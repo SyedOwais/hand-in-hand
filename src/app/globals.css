@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FBF9F5;
+    color: #1B3B48;
+    font-family: var(--font-jakarta), sans-serif;
+  }
+}
+
+@theme {
+  --color-[#1B3B48]: #1B3B48;
+  --color-[#F57A54]: #F57A54;
+  --color-[#EAA85E]: #EAA85E;
+  --color-[#2A5243]: #2A5243;
+  --color-[#4A7C64]: #4A7C64;
+  --color-[#6B8E7B]: #6B8E7B;
+  --color-[#E8F0EC]: #E8F0EC;
+  --color-[#FBF9F5]: #FBF9F5;
+
+  --color-brand-navy: #1B3B48;
+  --color-brand-midnight: #0F2530;
+  --color-organic-forest: #2A5243;
+  --color-organic-sage: #4A7C64;
+  --color-organic-eucalyptus: #6B8E7B;
+  --color-organic-mist: #E8F0EC;
+  --color-organic-linen: #FBF9F5;
+  --color-brand-coral: #F57A54;
+  --color-brand-amber: #EAA85E;
+}
+
+/* Custom arch frames for organic therapeutic aesthetic */
+.arch-top {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.arch-card {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
