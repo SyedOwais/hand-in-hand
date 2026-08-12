@@ -246,7 +246,7 @@ function FAQsContent() {
           Still Have Questions About Admission or Funding?
         </h2>
         <p className="text-sm sm:text-base text-slate-200 max-w-xl mx-auto">
-          Schedule a virtual information meeting or tour with Program Supervisor <strong>Nakita Medeiros</strong>.
+          Schedule a virtual information meeting or tour with our Admissions Team.
         </p>
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
@@ -261,7 +261,7 @@ function FAQsContent() {
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-sm font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
           >
             <Video className="w-4 h-4 text-[#F57A54]" />
-            <span>Book Meeting with Nakita</span>
+            <span>Get Started</span>
           </Link>
         </div>
       </div>

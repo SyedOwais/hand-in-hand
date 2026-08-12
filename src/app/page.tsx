@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FBF9F5]">
+    <div className="min-h-screen flex flex-col bg-[#FAFDFB]">
       {/* 1. Primary Sticky Header */}
       <Header />
 

@@ -441,13 +441,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   Need Help with Funding or Therapy Intake?
                 </h3>
                 <p className="text-xs text-slate-200 leading-relaxed">
-                  Connect directly with Nakita & Cassandra to discuss Access OAP or Passport Funding applications for your family.
+                  Connect directly with our admissions team to discuss Access OAP or Passport Funding applications for your family.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all"
                 >
-                  <span>Book Free Consultation</span>
+                  <span>Get Started</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

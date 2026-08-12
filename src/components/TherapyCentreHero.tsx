@@ -46,7 +46,7 @@ export default function TherapyCentreHero() {
   );
 
   return (
-    <section id="therapy-centre-hero" className="pt-36 sm:pt-40 lg:pt-36 pb-12 bg-[#FBF9F5] relative overflow-hidden">
+    <section id="therapy-centre-hero" className="pt-36 sm:pt-40 lg:pt-36 pb-12 bg-gradient-to-b from-[#F4F9F6] via-[#FAFDFB] to-[#FAFDFB] relative overflow-hidden">
       {/* Organic background ambient glow */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-[#E8F0EC] rounded-full blur-3xl pointer-events-none" />
 
@@ -61,13 +61,17 @@ export default function TherapyCentreHero() {
               <span>Pediatric & Adolescent Support • Ages 2–18</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1B3B48] leading-tight tracking-tight">
-              Helping children build skills, confidence, and independence.
-            </h1>
-
-            <p className="text-slate-700 text-base sm:text-lg leading-relaxed max-w-xl">
-              Support designed around where your child is today and where you want them to go next. Certified ABA, Speech & OT therapy in Vaughan & Bradford.
-            </p>
+            <div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#1B3B48] tracking-tight leading-none mb-3">
+                Hand in Hand
+              </h1>
+              <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#F57A54] tracking-tight mb-4">
+                Together We Can!
+              </p>
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-xl">
+                Support designed around where your child is today and where you want them to go next. Certified ABA, Speech & OT therapy in Vaughan & Bradford.
+              </p>
+            </div>
 
             {/* Hero Image - Rendered here on mobile right below header copy */}
             <div className="block lg:hidden my-6">

@@ -73,9 +73,12 @@ export default function AboutPage() {
                 <span>Our Story, Mission & Leadership</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1B3B48] leading-tight">
-                Hand in Hand - The Next Level
+              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[#1B3B48] leading-none mb-3">
+                Hand in Hand
               </h1>
+              <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#F57A54] tracking-tight mb-4">
+                Together We Can!
+              </p>
 
               <p className="text-base sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
                 A dedicated group of professional educators and clinicians providing compassionate, effective educational services for teenagers and adults with developmental special needs.
@@ -144,7 +147,7 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                  <strong>Hand in Hand - The Next Level</strong> consists of a group of professional educators and clinicians who are dedicated to providing efficient and effective educational services for all adults and young individuals. The team at Hand in Hand - The Next Level has specialized in providing therapy for individuals with developmental disabilities for over ten years.
+                  <strong>Hand in Hand</strong> consists of a group of professional educators and clinicians who are dedicated to providing efficient and effective educational services for all adults and young individuals. The team at Hand in Hand has specialized in providing therapy for individuals with developmental disabilities for over ten years.
                 </p>
 
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
@@ -363,7 +366,7 @@ export default function AboutPage() {
                     href="/contact"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
                   >
-                    <span>Contact Nakita Medeiros</span>
+                    <span>Get Started</span>
                   </Link>
                 </div>
               </div>

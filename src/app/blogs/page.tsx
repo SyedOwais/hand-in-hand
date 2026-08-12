@@ -369,14 +369,14 @@ function BlogsContent() {
           Have Questions About Access OAP or Passport Funding?
         </h2>
         <p className="text-sm sm:text-base text-slate-200 max-w-xl mx-auto">
-          Schedule a complimentary consultation with Nakita & Cassandra at Concord / Vaughan or Bradford.
+          Schedule a complimentary consultation with our clinical team at Concord / Vaughan or Bradford.
         </p>
         <div className="pt-2">
           <Link
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all transform hover:-translate-y-0.5"
           >
-            <span>Book Intake Consultation</span>
+            <span>Get Started</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

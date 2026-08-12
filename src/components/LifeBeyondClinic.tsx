@@ -13,7 +13,7 @@ export default function LifeBeyondClinic() {
   ];
 
   return (
-    <section id="life-beyond-clinic" className="py-20 bg-[#FBF9F5] relative overflow-hidden">
+    <section id="life-beyond-clinic" className="py-20 bg-[#FAFDFB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Storytelling Header */}

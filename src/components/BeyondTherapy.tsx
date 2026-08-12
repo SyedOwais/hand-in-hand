@@ -35,25 +35,25 @@ export default function BeyondTherapy() {
   ];
 
   return (
-    <section id="beyond-therapy" className="py-20 bg-gradient-to-b from-[#0F2530] via-[#142E28] to-[#0F2530] text-white relative overflow-hidden">
+    <section id="beyond-therapy" className="py-20 bg-gradient-to-b from-[#E8F0EC]/80 via-[#F4F9F6] to-[#FAFDFB] text-[#1B3B48] relative overflow-hidden border-y border-slate-200/60">
       {/* Soft background ambient glows */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#4A7C64]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1B3B48]/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F57A54]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-black tracking-wider uppercase mb-4 border border-white/10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-black tracking-wider uppercase mb-4 border border-[#2A5243]/20">
             <Leaf className="w-4 h-4 text-[#4A7C64]" />
             <span>The Hand In Hand Differentiator</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1B3B48] tracking-tight mb-4">
             It's not just about therapy.
           </h2>
 
-          <p className="text-[#6B8E7B] text-xl font-bold tracking-wide">
+          <p className="text-[#2A5243] text-xl font-bold tracking-wide">
             It's about helping the whole family move forward.
           </p>
         </div>
@@ -65,35 +65,35 @@ export default function BeyondTherapy() {
             return (
               <div
                 key={idx}
-                className="bg-white/5 border border-white/10 hover:border-[#4A7C64]/50 rounded-3xl p-8 backdrop-blur-md hover:bg-white/10 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+                className="bg-white border border-slate-200/90 hover:border-[#4A7C64]/50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group shadow-lg"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${pillar.color}`}>
-                      <Icon className="w-6 h-6" />
+                    <div className="w-12 h-12 rounded-2xl bg-[#E8F0EC] text-[#2A5243] flex items-center justify-center font-bold">
+                      <Icon className="w-6 h-6 text-[#2A5243]" />
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-white/10 text-slate-300">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243]">
                       {pillar.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-extrabold text-white mb-1 group-hover:text-[#6B8E7B] transition-colors">
+                  <h3 className="text-2xl font-extrabold text-[#1B3B48] mb-1 group-hover:text-[#2A5243] transition-colors">
                     {pillar.title}
                   </h3>
 
-                  <p className="text-xs font-bold text-[#EAA85E] uppercase tracking-wider mb-4">
+                  <p className="text-xs font-bold text-[#F57A54] uppercase tracking-wider mb-4">
                     {pillar.subtitle}
                   </p>
 
-                  <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
                     {pillar.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/10">
+                <div className="pt-4 border-t border-slate-100">
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 text-xs font-extrabold text-[#6B8E7B] uppercase tracking-wider group-hover:translate-x-1 transition-transform"
+                    className="inline-flex items-center gap-2 text-xs font-extrabold text-[#2A5243] uppercase tracking-wider group-hover:translate-x-1 transition-transform"
                   >
                     <span>Learn About {pillar.title}</span>
                     <ArrowRight className="w-4 h-4" />

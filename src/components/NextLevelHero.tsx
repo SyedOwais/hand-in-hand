@@ -59,14 +59,11 @@ export default function NextLevelHero() {
             </div>
 
             <div>
-              <span className="text-[#6B8E7B] font-black text-sm uppercase tracking-widest block mb-1">
-                HAND IN HAND
-              </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none mb-3">
-                The Next Level
+                Hand in Hand
               </h1>
-              <p className="text-xl sm:text-2xl font-bold text-[#EAA85E] tracking-wide">
-                Adult Day Program | Ages 18+
+              <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#EAA85E] tracking-tight">
+                Together We Can!
               </p>
             </div>
 

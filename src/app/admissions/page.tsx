@@ -27,7 +27,7 @@ import {
 
 export const metadata = {
   title: "Admissions & Intake Process | Hand In Hand & The Next Level",
-  description: "Step-by-step admissions process for Hand In Hand Therapy Centre (Ages 2–18) and The Next Level Adult Day Program (Ages 18+). Book a virtual meeting with Program Supervisor Nakita Medeiros.",
+  description: "Step-by-step admissions process for Hand In Hand Therapy Centre (Ages 2–18) and The Next Level Adult Day Program (Ages 18+). Contact our Intake & Admissions Team to get started.",
 };
 
 export default function AdmissionsPage() {
@@ -55,14 +55,14 @@ export default function AdmissionsPage() {
                 Welcoming children (ages 2–18) and adults (ages 18+) to Hand In Hand Therapy Centre and THE NEXT LEVEL Adult Day Program in Concord / Vaughan & Bradford.
               </p>
 
-              {/* Lead Supervisor Contact Banner */}
+              {/* Admissions Contact Banner */}
               <div className="pt-4 inline-flex flex-col sm:flex-row items-center gap-4 bg-white p-4 sm:px-6 sm:py-4 rounded-3xl border border-slate-200 shadow-md">
                 <div className="w-12 h-12 rounded-full bg-[#2A5243] text-white font-extrabold text-lg flex items-center justify-center shadow-xs">
-                  N
+                  <UserCheck className="w-6 h-6" />
                 </div>
                 <div className="text-left space-y-0.5">
-                  <span className="block text-xs font-bold text-[#6B8E7B] uppercase tracking-wider">Admissions & Intake Lead</span>
-                  <span className="block text-base font-extrabold text-[#1B3B48]">Nakita Medeiros — Program Supervisor</span>
+                  <span className="block text-xs font-bold text-[#6B8E7B] uppercase tracking-wider">Admissions & Intake</span>
+                  <span className="block text-base font-extrabold text-[#1B3B48]">Intake & Admissions Team</span>
                   <span className="block text-xs text-slate-500">Virtual Meetings & Phone Consultations Available</span>
                 </div>
                 <div className="sm:ml-4">
@@ -71,7 +71,7 @@ export default function AdmissionsPage() {
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-[#F57A54]" />
-                    <span>Contact Nakita</span>
+                    <span>Get Started</span>
                   </Link>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function AdmissionsPage() {
                 How Our Admissions Assessment Works
               </h2>
               <p className="text-slate-600 text-sm sm:text-base">
-                From initial virtual meeting with Program Supervisor Nakita Medeiros to student trial days and group placement.
+                From initial virtual meeting with our Program Supervisor to student trial days and group placement.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function AdmissionsPage() {
                   </h3>
 
                   <p className="text-sm text-slate-700 leading-relaxed font-medium">
-                    The Admissions process starts with a virtual information meeting or phone call with Program Supervisor, <strong>Nakita Medeiros</strong>.
+                    The Admissions process starts with a virtual information meeting or phone call with our <strong>Program Supervisor</strong>.
                   </p>
 
                   {/* Subtext Quote Callout */}
@@ -134,11 +134,11 @@ export default function AdmissionsPage() {
                   {/* Supervisor Profile Micro-Card */}
                   <div className="flex items-center gap-3 p-3 rounded-2xl bg-[#E8F0EC]/60 border border-[#2A5243]/20">
                     <div className="w-10 h-10 rounded-full bg-[#1B3B48] text-white font-extrabold text-sm flex items-center justify-center shadow-xs">
-                      N
+                      <UserCheck className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="block text-xs font-extrabold text-[#1B3B48]">Nakita Medeiros</span>
-                      <span className="block text-[10px] text-slate-500 font-medium">Program Supervisor & Admissions Lead</span>
+                      <span className="block text-xs font-extrabold text-[#1B3B48]">Intake & Admissions Team</span>
+                      <span className="block text-[10px] text-slate-500 font-medium">Program Supervisor & Intake Lead</span>
                     </div>
                   </div>
 
@@ -150,7 +150,7 @@ export default function AdmissionsPage() {
                     className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md transition-all group-hover:scale-[1.02]"
                   >
                     <Video className="w-4 h-4 text-[#F57A54]" />
-                    <span>Book Virtual Meeting with Nakita</span>
+                    <span>Get Started</span>
                   </Link>
                 </div>
               </div>
@@ -348,7 +348,7 @@ export default function AdmissionsPage() {
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all text-center"
                 >
                   <Calendar className="w-4 h-4 text-[#2A5243]" />
-                  <span>Book Virtual Meeting & Tour</span>
+                  <span>Get Started</span>
                 </Link>
                 <a
                   href="tel:4169305293"
@@ -373,7 +373,7 @@ export default function AdmissionsPage() {
               Start Your Admissions Journey Today
             </h2>
             <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
-              Please contact program supervisor, <strong>Nakita Medeiros</strong>, for more information or to book a virtual meeting and tour.
+              Please contact our <strong>Intake & Admissions Team</strong> for more information or to get started with an initial meeting and tour.
             </p>
             
             {/* Admissions CTAs */}
@@ -383,7 +383,7 @@ export default function AdmissionsPage() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <Video className="w-5 h-5 text-[#2A5243]" />
-                <span>Book Virtual Meeting & Tour</span>
+                <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
 

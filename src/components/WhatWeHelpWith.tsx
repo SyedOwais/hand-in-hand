@@ -6,7 +6,7 @@ import { Brain, Users, MessageCircle, Activity, Sparkles, ArrowRight, Leaf, Shie
 
 export default function WhatWeHelpWith() {
   return (
-    <section id="what-we-help-with" className="py-20 bg-[#FBF9F5] relative overflow-hidden border-t border-slate-200/80">
+    <section id="what-we-help-with" className="py-20 bg-[#FAFDFB] relative overflow-hidden border-t border-slate-200/80">
       {/* Subtle background ambient lighting */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#E8F0EC] rounded-full blur-3xl pointer-events-none" />
 
@@ -27,15 +27,15 @@ export default function WhatWeHelpWith() {
             </p>
           </div>
 
-          <div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md hover:shadow-lg transition-all uppercase tracking-wider"
-            >
-              <span>Book An Assessment</span>
-              <ArrowRight className="w-4 h-4 text-white" />
-            </Link>
-          </div>
+            <div className="pt-2">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              >
+                <span>Get Started</span>
+                <ArrowRight className="w-5 h-5 text-[#F57A54]" />
+              </Link>
+            </div>
         </div>
 
         {/* TRUE BENTO GRID LAYOUT */}
@@ -73,7 +73,7 @@ export default function WhatWeHelpWith() {
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-100">
                   <CheckCircle2 className="w-4 h-4 text-[#6B8E7B] shrink-0" />
-                  <span>OAP Direct Billing Ready</span>
+                  <span>OAP or Private Insurance</span>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function WhatWeHelpWith() {
                   Ontario Autism Program
                 </span>
                 <h4 className="text-lg font-black text-white mb-0.5">
-                  OAP Approved & Direct Billing Ready
+                  OAP or Private Insurance
                 </h4>
                 <p className="text-xs text-slate-200 max-w-2xl leading-relaxed">
                   We assist families with OAP Childhood Budgets, Core Clinical Services, and direct invoice submission across both our Vaughan and Bradford centres.

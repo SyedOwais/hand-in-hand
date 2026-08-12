@@ -16,11 +16,17 @@ export default function HeroSection() {
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-mint text-brand-navy text-xs sm:text-sm font-bold tracking-wide mb-4 shadow-xs">
             <Sparkles className="w-4 h-4 text-brand-coral" />
-            <span>York Region's Trusted Therapy & Daycare Centre</span>
+            <span>York Region's Trusted Therapy & Day Care Centre</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-navy leading-tight tracking-tight">
-            One coordinated team, multiple areas of expertise, & a plan made specifically for your family.
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-brand-navy leading-none tracking-tight mb-3">
+            Hand in Hand
           </h1>
+          <p className="text-2xl sm:text-4xl md:text-5xl font-black text-brand-coral tracking-tight mb-4">
+            Together We Can!
+          </p>
+          <p className="text-base sm:text-lg text-slate-700 max-w-xl mx-auto">
+            One coordinated team, multiple areas of expertise, & a plan made specifically for your family.
+          </p>
         </div>
 
         {/* Split Hero Cards */}
@@ -72,7 +78,7 @@ export default function HeroSection() {
                   href="#contact"
                   className="inline-flex items-center gap-2 px-6 py-3.2 rounded-full text-sm font-bold bg-brand-coral text-white hover:bg-brand-coral-hover shadow-md hover:shadow-lg transition-all"
                 >
-                  <span>Book an Assessment</span>
+                  <span>Get Started</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>

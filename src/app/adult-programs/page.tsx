@@ -50,12 +50,15 @@ export default function AdultProgramsPage() {
             <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider">
                 <Sparkles className="w-4 h-4 text-[#F57A54]" />
-                <span>The Next Level Adult Day Program (18+)</span>
+                <span>Adult Day Program (18+)</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1B3B48] leading-tight">
-                Specialized Adult Day Programs
+              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[#1B3B48] leading-none mb-3">
+                Hand in Hand
               </h1>
+              <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#F57A54] tracking-tight mb-4">
+                Together We Can!
+              </p>
 
               <p className="text-base sm:text-xl text-slate-600 leading-relaxed">
                 Empowering adults with unique abilities to achieve independence, active community involvement, lifelong friendships, and personal growth through our interactive Bento Grid programming tracks.
@@ -420,7 +423,7 @@ export default function AdultProgramsPage() {
                 href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                <span>Book a Tour / Enrol</span>
+                <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link

@@ -23,7 +23,7 @@ export default function NotFound() {
     { title: "Home Choice Portal", href: "/", icon: Home, desc: "Return to main program selection" },
     { title: "ABA Therapy (2–18)", href: "/therapy", icon: Heart, desc: "ABA, Speech, OT & Social Skills" },
     { title: "Adult Day Program (18+)", href: "/adult-program", icon: Sparkles, desc: "Independent living & life skills" },
-    { title: "Admissions & Intake", href: "/admissions", icon: UserCheck, desc: "4-step process & Nakita Medeiros" },
+    { title: "Admissions & Intake", href: "/admissions", icon: UserCheck, desc: "4-step intake & assessment process" },
     { title: "Frequently Asked Questions", href: "/faqs", icon: HelpCircle, desc: "RESP, Passport & OAP funding" },
     { title: "Contact Us", href: "/contact", icon: PhoneCall, desc: "Book a tour or get in touch" },
   ];

@@ -54,9 +54,13 @@ export default function EntryPortal() {
             HAND IN HAND THERAPY & ADULT DAY PROGRAM
           </span>
 
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-2">
-            Support that grows with you.
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none mb-3">
+            Hand in Hand
           </h1>
+
+          <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#F57A54] tracking-tight mb-4">
+            Together We Can!
+          </p>
 
           <p className="text-slate-300 text-xs sm:text-base max-w-2xl mx-auto leading-relaxed mb-4">
             Whether you're looking for support for a child or exploring opportunities for an adult, you're in the right place.
