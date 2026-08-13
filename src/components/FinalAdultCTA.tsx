@@ -35,7 +35,7 @@ export default function FinalAdultCTA() {
         </div>
 
         {/* Directory Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/10 text-xs sm:text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-8 border-t border-white/10 text-xs sm:text-sm">
           
           <a
             href="tel:4169305293"
@@ -61,18 +61,7 @@ export default function FinalAdultCTA() {
           >
             <Mail className="w-5 h-5 text-blue-400" />
             <span className="font-bold">Email Us</span>
-            <span className="text-[11px] text-slate-400 truncate max-w-[120px]">handinhandtherapy1@gmail.com</span>
-          </a>
-
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 flex flex-col items-center gap-2 transition-colors"
-          >
-            <Camera className="w-5 h-5 text-[#F57A54]" />
-            <span className="font-bold">Instagram</span>
-            <span className="text-[11px] text-slate-400">@handinhandtherapy</span>
+            <span className="text-[11px] text-slate-400 truncate max-w-[160px]">handinhandtherapy1@gmail.com</span>
           </a>
 
         </div>
