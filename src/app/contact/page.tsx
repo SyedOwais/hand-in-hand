@@ -16,20 +16,20 @@ export default function ContactPage() {
 
       <main className="flex-1 pt-44 sm:pt-48 lg:pt-38">
         {/* Contact Hero Header */}
-        <section className="bg-gradient-to-b from-[#0F2530] via-[#1B3B48] to-[#142E28] text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden text-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
+        <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden text-center">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="max-w-4xl mx-auto relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-black tracking-widest uppercase border border-white/10">
-              <Leaf className="w-4 h-4 text-[#4A7C64]" />
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold tracking-wider uppercase border border-[#2A5243]/20 shadow-xs">
+              <Leaf className="w-4 h-4 text-[#F57A54]" />
               <span>Get In Touch</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-[#1B3B48] leading-tight">
               We're here to support your family.
             </h1>
 
-            <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
               Have questions about pediatric therapy (Ages 2–18) or The Next Level Adult Day Program (Ages 18+)? Reach out to our clinical team today.
             </p>
           </div>
