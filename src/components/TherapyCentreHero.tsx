@@ -37,15 +37,16 @@ export default function TherapyCentreHero() {
       >
         {/* Base Layer: Image 2 (Right side revealed as slider moves left) */}
         <Image
-          src="/images/Childhood-Outside.webp"
-          alt="Outdoor Social Play & Community Connection"
+          src="/images/indoor.webp"
+          alt="Indoor Sensory Gym & Play Activities"
           fill
           className="object-cover object-center"
           priority
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
         
         <div className="absolute top-4 right-4 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-[#EAA85E] z-10 border border-white/20 shadow-md">
-          Group Connection & Play
+          Sensory Gym & Indoor Play
         </div>
 
         {/* Top Layer: Image 1 (Left side clipped dynamically) */}
@@ -59,6 +60,7 @@ export default function TherapyCentreHero() {
             fill
             className="object-cover object-top sm:object-[center_20%]"
             priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
           />
           <div className="absolute top-4 left-4 bg-[#2A5243]/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-white z-10 border border-white/20 shadow-md">
             1:1 ABA & Pediatric Therapy
