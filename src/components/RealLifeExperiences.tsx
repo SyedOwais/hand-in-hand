@@ -11,7 +11,7 @@ export default function RealLifeExperiences() {
       subtitle: "Getting out and experiencing the world",
       description: "Day excursions to local museums, parks, sports venues, and community events across York Region.",
       icon: Compass,
-      image: "/images/adult-community-trips.png",
+      image: "/images/adult-12.webp",
       tag: "Excursions & Travel",
     },
     {
@@ -19,7 +19,7 @@ export default function RealLifeExperiences() {
       subtitle: "Structured activities around individual goals",
       description: "Tailored daily schedules including culinary workshops, fitness, creative arts, and group projects.",
       icon: Calendar,
-      image: "/images/adult-day-program.png",
+      image: "/images/adult-13.webp",
       tag: "Daily Workshops",
     },
     {
@@ -27,7 +27,7 @@ export default function RealLifeExperiences() {
       subtitle: "Participating in meaningful community activities",
       description: "Local volunteering, vocational skills practice, and active participation in local businesses.",
       icon: Users,
-      image: "/images/daycare-hero.png",
+      image: "/images/adult-14.webp",
       tag: "Volunteering & Connection",
     },
     {
@@ -35,7 +35,7 @@ export default function RealLifeExperiences() {
       subtitle: "Developing practical skills for everyday life",
       description: "Meal preparation, personal budgeting, digital literacy, transit training, and self-advocacy.",
       icon: Sparkles,
-      image: "/images/therapy-approach.png",
+      image: "/images/adult-15.webp",
       tag: "Life Skills Practice",
     },
   ];

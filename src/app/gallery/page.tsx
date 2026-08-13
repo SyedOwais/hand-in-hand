@@ -251,6 +251,38 @@ function GalleryContent() {
       location: "Concord / Vaughan",
       image: "/images/adult-11.webp",
       description: "Shared mealtime social circle reinforcing conversation etiquette, table manners, and warm peer bonding."
+    },
+    {
+      id: 213,
+      title: "Community Trips & Local Excursions",
+      category: "adult",
+      location: "Bradford",
+      image: "/images/adult-12.webp",
+      description: "Day excursions to local museums, parks, sports venues, and community events across York Region."
+    },
+    {
+      id: 214,
+      title: "Daily Goal-Focused Workshops",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-13.webp",
+      description: "Tailored daily schedules including culinary workshops, fitness, creative arts, and group projects."
+    },
+    {
+      id: 215,
+      title: "Volunteering & Community Connection",
+      category: "adult",
+      location: "Bradford",
+      image: "/images/adult-14.webp",
+      description: "Local volunteering, vocational skills practice, and active participation in local businesses."
+    },
+    {
+      id: 216,
+      title: "Life Skills & Independence Building",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-15.webp",
+      description: "Meal preparation, personal budgeting, digital literacy, transit training, and self-advocacy."
     }
   ];
 
