@@ -7,36 +7,40 @@ import { Compass, Calendar, Users, Sparkles, MapPin } from "lucide-react";
 export default function RealLifeExperiences() {
   const experiences = [
     {
-      title: "Taking Trips",
-      subtitle: "Getting out and experiencing the world",
-      description: "Day excursions to local museums, parks, sports venues, and community events across York Region.",
+      title: "Taking Trips & Outdoor Excursions",
+      subtitle: "Getting out and experiencing the community",
+      description: "Guided outdoor group trips to local parks, community nature trails, and recreational spaces across York Region & Simcoe County.",
       icon: Compass,
       image: "/images/adult-12.webp",
       tag: "Excursions & Travel",
+      objectPos: "object-top",
     },
     {
-      title: "Day Programming",
-      subtitle: "Structured activities around individual goals",
-      description: "Tailored daily schedules including culinary workshops, fitness, creative arts, and group projects.",
+      title: "Culinary & Meal Prep Workshop",
+      subtitle: "Structured kitchen skills & daily meal planning",
+      description: "Hands-on kitchen workshops where adult participants practice recipe planning, food safety, and independent cooking.",
       icon: Calendar,
       image: "/images/adult-13.webp",
-      tag: "Daily Workshops",
+      tag: "Culinary Life Skills",
+      objectPos: "object-top",
     },
     {
-      title: "Community Involvement",
-      subtitle: "Participating in meaningful community activities",
-      description: "Local volunteering, vocational skills practice, and active participation in local businesses.",
+      title: "Creative Arts & Expression Studio",
+      subtitle: "Hands-on art projects & collaborative design",
+      description: "Therapeutic art and craft stations encouraging fine motor precision, personal expression, and group showcase projects.",
       icon: Users,
       image: "/images/adult-14.webp",
-      tag: "Volunteering & Connection",
+      tag: "Creative Studio",
+      objectPos: "object-top",
     },
     {
-      title: "Building Independence",
-      subtitle: "Developing practical skills for everyday life",
-      description: "Meal preparation, personal budgeting, digital literacy, transit training, and self-advocacy.",
+      title: "Building Independence & Practical Life Skills",
+      subtitle: "Developing practical tools for daily living",
+      description: "Interactive stations for computer literacy, personal budgeting, item organization, and self-advocacy training.",
       icon: Sparkles,
       image: "/images/adult-15.webp",
-      tag: "Life Skills Practice",
+      tag: "Life & Job Skills",
+      objectPos: "object-top",
     },
   ];
 
@@ -70,16 +74,17 @@ export default function RealLifeExperiences() {
                 className="bg-white/5 border border-white/10 hover:border-[#EAA85E]/50 rounded-3xl overflow-hidden backdrop-blur-md hover:bg-white/10 transition-all duration-300 flex flex-col justify-between group shadow-xl"
               >
                 {/* Photo Header */}
-                <div className="relative h-64 w-full overflow-hidden">
+                <div className="relative h-72 sm:h-80 md:h-96 w-full overflow-hidden">
                   <Image
                     src={exp.image}
                     alt={exp.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className={`object-cover ${exp.objectPos || "object-top"} group-hover:scale-105 transition-transform duration-500`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
                   
-                  <div className="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold text-[#EAA85E] border border-white/10">
+                  <div className="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold text-[#EAA85E] border border-white/10 z-10">
                     {exp.tag}
                   </div>
                 </div>
