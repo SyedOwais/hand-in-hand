@@ -71,44 +71,45 @@ export default function RealLifeExperiences() {
             return (
               <div
                 key={idx}
-                className="bg-white border border-slate-200/80 hover:border-[#4A7C64]/40 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                className="bg-gradient-to-br from-white via-[#FBF9F5] to-[#E8F0EC]/40 border border-[#2A5243]/15 hover:border-[#2A5243]/40 rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
               >
-                {/* Photo Header */}
-                <div className="relative h-72 sm:h-80 md:h-96 w-full overflow-hidden">
-                  <Image
-                    src={exp.image}
-                    alt={exp.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className={`object-cover ${exp.objectPos || "object-top"} group-hover:scale-105 transition-transform duration-500`}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80" />
-                  
-                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-extrabold text-[#2A5243] border border-slate-200 z-10 shadow-xs">
-                    {exp.tag}
-                  </div>
-                </div>
-
-                {/* Body Content */}
-                <div className="p-8 flex-1 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-8 h-8 rounded-xl bg-[#E8F0EC] text-[#2A5243] flex items-center justify-center">
-                        <Icon className="w-4 h-4 text-[#4A7C64]" />
-                      </div>
-                      <h3 className="text-2xl font-black text-[#1B3B48] group-hover:text-[#2A5243] transition-colors">
-                        {exp.title}
-                      </h3>
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#2A5243]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#E8F0EC] to-[#D5E5DC] text-[#2A5243] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#4A7C64]/20 shadow-xs">
+                      {exp.tag}
+                    </span>
+                    <div className="w-8 h-8 rounded-xl bg-[#E8F0EC] text-[#2A5243] flex items-center justify-center border border-[#4A7C64]/20">
+                      <Icon className="w-4 h-4 text-[#4A7C64]" />
                     </div>
-
-                    <p className="text-xs font-bold text-[#4A7C64] uppercase tracking-wider mb-4">
-                      {exp.subtitle}
-                    </p>
-
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
                   </div>
+
+                  <h3 className="text-2xl font-black text-[#1B3B48] mb-1">
+                    {exp.title}
+                  </h3>
+
+                  <p className="text-xs font-bold text-[#4A7C64] uppercase tracking-wider mb-4">
+                    {exp.subtitle}
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-5 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2A5243]/20 via-[#4A7C64]/15 to-[#F57A54]/20 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src={exp.image}
+                        alt={exp.title}
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
+                    </div>
+                  </div>
+
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium">
+                    {exp.description}
+                  </p>
                 </div>
               </div>
             );

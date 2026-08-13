@@ -111,32 +111,41 @@ export default function AdultProgramsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8">
 
               {/* Bento Card 1: Life Skills Program (Span 7) */}
-              <div className="lg:col-span-7 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-60 sm:h-72 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-14.webp"
-                    alt="Life Skills Program"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/80 via-black/20 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#2A5243] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-7 bg-gradient-to-br from-white via-[#FBF9F5] to-[#E8F0EC]/40 rounded-3xl p-5 sm:p-7 border border-[#2A5243]/15 hover:border-[#2A5243]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#2A5243]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#E8F0EC] to-[#D5E5DC] text-[#2A5243] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#4A7C64]/20 shadow-xs">
                       Essential Independence
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 01</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-2xl sm:text-3xl font-extrabold flex items-center gap-2">
-                      <Utensils className="w-6 h-6 text-[#EAA85E]" />
-                      Life Skills & Cooking Program
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-200 mt-1 font-medium">
-                      Menu Planning, Cooking, Budgeting & Household Self-Care
-                    </p>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] flex items-center gap-2.5 mb-2">
+                    <Utensils className="w-6 h-6 text-[#2A5243] shrink-0" />
+                    <span>Life Skills & Cooking Program</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Menu Planning, Cooking, Budgeting & Household Self-Care
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2A5243]/20 via-[#4A7C64]/15 to-[#F57A54]/20 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-14.webp"
+                        alt="Life Skills & Cooking Program"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 60vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {[
                       "Menu Planning & Budgeting",
                       "Cooking and Food Preparation",
@@ -147,9 +156,9 @@ export default function AdultProgramsPage() {
                       "Bathing & Personal Care",
                       "Self-Wellness & Hygiene"
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
+                      <div key={i} className="flex items-center gap-2.5 bg-white/80 backdrop-blur-xs p-3 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />
-                        <span className="text-xs sm:text-sm font-semibold text-[#1B3B48]">{item}</span>
+                        <span className="text-xs sm:text-sm font-bold text-[#1B3B48]">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -157,111 +166,146 @@ export default function AdultProgramsPage() {
               </div>
 
               {/* Bento Card 2: Daily Living Skills / Self Help (Span 5) */}
-              <div className="lg:col-span-5 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-60 sm:h-72 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-05.webp"
-                    alt="Daily Living Skills"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/80 via-black/20 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#1B3B48] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-5 bg-gradient-to-br from-white via-[#FBF9F5] to-[#FFF0EB]/50 rounded-3xl p-5 sm:p-7 border border-[#F57A54]/20 hover:border-[#F57A54]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#F57A54]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#FFF0EB] to-[#FFE0D6] text-[#F57A54] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#F57A54]/20 shadow-xs">
                       Self-Help Mastery
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 02</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-2xl font-extrabold flex items-center gap-2">
-                      <Heart className="w-6 h-6 text-[#F57A54]" />
-                      Daily Living / Personal Care
-                    </h3>
-                    <p className="text-xs text-slate-200 mt-1 font-medium">
-                      Hands-on routines for personal grooming, hygiene & independence
-                    </p>
-                  </div>
-                </div>
-                <div className="p-6 sm:p-8 flex-grow space-y-3">
-                  {[
-                    "Learn Personal Grooming & Hygiene",
-                    "Learn Hair Care & Self-Wellness",
-                    "Learn To Make Up A Room",
-                    "Learn To Clean Living Room",
-                    "Skills In The Washroom",
-                    "And Much More..."
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
-                      <CheckCircle2 className="w-4 h-4 text-[#1B3B48] shrink-0" />
-                      <span className="text-xs sm:text-sm font-semibold text-[#1B3B48]">{item}</span>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] flex items-center gap-2.5 mb-2">
+                    <Heart className="w-6 h-6 text-[#F57A54] shrink-0" />
+                    <span>Daily Living / Personal Care</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Hands-on routines for personal grooming, hygiene & independence
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F57A54]/25 via-[#EAA85E]/15 to-[#2A5243]/15 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-05.webp"
+                        alt="Daily Living / Personal Care"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 40vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="space-y-2.5">
+                    {[
+                      "Learn Personal Grooming & Hygiene",
+                      "Learn Hair Care & Self-Wellness",
+                      "Learn To Make Up A Room",
+                      "Learn To Clean Living Room",
+                      "Skills In The Washroom",
+                      "And Much More..."
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-2.5 bg-white/80 backdrop-blur-xs p-3 rounded-xl border border-slate-200/60 shadow-xs">
+                        <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0" />
+                        <span className="text-xs sm:text-sm font-bold text-[#1B3B48]">{item}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               {/* Bento Card 3: Cognitive & Table Activities (Span 4) */}
-              <div className="lg:col-span-4 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-56 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-12.webp"
-                    alt="Cognitive & Tabletop Activities"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#4A7C64] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-4 bg-gradient-to-br from-white via-[#FBF9F5] to-[#E8F0EC]/40 rounded-3xl p-5 sm:p-7 border border-[#4A7C64]/20 hover:border-[#4A7C64]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-[#4A7C64]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#E8F0EC] to-[#D5E5DC] text-[#4A7C64] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#4A7C64]/20 shadow-xs">
                       Cognitive Focus
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 03</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-xl font-extrabold flex items-center gap-2">
-                      <BookOpen className="w-5 h-5 text-[#6B8E7B]" />
-                      Cognitive & Table Games
-                    </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Puzzles, focus & learning</p>
-                  </div>
-                </div>
-                <div className="p-6 flex-grow space-y-2.5">
-                  {[
-                    "Jigsaw Puzzles & Problem Solving",
-                    "Tabletop Games & Strategy",
-                    "Individual Worksheets & Books",
-                    "Classroom Learning Stations",
-                    "Functional Reading & Math"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
-                      <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
-                      <span className="text-xs font-semibold text-[#1B3B48]">{item}</span>
+
+                  <h3 className="text-xl sm:text-2xl font-black text-[#1B3B48] flex items-center gap-2 mb-2">
+                    <BookOpen className="w-5 h-5 text-[#4A7C64] shrink-0" />
+                    <span>Cognitive & Table Games</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Puzzles, focus & cognitive learning
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#4A7C64]/25 via-[#2A5243]/15 to-[#EAA85E]/15 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-12.webp"
+                        alt="Cognitive & Table Games"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="space-y-2">
+                    {[
+                      "Jigsaw Puzzles & Problem Solving",
+                      "Tabletop Games & Strategy",
+                      "Individual Worksheets & Books",
+                      "Classroom Learning Stations",
+                      "Functional Reading & Math"
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
+                        <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
+                        <span className="text-xs font-bold text-[#1B3B48]">{item}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               {/* Bento Card 4: Recreation & Outings (Span 8) */}
-              <div className="lg:col-span-8 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-56 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-07.webp"
-                    alt="Recreation & Outings"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#F57A54] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-8 bg-gradient-to-br from-white via-[#FBF9F5] to-[#FFF0EB]/50 rounded-3xl p-5 sm:p-7 border border-[#F57A54]/20 hover:border-[#F57A54]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#F57A54]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#FFF0EB] to-[#FFE0D6] text-[#F57A54] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#F57A54]/20 shadow-xs">
                       Community Outings
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 04</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-2xl font-extrabold flex items-center gap-2">
-                      <Music className="w-6 h-6 text-[#EAA85E]" />
-                      Recreation & Bowling Trips
-                    </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Splitsville bowling, outings & community fun</p>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] flex items-center gap-2.5 mb-2">
+                    <Music className="w-6 h-6 text-[#F57A54] shrink-0" />
+                    <span>Recreation & Bowling Trips</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Splitsville bowling, outings & community fun
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F57A54]/25 via-[#EAA85E]/20 to-[#4A7C64]/15 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-07.webp"
+                        alt="Recreation & Bowling Trips"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 66vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="p-6 sm:p-8 flex-grow">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
                     {[
                       "Splitsville Bowling Trips",
                       "Farm Visits & Pet Therapy",
@@ -273,9 +317,9 @@ export default function AdultProgramsPage() {
                       "Books & Smart Stories",
                       "Music & Rhythm Sessions"
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
+                      <div key={i} className="flex items-center gap-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0" />
-                        <span className="text-xs font-semibold text-[#1B3B48]">{item}</span>
+                        <span className="text-xs font-bold text-[#1B3B48]">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -283,30 +327,41 @@ export default function AdultProgramsPage() {
               </div>
 
               {/* Bento Card 5: Physical Fitness Program (Span 6) */}
-              <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-60 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-03.webp"
-                    alt="Physical Fitness Program"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#2A5243] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-6 bg-gradient-to-br from-white via-[#FBF9F5] to-[#E8F0EC]/40 rounded-3xl p-5 sm:p-7 border border-[#2A5243]/20 hover:border-[#2A5243]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#2A5243]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#E8F0EC] to-[#D5E5DC] text-[#2A5243] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#4A7C64]/20 shadow-xs">
                       Active Health & Exercise
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 05</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-2xl font-extrabold flex items-center gap-2">
-                      <Dumbbell className="w-6 h-6 text-[#6B8E7B]" />
-                      Physical Fitness & Exercise
-                    </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Elliptical fitness, sports & active health</p>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] flex items-center gap-2.5 mb-2">
+                    <Dumbbell className="w-6 h-6 text-[#2A5243] shrink-0" />
+                    <span>Physical Fitness & Exercise</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Elliptical fitness, sports & active health
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2A5243]/25 via-[#4A7C64]/20 to-[#F57A54]/15 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-03.webp"
+                        alt="Physical Fitness & Exercise"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="p-6 sm:p-8 flex-grow">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {[
                       "Elliptical Machine Workout",
                       "Gymnasium Games & Sports",
@@ -315,9 +370,9 @@ export default function AdultProgramsPage() {
                       "Fitness & Movement Classes",
                       "Physiotherapy / Exercise"
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
+                      <div key={i} className="flex items-center gap-2.5 bg-white/80 backdrop-blur-xs p-3 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />
-                        <span className="text-xs sm:text-sm font-semibold text-[#1B3B48]">{item}</span>
+                        <span className="text-xs sm:text-sm font-bold text-[#1B3B48]">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -325,30 +380,41 @@ export default function AdultProgramsPage() {
               </div>
 
               {/* Bento Card 6: Social Skills Program (Span 6) */}
-              <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
-                <div className="relative h-60 w-full overflow-hidden">
-                  <Image
-                    src="/images/adult-01.webp"
-                    alt="Social Skills Program"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-[#F57A54] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+              <div className="lg:col-span-6 bg-gradient-to-br from-white via-[#FBF9F5] to-[#FFF0EB]/50 rounded-3xl p-5 sm:p-7 border border-[#F57A54]/20 hover:border-[#F57A54]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#F57A54]/5 to-transparent rounded-full blur-2xl pointer-events-none" />
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                    <span className="bg-gradient-to-r from-[#FFF0EB] to-[#FFE0D6] text-[#F57A54] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-[#F57A54]/20 shadow-xs">
                       Peer Connection & Circles
                     </span>
+                    <span className="text-xs font-bold text-slate-400">Activity Track 06</span>
                   </div>
-                  <div className="absolute bottom-4 left-6 right-6 text-white">
-                    <h3 className="text-2xl font-extrabold flex items-center gap-2">
-                      <Users className="w-6 h-6 text-[#EAA85E]" />
-                      Group Social Connections
-                    </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Circle discussions, peer bonds & guided social time</p>
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] flex items-center gap-2.5 mb-2">
+                    <Users className="w-6 h-6 text-[#F57A54] shrink-0" />
+                    <span>Group Social Connections</span>
+                  </h3>
+
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium mb-5">
+                    Circle discussions, peer bonds & guided social time
+                  </p>
+
+                  {/* 100% Full Width Uncropped Photo with Luminous Ambient Light Glow */}
+                  <div className="w-full mb-6 relative group/img">
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#F57A54]/25 via-[#2A5243]/20 to-[#EAA85E]/15 rounded-2.5xl blur-xs opacity-75 group-hover/img:opacity-100 transition duration-300" />
+                    <div className="relative rounded-2xl overflow-hidden bg-white p-1 border border-slate-200/80 shadow-sm">
+                      <Image
+                        src="/images/adult-01.webp"
+                        alt="Group Social Connections"
+                        width={800}
+                        height={533}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="w-full h-auto rounded-xl group-hover/img:scale-[1.01] transition-transform duration-300 block"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="p-6 sm:p-8 flex-grow">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {[
                       "Social Communication Practice",
                       "Lifelong Friendships Development",
@@ -357,9 +423,9 @@ export default function AdultProgramsPage() {
                       "Guided Social Interactions",
                       "And much, much more..."
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
+                      <div key={i} className="flex items-center gap-2.5 bg-white/80 backdrop-blur-xs p-3 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0" />
-                        <span className="text-xs sm:text-sm font-semibold text-[#1B3B48]">{item}</span>
+                        <span className="text-xs sm:text-sm font-bold text-[#1B3B48]">{item}</span>
                       </div>
                     ))}
                   </div>
