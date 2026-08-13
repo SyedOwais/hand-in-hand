@@ -26,6 +26,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [insightsHovered, setInsightsHovered] = useState(false);
   const [mobileInsightsOpen, setMobileInsightsOpen] = useState(false);
+  const [servicesHovered, setServicesHovered] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +42,22 @@ export default function Header() {
   const currentEmail = isAdult
     ? "handinhandthenextlevel@gmail.com"
     : "handinhandtherapycentre@yahoo.com";
+
+  // Services Dropdown Items (For ABA Therapy Header ONLY)
+  const servicesDropdownItems = [
+    {
+      name: "Speech Therapy Vaughan",
+      href: "/speech-therapy-vaughan",
+      desc: "SLP assessment, articulation & language therapy",
+      icon: Sparkles
+    },
+    {
+      name: "All Therapy Services",
+      href: "/therapy#what-we-help-with",
+      desc: "Multidisciplinary ABA, OT & Social Skills",
+      icon: Heart
+    }
+  ];
 
   // Dynamic Insights Dropdown Items based on active Track (Therapy 2–18 vs Adult 18+)
   const therapyInsightsItems = [
@@ -98,17 +116,24 @@ export default function Header() {
 
   const insightsDropdownItems = isAdult ? adultInsightsItems : therapyInsightsItems;
 
-  // Navigation Links for Therapy Centre (2–18)
-  const therapyNavLinks = [
+  type NavLink = {
+    name: string;
+    href?: string;
+    isDropdown?: boolean;
+    isServicesDropdown?: boolean;
+  };
+
+  // Navigation Links for Therapy Centre (2–18) — Includes Services Dropdown
+  const therapyNavLinks: NavLink[] = [
     { name: "About Us", href: "/about" },
-    { name: "Services", href: "/therapy#what-we-help-with" },
+    { name: "Services", isServicesDropdown: true },
     { name: "Admission", href: "/admissions" },
     { name: "Insights", isDropdown: true },
     { name: "Locations", href: "/therapy#locations" },
   ];
 
   // Navigation Links for Adult Day Program (18+)
-  const adultNavLinks = [
+  const adultNavLinks: NavLink[] = [
     { name: "Programs", href: "/adult-programs" },
     { name: "About Us", href: "/about" },
     { name: "Admission", href: "/admissions" },
@@ -205,6 +230,76 @@ export default function Header() {
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => {
+              if (link.isServicesDropdown) {
+                return (
+                  <div
+                    key="services-dropdown"
+                    className="relative"
+                    onMouseEnter={() => setServicesHovered(true)}
+                    onMouseLeave={() => setServicesHovered(false)}
+                  >
+                    <button
+                      className={`inline-flex items-center gap-1 text-sm font-extrabold transition-all duration-200 py-2 px-3 rounded-full ${
+                        servicesHovered
+                          ? "bg-[#0F2530] text-white shadow-md"
+                          : "text-[#1B3B48] hover:text-[#4A7C64]"
+                      }`}
+                      onClick={() => setServicesHovered(!servicesHovered)}
+                    >
+                      <span>Services</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform duration-300 ${
+                          servicesHovered ? "rotate-180 text-[#6B8E7B]" : "text-[#2A5243]"
+                        }`}
+                      />
+                    </button>
+
+                    {/* Light Palette Desktop Dropdown Card for Services */}
+                    {servicesHovered && (
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 w-80 pt-3 z-50 animate-in fade-in slide-in-from-top-3 duration-200">
+                        <div className="bg-[#FBF9F5] rounded-3xl p-3.5 shadow-2xl border border-[#2A5243]/20 text-[#1B3B48] space-y-2">
+                          
+                          {/* Dropdown Header Pill */}
+                          <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
+                            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
+                              <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
+                              Pediatric Care & Therapy
+                            </span>
+                            <span className="text-[10px] text-[#2A5243] font-bold">2 Services</span>
+                          </div>
+
+                          {/* Items Grid */}
+                          <div className="space-y-1 pt-1">
+                            {servicesDropdownItems.map((item, idx) => {
+                              return (
+                                <Link
+                                  key={idx}
+                                  href={item.href}
+                                  onClick={() => setServicesHovered(false)}
+                                  className="flex items-center justify-between p-3 rounded-2xl bg-white hover:bg-[#E8F0EC] border border-slate-200/80 hover:border-[#2A5243]/40 transition-all duration-200 group shadow-xs"
+                                >
+                                  <div className="space-y-0.5">
+                                    <span className="block text-sm font-black text-[#1B3B48] group-hover:text-[#2A5243] transition-colors">
+                                      {item.name}
+                                    </span>
+                                    <span className="block text-[11px] text-slate-600 font-medium leading-tight">
+                                      {item.desc}
+                                    </span>
+                                  </div>
+
+                                  <ArrowRight className="w-4 h-4 text-[#F57A54] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all shrink-0 ml-2" />
+                                </Link>
+                              );
+                            })}
+                          </div>
+
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               if (link.isDropdown) {
                 return (
                   <div
@@ -325,6 +420,47 @@ export default function Header() {
           <div className="lg:hidden bg-[#FBF9F5] border-t border-slate-200 shadow-xl px-4 pt-4 pb-6 mt-2">
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => {
+                if (link.isServicesDropdown) {
+                  return (
+                    <div key="mobile-services" className="space-y-2">
+                      <button
+                        onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                        className={`w-full flex items-center justify-between text-base font-extrabold py-2.5 px-3.5 rounded-2xl transition-all ${
+                          mobileServicesOpen ? "bg-[#0F2530] text-white" : "bg-[#E8F0EC] text-[#1B3B48]"
+                        }`}
+                      >
+                        <span>Services</span>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform duration-200 ${
+                            mobileServicesOpen ? "rotate-180 text-[#6B8E7B]" : "text-[#2A5243]"
+                          }`}
+                        />
+                      </button>
+
+                      {mobileServicesOpen && (
+                        <div className="bg-[#E8F0EC]/60 rounded-2xl p-2.5 space-y-1.5 border border-[#2A5243]/20">
+                          {servicesDropdownItems.map((sub, i) => {
+                            return (
+                              <Link
+                                key={i}
+                                href={sub.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="flex items-center justify-between p-3 rounded-xl bg-white hover:bg-[#E8F0EC] border border-slate-200/80 transition-colors shadow-xs"
+                              >
+                                <div>
+                                  <span className="block text-xs font-black text-[#1B3B48]">{sub.name}</span>
+                                  <span className="block text-[10px] text-slate-600 font-medium">{sub.desc}</span>
+                                </div>
+                                <ArrowRight className="w-3.5 h-3.5 text-[#F57A54] shrink-0 ml-2" />
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
                 if (link.isDropdown) {
                   return (
                     <div key="mobile-insights" className="space-y-2">
