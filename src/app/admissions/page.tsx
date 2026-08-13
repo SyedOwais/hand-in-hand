@@ -244,10 +244,11 @@ export default function AdmissionsPage() {
                   {/* Left Column: Visual Media Card */}
                   <div className="lg:col-span-6 relative h-64 sm:h-80 rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
                     <Image
-                      src="/images/adult-community-trips.png"
+                      src="/images/adult-01.webp"
                       alt="Student Trial Day Visit at Hand in Hand"
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover object-top sm:object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
                       priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-[#0F2530]/40 to-transparent" />
@@ -379,29 +380,29 @@ export default function AdmissionsPage() {
         <AdultFAQSection />
 
         {/* Final Admissions CTA Banner */}
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-[#1B3B48] to-[#0F2530] text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-[#E8F0EC] via-[#F4F9F6] to-[#FAFDFB] text-[#1B3B48] relative overflow-hidden border-t border-slate-200/80">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10 space-y-6">
-            <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
+            <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#1B3B48]">
               Start Your Admissions Journey Today
             </h2>
-            <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed font-medium">
-              Please contact our <strong>Intake & Admissions Team</strong> for more information or to get started with an initial consultation and tour.
+            <p className="text-base sm:text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed font-medium">
+              Please contact our <strong className="text-[#2A5243]">Intake & Admissions Team</strong> for more information or to get started with an initial consultation and tour.
             </p>
             
             {/* Admissions CTAs */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-black text-[#1B3B48] bg-white hover:bg-slate-100 shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-black text-white bg-[#2A5243] hover:bg-[#1B3B48] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                <Video className="w-5 h-5 text-[#2A5243]" />
+                <Video className="w-5 h-5 text-white" />
                 <span>Get Started</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 text-white" />
               </Link>
 
               <a
                 href="mailto:info@handinhandtherapy.ca"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
               >
                 <Mail className="w-5 h-5 text-[#F57A54]" />
                 <span>Email Intake Team</span>
