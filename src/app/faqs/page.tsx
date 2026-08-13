@@ -133,8 +133,26 @@ function FAQsContent() {
     return matchesCategory && matchesSearch;
   });
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": allFaqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <div className="space-y-12">
+      {/* FAQ JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       
       {/* Hero Header */}
       <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0F2530] via-[#1B3B48] to-[#0F2530] text-white p-8 sm:p-14 shadow-2xl border border-[#2A5243]/40 text-center">

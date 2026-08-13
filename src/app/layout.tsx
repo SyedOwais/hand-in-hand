@@ -66,24 +66,78 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "MedicalClinic",
-              name: "Hand In Hand Therapy Centre & Adult Day Program",
-              description: "Individualized ABA, Speech, Occupational therapy and Adult Day Programming in Vaughan and Bradford.",
-              telephone: "+1-416-930-5293",
-              address: [
+              "@graph": [
                 {
-                  "@type": "PostalAddress",
-                  streetAddress: "665 Millway Ave, Unit 38",
-                  addressLocality: "Concord",
-                  addressRegion: "ON",
-                  addressCountry: "CA"
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "465 Holland St W, Unit 3/4",
-                  addressLocality: "Bradford",
-                  addressRegion: "ON",
-                  addressCountry: "CA"
+                  "@type": ["Organization", "MedicalClinic", "LocalBusiness"],
+                  "@id": "https://thedesignsllc.com/will/therapyanddaycare/#organization",
+                  "name": "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
+                  "alternateName": [
+                    "Hand In Hand Therapy Centre",
+                    "The Next Level Adult Day Program"
+                  ],
+                  "url": "https://thedesignsllc.com/will/therapyanddaycare/",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://thedesignsllc.com/will/therapyanddaycare/images/hand-in-hand.png"
+                  },
+                  "image": "https://thedesignsllc.com/will/therapyanddaycare/images/aboutus-main.webp",
+                  "slogan": "Together We Can!",
+                  "description": "Comprehensive pediatric ABA therapy, Speech-Language Pathology, Occupational Therapy, and 18+ Adult Day Programming across York Region and Simcoe County.",
+                  "founder": {
+                    "@type": "Person",
+                    "name": "Nakita Medeiros",
+                    "jobTitle": "Founder & Owner"
+                  },
+                  "foundingDate": "2010",
+                  "email": "handinhandtherapycentre@yahoo.com",
+                  "telephone": ["+1-416-930-5293", "+1-905-251-4756"],
+                  "address": [
+                    {
+                      "@type": "PostalAddress",
+                      "name": "Concord / Vaughan Centre",
+                      "streetAddress": "665 Millway Ave, Unit 38",
+                      "addressLocality": "Concord",
+                      "addressRegion": "ON",
+                      "postalCode": "L4K 3T8",
+                      "addressCountry": "CA"
+                    },
+                    {
+                      "@type": "PostalAddress",
+                      "name": "Bradford Centre",
+                      "streetAddress": "465 Holland St W, Unit 3/4",
+                      "addressLocality": "Bradford",
+                      "addressRegion": "ON",
+                      "postalCode": "L3Z 0A2",
+                      "addressCountry": "CA"
+                    }
+                  ],
+                  "sameAs": [
+                    "https://www.facebook.com",
+                    "https://www.linkedin.com",
+                    "https://www.instagram.com"
+                  ],
+                  "areaServed": [
+                    {
+                      "@type": "AdministrativeArea",
+                      "name": "York Region"
+                    },
+                    {
+                      "@type": "AdministrativeArea",
+                      "name": "Simcoe County"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "Vaughan"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "Concord"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "Bradford"
+                    }
+                  ]
                 }
               ]
             }),
