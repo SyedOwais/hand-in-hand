@@ -139,10 +139,11 @@ export default function AboutPage() {
               {/* Image Column */}
               <div className="lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
-                  src="/images/therapy-hero.png"
-                  alt="Nakita Medeiros Hand in Hand Therapy Centre Team"
+                  src="/images/aboutus-main.webp"
+                  alt="Hand in Hand Therapy Centre Team"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-top sm:object-center group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-85" />
@@ -482,10 +483,11 @@ export default function AboutPage() {
                   <div className="relative z-10 pt-6 mt-6">
                     <div className="relative h-32 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md group-hover:scale-[1.02] transition-transform duration-500">
                       <Image
-                        src="/images/adult-community-trips.png"
-                        alt="Life Skills Outings"
+                        src="/images/Adults-Hero.webp"
+                        alt="Life Skills & Program Engagement"
                         fill
-                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover object-top sm:object-center"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent" />
                       <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-extrabold text-white">
@@ -505,10 +507,11 @@ export default function AboutPage() {
                     {/* Visual Media Frame */}
                     <div className="lg:col-span-5 relative h-56 sm:h-64 rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl">
                       <Image
-                        src="/images/therapy-hero.png"
-                        alt="Caregiver Relief & Support Team"
+                        src="/images/interaction.webp"
+                        alt="Caregiver Relief & Peer Interaction"
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                        className="object-cover object-top sm:object-center group-hover:scale-105 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-75" />
                       <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-white/20 backdrop-blur-md border border-white/25 text-white">
@@ -616,10 +619,11 @@ export default function AboutPage() {
 
               <div className="lg:col-span-5 relative h-[320px] sm:h-[400px] rounded-2xl overflow-hidden shadow-xl border border-white/10">
                 <Image
-                  src="/images/adult-day-program.png"
+                  src="/images/adult-06.webp"
                   alt="The Next Level Adult Day Program Environment"
                   fill
-                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover object-top sm:object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-white">
