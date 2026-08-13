@@ -94,10 +94,10 @@ export default function TherapyCentreHero() {
           </div>
           <div>
             <p className="text-[11px] sm:text-xs font-black text-[#1B3B48] uppercase tracking-wider">
-              Hover / Drag over image to compare
+              Child-Centered & Family First
             </p>
             <p className="text-[11px] sm:text-xs text-slate-600">
-              Interactive 1:1 Clinical Care vs Social Connection
+              Empowering 150+ families in Vaughan, Bradford & York Region
             </p>
           </div>
         </div>
