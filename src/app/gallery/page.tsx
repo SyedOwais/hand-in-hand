@@ -15,7 +15,9 @@ import {
   ChevronLeft,
   ChevronRight,
   Maximize2,
-  ArrowRight
+  ArrowRight,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react";
 
 interface GalleryItem {
@@ -34,6 +36,7 @@ function GalleryContent() {
 
   const [activeTrack, setActiveTrack] = useState<"pediatric" | "adult">(initialTrack);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   useEffect(() => {
     const trackParam = searchParams.get("track");
@@ -44,56 +47,109 @@ function GalleryContent() {
     }
   }, [searchParams]);
 
+  // Reset expansion state when changing active category track
+  useEffect(() => {
+    setIsExpanded(false);
+  }, [activeTrack]);
+
   // Dedicated Pediatric Gallery Items (Ages 2–18)
   const pediatricItems: GalleryItem[] = [
     {
       id: 101,
-      title: "Multi-Sensory Snoezelen Discovery Sanctuary",
+      title: "1:1 Pediatric ABA & Speech Therapy Session",
       category: "pediatric",
       location: "Concord / Vaughan",
-      image: "/images/camp-community.png",
-      description: "Interactive sensory room with fiber-optic light cables, glowing bubble columns, and soft beanbags for self-regulation.",
+      image: "/images/child.webp",
+      description: "Individualized play-based session focusing on early language development, communication, and emotional regulation.",
       featured: true
     },
     {
       id: 102,
-      title: "Pediatric Speech & ABA 1-on-1 Suite",
+      title: "Fine Motor & Educational Toy Activity",
       category: "pediatric",
-      location: "Concord / Vaughan",
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop",
-      description: "Individualized speech therapy & ABA desk set up for play-based communication, vocabulary building, and positive reinforcement."
+      location: "Bradford",
+      image: "/images/toy-activity.webp",
+      description: "Tactile play station designed for fine motor dexterity, hand-eye coordination, and cognitive problem-solving."
     },
     {
       id: 103,
-      title: "Pediatric Occupational Therapy Gymnasium",
+      title: "Early Childhood Peer Play Circle",
       category: "pediatric",
-      location: "Bradford",
-      image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop",
-      description: "Sensory-motor gym featuring crash pads, adaptive swings, and climbing structures to strengthen motor planning and balance."
+      location: "Concord / Vaughan",
+      image: "/images/kids.webp",
+      description: "Interactive peer play circle encouraging verbal communication, sharing, and early childhood socialization."
     },
     {
       id: 104,
-      title: "Group Socialization & Play Circle",
+      title: "Therapist-Guided Clinical Interaction",
       category: "pediatric",
-      location: "Concord / Vaughan",
-      image: "/images/therapy-hero.png",
-      description: "Small-group social circles where children practice turn-taking, emotion recognition, and cooperative play."
+      location: "Bradford",
+      image: "/images/interaction.webp",
+      description: "Warm 1-on-1 interaction building trust, joint attention, and functional communication milestones."
     },
     {
       id: 105,
-      title: "Fine Motor & Creative Art Studio",
+      title: "Themed Character Visits & Creative Play",
       category: "pediatric",
-      location: "Bradford",
-      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200&auto=format&fit=crop",
-      description: "Tactile art space designed to strengthen pincer grip, hand-eye coordination, and self-expression through craft."
+      location: "Concord / Vaughan",
+      image: "/images/character.webp",
+      description: "Special event days featuring costume visits, sensory games, and joyful creative self-expression."
     },
     {
       id: 106,
-      title: "Early Intervention Sensory Play Nook",
+      title: "Water Play & Hydrotherapy Session",
+      category: "pediatric",
+      location: "Bradford",
+      image: "/images/swimming.webp",
+      description: "Guided aquatic therapy promoting sensory integration, confidence, and gross motor skill development."
+    },
+    {
+      id: 107,
+      title: "Indoor Sensory & Learning Center",
       category: "pediatric",
       location: "Concord / Vaughan",
-      image: "/images/daycare-hero.png",
-      description: "Nurturing early childhood space tailored for toddlers starting early intensive behavior and speech intervention."
+      image: "/images/indoor.webp",
+      description: "Structured multi-sensory environment equipped for cognitive building, motor play, and structured learning routines."
+    },
+    {
+      id: 108,
+      title: "Outdoor Exploration & Gross Motor Play",
+      category: "pediatric",
+      location: "Bradford",
+      image: "/images/outdoor.webp",
+      description: "Active outdoor play area designed for gross motor exercises, teamwork, and nature-based sensory discovery."
+    },
+    {
+      id: 109,
+      title: "Milestone Celebrations & Achievements",
+      category: "pediatric",
+      location: "Concord / Vaughan",
+      image: "/images/celebration.webp",
+      description: "Joyful community gatherings celebrating developmental milestones, birthdays, and personal achievements."
+    },
+    {
+      id: 110,
+      title: "Peer Social Skills & Collaborative Group",
+      category: "pediatric",
+      location: "Bradford",
+      image: "/images/activity.webp",
+      description: "Interactive group activities fostering turn-taking, peer friendships, and cooperative problem solving."
+    },
+    {
+      id: 111,
+      title: "Summer Camp & Real-World Outings",
+      category: "pediatric",
+      location: "Concord / Vaughan",
+      image: "/images/Childhood-Outside.webp",
+      description: "Guided seasonal camp activities and park excursions expanding social connection beyond clinical walls."
+    },
+    {
+      id: 112,
+      title: "Focused 1-on-1 Cognitive Skill Building",
+      category: "pediatric",
+      location: "Bradford",
+      image: "/images/therapy-hero.webp",
+      description: "Targeted individual therapy session strengthening focus, task completion, and academic readiness."
     }
   ];
 
@@ -101,66 +157,115 @@ function GalleryContent() {
   const adultItems: GalleryItem[] = [
     {
       id: 201,
-      title: "Life-Skills Culinary & Meal Prep Kitchen",
+      title: "Culinary Life-Skills & Meal Prep Workshop",
       category: "adult",
       location: "Bradford",
-      image: "/images/adult-day-program.png",
-      description: "Accessible kitchen hub where adult participants learn cooking recipes, food safety, dishwashing, and independent meal prep.",
+      image: "/images/Adults-Hero.webp",
+      description: "Hands-on kitchen workshop where adult participants learn recipe planning, food safety, and independent cooking skills.",
       featured: true
     },
     {
       id: 202,
-      title: "Digital Literacy & Computer Career Lab",
+      title: "Daily Life Skills & Routine Building",
       category: "adult",
       location: "Concord / Vaughan",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
-      description: "Modern technology lab equipped with desktop workstations for email literacy, online budgeting, and job research."
+      image: "/images/adult-01.webp",
+      description: "Structured group activity guiding adults through independent daily planning, time management, and task routines."
     },
     {
       id: 203,
-      title: "Adaptive Fitness & Movement Studio",
+      title: "Vocational & Micro-Enterprise Skills Studio",
       category: "adult",
-      location: "Concord / Vaughan",
-      image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1200&auto=format&fit=crop",
-      description: "Spacious wellness studio hosting daily adaptive stretching, yoga, dance, and cardiovascular conditioning."
+      location: "Bradford",
+      image: "/images/adult-02.webp",
+      description: "Pre-vocational station for organizing items, sorting inventory, and building functional workplace competencies."
     },
     {
       id: 204,
-      title: "Adult Peer Social & Gaming Lounge",
+      title: "Peer Socialization & Group Life Discussions",
       category: "adult",
-      location: "Bradford",
-      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200&auto=format&fit=crop",
-      description: "Comfortable community lounge equipped with board games, smart displays, and lounge seating for building adult friendships."
+      location: "Concord / Vaughan",
+      image: "/images/adult-03.webp",
+      description: "Collaborative group circles promoting social communication, active listening, and adult peer bonding."
     },
     {
       id: 205,
-      title: "Community Vocational Outings",
+      title: "Community Outings & Local Grocery Navigation",
       category: "adult",
-      location: "Concord / Vaughan",
-      image: "/images/adult-community-trips.png",
-      description: "Supervised outings to local grocery stores, libraries, parks, and cafes to apply real-world money management & social skills."
+      location: "Bradford",
+      image: "/images/adult-04.webp",
+      description: "Real-world community excursions focusing on budgeting, purchasing items, and navigating local retail settings."
     },
     {
       id: 206,
-      title: "Adult Multi-Sensory Relaxation Sanctuary",
+      title: "Creative Expression & Hands-On Art Workshop",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-05.webp",
+      description: "Therapeutic art projects encouraging fine motor precision, creative focus, and group art showcase."
+    },
+    {
+      id: 207,
+      title: "Digital Literacy & Technology Skills Station",
       category: "adult",
       location: "Bradford",
-      image: "/images/therapy-approach.png",
-      description: "Quiet relaxation room with dimmable ambient lighting and weighted blankets for adult sensory regulation."
+      image: "/images/adult-06.webp",
+      description: "Guided computer literacy sessions introducing email navigation, online safety, and digital communication tools."
+    },
+    {
+      id: 208,
+      title: "Adaptive Fitness & Gross Motor Conditioning",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-07.webp",
+      description: "Group physical wellness activity emphasizing mobility, stretching, balance, and healthy active living."
+    },
+    {
+      id: 209,
+      title: "Independent Home Management & Organization",
+      category: "adult",
+      location: "Bradford",
+      image: "/images/adult-08.webp",
+      description: "Practical life station for practicing laundry folding, organization, and independent household care routines."
+    },
+    {
+      id: 210,
+      title: "Self-Advocacy & Goal Setting Workshop",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-09.webp",
+      description: "Interactive group workshop empowering participants to communicate personal choices, daily preferences, and individual goals."
+    },
+    {
+      id: 211,
+      title: "Multi-Sensory Snoezelen & Relaxation Space",
+      category: "adult",
+      location: "Bradford",
+      image: "/images/adult-10.webp",
+      description: "Calming multi-sensory environment equipped for sensory regulation, stress relief, and gentle relaxation."
+    },
+    {
+      id: 212,
+      title: "Social Dining & Community Lunch Hour",
+      category: "adult",
+      location: "Concord / Vaughan",
+      image: "/images/adult-11.webp",
+      description: "Shared mealtime social circle reinforcing conversation etiquette, table manners, and warm peer bonding."
     }
   ];
 
   const currentItems = activeTrack === "pediatric" ? pediatricItems : adultItems;
+  const displayedItems = isExpanded ? currentItems : currentItems.slice(0, 6);
 
   const handleNext = () => {
     if (lightboxIndex !== null) {
-      setLightboxIndex((lightboxIndex + 1) % currentItems.length);
+      setLightboxIndex((lightboxIndex + 1) % displayedItems.length);
     }
   };
 
   const handlePrev = () => {
     if (lightboxIndex !== null) {
-      setLightboxIndex((lightboxIndex - 1 + currentItems.length) % currentItems.length);
+      setLightboxIndex((lightboxIndex - 1 + displayedItems.length) % displayedItems.length);
     }
   };
 
@@ -179,7 +284,7 @@ function GalleryContent() {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto">
-          Click any photograph below to open the full-screen interactive view.
+          Explore our state-of-the-art therapy suites and adult day hubs in Concord / Vaughan & Bradford. Click any photograph to enlarge.
         </p>
       </div>
 
@@ -218,7 +323,7 @@ function GalleryContent() {
 
       {/* Asymmetric Bento Photography Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 auto-rows-[280px] sm:auto-rows-[320px]">
-        {currentItems.map((item, idx) => {
+        {displayedItems.map((item, idx) => {
           const isFeatured = item.featured;
           return (
             <div
@@ -272,6 +377,27 @@ function GalleryContent() {
         })}
       </div>
 
+      {/* Expand / View More Button Bar positioned right after all 6 primary images */}
+      <div className="flex justify-center pt-6">
+        {!isExpanded && currentItems.length > 6 ? (
+          <button
+            onClick={() => setIsExpanded(true)}
+            className="group px-8 py-3.5 rounded-full bg-[#1B3B48] hover:bg-[#2A5243] text-white text-xs sm:text-sm font-extrabold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2.5 transform hover:-translate-y-0.5"
+          >
+            <span>View More</span>
+            <ChevronDown className="w-4 h-4 text-[#F57A54] group-hover:translate-y-0.5 transition-transform" />
+          </button>
+        ) : isExpanded ? (
+          <button
+            onClick={() => setIsExpanded(false)}
+            className="px-6 py-2.5 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-extrabold transition-all flex items-center gap-2 shadow-xs"
+          >
+            <span>Show Less</span>
+            <ChevronUp className="w-4 h-4 text-slate-500" />
+          </button>
+        ) : null}
+      </div>
+
       {/* Lightbox Modal */}
       {lightboxIndex !== null && (
         <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8 animate-in fade-in duration-200">
@@ -302,8 +428,8 @@ function GalleryContent() {
           <div className="max-w-4xl w-full bg-[#0F2530] text-white rounded-3xl overflow-hidden shadow-2xl border border-white/15 space-y-0">
             <div className="relative h-[360px] sm:h-[480px] w-full">
               <Image
-                src={currentItems[lightboxIndex].image}
-                alt={currentItems[lightboxIndex].title}
+                src={displayedItems[lightboxIndex].image}
+                alt={displayedItems[lightboxIndex].title}
                 fill
                 className="object-cover"
               />
@@ -312,17 +438,17 @@ function GalleryContent() {
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-[#6B8E7B] uppercase tracking-wider flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-[#F57A54]" />
-                  {currentItems[lightboxIndex].location} • {activeTrack === "pediatric" ? "Pediatric Therapy" : "Adult Day Program"}
+                  {displayedItems[lightboxIndex].location} • {activeTrack === "pediatric" ? "Pediatric Therapy" : "Adult Day Program"}
                 </span>
                 <span className="text-xs text-slate-400 font-semibold">
-                  {lightboxIndex + 1} of {currentItems.length}
+                  {lightboxIndex + 1} of {displayedItems.length}
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
-                {currentItems[lightboxIndex].title}
+                {displayedItems[lightboxIndex].title}
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                {currentItems[lightboxIndex].description}
+                {displayedItems[lightboxIndex].description}
               </p>
             </div>
           </div>
@@ -357,7 +483,7 @@ export default function GalleryPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-28 sm:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-36 sm:pt-40 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={
             <div className="text-center py-20">

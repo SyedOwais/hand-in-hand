@@ -55,8 +55,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "OAP Funding",
     categoryBadge: "bg-[#2A5243] text-white",
     track: "pediatric",
-    author: "Nakita & Cassandra",
-    authorRole: "Clinical Directors & Therapy Founders",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Multidisciplinary Clinical Specialists",
     readTime: "8 min read",
     date: "August 10, 2026",
     image: "/images/therapy-hero.png",
@@ -93,7 +93,7 @@ const blogData: Record<string, BlogPostDetail> = {
       ],
       quote: {
         text: "Empowering parents with clarity on OAP funding allows families to focus on what matters most: watching their children grow, communicate, and thrive.",
-        author: "Nakita & Cassandra, Founders"
+        author: "Hand In Hand Clinical Team"
       }
     }
   },
@@ -104,8 +104,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "Adult Passport Funding",
     categoryBadge: "bg-[#1B3B48] text-white",
     track: "adult",
-    author: "Cassandra",
-    authorRole: "Adult Day Program Director",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Adult Program Specialists",
     readTime: "7 min read",
     date: "August 4, 2026",
     image: "/images/adult-day-program.png",
@@ -135,7 +135,7 @@ const blogData: Record<string, BlogPostDetail> = {
       ],
       quote: {
         text: "Adulthood is about dignity, choice, and active community participation. Passport Funding opens the door for young adults to thrive.",
-        author: "Cassandra, Adult Program Director"
+        author: "Hand In Hand Adult Program Team"
       }
     }
   },
@@ -146,8 +146,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "Pediatric Speech",
     categoryBadge: "bg-[#2A5243] text-white",
     track: "pediatric",
-    author: "Nakita",
-    authorRole: "Pediatric Therapy Specialist",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Pediatric Therapy Specialists",
     readTime: "5 min read",
     date: "July 28, 2026",
     image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop",
@@ -176,8 +176,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "Adult Vocational",
     categoryBadge: "bg-[#1B3B48] text-white",
     track: "adult",
-    author: "Cassandra",
-    authorRole: "Life-Skills & Vocational Lead",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Life-Skills & Vocational Team",
     readTime: "6 min read",
     date: "July 19, 2026",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
@@ -205,8 +205,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "Sensory & OT",
     categoryBadge: "bg-[#2A5243] text-white",
     track: "pediatric",
-    author: "Nakita",
-    authorRole: "Sensory & OT Clinical Lead",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Sensory & OT Clinical Team",
     readTime: "6 min read",
     date: "July 12, 2026",
     image: "/images/camp-community.png",
@@ -234,8 +234,8 @@ const blogData: Record<string, BlogPostDetail> = {
     category: "Adult Life",
     categoryBadge: "bg-[#1B3B48] text-white",
     track: "adult",
-    author: "Nakita & Cassandra",
-    authorRole: "Co-Founders & Clinical Leads",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Adult Program Specialists",
     readTime: "5 min read",
     date: "June 30, 2026",
     image: "/images/adult-community-trips.png",
@@ -276,7 +276,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-28 sm:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-36 sm:pt-40 pb-16 sm:pb-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
           {/* Breadcrumb & Back Link */}
@@ -411,17 +411,17 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               {/* Author Bio Box */}
               <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4">
                 <span className="text-xs font-extrabold text-[#2A5243] uppercase tracking-wider block">
-                  About the Authors
+                  About the Clinical Team
                 </span>
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-[#1B3B48] text-white font-extrabold text-xl flex items-center justify-center shadow-md">
-                    {post.author.charAt(0)}
+                    H
                   </div>
                   <div className="space-y-1">
                     <h4 className="text-base font-extrabold text-[#1B3B48]">{post.author}</h4>
                     <p className="text-xs text-slate-500 font-medium">{post.authorRole}</p>
                     <p className="text-xs text-slate-600">
-                      Co-founders and Directors at Hand In Hand Therapy Centre (2–18) & The Next Level Adult Day Program (18+) in Concord / Vaughan & Bradford.
+                      Multidisciplinary clinical specialists, BCBAs, speech therapists, and adult day leads at Hand In Hand Therapy Centre (2–18) & The Next Level Adult Day Program (18+) in Concord / Vaughan & Bradford.
                     </p>
                   </div>
                 </div>
@@ -433,7 +433,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             <div className="lg:col-span-4 space-y-6">
               
               {/* Intake CTA Box */}
-              <div className="bg-[#2A5243] text-white p-6 sm:p-8 rounded-3xl space-y-4 shadow-xl border border-[#2A5243]">
+              <div className="bg-[#2A5243] text-[#FBF9F5] p-6 sm:p-8 rounded-3xl space-y-4 shadow-xl border border-[#2A5243]">
                 <div className="w-10 h-10 rounded-2xl bg-white/10 flex items-center justify-center text-white">
                   <MessageCircle className="w-5 h-5 text-[#F57A54]" />
                 </div>
@@ -472,7 +472,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                         {rel.title}
                       </h4>
                       <span className="block text-[10px] text-slate-400">
-                        {rel.readTime} • By {rel.author}
+                        {rel.readTime} • {rel.author}
                       </span>
                     </Link>
                   ))}

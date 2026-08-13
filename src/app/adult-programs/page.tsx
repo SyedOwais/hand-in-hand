@@ -90,7 +90,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-7 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-day-program.png"
+                    src="/images/Adults-Hero.webp"
                     alt="Life Skills Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -136,7 +136,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-5 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
-                    src="/images/therapy-approach.png"
+                    src="/images/adult-01.webp"
                     alt="Daily Living Skills"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -178,7 +178,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-4 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
-                    src="/images/daycare-hero.png"
+                    src="/images/adult-06.webp"
                     alt="Academic Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -217,7 +217,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-8 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
-                    src="/images/camp-community.png"
+                    src="/images/adult-05.webp"
                     alt="Recreation and Leisure Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -262,7 +262,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 w-full overflow-hidden">
                   <Image
-                    src="/images/therapy-hero.png"
+                    src="/images/adult-07.webp"
                     alt="Physical Fitness Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -304,7 +304,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-community-trips.png"
+                    src="/images/adult-03.webp"
                     alt="Social Skills Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -356,7 +356,7 @@ export default function AdultProgramsPage() {
                 <div className="lg:col-span-5 relative">
                   <div className="relative h-[380px] sm:h-[480px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
                     <Image
-                      src="/images/adult-community-trips.png"
+                      src="/images/adult-04.webp"
                       alt="Community Involvement Program Participant"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

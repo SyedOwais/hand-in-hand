@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   HeartHandshake,
   ArrowRight,
@@ -22,24 +23,9 @@ export default function EntryPortal() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Top Brand Bar */}
-      <div className="max-w-7xl mx-auto w-full flex items-center justify-between z-10">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1B3B48] via-[#4A7C64] to-[#F57A54] flex items-center justify-center text-white shadow-lg border border-white/20">
-            <HeartHandshake className="w-6 h-6" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-extrabold text-xl tracking-tight text-white leading-none">
-              HAND IN HAND
-            </span>
-            <span className="text-[10px] font-bold tracking-widest text-[#6B8E7B] uppercase mt-0.5 flex items-center gap-1">
-              <Leaf className="w-2.5 h-2.5 text-[#4A7C64]" />
-              Support That Grows With You
-            </span>
-          </div>
-        </div>
-
-        <div className="hidden sm:flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold backdrop-blur-md border border-white/10">
+      {/* Top Bar */}
+      <div className="max-w-7xl mx-auto w-full flex items-center justify-end z-10">
+        <div className="flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold backdrop-blur-md border border-white/10">
           <Sparkles className="w-3.5 h-3.5 text-[#6B8E7B]" />
           <span>Vaughan & Bradford, ON</span>
         </div>
@@ -49,14 +35,19 @@ export default function EntryPortal() {
       <div className="max-w-6xl mx-auto w-full my-auto z-10 py-2">
         
         {/* Intro Header */}
-        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-8">
-          <span className="inline-block font-black text-xs uppercase tracking-widest text-[#6B8E7B] mb-1">
-            HAND IN HAND THERAPY & ADULT DAY PROGRAM
-          </span>
-
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none mb-3">
-            Hand in Hand
-          </h1>
+        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-8 flex flex-col items-center">
+          {/* Centered Logo */}
+          <div className="bg-white/95 backdrop-blur-md px-6 sm:px-8 py-3.5 sm:py-4 rounded-3xl shadow-2xl border border-white/20 mb-4 inline-flex items-center justify-center">
+            <div className="relative h-14 w-60 sm:h-18 sm:w-80">
+              <Image
+                src="/images/hand-in-hand.png"
+                alt="Hand In Hand Therapy Centre & Adult Day Program"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
 
           <p className="text-2xl sm:text-4xl md:text-5xl font-black text-[#F57A54] tracking-tight mb-4">
             Together We Can!

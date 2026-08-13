@@ -39,10 +39,10 @@ export default function LifeBeyondClinic() {
           <div className="lg:col-span-6">
             <div className="relative h-[400px] sm:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
               <Image
-                src="/images/camp-community.png"
+                src="/images/Childhood-Outside.webp"
                 alt="Children happily engaging in summer camp outdoor activities"
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-top sm:object-[center_25%] transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/80 via-transparent to-transparent" />
               

@@ -10,10 +10,10 @@ export default function TherapyCentreHero() {
     <div className="relative mx-auto max-w-lg lg:max-w-none">
       <div className="relative h-[320px] sm:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
         <Image
-          src="/images/therapy-hero.png"
+          src="/images/therapy-hero.webp"
           alt="Child actively engaging in learning session with therapist"
           fill
-          className="object-cover"
+          className="object-cover object-top sm:object-[center_20%]"
           priority
         />
         
@@ -94,22 +94,32 @@ export default function TherapyCentreHero() {
               </div>
             </div>
 
-            {/* Dual CTAs - Placed beneath bullets on mobile */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 pt-2">
-              <Link
-                href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md hover:shadow-lg transition-all"
-              >
-                <span>Contact Us</span>
-                <ArrowRight className="w-4 h-4 text-white" />
-              </Link>
+            {/* Dual CTAs & Phone Buttons - Placed beneath bullets on mobile */}
+            <div className="flex flex-col gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                <Link
+                  href="/contact"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md hover:shadow-lg transition-all"
+                >
+                  <span>Contact Us</span>
+                  <ArrowRight className="w-4 h-4 text-white" />
+                </Link>
+
+                <a
+                  href="tel:4169305293"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs hover:shadow-md transition-all"
+                >
+                  <Phone className="w-4 h-4 text-[#2A5243]" />
+                  <span>Call Vaughan: (416)-930-5293</span>
+                </a>
+              </div>
 
               <a
-                href="tel:4169305293"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs hover:shadow-md transition-all"
+                href="tel:9052514756"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs hover:shadow-md transition-all sm:self-start"
               >
                 <Phone className="w-4 h-4 text-[#2A5243]" />
-                <span>Call Vaughan: (416)-930-5293</span>
+                <span>Call Bradford: (905)-251-4756</span>
               </a>
             </div>
           </div>

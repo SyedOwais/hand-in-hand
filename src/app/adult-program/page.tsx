@@ -17,6 +17,15 @@ export const metadata = {
 };
 
 export default function AdultProgramPage() {
+  const adultCommunityItems = [
+    { src: "/images/Adults-Hero.webp", title: "Culinary Life Skills", caption: "Independent Cooking & Recipe Planning" },
+    { src: "/images/adult-01.webp", title: "Daily Life Skills Routine", caption: "Schedule Planning & Time Management" },
+    { src: "/images/adult-02.webp", title: "Pre-Vocational Workshop", caption: "Inventory Sorting & Task Organization" },
+    { src: "/images/adult-04.webp", title: "Community Outings", caption: "Budgeting & Store Navigation" },
+    { src: "/images/adult-05.webp", title: "Creative Art Studio", caption: "Self-Expression & Fine Motor Focus" },
+    { src: "/images/adult-06.webp", title: "Digital Literacy Lab", caption: "Computer Skills & Online Safety" },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -36,11 +45,15 @@ export default function AdultProgramPage() {
         {/* 12. A Strong "18+" Visual Break */}
         <VisualBreak18Plus />
 
-        {/* 13. Community / Instagram Photo Section */}
+        {/* 13. Dedicated Adult Gallery Photo Section */}
         <SeeLifeCommunity
           title="See Life at The Next Level"
-          subtitle="Real people. Real activities. Real community."
-          tagline="Real Community Moments"
+          subtitle="Empowering adult independence, daily purpose & community connection — Together We Can!"
+          tagline="Next Level Adult Moments"
+          items={adultCommunityItems}
+          instagramUrl="https://www.instagram.com/hand_in_hand_the_next_level/"
+          galleryLink="/gallery?track=adult"
+          buttonText="Explore Next Level Gallery"
         />
 
         {/* 14. Adult Program FAQs */}

@@ -10,10 +10,10 @@ export default function NextLevelHero() {
     <div className="relative mx-auto max-w-lg lg:max-w-none">
       <div className="relative h-[320px] sm:h-[480px] w-full rounded-[40px] overflow-hidden shadow-2xl border-4 border-white/20">
         <Image
-          src="/images/adult-day-program.png"
+          src="/images/Adults-Hero.webp"
           alt="Young adults actively engaging in a culinary life skills workshop"
           fill
-          className="object-cover"
+          className="object-cover object-top sm:object-center"
           priority
         />
         
@@ -103,11 +103,11 @@ export default function NextLevelHero() {
               </Link>
 
               <a
-                href="tel:9052514756"
+                href="tel:4169305293"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all"
               >
                 <Phone className="w-4 h-4 text-[#6B8E7B]" />
-                <span>Call Bradford: (905)-251-4756</span>
+                <span>Call Vaughan: (416)-930-5293</span>
               </a>
             </div>
           </div>

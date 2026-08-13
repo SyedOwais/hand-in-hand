@@ -57,8 +57,8 @@ function BlogsContent() {
       excerpt: "A comprehensive breakdown of core clinical services funding, budget allocations, eligible therapies, and step-by-step guidance for submitting claims through Access OAP.",
       category: "funding",
       track: "pediatric",
-      author: "Nakita & Cassandra",
-      authorRole: "Clinical Directors & Therapy Founders",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Multidisciplinary Clinical Specialists",
       readTime: "8 min read",
       date: "August 10, 2026",
       image: "/images/therapy-hero.png",
@@ -71,8 +71,8 @@ function BlogsContent() {
       excerpt: "Essential steps for parents of teens aging out of school systems. Learn how Passport Funding covers adult day programs, community trips, and independent living skills.",
       category: "funding",
       track: "adult",
-      author: "Cassandra",
-      authorRole: "Adult Day Program Director",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Adult Program Specialists",
       readTime: "7 min read",
       date: "August 4, 2026",
       image: "/images/adult-day-program.png",
@@ -85,8 +85,8 @@ function BlogsContent() {
       excerpt: "Discover how Augmentative and Alternative Communication (AAC) devices empower non-verbal toddlers to express wants, lower frustration, and expand speech articulation.",
       category: "speech",
       track: "pediatric",
-      author: "Nakita",
-      authorRole: "Pediatric Therapy Specialist",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Pediatric Therapy Specialists",
       readTime: "5 min read",
       date: "July 28, 2026",
       image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop",
@@ -99,8 +99,8 @@ function BlogsContent() {
       excerpt: "Inside our Bradford life-skills kitchen: how cooking, meal prep, and kitchen safety foster autonomy and self-esteem for adults with developmental delays.",
       category: "adult",
       track: "adult",
-      author: "Cassandra",
-      authorRole: "Life-Skills & Vocational Lead",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Life-Skills & Vocational Team",
       readTime: "6 min read",
       date: "July 19, 2026",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
@@ -113,8 +113,8 @@ function BlogsContent() {
       excerpt: "Occupational therapy strategies to help children self-regulate sensory overstimulation using light cables, deep pressure, and tactile tools.",
       category: "aba",
       track: "pediatric",
-      author: "Nakita",
-      authorRole: "Sensory & OT Clinical Lead",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Sensory & OT Clinical Team",
       readTime: "6 min read",
       date: "July 12, 2026",
       image: "/images/camp-community.png",
@@ -127,8 +127,8 @@ function BlogsContent() {
       excerpt: "Why social connection is crucial for young adults with special needs and how structured gaming lounges & community outings prevent isolation.",
       category: "adult",
       track: "adult",
-      author: "Nakita & Cassandra",
-      authorRole: "Co-Founders & Clinical Leads",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Adult Program Specialists",
       readTime: "5 min read",
       date: "June 30, 2026",
       image: "/images/adult-community-trips.png",
@@ -174,7 +174,7 @@ function BlogsContent() {
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-            Evidence-based ABA guides, speech milestones, OAP & Passport funding advice, and developmental strategies written by Nakita & Cassandra.
+            Evidence-based ABA guides, speech milestones, OAP & Passport funding advice, and developmental strategies written by our expert clinical team.
           </p>
         </div>
       </div>
@@ -214,7 +214,7 @@ function BlogsContent() {
           <Search className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search articles by keyword or author..."
+            placeholder="Search articles by keyword or topic..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-11 pr-4 py-2.5 rounded-full bg-[#FBF9F5] border border-slate-200 text-xs sm:text-sm text-[#1B3B48] placeholder-slate-400 focus:outline-none focus:border-[#2A5243] focus:ring-2 focus:ring-[#2A5243]/20 transition-all shadow-xs"
@@ -391,7 +391,7 @@ export default function BlogsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-28 sm:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-36 sm:pt-40 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={
             <div className="text-center py-20">

@@ -65,7 +65,7 @@ export default function HeroSection() {
               {/* Therapy Image Arch */}
               <div className="relative w-full h-48 sm:h-56 rounded-2xl overflow-hidden shadow-md border border-white/10 group-hover:scale-[1.01] transition-transform duration-300">
                 <Image
-                  src="/images/therapy-hero.png"
+                  src="/images/therapy-hero.webp"
                   alt="Therapist guiding a child in learning activities"
                   fill
                   className="object-cover"

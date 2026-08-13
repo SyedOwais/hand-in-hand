@@ -34,20 +34,9 @@ export default function FinalTherapyCTA() {
           </Link>
         </div>
 
-        {/* Quick Contact & Social Directory */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-200/80 text-xs sm:text-sm">
+        {/* Quick Contact Directory */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-8 border-t border-slate-200/80 text-xs sm:text-sm">
           
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-white hover:bg-[#E8F0EC]/50 border border-slate-200/80 shadow-xs flex flex-col items-center gap-2 transition-colors"
-          >
-            <Camera className="w-5 h-5 text-[#F57A54]" />
-            <span className="font-bold text-[#1B3B48]">Instagram</span>
-            <span className="text-[11px] text-slate-500">@handinhandtherapy</span>
-          </a>
-
           <a
             href="tel:4169305293"
             className="p-4 rounded-2xl bg-white hover:bg-[#E8F0EC]/50 border border-slate-200/80 shadow-xs flex flex-col items-center gap-2 transition-colors"
@@ -72,7 +61,7 @@ export default function FinalTherapyCTA() {
           >
             <Mail className="w-5 h-5 text-blue-600" />
             <span className="font-bold text-[#1B3B48]">Email Us</span>
-            <span className="text-[11px] text-slate-500 truncate max-w-[120px]">handinhandtherapy1@gmail.com</span>
+            <span className="text-[11px] text-slate-500 truncate max-w-[160px]">handinhandtherapy1@gmail.com</span>
           </a>
 
         </div>

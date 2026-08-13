@@ -32,8 +32,10 @@ export default function TherapyCentreView() {
       {/* 07. Photos Section: See Life at Therapy Centre */}
       <SeeLifeCommunity
         title="See Life at Therapy Centre"
-        subtitle="Real children. Real progress. Real moments."
+        subtitle="Building confidence, connection, and lifelong skills — Together We Can!"
         tagline="Hand in Hand Moments"
+        galleryLink="/gallery?track=pediatric"
+        buttonText="Explore Therapy Gallery"
       />
 
       {/* 07. Section 7: Final CTA */}

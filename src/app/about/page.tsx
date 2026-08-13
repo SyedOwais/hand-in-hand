@@ -61,14 +61,32 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-28 sm:pt-36">
+      <main className="flex-grow pt-36 sm:pt-40">
         
-        {/* Luxury Hero Section */}
-        <section className="relative py-12 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/80 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+        {/* Luxury Hero Section with Subtle Faded Banner Background */}
+        <section className="relative py-14 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+          
+          {/* Faded Background Image Banner */}
+          <div className="absolute inset-0 z-0 opacity-20 sm:opacity-25 pointer-events-none overflow-hidden">
+            <Image
+              src="/images/camp-community.png"
+              alt="Hand in Hand Hero Background"
+              fill
+              className="object-cover object-center scale-105"
+              priority
+            />
+            {/* Soft Gradient Overlay for Readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5]/85 to-[#FBF9F5]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#FBF9F5]/90 via-transparent to-[#FBF9F5]/90" />
+          </div>
+
+          {/* Ambient Lighting Glows */}
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
+
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
               
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm backdrop-blur-md">
                 <Sparkles className="w-4 h-4 text-[#F57A54]" />
                 <span>Our Story, Mission & Leadership</span>
               </div>
@@ -80,12 +98,12 @@ export default function AboutPage() {
                 Together We Can!
               </p>
 
-              <p className="text-base sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-base sm:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto font-medium">
                 A dedicated group of professional educators and clinicians providing compassionate, effective educational services for teenagers and adults with developmental special needs.
               </p>
 
               {/* Founder Tagline Banner */}
-              <div className="pt-3 inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-full border border-slate-200 shadow-sm text-xs sm:text-sm font-bold text-[#1B3B48]">
+              <div className="pt-3 inline-flex items-center gap-3 bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-full border border-slate-200 shadow-md text-xs sm:text-sm font-bold text-[#1B3B48]">
                 <Award className="w-4 h-4 text-[#F57A54]" />
                 <span>Created by Founder & Owner <strong>Nakita Medeiros</strong> (Established 2010)</span>
               </div>
@@ -97,12 +115,12 @@ export default function AboutPage() {
               {stats.map((stat, idx) => (
                 <div
                   key={idx}
-                  className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm text-center transform hover:-translate-y-1 transition-transform duration-300"
+                  className="bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-md text-center transform hover:-translate-y-1 transition-all duration-300"
                 >
                   <span className="block text-3xl sm:text-4xl font-extrabold text-[#2A5243]">
                     {stat.value}
                   </span>
-                  <span className="block text-xs sm:text-sm font-semibold text-slate-600 mt-1">
+                  <span className="block text-xs sm:text-sm font-bold text-slate-700 mt-1">
                     {stat.label}
                   </span>
                 </div>
@@ -171,74 +189,176 @@ export default function AboutPage() {
             </div>
 
             {/* Struggles Addressed & Open Door Policy Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-stretch">
               
-              {/* Areas Most Struggle With */}
-              <div className="bg-[#FBF9F5] p-8 rounded-3xl border border-slate-200/90 shadow-sm space-y-4">
-                <h3 className="text-xl font-extrabold text-[#1B3B48] flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#2A5243]" />
-                  <span>Key Life Areas Supported</span>
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600">
-                  Our tailored programs specifically assist individuals struggling in essential everyday domains:
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
-                  {coreStrugglesAddressed.map((struggle, idx) => (
-                    <div key={idx} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-slate-200/60 text-xs font-bold text-[#1B3B48]">
-                      <span className="w-2 h-2 rounded-full bg-[#F57A54]" />
-                      <span>{struggle}</span>
+              {/* Card 1: Key Life Areas Supported (6 Columns) */}
+              <div className="lg:col-span-6 bg-gradient-to-br from-white via-[#FBF9F5] to-white p-8 sm:p-10 rounded-[32px] border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between space-y-6">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-extrabold uppercase tracking-wider border border-[#2A5243]/20">
+                      <Target className="w-3.5 h-3.5 text-[#F57A54]" />
+                      <span>Tailored Growth Domains</span>
+                    </div>
+                    <div className="w-9 h-9 rounded-2xl bg-[#E8F0EC] text-[#2A5243] flex items-center justify-center font-bold">
+                      <CheckCircle2 className="w-5 h-5" />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48]">
+                      Key Life Areas Supported
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium">
+                      Our multidisciplinary programs target essential daily domains for continuous developmental progress:
+                    </p>
+                  </div>
+                </div>
+
+                {/* 6 Interactive Skill Tiles */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {[
+                    { title: "Language & Expressive Skills", desc: "Communication & vocabulary", icon: BookOpen, color: "text-[#F57A54]", bg: "bg-[#F57A54]/10" },
+                    { title: "Behavioural Support & Coping", desc: "Regulation & emotional health", icon: Heart, color: "text-[#2A5243]", bg: "bg-[#2A5243]/10" },
+                    { title: "Communication & Socializing", desc: "Peer inclusion & relationships", icon: Users, color: "text-[#1B3B48]", bg: "bg-[#1B3B48]/10" },
+                    { title: "Mobility & Motor Skills", desc: "Fine & gross motor dexterity", icon: Target, color: "text-[#F57A54]", bg: "bg-[#F57A54]/10" },
+                    { title: "Cognitive Growth", desc: "Task sequencing & learning", icon: Sparkles, color: "text-[#2A5243]", bg: "bg-[#2A5243]/10" },
+                    { title: "Independent Living", desc: "Culinary & self-help skills", icon: ShieldCheck, color: "text-[#1B3B48]", bg: "bg-[#1B3B48]/10" }
+                  ].map((tile, tIdx) => (
+                    <div
+                      key={tIdx}
+                      className="p-3.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-[#2A5243]/40 hover:shadow-md transition-all duration-300 flex items-start gap-3"
+                    >
+                      <div className={`w-8 h-8 rounded-xl ${tile.bg} ${tile.color} flex items-center justify-center shrink-0 mt-0.5`}>
+                        <tile.icon className="w-4 h-4" />
+                      </div>
+                      <div className="space-y-0.5">
+                        <span className="block text-xs font-extrabold text-[#1B3B48] leading-snug">{tile.title}</span>
+                        <span className="block text-[10px] text-slate-500 font-medium">{tile.desc}</span>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Complete Open-Door Policy */}
-              <div className="bg-[#0F2530] text-white p-8 rounded-3xl border border-white/10 shadow-xl space-y-4 flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-extrabold uppercase tracking-wider">
-                    <Shield className="w-3.5 h-3.5 text-[#F57A54]" />
-                    <span>Family Partnership</span>
+              {/* Card 2: Complete Open-Door Policy (6 Columns) */}
+              <div className="lg:col-span-6 bg-gradient-to-br from-[#E8F0EC]/80 via-white to-[#FBF9F5] p-8 sm:p-10 rounded-[32px] border border-[#2A5243]/20 shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between space-y-6">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F57A54] text-white text-xs font-black uppercase tracking-wider shadow-sm">
+                      <Shield className="w-3.5 h-3.5" />
+                      <span>Family Partnership</span>
+                    </div>
+                    <div className="w-9 h-9 rounded-2xl bg-[#2A5243]/10 text-[#2A5243] flex items-center justify-center font-bold">
+                      <UserCheck className="w-5 h-5" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-extrabold text-white">
-                    Complete Open-Door Policy
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Collectively, the Hand in Hand - The Next Level team has experienced the ins and outs of many treatment clinics and thoroughly understand a vast variety of therapy styles.
-                  </p>
-                  <blockquote className="p-4 rounded-2xl bg-white/10 border-l-4 border-[#2A5243] text-xs text-slate-200 italic">
-                    &ldquo;At Hand in Hand - The Next Level there is a complete open-door policy. This not only allows for parents to take part and watch their loved ones grow day by day, but also gives them the opportunity to learn and continue therapy exercises at home.&rdquo;
+
+                  <div className="space-y-2">
+                    <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48]">
+                      Complete Open-Door Policy
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                      Collectively, the Hand in Hand team thoroughly understands diverse therapy styles and values total transparency for peace of mind.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Styled Quote Box */}
+                <div className="p-5 rounded-2xl bg-white border border-[#2A5243]/20 shadow-md space-y-2 relative">
+                  <div className="absolute -top-3 left-4 px-2 py-0.5 bg-[#2A5243] text-white text-[10px] font-black uppercase rounded-full">
+                    Parent Assurance
+                  </div>
+                  <blockquote className="text-xs sm:text-sm text-slate-700 leading-relaxed italic font-medium pt-1">
+                    &ldquo;Our open-door policy empowers parents to observe therapy sessions, witness daily developmental breakthroughs, and confidently practice strategy exercises at home.&rdquo;
                   </blockquote>
+                </div>
+
+                {/* Family Partnership Pills */}
+                <div className="pt-2 flex flex-wrap gap-2">
+                  {[
+                    "👁️ Live Observation Welcomed",
+                    "📊 Continuous Progress Tracking",
+                    "🏠 Home Strategy Integration"
+                  ].map((chip, cIdx) => (
+                    <span key={cIdx} className="text-xs font-extrabold px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-[#2A5243] shadow-sm">
+                      {chip}
+                    </span>
+                  ))}
                 </div>
               </div>
 
             </div>
 
-            {/* Founder Spotlight Card: Nakita Medeiros */}
-            <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#1B3B48] via-[#0F2530] to-[#1B3B48] text-white shadow-2xl border border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Founder Spotlight Card: Nakita Medeiros (State-of-the-Art Luxury Showcase) */}
+            <div className="relative rounded-[40px] bg-gradient-to-r from-[#1B3B48] via-[#0F2530] to-[#1B3B48] text-white p-8 sm:p-12 lg:p-14 shadow-2xl border border-[#2A5243]/50 overflow-hidden">
               
-              <div className="lg:col-span-4 flex flex-col items-center text-center space-y-4">
-                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#2A5243] text-white font-black text-3xl sm:text-4xl flex items-center justify-center shadow-xl border-4 border-white/20">
-                  N
+              {/* Ambient Glow Effects */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+                
+                {/* Left Column: Monogram Badge & Legacy Milestones */}
+                <div className="lg:col-span-5 flex flex-col items-center text-center space-y-5 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-md">
+                  <div className="relative">
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-[#2A5243] via-[#1B3B48] to-[#F57A54] text-white font-black text-4xl sm:text-5xl flex items-center justify-center shadow-2xl border-4 border-white/30">
+                      NM
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 bg-[#F57A54] text-white p-2 rounded-full shadow-lg border-2 border-white">
+                      <Award className="w-5 h-5" />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <h3 className="text-2xl sm:text-3xl font-black text-white">Nakita Medeiros</h3>
+                    <span className="text-xs font-black text-[#EAA85E] uppercase tracking-wider block">Founder & Owner</span>
+                    <span className="text-xs text-slate-300 block font-medium">Hand in Hand Therapy Centre (Established 2010)</span>
+                  </div>
+
+                  <div className="w-full pt-3 border-t border-white/10 grid grid-cols-2 gap-2 text-left">
+                    <div className="p-2.5 rounded-xl bg-white/10 border border-white/10 text-xs">
+                      <span className="block font-black text-[#EAA85E]">15+ Years</span>
+                      <span className="block text-[10px] text-slate-300 font-medium">Clinical Advocacy</span>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-white/10 border border-white/10 text-xs">
+                      <span className="block font-black text-[#6B8E7B]">2 Locations</span>
+                      <span className="block text-[10px] text-slate-300 font-medium">Vaughan & Bradford</span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-extrabold text-white">Nakita Medeiros</h3>
-                  <span className="text-xs font-extrabold text-[#6B8E7B] uppercase tracking-wider block mt-0.5">Founder & Owner</span>
-                  <span className="text-xs text-slate-300 block">Hand in Hand Therapy Centre (Est. 2010)</span>
+
+                {/* Right Column: Visionary Story & Inspiring Quote */}
+                <div className="lg:col-span-7 space-y-6">
+                  
+                  <div className="space-y-3">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-black uppercase tracking-wider border border-white/15">
+                      <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
+                      <span>Visionary Leadership</span>
+                    </div>
+
+                    <h4 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+                      The Visionary Creation of Nakita Medeiros
+                    </h4>
+
+                    <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-medium">
+                      <strong>Hand in Hand - The Next Level</strong> represents the visionary expansion of Hand in Hand Therapy Centre, created by founder and owner Nakita Medeiros in 2010 to provide transformative care for individuals with special needs.
+                    </p>
+
+                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                      Driven by a passionate commitment to break down barriers that isolate individuals with developmental delays, Nakita collaborates with leading clinicians across Ontario to build inclusive environments where clients gain true independence.
+                    </p>
+                  </div>
+
+                  {/* Inspiring Founder Quote Card */}
+                  <div className="p-5 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md space-y-1">
+                    <p className="text-xs sm:text-sm text-slate-200 italic font-medium leading-relaxed">
+                      &ldquo;My life&rsquo;s purpose is breaking down the developmental and social barriers that isolate individuals with special needs, giving every client the dignity, tools, and freedom to thrive.&rdquo;
+                    </p>
+                    <span className="block text-[11px] font-extrabold text-[#EAA85E] uppercase tracking-wider pt-1">— Nakita Medeiros, Founder</span>
+                  </div>
+
                 </div>
-              </div>
 
-              <div className="lg:col-span-8 space-y-4">
-                <h4 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
-                  The Visionary Creation of Nakita Medeiros
-                </h4>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  <strong>Hand in Hand - The Next Level</strong> is the creation of Nakita Medeiros and is an expansion of the existing business, Hand in Hand Therapy Centre. Nakita is the founder and owner of Hand in Hand Therapy Centre since 2010. Nakita opened the doors to Hand in Hand Therapy Centre to care for children with special needs.
-                </p>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Over the years, Hand in Hand Therapy Center has focused on using educational and clinical expertise to teach children with a variety of learning styles in their homes, schools, communities, and at our center. Nakita has been collaborating with professionals of the field and continues to collectively learn. Nakita is extremely passionate about breaking down the barriers that isolate all individuals with special needs from the world around them. Nakita’s passion for inclusion is what led her to create Hand in Hand Therapy Centre.
-                </p>
               </div>
 
             </div>
@@ -246,78 +366,201 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 2: What Hand in Hand - The Next Level Does */}
-        <section className="py-16 sm:py-24 bg-[#FBF9F5] border-b border-slate-200/60">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        {/* Section 2: What Hand in Hand - The Next Level Does (Light Luxury Bento Box Showcase) */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="relative rounded-[40px] sm:rounded-[56px] bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#E8F0EC]/80 text-[#1B3B48] p-6 sm:p-14 lg:p-16 shadow-xl border border-slate-200/90 overflow-hidden">
             
-            <div className="text-center max-w-2xl mx-auto space-y-3">
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-3.5 py-1 rounded-full">
-                Core Program Purpose
-              </span>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#1B3B48]">
-                What Hand in Hand - The Next Level Does
-              </h2>
-              <p className="text-slate-600 text-sm sm:text-base">
-                A safe, inclusive environment providing a dedicated &ldquo;chill zone&rdquo;, peer connection, and essential life skill building.
-              </p>
-            </div>
+            {/* Ambient Soft Lighting Orbs */}
+            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#2A5243]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[#F57A54]/10 rounded-full blur-3xl pointer-events-none" />
 
-            {/* Feature Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative z-10 space-y-12 sm:space-y-16">
               
-              {/* Card 1: Safe Atmosphere & Chill Zone */}
-              <div className="bg-white p-8 rounded-3xl border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-2xl bg-[#2A5243]/10 text-[#2A5243] flex items-center justify-center font-bold">
-                    <Smile className="w-6 h-6 text-[#2A5243]" />
-                  </div>
-                  <h3 className="text-xl font-extrabold text-[#1B3B48]">
-                    Safe Environment & &ldquo;Chill Zone&rdquo;
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                    Hand in Hand - The Next Level is a day program specifically catering to teenagers and adults with special needs. The atmosphere that Hand in Hand - The Next Level provides all attendees is a safe and inclusive environment where teenagers and adults will be able to express themselves.
-                  </p>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Hand in Hand - The Next Level intended to provide their clients with a safe &ldquo;chill zone&rdquo; that was previously not available. Hand in Hand - The Next Level is a place where teenagers and adults with special needs are encouraged to explore and meet new friends, hang out, and feel comfort among peers.
-                  </p>
+              {/* Creative Section Header */}
+              <div className="text-center max-w-3xl mx-auto space-y-4">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm">
+                  <Sparkles className="w-4 h-4 text-[#F57A54]" />
+                  <span>Core Program Purpose & Impact</span>
                 </div>
+                
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#1B3B48] tracking-tight leading-none">
+                  What Hand in Hand - The Next Level Does
+                </h2>
+                
+                <p className="text-slate-600 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
+                  An innovative sanctuary offering inclusive peer connection, sensory-friendly &ldquo;chill zones&rdquo;, hands-on life skills, and family respite.
+                </p>
               </div>
 
-              {/* Card 2: Skill Building & High Needs Support */}
-              <div className="bg-white p-8 rounded-3xl border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-2xl bg-[#1B3B48]/10 text-[#1B3B48] flex items-center justify-center font-bold">
-                    <Compass className="w-6 h-6 text-[#1B3B48]" />
+              {/* Asymmetric Bento Box Grid (12 Columns) */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+                
+                {/* Bento Card A: Safe Atmosphere & Chill Zone (Spans 7 Columns) */}
+                <div className="lg:col-span-7 group relative bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-10 border border-slate-200/90 hover:border-[#F57A54]/50 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl overflow-hidden">
+                  
+                  {/* Subtle Background Image Overlay with Gradient */}
+                  <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 group-hover:opacity-35 transition-opacity duration-700 pointer-events-none hidden sm:block">
+                    <Image
+                      src="/images/camp-community.png"
+                      alt="Chill Zone Atmosphere"
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-[#1B3B48]">
-                    Motor & Valuable Life Skills
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                    Hand in Hand - The Next Level will also aid these individuals in learning new skills such as gross motor skills, fine motor skills, and valuable life skills.
-                  </p>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Hand in Hand - The Next Level aims to meet the needs of high needs individuals, and individuals with behavioural issues who may need extra support in other day program environments.
-                  </p>
-                </div>
-              </div>
 
-              {/* Card 3: Parent Relief & Ratios */}
-              <div className="bg-white p-8 rounded-3xl border border-slate-200/90 shadow-sm space-y-4 flex flex-col justify-between">
-                <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-2xl bg-[#F57A54]/10 text-[#F57A54] flex items-center justify-center font-bold">
-                    <Heart className="w-6 h-6 text-[#F57A54]" />
+                  <div className="relative z-10 space-y-6">
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F57A54] text-white text-xs font-black uppercase tracking-wider shadow-md">
+                        <Smile className="w-3.5 h-3.5" />
+                        Atmosphere & Social Nook
+                      </span>
+                      <div className="w-10 h-10 rounded-2xl bg-[#F57A54]/10 flex items-center justify-center text-[#F57A54] border border-[#F57A54]/20">
+                        <Sparkles className="w-5 h-5 text-[#F57A54]" />
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 max-w-xl">
+                      <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] tracking-tight">
+                        Safe Atmosphere & Dedicated &ldquo;Chill Zone&rdquo;
+                      </h3>
+                      <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-semibold">
+                        Hand in Hand - The Next Level provides an inclusive, pressure-free environment catering specifically to teenagers and young adults with special needs.
+                      </p>
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                        Our dedicated &ldquo;chill zone&rdquo; was created to fill a major community gap—a space where clients explore personal interests, meet new friends, hang out, and feel comfortable among peers without judgment.
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-extrabold text-[#1B3B48]">
-                    Parent Relief & Flexible Ratios
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                    Hand in Hand - The Next Level is a space where parents will feel comfortable bringing their loved ones. It allows parents to receive relief that was not accessible previously due to a serious lack of such programs, specifically for high needs individuals.
-                  </p>
-                  <div className="p-3 rounded-2xl bg-[#E8F0EC] border border-[#2A5243]/20 text-xs font-bold text-[#2A5243]">
-                    <span>Standard Ratio: 1:5 (Instructor:Client)</span>
-                    <span className="block text-[10px] text-slate-600 font-normal mt-0.5">1:1 support provided on a need basis.</span>
+
+                  {/* Interactive Feature Pills */}
+                  <div className="relative z-10 pt-6 border-t border-slate-100 mt-6">
+                    <div className="flex flex-wrap gap-2.5">
+                      {[
+                        "✨ Non-Judgmental Social Lounge",
+                        "🎮 Board Games & Recreation",
+                        "🤝 Genuine Peer Friendship",
+                        "🎨 Inclusive Creative Outlets"
+                      ].map((pill, pIdx) => (
+                        <span key={pIdx} className="text-xs font-extrabold px-3.5 py-1.5 rounded-xl bg-[#FBF9F5] border border-slate-200 text-[#1B3B48] shadow-sm">
+                          {pill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+
                 </div>
+
+                {/* Bento Card B: Motor & Valuable Life Skills (Spans 5 Columns) */}
+                <div className="lg:col-span-5 group relative bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-10 border border-slate-200/90 hover:border-[#2A5243]/50 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl overflow-hidden">
+                  
+                  <div className="relative z-10 space-y-6">
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2A5243] text-white text-xs font-black uppercase tracking-wider shadow-md">
+                        <Compass className="w-3.5 h-3.5" />
+                        Autonomy & Skills
+                      </span>
+                      <div className="w-10 h-10 rounded-2xl bg-[#2A5243]/10 flex items-center justify-center text-[#2A5243] border border-[#2A5243]/20">
+                        <Layers className="w-5 h-5 text-[#2A5243]" />
+                      </div>
+                    </div>
+
+                    <div className="space-y-3">
+                      <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] tracking-tight">
+                        Motor & Practical Life Skills
+                      </h3>
+                      <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-semibold">
+                        We actively aid individuals in building gross and fine motor coordination, culinary independence, and essential daily living tasks.
+                      </p>
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                        Specially tailored to support high-needs individuals and those with behavioral challenges who require structured, compassionate guidance to thrive.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Visual Image Card Badge */}
+                  <div className="relative z-10 pt-6 mt-6">
+                    <div className="relative h-32 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md group-hover:scale-[1.02] transition-transform duration-500">
+                      <Image
+                        src="/images/adult-community-trips.png"
+                        alt="Life Skills Outings"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent" />
+                      <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-extrabold text-white">
+                        <span>Community & Kitchen Mastery</span>
+                        <ArrowRight className="w-4 h-4 text-[#F57A54]" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                {/* Bento Card C: Full-Width Parent Relief & Ratios (Spans 12 Columns) */}
+                <div className="lg:col-span-12 group relative bg-gradient-to-r from-[#E8F0EC] via-white to-[#E8F0EC] rounded-3xl p-6 sm:p-10 border border-[#2A5243]/20 transition-all duration-500 shadow-xl overflow-hidden">
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    
+                    {/* Visual Media Frame */}
+                    <div className="lg:col-span-5 relative h-56 sm:h-64 rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl">
+                      <Image
+                        src="/images/therapy-hero.png"
+                        alt="Caregiver Relief & Support Team"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-75" />
+                      <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-white/20 backdrop-blur-md border border-white/25 text-white">
+                        <span className="text-[11px] font-extrabold text-[#EAA85E] uppercase tracking-wider block">Caregiver Peace of Mind</span>
+                        <p className="text-xs text-white mt-0.5 font-medium">Reliable daytime care for high-needs young adults.</p>
+                      </div>
+                    </div>
+
+                    {/* Content & Micro-Stat Cards */}
+                    <div className="lg:col-span-7 space-y-6">
+                      
+                      <div className="space-y-3">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F57A54] text-white text-xs font-black uppercase tracking-wider shadow-sm">
+                          <Heart className="w-3.5 h-3.5" />
+                          <span>Parent Relief & Support Ratios</span>
+                        </div>
+
+                        <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] tracking-tight">
+                          Essential Respite for Families
+                        </h3>
+
+                        <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-medium">
+                          Hand in Hand - The Next Level is a safe haven where parents feel completely comfortable bringing their loved ones. It provides essential respite previously inaccessible due to a lack of specialized adult day programs.
+                        </p>
+                      </div>
+
+                      {/* Stat Grid */}
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                        
+                        <div className="p-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-1">
+                          <span className="block text-xl font-black text-[#2A5243]">1:5 Ratio</span>
+                          <span className="block text-[11px] text-slate-600 font-bold">Standard Instructor Ratio</span>
+                        </div>
+
+                        <div className="p-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-1">
+                          <span className="block text-xl font-black text-[#1B3B48]">1:1 Support</span>
+                          <span className="block text-[11px] text-slate-600 font-bold">Available on Need Basis</span>
+                        </div>
+
+                        <div className="p-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-1">
+                          <span className="block text-xl font-black text-[#F57A54]">Open-Door</span>
+                          <span className="block text-[11px] text-slate-600 font-bold">Parent Transparency</span>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
 
             </div>
