@@ -127,7 +127,7 @@ export default function AdmissionsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-44 sm:pt-48">
+      <main className="flex-grow pt-32 sm:pt-36">
         
         {/* Luxury Hero Header */}
         <section className="relative py-14 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">

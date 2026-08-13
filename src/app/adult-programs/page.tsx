@@ -67,7 +67,7 @@ export default function AdultProgramsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-52 sm:pt-56">
+      <main className="flex-grow pt-32 sm:pt-36">
         {/* Hero Section */}
         <section className="relative py-12 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/80 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
