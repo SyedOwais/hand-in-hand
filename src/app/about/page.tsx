@@ -85,10 +85,10 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52">
+      <main className="flex-grow">
         
         {/* Luxury Hero Section with Subtle Faded Banner Background */}
-        <section className="relative py-14 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+        <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-14 sm:pb-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
           
           {/* Faded Background Image Banner */}
           <div className="absolute inset-0 z-0 opacity-20 sm:opacity-25 pointer-events-none overflow-hidden">

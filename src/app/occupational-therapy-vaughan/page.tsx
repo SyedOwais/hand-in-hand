@@ -190,10 +190,10 @@ export default function OccupationalTherapyVaughanPage() {
 
       <Header />
 
-      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52 pb-16 sm:pb-24">
+      <main className="flex-grow">
         
         {/* HERO SECTION */}
-        <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+        <section className="relative pt-40 sm:pt-44 lg:pt-44 pb-14 sm:pb-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
           
           {/* Background Lighting Blur */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />

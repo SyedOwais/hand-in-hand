@@ -14,7 +14,7 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5]">
       <Header />
       
-      <main className="flex-1 pt-44 sm:pt-48 lg:pt-52">
+      <main className="flex-1 pt-32 sm:pt-36 lg:pt-36">
         {/* Contact Hero Header */}
         <section className="bg-gradient-to-b from-[#0F2530] via-[#1B3B48] to-[#142E28] text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden text-center">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
