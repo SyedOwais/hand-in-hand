@@ -182,11 +182,11 @@ function BlogsContent() {
   const featuredPost = blogPosts.find((p) => p.featured) || blogPosts[0];
 
   return (
-    <div className="space-y-12">
-      
+    <div className="space-y-8">
+
       {/* Light Gradient Hero Header */}
       <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#E8F0EC] via-[#FBF9F5] to-[#E8F0EC] p-8 sm:p-14 shadow-xl border border-[#2A5243]/20 text-[#1B3B48]">
-        
+
         {/* Ambient Background Glows */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#2A5243]/15 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
@@ -209,7 +209,7 @@ function BlogsContent() {
 
       {/* Filter Tabs & Search Header */}
       <div className="bg-white p-4 sm:p-6 rounded-3xl border border-slate-200/80 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
-        
+
         {/* Category Filter Pills */}
         <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
           {[
@@ -224,11 +224,10 @@ function BlogsContent() {
               <button
                 key={tab.id}
                 onClick={() => setActiveCategory(tab.id)}
-                className={`px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition-all duration-300 flex items-center gap-2 ${
-                  isActive
+                className={`px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition-all duration-300 flex items-center gap-2 ${isActive
                     ? "bg-[#1B3B48] text-white shadow-lg scale-105"
                     : "bg-[#FBF9F5] text-slate-600 hover:bg-[#E8F0EC] border border-slate-200/80"
-                }`}
+                  }`}
               >
                 <IconComp className={`w-3.5 h-3.5 ${isActive ? "text-[#6B8E7B]" : "text-[#2A5243]"}`} />
                 <span>{tab.label}</span>
@@ -257,7 +256,7 @@ function BlogsContent() {
           href={`/blogs/${featuredPost.slug}`}
           className="group relative bg-[#0F2530] text-white rounded-3xl overflow-hidden shadow-2xl border border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-0 transform hover:-translate-y-1 transition-all duration-500 block"
         >
-          
+
           {/* Featured Image */}
           <div className="relative h-72 lg:h-auto lg:col-span-7 overflow-hidden">
             <Image
@@ -343,9 +342,8 @@ function BlogsContent() {
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute top-3 left-3">
-                <span className={`text-[10px] font-extrabold px-3 py-1 rounded-full text-white shadow-xs uppercase tracking-wider ${
-                  post.track === "pediatric" ? "bg-[#2A5243]" : post.track === "adult" ? "bg-[#1B3B48]" : "bg-[#F57A54]"
-                }`}>
+                <span className={`text-[10px] font-extrabold px-3 py-1 rounded-full text-white shadow-xs uppercase tracking-wider ${post.track === "pediatric" ? "bg-[#2A5243]" : post.track === "adult" ? "bg-[#1B3B48]" : "bg-[#F57A54]"
+                  }`}>
                   {post.track === "pediatric" ? "Pediatric (2–18)" : post.track === "adult" ? "Adult (18+)" : "Universal"}
                 </span>
               </div>
@@ -429,7 +427,7 @@ export default function BlogsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-32 sm:pt-36 lg:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={
             <div className="text-center py-20">

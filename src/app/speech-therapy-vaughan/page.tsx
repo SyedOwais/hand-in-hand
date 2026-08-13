@@ -273,20 +273,20 @@ export default function SpeechTherapyVaughanPage() {
 
       <Header />
 
-      <main className="flex-grow">
-        
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-38">
+
         {/* Hero Section */}
-        <section className="relative pt-40 sm:pt-44 lg:pt-44 pb-14 sm:pb-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
-          
+        <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+
           {/* Background Lighting Blur */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-              
+
               {/* Left Column: Heading & Copy */}
               <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-                
+
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-xs">
                   <Sparkles className="w-4 h-4 text-[#F57A54]" />
                   <span>Speech Therapy in Vaughan & Bradford</span>
@@ -350,7 +350,7 @@ export default function SpeechTherapyVaughanPage() {
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/80 via-transparent to-transparent" />
-                  
+
                   <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-white/50 text-[#1B3B48] space-y-1 shadow-lg">
                     <span className="text-xs font-black text-[#F57A54] uppercase tracking-wider block">
                       Individualized Speech Care
@@ -370,14 +370,14 @@ export default function SpeechTherapyVaughanPage() {
         <section className="py-12 sm:py-16 bg-white border-y border-slate-200/80 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#E8F0EC] via-[#FBF9F5] to-[#E8F0EC] p-8 sm:p-12 border border-[#2A5243]/20 shadow-lg space-y-6">
-              
+
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="space-y-3 max-w-3xl">
                   <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-extrabold uppercase tracking-wider">
                     <Users className="w-4 h-4 text-[#F57A54]" />
                     <span>Multidisciplinary Care Coordination</span>
                   </div>
-                  
+
                   <h2 className="text-2xl sm:text-3xl font-black text-[#1B3B48] leading-tight">
                     Coordinated Speech & Multidisciplinary Therapy
                   </h2>
@@ -435,7 +435,7 @@ export default function SpeechTherapyVaughanPage() {
         {/* Why Families Choose Hand in Hand */}
         <section className="py-16 sm:py-24 bg-white border-y border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
                 <ShieldCheck className="w-4 h-4 text-[#F57A54]" />
@@ -481,7 +481,7 @@ export default function SpeechTherapyVaughanPage() {
         {/* Our Speech Therapy Services in Vaughan */}
         <section className="py-16 sm:py-24 bg-[#FBF9F5]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
                 <Layers className="w-4 h-4 text-[#F57A54]" />
@@ -534,7 +534,7 @@ export default function SpeechTherapyVaughanPage() {
         {/* What to Expect Timeline */}
         <section className="py-16 sm:py-24 bg-white border-y border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
                 <Clock className="w-4 h-4 text-[#F57A54]" />
@@ -575,7 +575,7 @@ export default function SpeechTherapyVaughanPage() {
         {/* Serving Vaughan & Bradford (Location Cards & Embedded Maps) */}
         <section className="py-16 sm:py-24 bg-[#FBF9F5]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
                 <MapPin className="w-4 h-4 text-[#F57A54]" />
@@ -590,7 +590,7 @@ export default function SpeechTherapyVaughanPage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              
+
               {/* Vaughan / Concord Clinic Card */}
               <div className="bg-white rounded-3xl p-7 sm:p-8 border border-slate-200/90 shadow-lg space-y-6 flex flex-col justify-between">
                 <div className="space-y-4">
@@ -688,7 +688,7 @@ export default function SpeechTherapyVaughanPage() {
         {/* Ready to Get Started CTA Section */}
         <section className="py-16 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#E8F0EC]/70 text-[#1B3B48] border-t border-slate-200/80 relative overflow-hidden">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10 space-y-6">
-            
+
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-black uppercase tracking-wider border border-[#2A5243]/20 shadow-xs">
               <Sparkles className="w-4 h-4 text-[#F57A54]" />
               <span>Take the First Step</span>

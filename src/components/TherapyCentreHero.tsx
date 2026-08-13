@@ -44,7 +44,7 @@ export default function TherapyCentreHero() {
           priority
           sizes="(max-width: 1024px) 100vw, 50vw"
         />
-        
+
         <div className="absolute top-4 right-4 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-[#EAA85E] z-10 border border-white/20 shadow-md">
           Sensory Gym & Indoor Play
         </div>
@@ -106,14 +106,14 @@ export default function TherapyCentreHero() {
   );
 
   return (
-    <section id="therapy-centre-hero" className="pt-32 sm:pt-36 lg:pt-40 pb-12 bg-gradient-to-b from-[#F4F9F6] via-[#FAFDFB] to-[#FAFDFB] relative overflow-hidden">
+    <section id="therapy-centre-hero" className="pt-44 sm:pt-48 lg:pt-48 pb-12 bg-gradient-to-b from-[#F4F9F6] via-[#FAFDFB] to-[#FAFDFB] relative overflow-hidden">
       {/* Organic background ambient glow */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-[#E8F0EC] rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
-          
+
           {/* Left Column Text & Mobile Image */}
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs sm:text-sm font-extrabold tracking-wider uppercase border border-[#4A7C64]/30 shadow-xs">

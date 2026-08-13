@@ -660,7 +660,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
       <Header />
 
-      <main className="flex-grow pt-32 sm:pt-36 lg:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52 pb-16 sm:pb-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
           {/* Breadcrumb & Back Link */}

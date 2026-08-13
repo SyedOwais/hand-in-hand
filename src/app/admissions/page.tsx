@@ -127,17 +127,17 @@ export default function AdmissionsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow">
-        
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-38">
+
         {/* Luxury Hero Header */}
-        <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-14 sm:pb-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
-          
+        <section className="relative py-14 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+
           {/* Subtle Ambient Background Decorative Glow */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-6">
-              
+
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm">
                 <Sparkles className="w-4 h-4 text-[#F57A54]" />
                 <span>Admissions & Intake Guide</span>
@@ -154,7 +154,7 @@ export default function AdmissionsPage() {
               {/* Admissions Contact Quick Bar */}
               <div className="pt-4 max-w-2xl mx-auto">
                 <div className="bg-white/95 backdrop-blur-xl p-6 rounded-3xl border border-slate-200/90 shadow-xl grid grid-cols-1 sm:grid-cols-2 gap-4 items-center text-left">
-                  
+
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-2xl bg-[#2A5243] text-white font-extrabold flex items-center justify-center shadow-md shrink-0">
                       <UserCheck className="w-6 h-6" />
@@ -186,7 +186,7 @@ export default function AdmissionsPage() {
         {/* Step-by-Step Chronological Admissions Roadmap */}
         <section className="py-16 sm:py-24 bg-white border-y border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
                 <Layers className="w-4 h-4 text-[#F57A54]" />
@@ -202,7 +202,7 @@ export default function AdmissionsPage() {
 
             {/* 3 Chronological Cards + 1 Hero Feature Card */}
             <div className="space-y-8">
-              
+
               {/* Cards Grid (Steps 01, 02, 03) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
                 {admissionSteps.map((step, idx) => (
@@ -211,7 +211,7 @@ export default function AdmissionsPage() {
                     className="group bg-[#FBF9F5] rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md hover:shadow-2xl hover:border-[#2A5243]/40 transition-all duration-500 flex flex-col justify-between space-y-6 transform hover:-translate-y-1"
                   >
                     <div className="space-y-5">
-                      
+
                       {/* Step Header */}
                       <div className="flex items-center justify-between">
                         <span className={`text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-sm ${step.badgeBg}`}>
@@ -258,13 +258,13 @@ export default function AdmissionsPage() {
 
               {/* Hero Feature Spotlight: Step 04 Trial Day Visit */}
               <div className="relative rounded-[40px] bg-gradient-to-r from-[#0F2530] via-[#1B3B48] to-[#0F2530] text-white p-6 sm:p-12 lg:p-14 shadow-2xl border border-[#2A5243]/50 overflow-hidden group">
-                
+
                 {/* Background Ambient Lights */}
                 <div className="absolute top-0 right-0 w-96 h-96 bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                  
+
                   {/* Left Column: Visual Media Card */}
                   <div className="lg:col-span-6 relative h-64 sm:h-80 rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
                     <Image
@@ -276,7 +276,7 @@ export default function AdmissionsPage() {
                       priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-[#0F2530]/40 to-transparent" />
-                    
+
                     <div className="absolute top-4 left-4">
                       <span className="bg-[#F57A54] text-white text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-md inline-flex items-center gap-1.5">
                         <Compass className="w-4 h-4" />
@@ -292,7 +292,7 @@ export default function AdmissionsPage() {
 
                   {/* Right Column: Step 04 Content */}
                   <div className="lg:col-span-6 space-y-6">
-                    
+
                     <div className="space-y-3">
                       <span className="text-3xl font-black text-[#EAA85E]">Step 04</span>
                       <h3 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
@@ -363,7 +363,7 @@ export default function AdmissionsPage() {
 
             {/* Year-Round Admission Callout Canvas */}
             <div className="p-8 sm:p-12 rounded-[36px] bg-gradient-to-r from-[#2A5243] via-[#1B3B48] to-[#2A5243] text-white shadow-2xl border border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               <div className="lg:col-span-8 space-y-3">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 text-xs font-black uppercase tracking-wider border border-white/15">
                   <Clock className="w-3.5 h-3.5 text-[#F57A54]" />
@@ -385,7 +385,7 @@ export default function AdmissionsPage() {
                   <Calendar className="w-4 h-4 text-[#2A5243]" />
                   <span>Book Virtual Tour</span>
                 </Link>
-                
+
                 <a
                   href="tel:4169305293"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all text-center"
@@ -412,7 +412,7 @@ export default function AdmissionsPage() {
             <p className="text-base sm:text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed font-medium">
               Please contact our <strong className="text-[#2A5243]">Intake & Admissions Team</strong> for more information or to get started with an initial consultation and tour.
             </p>
-            
+
             {/* Admissions CTAs */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link

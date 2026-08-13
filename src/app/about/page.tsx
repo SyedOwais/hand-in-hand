@@ -85,11 +85,11 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow">
-        
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-38">
+
         {/* Luxury Hero Section with Subtle Faded Banner Background */}
-        <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-14 sm:pb-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
-          
+        <section className="relative py-14 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
+
           {/* Faded Background Image Banner */}
           <div className="absolute inset-0 z-0 opacity-20 sm:opacity-25 pointer-events-none overflow-hidden">
             <Image
@@ -109,7 +109,7 @@ export default function AboutPage() {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
-              
+
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm backdrop-blur-md">
                 <Sparkles className="w-4 h-4 text-[#F57A54]" />
                 <span>Our Story, Mission & Leadership</span>
@@ -157,9 +157,9 @@ export default function AboutPage() {
         {/* Section 1: Who We Are */}
         <section className="py-16 sm:py-24 bg-white border-y border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               {/* Image Column */}
               <div className="lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
@@ -179,7 +179,7 @@ export default function AboutPage() {
 
               {/* Content Column */}
               <div className="lg:col-span-6 space-y-6">
-                
+
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1B3B48]/10 text-[#1B3B48] text-xs font-extrabold uppercase tracking-wider">
                   <Users className="w-3.5 h-3.5 text-[#2A5243]" />
                   <span>Who We Are</span>
@@ -215,7 +215,7 @@ export default function AboutPage() {
 
             {/* Struggles Addressed & Open Door Policy Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-stretch">
-              
+
               {/* Card 1: Key Life Areas Supported (6 Columns) */}
               <div className="lg:col-span-6 bg-gradient-to-br from-white via-[#FBF9F5] to-white p-8 sm:p-10 rounded-[32px] border border-slate-200/90 shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between space-y-6">
                 <div className="space-y-4">
@@ -316,13 +316,13 @@ export default function AboutPage() {
 
             {/* Founder Spotlight Card: Nakita Medeiros (State-of-the-Art Luxury Showcase) */}
             <div className="relative rounded-[40px] bg-gradient-to-r from-[#1B3B48] via-[#0F2530] to-[#1B3B48] text-white p-8 sm:p-12 lg:p-14 shadow-2xl border border-[#2A5243]/50 overflow-hidden">
-              
+
               {/* Ambient Glow Effects */}
               <div className="absolute top-0 right-0 w-96 h-96 bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
-                
+
                 {/* Left Column: Monogram Badge & Legacy Milestones */}
                 <div className="lg:col-span-5 flex flex-col items-center text-center space-y-5 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-md">
                   <div className="relative">
@@ -354,7 +354,7 @@ export default function AboutPage() {
 
                 {/* Right Column: Visionary Story & Inspiring Quote */}
                 <div className="lg:col-span-7 space-y-6">
-                  
+
                   <div className="space-y-3">
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-black uppercase tracking-wider border border-white/15">
                       <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
@@ -394,24 +394,24 @@ export default function AboutPage() {
         {/* Section 2: What Hand in Hand - The Next Level Does (Light Luxury Bento Box Showcase) */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="relative rounded-[40px] sm:rounded-[56px] bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#E8F0EC]/80 text-[#1B3B48] p-6 sm:p-14 lg:p-16 shadow-xl border border-slate-200/90 overflow-hidden">
-            
+
             {/* Ambient Soft Lighting Orbs */}
             <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#2A5243]/10 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[#F57A54]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 space-y-12 sm:space-y-16">
-              
+
               {/* Creative Section Header */}
               <div className="text-center max-w-3xl mx-auto space-y-4">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm">
                   <Sparkles className="w-4 h-4 text-[#F57A54]" />
                   <span>Core Program Purpose & Impact</span>
                 </div>
-                
+
                 <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#1B3B48] tracking-tight leading-none">
                   What Hand in Hand - The Next Level Does
                 </h2>
-                
+
                 <p className="text-slate-600 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
                   An innovative sanctuary offering inclusive peer connection, sensory-friendly &ldquo;chill zones&rdquo;, hands-on life skills, and family respite.
                 </p>
@@ -419,10 +419,10 @@ export default function AboutPage() {
 
               {/* Asymmetric Bento Box Grid (12 Columns) */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-                
+
                 {/* Bento Card A: Safe Atmosphere & Chill Zone (Spans 7 Columns) */}
                 <div className="lg:col-span-7 group relative bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-10 border border-slate-200/90 hover:border-[#F57A54]/50 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl overflow-hidden">
-                  
+
                   {/* Subtle Background Image Overlay with Gradient */}
                   <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 group-hover:opacity-35 transition-opacity duration-700 pointer-events-none hidden sm:block">
                     <Image
@@ -478,7 +478,7 @@ export default function AboutPage() {
 
                 {/* Bento Card B: Motor & Valuable Life Skills (Spans 5 Columns) */}
                 <div className="lg:col-span-5 group relative bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-10 border border-slate-200/90 hover:border-[#2A5243]/50 transition-all duration-500 flex flex-col justify-between shadow-lg hover:shadow-2xl overflow-hidden">
-                  
+
                   <div className="relative z-10 space-y-6">
                     <div className="flex items-center justify-between">
                       <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2A5243] text-white text-xs font-black uppercase tracking-wider shadow-md">
@@ -525,9 +525,9 @@ export default function AboutPage() {
 
                 {/* Bento Card C: Full-Width Parent Relief & Ratios (Spans 12 Columns) */}
                 <div className="lg:col-span-12 group relative bg-gradient-to-r from-[#E8F0EC] via-white to-[#E8F0EC] rounded-3xl p-6 sm:p-10 border border-[#2A5243]/20 transition-all duration-500 shadow-xl overflow-hidden">
-                  
+
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                    
+
                     {/* Visual Media Frame */}
                     <div className="lg:col-span-5 relative h-56 sm:h-64 rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl">
                       <Image
@@ -546,7 +546,7 @@ export default function AboutPage() {
 
                     {/* Content & Micro-Stat Cards */}
                     <div className="lg:col-span-7 space-y-6">
-                      
+
                       <div className="space-y-3">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F57A54] text-white text-xs font-black uppercase tracking-wider shadow-sm">
                           <Heart className="w-3.5 h-3.5" />
@@ -564,7 +564,7 @@ export default function AboutPage() {
 
                       {/* Stat Grid */}
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                        
+
                         <div className="p-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-1">
                           <span className="block text-xl font-black text-[#2A5243]">1:5 Ratio</span>
                           <span className="block text-[11px] text-slate-600 font-bold">Standard Instructor Ratio</span>
@@ -598,9 +598,9 @@ export default function AboutPage() {
         {/* Section 3: What Hand in Hand - The Next Level Has To Offer */}
         <section className="py-16 sm:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
+
             <div className="bg-[#0F2530] text-white p-8 sm:p-14 rounded-3xl shadow-2xl border border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-extrabold uppercase tracking-wider">
                   <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />

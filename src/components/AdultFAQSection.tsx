@@ -63,7 +63,7 @@ export default function AdultFAQSection() {
   };
 
   return (
-    <section id="faqs-18" className="py-16 sm:py-24 bg-[#FBF9F5] border-t border-slate-200/80">
+    <section id="faqs-18" className="scroll-mt-40 sm:scroll-mt-48 py-16 sm:py-24 bg-[#FBF9F5] border-t border-slate-200/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Section Header */}

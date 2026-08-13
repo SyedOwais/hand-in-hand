@@ -155,18 +155,23 @@ function FAQsContent() {
       />
       
       {/* Hero Header */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0F2530] via-[#1B3B48] to-[#0F2530] text-white p-8 sm:p-14 shadow-2xl border border-[#2A5243]/40 text-center">
+      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#E8F0EC] via-[#FBF9F5] to-[#E8F0EC] p-8 sm:p-14 shadow-xl border border-[#2A5243]/20 text-[#1B3B48] text-center">
+        
+        {/* Ambient Background Glows */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#2A5243]/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
+
         <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-extrabold uppercase tracking-wider text-[#6B8E7B]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 border border-[#2A5243]/20 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-xs">
             <HelpCircle className="w-4 h-4 text-[#F57A54]" />
             <span>Help & Knowledge Center</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-[#1B3B48] leading-tight">
             Frequently Asked Questions
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-medium">
             Find immediate answers regarding 18+ Adult Day Program admissions, RESP funds, Passport funding, 1:1 support, and pediatric OAP services.
           </p>
         </div>
@@ -293,7 +298,7 @@ export default function FAQsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-32 sm:pt-36 lg:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-48 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={
             <div className="text-center py-20">
