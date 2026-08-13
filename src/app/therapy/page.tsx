@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pediatric Therapy Centre (Ages 2–18) | Hand In Hand",
     description: "ABA Therapy, Speech-Language Pathology, Occupational Therapy, and Social Skills in Vaughan & Bradford. OAP approved.",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/therapy",
+    url: "https://handinhandtherapy.ca/therapy",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
       {

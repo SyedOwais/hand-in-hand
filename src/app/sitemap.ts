@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://thedesignsllc.com/will/therapyanddaycare";
+  const baseUrl = "https://handinhandtherapy.ca";
 
   const routes = [
     "",

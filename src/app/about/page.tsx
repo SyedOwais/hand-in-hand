@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us | Hand In Hand - The Next Level (Established 2010)",
     description: "Our story, mission, and founder leadership by Nakita Medeiros. Transformative pediatric therapy and adult day programming in Vaughan & Bradford.",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/about",
+    url: "https://handinhandtherapy.ca/about",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
       {

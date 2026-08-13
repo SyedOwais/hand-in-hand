@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hand In Hand | Therapy Centre & Adult Day Program (Vaughan & Bradford)",
     description: "Pediatric ABA therapy, speech, OT & 18+ Adult Day Program in Vaughan & Bradford. Together We Can!",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/",
+    url: "https://handinhandtherapy.ca/",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
       {

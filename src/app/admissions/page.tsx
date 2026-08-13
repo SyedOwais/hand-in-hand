@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Admissions & Intake Process | Hand In Hand & The Next Level",
     description: "Step-by-step admissions & assessment process for pediatric therapy and 18+ adult day programming in Vaughan & Bradford.",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/admissions",
+    url: "https://handinhandtherapy.ca/admissions",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
       {

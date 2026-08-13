@@ -10,7 +10,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thedesignsllc.com/will/therapyanddaycare"),
+  metadataBase: new URL("https://handinhandtherapy.ca"),
   title: {
     default: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
     template: "%s | Hand In Hand Therapy Centre & Adult Day Program",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
     description: "Individualized pediatric therapy and adult day support built around unique strengths in Vaughan and Bradford. Together We Can!",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/",
+    url: "https://handinhandtherapy.ca/",
     siteName: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
     images: [
       {
@@ -83,18 +83,18 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": ["Organization", "MedicalClinic", "LocalBusiness"],
-                  "@id": "https://thedesignsllc.com/will/therapyanddaycare/#organization",
+                  "@id": "https://handinhandtherapy.ca/#organization",
                   "name": "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
                   "alternateName": [
                     "Hand In Hand Therapy Centre",
                     "The Next Level Adult Day Program"
                   ],
-                  "url": "https://thedesignsllc.com/will/therapyanddaycare/",
+                  "url": "https://handinhandtherapy.ca/",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://thedesignsllc.com/will/therapyanddaycare/images/hand-in-hand.png"
+                    "url": "https://handinhandtherapy.ca/images/hand-in-hand.png"
                   },
-                  "image": "https://thedesignsllc.com/will/therapyanddaycare/images/aboutus-main.webp",
+                  "image": "https://handinhandtherapy.ca/images/aboutus-main.webp",
                   "slogan": "Together We Can!",
                   "description": "Comprehensive pediatric ABA therapy, Speech-Language Pathology, Occupational Therapy, and 18+ Adult Day Programming across York Region and Simcoe County.",
                   "founder": {

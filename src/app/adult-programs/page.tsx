@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Adult Day Programs (Ages 18+) | Hand In Hand - The Next Level",
     description: "Life skills, daily living, academic, fitness, and community involvement for adults 18+ in Vaughan & Bradford.",
-    url: "https://thedesignsllc.com/will/therapyanddaycare/adult-programs",
+    url: "https://handinhandtherapy.ca/adult-programs",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
       {
