@@ -193,7 +193,7 @@ export default function Header() {
           <Link href="/" className="group inline-flex items-center" title="Return to Entry Choice Portal">
             <div className="relative h-14 w-56 sm:h-16 sm:w-64 transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/images/hand-in-hand.png?v=2"
+                src="/images/hand-in-hand-v2.png"
                 alt="Hand In Hand Therapy Centre & Adult Day Program"
                 fill
                 className="object-contain object-left"

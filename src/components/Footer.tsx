@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-4">
             <div className="relative h-20 w-64 sm:h-24 sm:w-72">
               <Image
-                src="/images/footer.png?v=2"
+                src="/images/footer-v2.png"
                 alt="Hand In Hand Therapy Centre & Adult Day Program"
                 fill
                 className="object-contain object-left"

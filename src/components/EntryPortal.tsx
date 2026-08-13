@@ -40,7 +40,7 @@ export default function EntryPortal() {
           <div className="bg-white/95 backdrop-blur-md px-6 sm:px-8 py-3.5 sm:py-4 rounded-3xl shadow-2xl border border-white/20 mb-4 inline-flex items-center justify-center">
             <div className="relative h-14 w-60 sm:h-18 sm:w-80">
               <Image
-                src="/images/hand-in-hand.png?v=2"
+                src="/images/hand-in-hand-v2.png"
                 alt="Hand In Hand Therapy Centre & Adult Day Program"
                 fill
                 className="object-contain"
