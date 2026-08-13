@@ -51,6 +51,20 @@ function BlogsContent() {
 
   const blogPosts: BlogPost[] = [
     {
+      id: 8,
+      slug: "signs-child-needs-occupational-therapy-vaughan",
+      title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
+      excerpt: "Struggling with handwriting, sensory overload, or daily routines? Learn the signs your child may benefit from occupational therapy in Vaughan & Bradford.",
+      category: "aba",
+      track: "pediatric",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Pediatric Occupational Therapy Team",
+      readTime: "7 min read",
+      date: "August 13, 2026",
+      image: "/images/signs-child-needs-occupational-therapy-vaughan.png",
+      featured: false
+    },
+    {
       id: 1,
       slug: "signs-your-child-needs-speech-therapy-vaughan",
       title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",

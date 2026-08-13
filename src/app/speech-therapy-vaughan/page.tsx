@@ -299,7 +299,7 @@ export default function SpeechTherapyVaughanPage() {
                 </p>
 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium">
-                  At <strong>Hand in Hand Therapy Centre</strong>, we believe every child and family deserves a plan built around how they actually learn, not a one-size-fits-all program. Our Vaughan clinic (located in Concord, at <strong>65 Millway Ave, Unit 38</strong>) brings speech-language pathology together with ABA/IBI therapy, occupational therapy, and social skills groups, so your child gets coordinated care from a team that talks to each other, not a single therapist working in isolation.
+                  At <strong>Hand in Hand Therapy Centre</strong>, we believe every child and family deserves a plan built around how they actually learn, not a one-size-fits-all program.
                 </p>
 
                 {/* Hero CTAs */}
@@ -357,6 +357,72 @@ export default function SpeechTherapyVaughanPage() {
                       Multidisciplinary SLP + ABA + OT Collaboration in Concord & Bradford
                     </p>
                   </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* MULTIDISCIPLINARY CARE COORDINATION SECTION */}
+        <section className="py-12 sm:py-16 bg-white border-y border-slate-200/80 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#E8F0EC] via-[#FBF9F5] to-[#E8F0EC] p-8 sm:p-12 border border-[#2A5243]/20 shadow-lg space-y-6">
+              
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div className="space-y-3 max-w-3xl">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-extrabold uppercase tracking-wider">
+                    <Users className="w-4 h-4 text-[#F57A54]" />
+                    <span>Multidisciplinary Care Coordination</span>
+                  </div>
+                  
+                  <h2 className="text-2xl sm:text-3xl font-black text-[#1B3B48] leading-tight">
+                    Coordinated Speech & Multidisciplinary Therapy
+                  </h2>
+
+                  <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium">
+                    Our Vaughan clinic (located in Concord) brings speech-language pathology together with{" "}
+                    <Link href="/therapy#what-we-help-with" className="text-[#2A5243] font-extrabold underline decoration-[#F57A54] underline-offset-4 hover:text-[#F57A54] transition-colors">
+                      ABA/IBI therapy
+                    </Link>
+                    ,{" "}
+                    <Link href="/occupational-therapy-vaughan" className="text-[#2A5243] font-extrabold underline decoration-[#F57A54] underline-offset-4 hover:text-[#F57A54] transition-colors">
+                      occupational therapy
+                    </Link>
+                    , and{" "}
+                    <Link href="/therapy#what-we-help-with" className="text-[#2A5243] font-extrabold underline decoration-[#F57A54] underline-offset-4 hover:text-[#F57A54] transition-colors">
+                      social skills groups
+                    </Link>
+                    , so your child gets coordinated care from a team that talks to each other, not a single therapist working in isolation.
+                  </p>
+                </div>
+
+                <Link
+                  href="/contact"
+                  className="shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-xs sm:text-sm font-extrabold text-white bg-[#2A5243] hover:bg-[#1B3B48] shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  <span>Book Coordinated Consultation</span>
+                  <ArrowRight className="w-4 h-4 text-[#F57A54]" />
+                </Link>
+              </div>
+
+              {/* Service Pillars Grid */}
+              <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="p-3.5 rounded-2xl bg-white/90 border border-slate-200/80 text-center space-y-1 shadow-xs">
+                  <span className="text-xs font-black text-[#2A5243] block uppercase">Speech Therapy</span>
+                  <span className="text-[11px] text-slate-500 font-medium block">Articulation & Language</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/90 border border-slate-200/80 text-center space-y-1 shadow-xs">
+                  <span className="text-xs font-black text-[#2A5243] block uppercase">Occupational Therapy</span>
+                  <span className="text-[11px] text-slate-500 font-medium block">Fine Motor & Sensory</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/90 border border-slate-200/80 text-center space-y-1 shadow-xs">
+                  <span className="text-xs font-black text-[#2A5243] block uppercase">ABA / IBI Therapy</span>
+                  <span className="text-[11px] text-slate-500 font-medium block">Functional Skills</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/90 border border-slate-200/80 text-center space-y-1 shadow-xs">
+                  <span className="text-xs font-black text-[#2A5243] block uppercase">Social Skills Groups</span>
+                  <span className="text-[11px] text-slate-500 font-medium block">Peer Integration</span>
                 </div>
               </div>
 

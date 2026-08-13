@@ -53,6 +53,99 @@ interface BlogPostDetail {
 }
 
 const blogData: Record<string, BlogPostDetail> = {
+  "signs-child-needs-occupational-therapy-vaughan": {
+    slug: "signs-child-needs-occupational-therapy-vaughan",
+    title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
+    metaTitle: "Does My Child Need Occupational Therapy? Signs to Know | Hand in Hand Therapy",
+    metaDescription: "Struggling with handwriting, sensory overload, or daily routines? Learn the signs your child may benefit from occupational therapy in Vaughan.",
+    excerpt: "Learn the common signs a child may benefit from pediatric occupational therapy, what happens during an OT assessment, and how sensory & fine motor support helps Vaughan and Bradford families.",
+    category: "Pediatric Occupational Therapy",
+    categoryBadge: "bg-[#2A5243] text-white",
+    track: "pediatric",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Pediatric Occupational Therapy Team",
+    readTime: "7 min read",
+    date: "August 13, 2026",
+    image: "/images/signs-child-needs-occupational-therapy-vaughan.png",
+    content: {
+      intro: "If your child melts down over a scratchy shirt tag, can't seem to hold a pencil the \"right\" way no matter how much you practice, or struggles to sit still through dinner, you've probably wondered whether it's just a phase - or something worth looking into. Occupational therapy (OT) is one of the most misunderstood services in pediatric care, largely because most parents only associate it with physical rehabilitation. In reality, occupational therapists work on something much broader: the everyday skills kids need to function, learn, and feel comfortable in their own bodies.\n\nThis guide breaks down the most common signs a child may benefit from [pediatric occupational therapy in Vaughan](/occupational-therapy-vaughan/), what a typical assessment looks like, and how to find the right support in Vaughan or Bradford.",
+      keyTakeaways: [
+        "Occupational therapy focuses on everyday 'occupations' for kids - fine motor skills, self-care routines, sensory processing, and self-regulation.",
+        "Key indicators for OT include pencil grip difficulties, clothing texture sensitivities, clumsy coordination, and routine meltdowns.",
+        "Assessments evaluate fine motor, sensory, and daily living skills to build an individualized, multidisciplinary treatment plan.",
+        "Multidisciplinary care combines OT with speech therapy and ABA programming under one roof in Vaughan (Concord) and Bradford."
+      ],
+      sections: [
+        {
+          heading: "What Does an Occupational Therapist Actually Do for Kids?",
+          body: [
+            "Unlike physical therapists, who focus mainly on gross motor movement, strength, and mobility, occupational therapists focus on the skills a child needs for daily life - what OTs call 'occupations.' For a child, that means things like:",
+            "• **Writing and using scissors** (fine motor skills)\n• **Getting dressed, brushing teeth, and eating independently** (self-care/daily living skills)\n• **Managing sounds, textures, movement, and crowded spaces** without becoming overwhelmed (sensory processing)\n• **Sitting still, transitioning between activities, and staying organized** (attention and self-regulation)\n• **Playing and interacting comfortably** with peers",
+            "When any of these areas are significantly harder for a child than they are for same-age peers, it can affect far more than the specific task - it often shows up as frustration, avoidance, or behavioural struggles at school and at home."
+          ]
+        },
+        {
+          heading: "Common Signs Your Child May Benefit from Occupational Therapy",
+          body: [
+            "Not every child needs OT just because they're a picky eater or dislike loud noises occasionally. But if several of these show up consistently, it's worth an assessment.",
+            "**Fine Motor Signs:**\n• Awkward or inconsistent pencil grip well past the age when peers have it figured out\n• Illegible handwriting, or written work that takes far longer than it should\n• Difficulty using scissors, buttons, zippers, or shoelaces\n• Avoids drawing, colouring, or building activities",
+            "**Sensory Processing Signs:**\n• Extreme reactions to certain textures, food consistencies, or clothing tags\n• Covers ears or becomes distressed in loud or busy environments\n• Seeks out intense movement (spinning, crashing into things) or avoids movement altogether\n• Seems either 'under-reactive' (doesn't notice pain or temperature) or 'over-reactive' (small things feel overwhelming)",
+            "**Daily Living / Self-Care Signs:**\n• Struggles with dressing, feeding, or toileting routines well past the typical age\n• Needs significant help with tasks that same-age peers manage independently\n• Resistance or meltdowns around daily routines like getting dressed or brushing teeth",
+            "**Coordination & Attention Signs:**\n• Appears clumsy, trips or bumps into things frequently\n• Difficulty with balance, or activities like riding a bike or catching a ball\n• Trouble staying seated, transitioning between activities, or following multi-step routines\n• Seems to tire quickly during handwriting or fine motor tasks",
+            "**Social & Play Signs:**\n• Avoids group play or seems unsure how to join in\n• Difficulty adapting when routines change\n• Play skills that seem noticeably behind same-age peers",
+            "If this list feels like it's describing your child in several areas at once, that pattern - rather than any single item - is usually the clearest signal that an assessment is worthwhile."
+          ]
+        },
+        {
+          heading: "What Happens During an Occupational Therapy Assessment?",
+          body: [
+            "Many parents delay booking simply because they don't know what to expect. Here's the general process at our Vaughan (Concord) and [Bradford occupational therapy clinic](/occupational-therapy-vaughan/#locations):",
+            "1. **Initial consultation:** We talk through your concerns and what daily routines look like - mornings, mealtimes, school, and play.\n2. **Formal assessment:** An occupational therapist evaluates fine motor skills, sensory processing, self-care abilities, and coordination, often using standardized tools alongside direct observation.\n3. **Individualized plan:** Every plan is built around your child's specific profile. If your child also receives [speech therapy](/speech-therapy-vaughan/) or [ABA/IBI support](/therapy#what-we-help-with) with us, OT goals are coordinated with the rest of their team rather than worked on separately.\n4. **Ongoing therapy with progress reviews:** Sessions are structured around clear, functional goals, with regular updates so you always know how things are going.",
+            "No doctor's referral is required to book an initial consultation."
+          ]
+        },
+        {
+          heading: "Occupational Therapy vs. 'They'll Grow Out of It'",
+          body: [
+            "This is the question almost every parent asks, and it's a fair one - kids develop at different rates, and not every quirky habit needs intervention. A few things help distinguish typical variation from something worth addressing:",
+            "• **Likely typical development:** mild sensory preferences, occasional clumsiness, gradual improvement in fine motor tasks over time.\n• **Worth an assessment:** consistent difficulty across multiple daily activities, meltdowns tied to sensory or motor challenges, or a noticeable gap between your child's skills and their peers' that isn't narrowing.",
+            "An occupational therapy assessment gives you a clear, professional answer rather than months of uncertainty - and if therapy isn't needed, that's useful information too."
+          ]
+        },
+        {
+          heading: "Why a Multidisciplinary Approach Matters",
+          body: [
+            "Fine motor delays, sensory processing differences, speech delays, and behavioural challenges frequently overlap - particularly for children with autism spectrum disorder or other developmental differences. That's why our approach at Hand in Hand Therapy Centre brings occupational therapists, speech-language pathologists, and ABA/IBI therapists together on one coordinated plan, rather than treating each area as a separate, disconnected service.",
+            "For families across Vaughan, Woodbridge, Maple, Thornhill, and Bradford West Gwillimbury, that coordination is often what makes the biggest difference in how quickly a child progresses."
+          ]
+        },
+        {
+          heading: "Next Steps",
+          body: [
+            "If several of these signs sound familiar, the most useful next step isn't waiting to see if your child 'grows out of it' - it's getting a clear answer from an assessment. Our team at Hand in Hand Therapy Centre provides individualized [occupational therapy in Vaughan](/occupational-therapy-vaughan/) and Bradford, coordinated with speech therapy and ABA/IBI support when needed."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "What age should occupational therapy start?",
+          a: "There's no minimum age - OT can begin in toddlerhood and continue through the school years, depending on the child's needs. Earlier support generally leads to faster, more durable progress."
+        },
+        {
+          q: "Is occupational therapy just for kids with autism?",
+          a: "No. While OT is a core part of many autism support plans, it's also used for sensory processing differences, fine motor delays, coordination challenges, and self-care skill-building in children without a specific diagnosis."
+        },
+        {
+          q: "How long does occupational therapy usually take to show results?",
+          a: "This depends on the specific goals and the child. Some families see noticeable progress in handwriting or daily routines within a few months; more complex sensory or coordination goals may take a longer, coordinated program."
+        },
+        {
+          q: "Do you offer occupational therapy in Bradford as well as Vaughan?",
+          a: "Yes - Hand in Hand Therapy Centre has a dedicated Bradford clinic serving Bradford West Gwillimbury, in addition to our Vaughan (Concord) location."
+        }
+      ]
+    }
+  },
   "signs-your-child-needs-speech-therapy-vaughan": {
     slug: "signs-your-child-needs-speech-therapy-vaughan",
     title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",
