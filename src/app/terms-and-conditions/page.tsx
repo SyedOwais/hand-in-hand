@@ -14,7 +14,7 @@ export default function TermsAndConditionsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-28 sm:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 pb-16 sm:pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Header Banner */}

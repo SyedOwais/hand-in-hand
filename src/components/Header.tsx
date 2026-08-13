@@ -121,55 +121,58 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Info Bar */}
-      <div className="bg-[#0F2530] text-slate-200 text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-[#2A5243]/50">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
-          <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-center sm:justify-start text-[11px] sm:text-xs">
-            <span className="flex items-center gap-1 font-medium">
-              <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F57A54]" />
+      <div className="bg-[#0F2530] text-slate-200 text-xs py-2.5 sm:py-3.5 px-3 sm:px-6 border-b border-[#2A5243]/50 shadow-xs">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-5 flex-wrap justify-center sm:justify-start text-xs">
+            <span className="flex items-center gap-1.5 font-semibold">
+              <MapPin className="w-4 h-4 text-[#F57A54]" />
               <span>Concord / Vaughan & Bradford, ON</span>
             </span>
             <span className="hidden md:inline text-slate-500">•</span>
             <a
               href="tel:4169305293"
-              className="flex items-center gap-1 hover:text-[#6B8E7B] transition-colors font-medium"
+              className="flex items-center gap-1.5 hover:text-white transition-colors font-semibold"
             >
-              <PhoneCall className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#6B8E7B]" />
+              <PhoneCall className="w-4 h-4 text-[#6B8E7B]" />
               <span>(416)-930-5293</span>
             </a>
             <span className="hidden md:inline text-slate-500">•</span>
             <a
               href={`mailto:${currentEmail}`}
-              className="hidden lg:flex items-center gap-1 hover:text-[#6B8E7B] transition-colors text-[11px]"
+              className="hidden lg:flex items-center gap-1.5 hover:text-white transition-colors text-xs font-medium"
             >
-              <Mail className="w-3.5 h-3.5 text-[#6B8E7B]" />
+              <Mail className="w-4 h-4 text-[#6B8E7B]" />
               <span>{currentEmail}</span>
             </a>
           </div>
 
           {/* Age Group Selector Toggle Switch */}
-          <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
-            <span className="text-slate-400 font-semibold hidden sm:inline">Select Program:</span>
-            <div className="inline-flex p-0.5 rounded-full bg-white/10 border border-white/10">
+          <div className="flex items-center gap-2 text-xs sm:text-sm">
+            <span className="text-[#EAA85E] font-extrabold uppercase tracking-wider text-[11px] sm:text-xs flex items-center gap-1">
+              <Compass className="w-3.5 h-3.5 text-[#EAA85E]" />
+              <span>Select Program:</span>
+            </span>
+            <div className="inline-flex p-1 rounded-full bg-white/15 border border-white/20 shadow-inner">
               <Link
                 href="/therapy"
-                className={`px-2.5 sm:px-3 py-0.5 rounded-full font-bold transition-all duration-200 flex items-center gap-1 ${
+                className={`px-3 sm:px-4 py-1 rounded-full text-xs font-black transition-all duration-200 flex items-center gap-1.5 ${
                   !isAdult
-                    ? "bg-[#2A5243] text-white shadow-xs"
-                    : "text-slate-300 hover:text-white"
+                    ? "bg-[#2A5243] text-white shadow-md ring-2 ring-[#2A5243]/30"
+                    : "text-slate-300 hover:text-white hover:bg-white/10"
                 }`}
               >
-                <Heart className="w-3 h-3 text-[#F57A54]" />
+                <Heart className="w-3.5 h-3.5 text-[#F57A54]" />
                 <span>ABA Therapy</span>
               </Link>
               <Link
                 href="/adult-program"
-                className={`px-2.5 sm:px-3 py-0.5 rounded-full font-bold transition-all duration-200 flex items-center gap-1 ${
+                className={`px-3 sm:px-4 py-1 rounded-full text-xs font-black transition-all duration-200 flex items-center gap-1.5 ${
                   isAdult
-                    ? "bg-[#1B3B48] text-white shadow-xs"
-                    : "text-slate-300 hover:text-white"
+                    ? "bg-[#1B3B48] text-white shadow-md ring-2 ring-[#1B3B48]/30"
+                    : "text-slate-300 hover:text-white hover:bg-white/10"
                 }`}
               >
-                <Sparkles className="w-3 h-3 text-[#6B8E7B]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#6B8E7B]" />
                 <span>Adult Day Program</span>
               </Link>
             </div>

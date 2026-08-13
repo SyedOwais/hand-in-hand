@@ -42,7 +42,7 @@ export default function NextLevelHero() {
   );
 
   return (
-    <section className="pt-36 sm:pt-40 lg:pt-36 pb-12 bg-gradient-to-b from-[#0F2530] via-[#142E28] to-[#0F2530] text-white relative overflow-hidden">
+    <section className="pt-44 sm:pt-48 lg:pt-44 pb-12 bg-gradient-to-b from-[#0F2530] via-[#142E28] to-[#0F2530] text-white relative overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#4A7C64]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#2A5243]/20 rounded-full blur-3xl pointer-events-none" />

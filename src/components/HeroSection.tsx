@@ -6,7 +6,7 @@ import { ArrowUpRight, ArrowDown, Sparkles, Heart, ShieldCheck, Sun } from "luci
 
 export default function HeroSection() {
   return (
-    <section id="home" className="pt-28 lg:pt-36 pb-12 bg-slate-50 relative overflow-hidden">
+    <section id="home" className="pt-44 sm:pt-48 lg:pt-44 pb-12 bg-slate-50 relative overflow-hidden">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
 
