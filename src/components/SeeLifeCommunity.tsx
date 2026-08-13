@@ -80,22 +80,22 @@ export default function SeeLifeCommunity({
   }, [selectedIndex, showNext, showPrev]);
 
   return (
-    <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-[#FAFDFB] text-[#1B3B48] relative overflow-hidden border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-[#EAA85E] text-xs font-black tracking-wider uppercase mb-3 border border-white/10">
-              <Camera className="w-4 h-4 text-[#EAA85E]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-black tracking-wider uppercase mb-3 border border-[#4A7C64]/20">
+              <Camera className="w-4 h-4 text-[#4A7C64]" />
               <span>{tagline}</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-2">
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1B3B48] tracking-tight mb-2">
               {title}
             </h2>
 
-            <p className="text-[#EAA85E] text-base sm:text-lg font-bold">
+            <p className="text-[#2A5243] text-base sm:text-lg font-bold">
               {subtitle}
             </p>
           </div>
@@ -105,10 +105,10 @@ export default function SeeLifeCommunity({
               href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-extrabold text-white bg-white/10 hover:bg-[#F57A54] border border-white/20 hover:border-[#F57A54] shadow-md transition-all uppercase tracking-wider group"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md transition-all uppercase tracking-wider group border border-[#1B3B48]"
             >
               <span>Follow us on Instagram</span>
-              <ArrowRight className="w-4 h-4 text-[#F57A54] group-hover:text-white group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-all" />
             </a>
           </div>
         </div>

@@ -59,13 +59,13 @@ export default function SocialProofVisual() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* BENTO CARD 1: Angela Sciabbarrasi (Featured 10+ Year Testimonial - Spans 2 Columns) */}
-          <div className="md:col-span-2 lg:col-span-2 bg-gradient-to-br from-[#0F2530] via-[#1B3B48] to-[#2A5243] text-white rounded-3xl p-8 sm:p-10 border border-white/15 shadow-2xl flex flex-col justify-between space-y-6 relative overflow-hidden group hover:shadow-[#2A5243]/20 transition-all duration-300">
+          <div className="md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white via-[#FAFBF9] to-[#E8F0EC]/60 text-[#1B3B48] rounded-3xl p-8 sm:p-10 border-2 border-[#2A5243]/30 shadow-lg flex flex-col justify-between space-y-6 relative overflow-hidden group transition-all duration-300">
             {/* Subtle Ambient Decorative Lighting */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-4 relative z-10">
               <div className="flex items-center justify-between flex-wrap gap-2">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-extrabold text-[#6B8E7B]">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F0EC] border border-[#2A5243]/20 text-xs font-extrabold text-[#2A5243]">
                   <Award className="w-3.5 h-3.5 text-[#F57A54]" />
                   <span>10+ Year Client Parent</span>
                 </div>
@@ -77,26 +77,26 @@ export default function SocialProofVisual() {
                 </div>
               </div>
 
-              <Quote className="w-10 h-10 text-[#F57A54]/40" />
+              <Quote className="w-10 h-10 text-[#2A5243]/30" />
 
-              <p className="text-base sm:text-lg text-slate-100 leading-relaxed font-medium italic">
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium italic">
                 &ldquo;My son has been a client of Hand in Hand therapy for over 10 years. Hand in Hand has provided my son with excellent therapy. Their highly qualified, compassionate and knowledgeable staff have made a tremendous impact on my son&apos;s development. They go out of their way to accommodate and to educate parents so there is consistency and continuity. I will say that after having my son in a specialized classroom, working with countless professionals such as OT, PT and speech pathologists, my son has hands down learned all of his skills at Hand in Hand. I highly recommend Hand in Hand therapy. They have changed the quality of my son&apos;s life and mine as well.&rdquo;
               </p>
             </div>
 
-            <div className="pt-6 border-t border-white/15 flex items-center justify-between relative z-10">
+            <div className="pt-6 border-t border-slate-200/80 flex items-center justify-between relative z-10">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-[#2A5243] text-white font-extrabold flex items-center justify-center text-base border-2 border-white/30 shadow-md">
+                <div className="w-12 h-12 rounded-full bg-[#2A5243] text-white font-extrabold flex items-center justify-center text-base border-2 border-white/80 shadow-md">
                   A
                 </div>
                 <div>
-                  <h3 className="text-sm sm:text-base font-extrabold text-white">Angela Sciabbarrasi</h3>
-                  <span className="block text-xs font-semibold text-slate-300">York Region Parent</span>
+                  <h3 className="text-sm sm:text-base font-extrabold text-[#1B3B48]">Angela Sciabbarrasi</h3>
+                  <span className="block text-xs font-semibold text-slate-500">York Region Parent</span>
                 </div>
               </div>
 
-              <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-3 py-1 rounded-full bg-white/15 text-white backdrop-blur-md border border-white/20">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] border border-[#2A5243]/20">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Google Verified</span>
               </span>
             </div>
@@ -232,7 +232,7 @@ export default function SocialProofVisual() {
           </div>
 
           {/* BENTO CARD 5: SaaS Callout Box & Google Review Link */}
-          <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-[#1B3B48] to-[#0F2530] text-white rounded-3xl p-7 border border-[#2A5243]/40 shadow-xl flex flex-col justify-between space-y-6">
+          <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-[#E8F0EC] via-white to-[#F4F9F6] text-[#1B3B48] rounded-3xl p-7 border-2 border-[#4A7C64]/30 shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <div className="w-11 h-11 rounded-2xl bg-white shadow-md border border-slate-200/80 flex items-center justify-center">
@@ -256,16 +256,16 @@ export default function SocialProofVisual() {
                   </svg>
                 </div>
 
-                <span className="text-[10px] font-bold text-slate-300">
+                <span className="text-[10px] font-bold text-slate-500">
                   Vaughan & Bradford
                 </span>
               </div>
 
-              <h3 className="text-lg font-extrabold text-white leading-snug">
+              <h3 className="text-lg font-extrabold text-[#1B3B48] leading-snug">
                 Verified Google Business Reviews
               </h3>
 
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-slate-600 leading-relaxed">
                 Read all client reviews or share your family&apos;s story on Google to help other York Region & Simcoe families.
               </p>
             </div>
@@ -275,10 +275,10 @@ export default function SocialProofVisual() {
                 href="https://www.google.com/search?q=Hand+in+Hand+Therapy+Centre+Vaughan+Bradford"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all transform hover:-translate-y-0.5"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-md transition-all transform hover:-translate-y-0.5"
               >
                 <span>Read All Google Reviews</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink className="w-3.5 h-3.5 text-white" />
               </a>
             </div>
           </div>

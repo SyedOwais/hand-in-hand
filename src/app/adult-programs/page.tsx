@@ -371,14 +371,14 @@ export default function AdultProgramsPage() {
         </section>
 
         {/* Hero Bento Feature Card 7: Community Involvement Program */}
-        <section className="py-16 sm:py-24 bg-[#0F2530] text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 bg-[#FAFDFB] text-[#1B3B48] relative overflow-hidden border-t border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="bg-[#1B3B48]/80 rounded-3xl p-8 sm:p-12 border border-white/10 shadow-2xl backdrop-blur-md">
+            <div className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-[#4A7C64]/30 shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 
                 {/* Left Image */}
                 <div className="lg:col-span-5 relative">
-                  <div className="relative h-[380px] sm:h-[480px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                  <div className="relative h-[380px] sm:h-[480px] rounded-2xl overflow-hidden shadow-xl border border-slate-200 group">
                     <Image
                       src="/images/adult-04.webp"
                       alt="Community Involvement Program Participant"
@@ -386,39 +386,39 @@ export default function AdultProgramsPage() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-80" />
-                    <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/10">
-                      <span className="text-xs font-bold text-[#EAA85E] uppercase tracking-wider block">Community Transferable Skills</span>
-                      <p className="text-sm font-semibold text-white mt-0.5">Real-World Outings Across York Region & Simcoe County</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80" />
+                    <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md">
+                      <span className="text-xs font-bold text-[#2A5243] uppercase tracking-wider block">Community Transferable Skills</span>
+                      <p className="text-sm font-bold text-[#1B3B48] mt-0.5">Real-World Outings Across York Region & Simcoe County</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Right Content */}
                 <div className="lg:col-span-7 space-y-6">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-extrabold uppercase tracking-wider border border-white/10">
-                    <Compass className="w-3.5 h-3.5 text-[#EAA85E]" />
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-extrabold uppercase tracking-wider border border-[#4A7C64]/20">
+                    <Compass className="w-3.5 h-3.5 text-[#4A7C64]" />
                     <span>Bento Spotlight Track</span>
                   </div>
 
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1B3B48] leading-tight">
                     Community Involvement Program
                   </h2>
 
-                  <blockquote className="p-5 rounded-2xl bg-white/5 border-l-4 border-[#2A5243] text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+                  <blockquote className="p-5 rounded-2xl bg-[#FBF9F5] border-l-4 border-[#2A5243] text-xs sm:text-sm text-slate-700 italic leading-relaxed">
                     &ldquo;THE NEXT LEVEL Centre prides itself on encouraging participants to be active in our community. Recreation, leisure and volunteering experiences are explored within the community with the intention that the skills learned by this exposure to the community will transfer outside the program setting of THE NEXT LEVEL.&rdquo;
                   </blockquote>
 
                   <div className="space-y-3 pt-2">
-                    <h4 className="text-xs font-extrabold text-[#6B8E7B] uppercase tracking-wider">
+                    <h4 className="text-xs font-extrabold text-[#2A5243] uppercase tracking-wider">
                       Through THE NEXT LEVEL participants are involved and exposed to the community in the following ways:
                     </h4>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-2">
                       {communityDestinations.map((dest, i) => (
-                        <div key={i} className="flex items-center gap-2.5 bg-white/5 p-3 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
-                          <CheckCircle2 className="w-4 h-4 text-[#EAA85E] shrink-0" />
-                          <span className="text-xs font-semibold text-slate-200">{dest}</span>
+                        <div key={i} className="flex items-center gap-2.5 bg-[#E8F0EC]/50 p-3 rounded-xl border border-slate-200/80 transition-colors">
+                          <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />
+                          <span className="text-xs font-semibold text-slate-700">{dest}</span>
                         </div>
                       ))}
                     </div>
@@ -434,27 +434,27 @@ export default function AdultProgramsPage() {
         <AdultFAQSection />
 
         {/* CTA Enrolment Banner */}
-        <section className="py-16 sm:py-24 bg-[#2A5243] text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 bg-gradient-to-r from-[#E8F0EC] via-[#F4F9F6] to-[#FAFDFB] text-[#1B3B48] relative overflow-hidden border-t border-slate-200/80">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10 space-y-6">
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1B3B48]">
               Ready to Experience The Next Level?
             </h2>
-            <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
               We accept Passport Funding & private payment options. Schedule a personal walkthrough of our Concord or Bradford centers today.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-extrabold text-white bg-[#1B3B48] hover:bg-[#2A5243] shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <span>Get Started</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 text-white" />
               </Link>
               <Link
                 href="/adult-program#funding"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs transition-all duration-300"
               >
-                <span>Passport Funding Info</span>
+                <span>Explore Funding Options</span>
               </Link>
             </div>
           </div>
