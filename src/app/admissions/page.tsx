@@ -27,9 +27,33 @@ import {
   Check
 } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Admissions & Intake Process | Hand In Hand & The Next Level",
   description: "Step-by-step admissions process for Hand In Hand Therapy Centre (Ages 2–18) and The Next Level Adult Day Program (Ages 18+). Contact our Intake & Admissions Team to get started.",
+  openGraph: {
+    title: "Admissions & Intake Process | Hand In Hand & The Next Level",
+    description: "Step-by-step admissions & assessment process for pediatric therapy and 18+ adult day programming in Vaughan & Bradford.",
+    url: "https://thedesignsllc.com/will/therapyanddaycare/admissions",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/adult-01.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hand In Hand Student Trial Day & Admissions",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Admissions & Intake Process | Hand In Hand",
+    description: "Start your admissions journey today with our intake team.",
+    images: ["/images/adult-01.webp"],
+  },
 };
 
 export default function AdmissionsPage() {

@@ -10,8 +10,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Hand In Hand Therapy Centre & Adult Day Program | York Region & Simcoe County",
-  description: "Individualized ABA, IBI, speech, occupational therapy & adult day programming in Vaughan and Bradford. Built to help every individual connect, grow & thrive.",
+  metadataBase: new URL("https://thedesignsllc.com/will/therapyanddaycare"),
+  title: {
+    default: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
+    template: "%s | Hand In Hand Therapy Centre & Adult Day Program",
+  },
+  description: "Individualized pediatric ABA therapy, speech, occupational therapy & 18+ adult day programming in Vaughan and Bradford. Built to help every individual connect, grow & thrive.",
   keywords: [
     "ABA Therapy Vaughan",
     "Speech Therapy Bradford",
@@ -19,10 +23,11 @@ export const metadata: Metadata = {
     "Adult Day Program Vaughan",
     "Autism Therapy Centre",
     "Hand In Hand Therapy Centre",
+    "The Next Level Adult Day Program",
     "Social Skills Programs",
-    "York Region Pediatric Therapy"
+    "York Region Special Needs Therapy"
   ],
-  authors: [{ name: "Hand In Hand Therapy Centre & Adult Day Program" }],
+  authors: [{ name: "Hand In Hand Therapy Centre & The Next Level Adult Day Program" }],
   icons: {
     icon: [
       { url: "/images/favicon.png?v=3", type: "image/png" },
@@ -32,17 +37,26 @@ export const metadata: Metadata = {
     apple: "/images/favicon.png?v=3",
   },
   openGraph: {
-    title: "Hand In Hand Therapy Centre & Adult Day Program",
-    description: "Individualized therapy and adult day support built around unique strengths in Vaughan and Bradford.",
+    title: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
+    description: "Individualized pediatric therapy and adult day support built around unique strengths in Vaughan and Bradford. Together We Can!",
     url: "https://thedesignsllc.com/will/therapyanddaycare/",
-    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    siteName: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
+    images: [
+      {
+        url: "/images/aboutus-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hand In Hand Therapy Centre Team & Facility",
+      },
+    ],
     locale: "en_CA",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hand In Hand Therapy Centre & Adult Day Program",
-    description: "Comprehensive pediatric therapy and adult day programming in York Region & Simcoe County.",
+    title: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
+    description: "Comprehensive pediatric therapy and 18+ adult day programming in York Region & Simcoe County.",
+    images: ["/images/aboutus-main.webp"],
   },
   robots: {
     index: true,

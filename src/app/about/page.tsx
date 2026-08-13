@@ -26,9 +26,33 @@ import {
   Award
 } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "About Us | Hand In Hand - The Next Level",
   description: "Learn about Hand In Hand - The Next Level, created by Nakita Medeiros in 2010. Dedicated educators and clinicians offering ABA therapy and adult day programming across Vaughan & Bradford.",
+  openGraph: {
+    title: "About Us | Hand In Hand - The Next Level (Established 2010)",
+    description: "Our story, mission, and founder leadership by Nakita Medeiros. Transformative pediatric therapy and adult day programming in Vaughan & Bradford.",
+    url: "https://thedesignsllc.com/will/therapyanddaycare/about",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/aboutus-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hand In Hand Therapy Centre Leadership Team",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Hand In Hand - The Next Level",
+    description: "Learn about our mission, 10+ years of clinical excellence, and founder leadership.",
+    images: ["/images/aboutus-main.webp"],
+  },
 };
 
 export default function AboutPage() {

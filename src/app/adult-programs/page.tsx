@@ -18,9 +18,33 @@ import {
   Layers
 } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Programs | The Next Level Adult Day Program (18+)",
   description: "Explore our comprehensive adult day programs in a modern Bento Grid format: Life Skills, Daily Living, Academic, Recreation & Leisure, Physical Fitness, Social Skills, and Community Involvement across York Region & Simcoe County.",
+  openGraph: {
+    title: "Adult Day Programs (Ages 18+) | Hand In Hand - The Next Level",
+    description: "Life skills, daily living, academic, fitness, and community involvement for adults 18+ in Vaughan & Bradford.",
+    url: "https://thedesignsllc.com/will/therapyanddaycare/adult-programs",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/Adults-Hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "The Next Level Adult Day Program Curriculum",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adult Day Programs (Ages 18+) | The Next Level",
+    description: "Explore our 7 core program areas for adults with developmental special needs.",
+    images: ["/images/Adults-Hero.webp"],
+  },
 };
 
 export default function AdultProgramsPage() {

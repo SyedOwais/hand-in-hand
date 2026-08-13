@@ -5,7 +5,9 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import EntryPortalModal from "@/components/EntryPortalModal";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Hand In Hand | Therapy Centre & Adult Day Program (Vaughan & Bradford)",
   description:
     "Pediatric ABA therapy, speech, OT, social skills (Ages 2–18) and The Next Level Adult Day Program (Ages 18+) in Vaughan & Bradford. OAP approved, DSO & Passport funding guidance.",
@@ -19,6 +21,28 @@ export const metadata = {
     "Passport Funding Ontario",
     "DSO Adult Services",
   ],
+  openGraph: {
+    title: "Hand In Hand | Therapy Centre & Adult Day Program (Vaughan & Bradford)",
+    description: "Pediatric ABA therapy, speech, OT & 18+ Adult Day Program in Vaughan & Bradford. Together We Can!",
+    url: "https://thedesignsllc.com/will/therapyanddaycare/",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/aboutus-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "Hand In Hand Therapy Centre & Adult Day Program",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hand In Hand | Therapy Centre & Adult Day Program",
+    description: "Pediatric ABA therapy, speech, OT & 18+ Adult Day Program in Vaughan & Bradford.",
+    images: ["/images/aboutus-main.webp"],
+  },
 };
 
 export default function Home() {

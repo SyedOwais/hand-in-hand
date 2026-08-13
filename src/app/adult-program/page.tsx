@@ -11,9 +11,33 @@ import LocationsSection from "@/components/LocationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "The Next Level Adult Day Program | Hand In Hand (Ages 18+)",
   description: "A place to build independence, connection, purpose, and community for adults 18+. Structured day programming, life skills, community outings, and DSO / Passport funding guidance in Vaughan & Bradford.",
+  openGraph: {
+    title: "The Next Level Adult Day Program (Ages 18+) | Hand In Hand",
+    description: "Building independence, connection, purpose, and community for adults 18+ in Vaughan & Bradford. DSO & Passport funding accepted.",
+    url: "https://thedesignsllc.com/will/therapyanddaycare/adult-program",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/Adults-Hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "The Next Level Adult Day Program Group & Activities",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Next Level Adult Day Program (Ages 18+)",
+    description: "Structured day programming, life skills, and community excursions in Vaughan & Bradford.",
+    images: ["/images/Adults-Hero.webp"],
+  },
 };
 
 export default function AdultProgramPage() {
