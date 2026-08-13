@@ -46,7 +46,7 @@ export default function TherapyCentreHero() {
   );
 
   return (
-    <section id="therapy-centre-hero" className="pt-44 sm:pt-48 lg:pt-44 pb-12 bg-gradient-to-b from-[#F4F9F6] via-[#FAFDFB] to-[#FAFDFB] relative overflow-hidden">
+    <section id="therapy-centre-hero" className="pt-52 sm:pt-56 lg:pt-52 pb-12 bg-gradient-to-b from-[#F4F9F6] via-[#FAFDFB] to-[#FAFDFB] relative overflow-hidden">
       {/* Organic background ambient glow */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-[#E8F0EC] rounded-full blur-3xl pointer-events-none" />
 
