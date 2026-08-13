@@ -6,6 +6,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/therapy",
+    "/speech-therapy-vaughan",
+    "/occupational-therapy-vaughan",
     "/adult-program",
     "/adult-programs",
     "/about",
@@ -13,6 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy-policy",
     "/terms-and-conditions",
     "/sitemap",
+    "/blogs",
+    "/gallery",
+    "/faqs",
+    "/admissions",
   ];
 
   return routes.map((route) => ({

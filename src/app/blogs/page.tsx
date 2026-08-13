@@ -79,7 +79,7 @@ function BlogsContent() {
       featured: false
     },
     {
-      id: 2,
+      id: 3,
       slug: "passport-funding-transition-18",
       title: "Transitioning Beyond 18: Maximizing Ontario Passport Funding for Day Programs",
       excerpt: "Essential steps for parents of teens aging out of school systems. Learn how Passport Funding covers adult day programs, community trips, and independent living skills.",
@@ -316,7 +316,7 @@ function BlogsContent() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
         {filteredPosts.map((post) => (
           <Link
-            key={post.id}
+            key={post.slug}
             href={`/blogs/${post.slug}`}
             className="group bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between cursor-pointer transform hover:-translate-y-1 block"
           >

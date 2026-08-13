@@ -43,13 +43,18 @@ export default function Header() {
     ? "handinhandthenextlevel@gmail.com"
     : "handinhandtherapycentre@yahoo.com";
 
-  // Services Dropdown Items (For ABA Therapy Header ONLY)
   const servicesDropdownItems = [
     {
       name: "Speech Therapy",
       href: "/speech-therapy-vaughan",
       desc: "SLP assessment, articulation & language therapy",
       icon: Sparkles
+    },
+    {
+      name: "Occupational Therapy",
+      href: "/occupational-therapy-vaughan",
+      desc: "Fine motor, sensory processing & daily living skills",
+      icon: Heart
     },
     {
       name: "All Therapy Services",
