@@ -3,22 +3,80 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Star, Heart, CheckCircle2, Leaf, Phone, MapPin, ExternalLink } from "lucide-react";
+import { ArrowRight, Star, Heart, CheckCircle2, Leaf, Phone, MapPin, ExternalLink, ChevronsLeftRight } from "lucide-react";
 
 export default function TherapyCentreHero() {
+  const [sliderPos, setSliderPos] = React.useState<number>(50);
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
+  const handleMove = (clientX: number) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+    setSliderPos(percentage);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    handleMove(e.clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (e.touches[0]) {
+      handleMove(e.touches[0].clientX);
+    }
+  };
+
   const ImageFrame = () => (
     <div className="relative mx-auto max-w-lg lg:max-w-none">
-      <div className="relative h-[320px] sm:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+      <div
+        ref={containerRef}
+        onMouseMove={handleMouseMove}
+        onTouchMove={handleTouchMove}
+        className="relative h-[320px] sm:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize select-none group"
+      >
+        {/* Base Layer: Image 2 (Right side revealed as slider moves left) */}
         <Image
-          src="/images/therapy-hero.webp"
-          alt="Child actively engaging in learning session with therapist"
+          src="/images/Childhood-Outside.webp"
+          alt="Outdoor Social Play & Community Connection"
           fill
-          className="object-cover object-top sm:object-[center_20%]"
+          className="object-cover object-center"
           priority
         />
         
+        <div className="absolute top-4 right-4 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-[#EAA85E] z-10 border border-white/20 shadow-md">
+          Group Connection & Play
+        </div>
+
+        {/* Top Layer: Image 1 (Left side clipped dynamically) */}
+        <div
+          className="absolute inset-0 z-10 overflow-hidden"
+          style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
+        >
+          <Image
+            src="/images/therapy-hero.webp"
+            alt="Pediatric Learning & ABA Therapy Session"
+            fill
+            className="object-cover object-top sm:object-[center_20%]"
+            priority
+          />
+          <div className="absolute top-4 left-4 bg-[#2A5243]/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-white z-10 border border-white/20 shadow-md">
+            1:1 ABA & Pediatric Therapy
+          </div>
+        </div>
+
+        {/* Vertical Divider Slider Handle Bar */}
+        <div
+          className="absolute top-0 bottom-0 z-20 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none transition-all duration-75"
+          style={{ left: `${sliderPos}%` }}
+        >
+          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-white text-[#1B3B48] shadow-2xl border-2 border-[#2A5243] flex items-center justify-center font-bold">
+            <ChevronsLeftRight className="w-5 h-5 text-[#2A5243]" />
+          </div>
+        </div>
+
         {/* Floating Rating Badge */}
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2">
+        <div className="absolute top-16 right-4 sm:top-16 sm:right-6 bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 z-20 pointer-events-none">
           <div className="flex text-amber-400">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400" />
@@ -28,16 +86,16 @@ export default function TherapyCentreHero() {
         </div>
 
         {/* Floating Bottom Trust Pill */}
-        <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg border border-[#E8F0EC] flex items-center gap-3">
+        <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg border border-[#E8F0EC] flex items-center gap-3 z-20 pointer-events-none">
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#E8F0EC] text-[#2A5243] flex items-center justify-center shrink-0">
             <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-[#4A7C64] text-[#4A7C64]" />
           </div>
           <div>
             <p className="text-[11px] sm:text-xs font-black text-[#1B3B48] uppercase tracking-wider">
-              Child-Centered & Family First
+              Hover / Drag over image to compare
             </p>
             <p className="text-[11px] sm:text-xs text-slate-600">
-              Empowering 150+ families in Vaughan, Bradford & York Region
+              Interactive 1:1 Clinical Care vs Social Connection
             </p>
           </div>
         </div>
