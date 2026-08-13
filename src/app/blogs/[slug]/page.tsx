@@ -18,12 +18,16 @@ import {
   Sparkles,
   MapPin,
   MessageCircle,
-  ShieldCheck
+  ShieldCheck,
+  HelpCircle
 } from "lucide-react";
+import type { Metadata } from "next";
 
 interface BlogPostDetail {
   slug: string;
   title: string;
+  metaTitle?: string;
+  metaDescription?: string;
   excerpt: string;
   category: string;
   categoryBadge: string;
@@ -40,6 +44,7 @@ interface BlogPostDetail {
       heading: string;
       body: string[];
     }[];
+    faqs?: { q: string; a: string }[];
     quote?: {
       text: string;
       author: string;
@@ -48,6 +53,98 @@ interface BlogPostDetail {
 }
 
 const blogData: Record<string, BlogPostDetail> = {
+  "signs-your-child-needs-speech-therapy-vaughan": {
+    slug: "signs-your-child-needs-speech-therapy-vaughan",
+    title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",
+    metaTitle: "Signs Your Child May Need Speech Therapy in Vaughan | Hand in Hand Therapy",
+    metaDescription: "Wondering if your child needs speech therapy? Learn the signs, what to expect, and how Hand in Hand Therapy Centre supports Vaughan & Bradford families.",
+    excerpt: "Learn the common signs of speech delay in toddlers and children, what to expect during an SLP assessment, and how early intervention supports Vaughan and Bradford families.",
+    category: "Pediatric Speech",
+    categoryBadge: "bg-[#2A5243] text-white",
+    track: "pediatric",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Pediatric Speech-Language Pathology Team",
+    readTime: "7 min read",
+    date: "August 13, 2026",
+    image: "/images/signs-child-speech-therapy-vaughan.png",
+    content: {
+      intro: "Every child develops at their own pace, which is exactly why so many Vaughan parents find themselves asking the same question: is this just a phase, or does my child actually need help? It's one of the most common concerns we hear at Hand in Hand Therapy Centre, and it's a good one to ask early. Speech and language delays are highly treatable, and the earlier they're addressed, the more smoothly a child tends to catch up - academically, socially, and emotionally.\n\nThis guide walks through the most common signs that a child may benefit from [speech therapy in Vaughan](/speech-therapy-vaughan), what a typical evaluation looks like, and how to find the right support for your family in Vaughan, Concord, Woodbridge, or Bradford.",
+      keyTakeaways: [
+        "Early intervention during toddler and preschool years generally produces faster, more durable speech and language progress.",
+        "Common red flags include having fewer than 50 words by age 2, difficulty being understood by age 3, or communication frustration.",
+        "Multidisciplinary care coordinates speech-language pathology with ABA and occupational therapy under one plan.",
+        "No doctor referral is required to book an initial SLP consultation in Concord (Vaughan) or Bradford."
+      ],
+      sections: [
+        {
+          heading: "Why Early Intervention Matters",
+          body: [
+            "Speech and language are the foundation for almost everything else a child does - following instructions at school, making friends, expressing frustration instead of acting it out, and eventually, learning to read. When a child struggles to communicate, it often shows up in other areas first: tantrums that seem to come from nowhere, reluctance to play with other kids, or falling behind in preschool or kindergarten.",
+            "The research is consistent on this point: children who receive support during the toddler and preschool years generally make faster, more durable progress than children who start therapy later. That doesn't mean it's ever 'too late' to start - it simply means that noticing the signs early and acting on them gives your child the biggest head start."
+          ]
+        },
+        {
+          heading: "Common Signs Your Child May Need Speech Therapy",
+          body: [
+            "Every child is different, and a single item on this list isn't necessarily cause for alarm. But if you're noticing several of these, it's worth a conversation with a speech-language pathologist.",
+            "**By 12–18 Months:**\n• Not babbling or using consistent sounds to communicate\n• Not responding to their name or familiar sounds\n• Limited or no use of gestures like pointing or waving",
+            "**By 2 Years:**\n• Fewer than 50 words in their vocabulary\n• Not yet combining two words together ('more milk,' 'go car')\n• Difficulty following simple, one-step directions",
+            "**By 3 Years:**\n• Speech that's difficult for family members to understand\n• Frequent dropping or substitution of sounds (e.g., 'wabbit' for 'rabbit')\n• Limited sentence structure compared to same-age peers\n• Frustration or behavioural outbursts that seem tied to communication struggles",
+            "**School-Age Children:**\n• Difficulty following multi-step directions or classroom instructions\n• Trouble telling a story in order, or organizing thoughts when speaking\n• Struggles with reading, spelling, or written expression\n• Social difficulties - trouble reading social cues, taking turns in conversation, or maintaining friendships\n• Noticeable stuttering or disfluency that causes distress",
+            "**At Any Age:**\n• A sudden loss of speech or language skills that were previously present\n• Speech that's noticeably behind that of siblings or peers at the same age\n• Ongoing difficulty being understood by people outside the immediate family",
+            "If any of this sounds familiar, know that you're not alone - and that a proper assessment is the clearest way to know what's actually going on, rather than guessing."
+          ]
+        },
+        {
+          heading: "What Happens During a Speech Therapy Assessment?",
+          body: [
+            "A lot of parents put off booking an assessment simply because they're not sure what to expect. Here's the general process, whether you're coming to our Vaughan (Concord) clinic or our [Bradford speech therapy clinic](/speech-therapy-vaughan#bradford):",
+            "1. **Initial consultation:** We talk with you about your concerns, your child's developmental history, and what communication looks like at home, at school, and in social settings.\n2. **Formal assessment:** A registered Speech-Language Pathologist evaluates speech sound production, language comprehension, expression, and - where relevant - social communication skills.\n3. **Individualized plan:** Rather than a generic program, your child's plan is built around their specific strengths and challenges. If your child is also receiving ABA or occupational therapy with us, speech goals are coordinated across the whole team rather than treated separately.\n4. **Ongoing therapy with regular check-ins:** You'll always know what's being worked on and how your child is progressing.",
+            "There's no need for a doctor's referral to book an initial consultation - you can reach out directly."
+          ]
+        },
+        {
+          heading: "Speech Therapy vs. 'Just Being a Late Talker'",
+          body: [
+            "One of the hardest parts of this decision is that some children genuinely are late talkers who catch up on their own - and others have a delay that benefits significantly from professional support. A few things tend to distinguish the two:",
+            "• **Late talkers** typically understand more than they say, use gestures to communicate, and show steady (even if slow) progress month to month.\n• **Children who may need therapy** often show limited understanding and limited speech, plateau rather than progress, or show frustration and behavioural changes tied to communication difficulty.",
+            "This distinction is exactly why an assessment - rather than a 'wait and see' approach - is worth doing. A speech-language pathologist can tell you fairly quickly which category your child falls into, and either way, you'll have a clear answer instead of months of uncertainty."
+          ]
+        },
+        {
+          heading: "Why Choose a Multidisciplinary Approach",
+          body: [
+            "Speech doesn't develop in isolation, and for many children - particularly those with autism spectrum disorder or other developmental differences - communication challenges are connected to behaviour, sensory processing, and social skills all at once. That's the thinking behind our approach at Hand in Hand Therapy Centre: our speech-language pathologists work alongside our [ABA/IBI therapists and occupational therapists](/therapy#what-we-help-with), so your child's communication goals are reinforced across every part of their program, not treated as a separate track.",
+            "This kind of coordinated care is one of the biggest reasons families across Vaughan, Woodbridge, Maple, Thornhill, and Bradford West Gwillimbury choose to work with a multidisciplinary clinic rather than a single therapist working alone."
+          ]
+        },
+        {
+          heading: "Next Steps",
+          body: [
+            "If you've recognized a few of these signs in your own child, the best next step isn't to wait and worry - it's to book an assessment and get real answers. Our team at Hand in Hand Therapy Centre provides individualized [speech therapy in Vaughan](/speech-therapy-vaughan) and Bradford, integrated with ABA, occupational therapy, and social skills support when it's needed."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "How do I know if my child's speech delay is serious?",
+          a: "Look for combinations of signs - limited vocabulary and limited understanding, or a plateau rather than gradual progress - rather than a single missed milestone. A formal assessment is the most reliable way to know for certain."
+        },
+        {
+          q: "What age is too late to start speech therapy?",
+          a: "There's no age where therapy stops being helpful. Children, teens, and even adults can make meaningful progress with the right support - though starting early generally means faster results."
+        },
+        {
+          q: "How long does speech therapy usually take?",
+          a: "This varies widely depending on the specific goals and the child. Some children make significant progress within months; others, particularly those with more complex needs, benefit from a longer-term, coordinated program."
+        },
+        {
+          q: "Do you offer speech therapy in Bradford as well as Vaughan?",
+          a: "Yes - Hand in Hand Therapy Centre has a dedicated clinic in Bradford serving Bradford West Gwillimbury and the surrounding area, in addition to our Vaughan (Concord) location."
+        }
+      ]
+    }
+  },
   "oap-funding-guide-2026": {
     slug: "oap-funding-guide-2026",
     title: "Navigating the Ontario Autism Program (OAP) Access Funding in 2026",
@@ -84,7 +181,7 @@ const blogData: Record<string, BlogPostDetail> = {
           ]
         },
         {
-          heading: "Submitting Invoices and Avoided Common Delays",
+          heading: "Submitting Invoices and Avoiding Common Delays",
           body: [
             "To ensure seamless reimbursement, invoices submitted to Access OAP must include the BCBA or registered therapist's registration number, dates of service, and itemized fee breakdown.",
             "At Hand In Hand Therapy Centre, our administrative team generates Access OAP-compliant receipts for every session so parents never face delayed funding claims."
@@ -182,7 +279,7 @@ const blogData: Record<string, BlogPostDetail> = {
     date: "July 19, 2026",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
     content: {
-      intro: "Cooking is more than just preparing a meal—it is a multi-step cognitive, sensory, and motor exercise that builds confidence. In our life-skills kitchens at Hand In Hand, adult participants master daily culinary routines in a safe, supportive environment.",
+      intro: "Cooking is more than just preparing a meal - it is a multi-step cognitive, sensory, and motor exercise that builds confidence. In our life-skills kitchens at Hand In Hand, adult participants master daily culinary routines in a safe, supportive environment.",
       keyTakeaways: [
         "Kitchen routines build sequencing, time management, and fine-motor dexterity.",
         "Participants learn food hygiene, knife safety with adaptive tools, and induction stove operation.",
@@ -250,7 +347,7 @@ const blogData: Record<string, BlogPostDetail> = {
         {
           heading: "Creating Inclusive Group Dynamics",
           body: [
-            "At The Next Level Adult Day Program, our facilitators design activities around shared participant interests—from gaming tournaments and art projects to weekly community volunteer trips."
+            "At The Next Level Adult Day Program, our facilitators design activities around shared participant interests - from gaming tournaments and art projects to weekly community volunteer trips."
           ]
         }
       ]
@@ -260,6 +357,150 @@ const blogData: Record<string, BlogPostDetail> = {
 
 export function generateStaticParams() {
   return Object.keys(blogData).map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = blogData[resolvedParams.slug];
+  if (!post) {
+    return {
+      title: {
+        absolute: "Article Not Found | Hand in Hand Therapy",
+      },
+    };
+  }
+
+  const titleText = post.metaTitle || `${post.title} | Hand in Hand Therapy`;
+
+  return {
+    title: {
+      absolute: titleText,
+    },
+    description: post.metaDescription || post.excerpt,
+    alternates: {
+      canonical: `https://handinhandtherapy.ca/blogs/${post.slug}`,
+    },
+    openGraph: {
+      title: titleText,
+      description: post.metaDescription || post.excerpt,
+      url: `https://handinhandtherapy.ca/blogs/${post.slug}`,
+      siteName: "Hand In Hand Therapy Centre",
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      locale: "en_CA",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titleText,
+      description: post.metaDescription || post.excerpt,
+      images: [post.image],
+    },
+  };
+}
+
+function headingToId(heading: string): string {
+  return heading
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
+function findSectionIdForTakeaway(item: string, sections: { heading: string }[]): string | null {
+  const lower = item.toLowerCase();
+  if (lower.includes("early intervention") || lower.includes("toddler")) {
+    const s = sections.find(sec => sec.heading.toLowerCase().includes("early intervention"));
+    if (s) return headingToId(s.heading);
+  }
+  if (lower.includes("red flag") || lower.includes("50 words") || lower.includes("common")) {
+    const s = sections.find(sec => sec.heading.toLowerCase().includes("signs"));
+    if (s) return headingToId(s.heading);
+  }
+  if (lower.includes("multidisciplinary") || lower.includes("co-plan") || lower.includes("coordinates")) {
+    const s = sections.find(sec => sec.heading.toLowerCase().includes("multidisciplinary"));
+    if (s) return headingToId(s.heading);
+  }
+  if (lower.includes("doctor referral") || lower.includes("assessment") || lower.includes("consultation")) {
+    const s = sections.find(sec => sec.heading.toLowerCase().includes("assessment"));
+    if (s) return headingToId(s.heading);
+  }
+  return null;
+}
+
+function getTargetIdForTakeaway(idx: number, item: string, sections: { heading: string }[]): string | undefined {
+  const matchedId = findSectionIdForTakeaway(item, sections);
+  if (matchedId) return matchedId;
+  if (sections[idx]) return headingToId(sections[idx].heading);
+  return undefined;
+}
+
+function parseFormattedText(text: string): React.ReactNode[] {
+  const regex = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g;
+  const parts = text.split(regex);
+
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={index} className="font-extrabold text-[#1B3B48]">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      const [, label, href] = linkMatch;
+      return (
+        <Link
+          key={index}
+          href={href}
+          className="text-[#2A5243] font-extrabold underline decoration-[#F57A54] underline-offset-4 hover:text-[#F57A54] transition-colors"
+        >
+          {label}
+        </Link>
+      );
+    }
+    return part;
+  });
+}
+
+function renderRichText(text: string) {
+  const lines = text.split("\n");
+  return (
+    <div className="space-y-3">
+      {lines.map((line, lIdx) => {
+        const trimmed = line.trim();
+        if (!trimmed) return null;
+
+        const isBullet = trimmed.startsWith("• ") || trimmed.startsWith("- ");
+        const isNumbered = /^\d+\.\s/.test(trimmed);
+
+        const content = trimmed.replace(/^•\s+|^-\s+|^\d+\.\s+/, "");
+        const parts = parseFormattedText(content);
+
+        if (isBullet || isNumbered) {
+          return (
+            <div key={lIdx} className="flex items-start gap-3 pl-3 py-1 text-slate-700 text-base leading-relaxed">
+              <span className="w-2 h-2 rounded-full bg-[#F57A54] shrink-0 mt-2.5" />
+              <span>{parts}</span>
+            </div>
+          );
+        }
+
+        return (
+          <p key={lIdx} className="text-base text-slate-700 leading-relaxed font-normal">
+            {parts}
+          </p>
+        );
+      })}
+    </div>
+  );
 }
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -272,11 +513,61 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
   const otherPosts = Object.values(blogData).filter((p) => p.slug !== post.slug).slice(0, 2);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://handinhandtherapy.ca${post.image.startsWith("/") ? post.image : "/" + post.image}`,
+    "author": {
+      "@type": "Organization",
+      "name": post.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hand In Hand Therapy Centre",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://handinhandtherapy.ca/icon.png"
+      }
+    },
+    "datePublished": "2026-08-13",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://handinhandtherapy.ca/blogs/${post.slug}`
+    }
+  };
+
+  const faqSchema = post.content.faqs ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": post.content.faqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.a
+      }
+    }))
+  } : null;
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
+      {/* Article Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <Header />
 
-      <main className="flex-grow pt-36 sm:pt-40 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52 pb-16 sm:pb-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
           {/* Breadcrumb & Back Link */}
@@ -318,8 +609,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             {/* Author Profile Bar */}
             <div className="pt-4 border-t border-b border-slate-200/80 py-4 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-[#2A5243] text-white font-bold text-base flex items-center justify-center shadow-md border-2 border-white">
-                  {post.author.charAt(0)}
+                <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-md border-2 border-[#2A5243] bg-white shrink-0">
+                  <Image
+                    src="/favicon.png"
+                    alt={post.author}
+                    fill
+                    className="object-contain p-1"
+                  />
                 </div>
                 <div>
                   <span className="block text-sm font-extrabold text-[#1B3B48]">{post.author}</span>
@@ -353,48 +649,77 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           </div>
 
           {/* Article Layout Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 pt-4 items-start">
             
             {/* Main Content (8 cols) */}
             <div className="lg:col-span-8 space-y-8">
               
               {/* Introduction Lead */}
-              <div className="p-6 rounded-3xl bg-[#E8F0EC]/60 border border-[#2A5243]/20 text-[#1B3B48] text-base leading-relaxed font-medium space-y-2">
+              <div className="p-6 sm:p-8 rounded-3xl bg-[#E8F0EC]/60 border border-[#2A5243]/20 text-[#1B3B48] text-base leading-relaxed font-medium space-y-3">
                 <span className="text-xs font-extrabold uppercase tracking-wider text-[#2A5243] block">
                   Clinical Executive Summary
                 </span>
-                <p>{post.content.intro}</p>
+                {renderRichText(post.content.intro)}
               </div>
 
-              {/* Key Takeaways Box */}
+              {/* Key Takeaways Box with Clickable Section Navigator */}
               <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
-                <h3 className="text-lg font-extrabold text-[#1B3B48] flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5 text-[#2A5243]" />
-                  <span>Key Article Takeaways</span>
-                </h3>
-                <ul className="space-y-3">
-                  {post.content.keyTakeaways.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm text-slate-700 leading-relaxed">
-                      <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
+                <div className="flex items-center justify-between flex-wrap gap-2">
+                  <h3 className="text-lg font-extrabold text-[#1B3B48] flex items-center gap-2">
+                    <ShieldCheck className="w-5 h-5 text-[#2A5243]" />
+                    <span>Key Article Takeaways</span>
+                  </h3>
+                  <span className="text-[10px] font-bold text-[#2A5243] bg-[#E8F0EC] px-3 py-1 rounded-full uppercase tracking-wider">
+                    Click item to jump
+                  </span>
+                </div>
+
+                <ul className="space-y-2">
+                  {post.content.keyTakeaways.map((item, idx) => {
+                    const targetId = getTargetIdForTakeaway(idx, item, post.content.sections);
+                    return (
+                      <li key={idx}>
+                        {targetId ? (
+                          <a
+                            href={`#${targetId}`}
+                            className="group flex items-start gap-3 text-sm text-slate-700 hover:text-[#2A5243] leading-relaxed p-3 rounded-2xl hover:bg-[#E8F0EC]/60 border border-transparent hover:border-[#2A5243]/20 transition-all cursor-pointer block"
+                          >
+                            <CheckCircle2 className="w-4 h-4 text-[#F57A54] group-hover:scale-110 shrink-0 mt-0.5 transition-transform" />
+                            <span className="group-hover:underline decoration-[#2A5243] underline-offset-4 font-medium">
+                              {item}
+                            </span>
+                          </a>
+                        ) : (
+                          <div className="flex items-start gap-3 text-sm text-slate-700 leading-relaxed p-3">
+                            <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0 mt-0.5" />
+                            <span className="font-medium">{item}</span>
+                          </div>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
-              {/* Content Sections */}
-              {post.content.sections.map((section, sIdx) => (
-                <div key={sIdx} className="space-y-4">
-                  <h2 className="text-2xl font-extrabold text-[#1B3B48] pt-2">
-                    {section.heading}
-                  </h2>
-                  {section.body.map((paragraph, pIdx) => (
-                    <p key={pIdx} className="text-base text-slate-700 leading-relaxed font-normal">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              ))}
+              {/* Content Sections with Heading Anchors */}
+              {post.content.sections.map((section, sIdx) => {
+                const sectionId = headingToId(section.heading);
+                return (
+                  <div key={sIdx} className="space-y-4">
+                    <h2
+                      id={sectionId}
+                      className="text-2xl font-extrabold text-[#1B3B48] pt-2 scroll-mt-48"
+                    >
+                      {section.heading}
+                    </h2>
+                    {section.body.map((paragraph, pIdx) => (
+                      <div key={pIdx}>
+                        {renderRichText(paragraph)}
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
 
               {/* Quote Pullout */}
               {post.content.quote && (
@@ -403,10 +728,55 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     &ldquo;{post.content.quote.text}&rdquo;
                   </p>
                   <span className="block text-xs font-extrabold text-[#6B8E7B] uppercase tracking-wider">
-                    — {post.content.quote.author}
+                    - {post.content.quote.author}
                   </span>
                 </div>
               )}
+
+              {/* In-article FAQs section if present */}
+              {post.content.faqs && post.content.faqs.length > 0 && (
+                <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
+                  <div className="flex items-center gap-2">
+                    <HelpCircle className="w-5 h-5 text-[#F57A54]" />
+                    <h3 className="text-xl font-extrabold text-[#1B3B48]">
+                      Frequently Asked Questions
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    {post.content.faqs.map((faq, fIdx) => (
+                      <div key={fIdx} className="p-5 rounded-2xl bg-[#FBF9F5] border border-slate-200/80 space-y-2">
+                        <h4 className="text-base font-extrabold text-[#1B3B48]">
+                          {faq.q}
+                        </h4>
+                        <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                          {faq.a}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Article CTA Banner */}
+              <div className="p-8 rounded-3xl bg-gradient-to-r from-[#2A5243] to-[#1B3B48] text-white space-y-4 shadow-xl">
+                <h3 className="text-2xl font-black text-white">
+                  Ready to Book a Speech & Language Consultation?
+                </h3>
+                <p className="text-sm text-slate-200 leading-relaxed font-medium">
+                  Connect with our registered Speech-Language Pathologists in Concord (Vaughan) or Bradford today.
+                </p>
+                <div className="pt-2">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full text-xs sm:text-sm font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all transform hover:-translate-y-0.5"
+                  >
+                    <MessageCircle className="w-4 h-4 text-[#2A5243]" />
+                    <span>Book a Free Consultation</span>
+                    <ArrowRight className="w-4 h-4 text-[#F57A54]" />
+                  </Link>
+                </div>
+              </div>
 
               {/* Author Bio Box */}
               <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4">
@@ -414,8 +784,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   About the Clinical Team
                 </span>
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#1B3B48] text-white font-extrabold text-xl flex items-center justify-center shadow-md">
-                    H
+                  <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-md border-2 border-[#1B3B48] bg-white shrink-0">
+                    <Image
+                      src="/favicon.png"
+                      alt={post.author}
+                      fill
+                      className="object-contain p-1"
+                    />
                   </div>
                   <div className="space-y-1">
                     <h4 className="text-base font-extrabold text-[#1B3B48]">{post.author}</h4>
@@ -429,8 +804,8 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
             </div>
 
-            {/* Sidebar Sticky Panel (4 cols) */}
-            <div className="lg:col-span-4 space-y-6">
+            {/* Sidebar Sticky Panel (4 cols - Stays fixed on viewport while scrolling) */}
+            <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-48 self-start">
               
               {/* Intake CTA Box */}
               <div className="bg-[#2A5243] text-[#FBF9F5] p-6 sm:p-8 rounded-3xl space-y-4 shadow-xl border border-[#2A5243]">
@@ -438,17 +813,37 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   <MessageCircle className="w-5 h-5 text-[#F57A54]" />
                 </div>
                 <h3 className="text-xl font-extrabold text-white leading-snug">
-                  Need Help with Funding or Therapy Intake?
+                  Need Help with Speech Therapy Intake?
                 </h3>
                 <p className="text-xs text-slate-200 leading-relaxed">
-                  Connect directly with our admissions team to discuss Access OAP or Passport Funding applications for your family.
+                  Connect directly with our admissions team to discuss SLP assessments, OAP funding claims, and consultation dates.
                 </p>
                 <Link
                   href="/contact"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 shadow-md transition-all"
                 >
-                  <span>Get Started</span>
+                  <span>Book Consultation</span>
                   <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Service Quick Link Card */}
+              <div className="bg-[#FBF9F5] p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3">
+                <span className="text-[10px] font-extrabold text-[#F57A54] uppercase tracking-wider block">
+                  Service Directory
+                </span>
+                <h4 className="text-base font-extrabold text-[#1B3B48]">
+                  Speech Therapy in Vaughan
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Explore our dedicated Speech & Language Pathology programs located in Concord (Vaughan) & Bradford.
+                </p>
+                <Link
+                  href="/speech-therapy-vaughan"
+                  className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#2A5243] hover:text-[#F57A54] transition-colors pt-1"
+                >
+                  <span>Visit Vaughan SLP Page</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
 

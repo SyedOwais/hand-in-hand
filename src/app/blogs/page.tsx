@@ -52,6 +52,20 @@ function BlogsContent() {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
+      slug: "signs-your-child-needs-speech-therapy-vaughan",
+      title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",
+      excerpt: "Wondering if your child needs speech therapy? Learn the signs, what to expect, and how Hand in Hand Therapy Centre supports Vaughan & Bradford families.",
+      category: "speech",
+      track: "pediatric",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Pediatric Speech-Language Pathology Team",
+      readTime: "7 min read",
+      date: "August 13, 2026",
+      image: "/images/signs-child-speech-therapy-vaughan.png",
+      featured: true
+    },
+    {
+      id: 2,
       slug: "oap-funding-guide-2026",
       title: "Navigating the Ontario Autism Program (OAP) Access Funding in 2026",
       excerpt: "A comprehensive breakdown of core clinical services funding, budget allocations, eligible therapies, and step-by-step guidance for submitting claims through Access OAP.",
@@ -62,7 +76,7 @@ function BlogsContent() {
       readTime: "8 min read",
       date: "August 10, 2026",
       image: "/images/therapy-hero.png",
-      featured: true
+      featured: false
     },
     {
       id: 2,
@@ -156,24 +170,24 @@ function BlogsContent() {
   return (
     <div className="space-y-12">
       
-      {/* Luxury Hero Header */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0F2530] via-[#1B3B48] to-[#0F2530] text-white p-8 sm:p-14 shadow-2xl border border-[#2A5243]/40">
+      {/* Light Gradient Hero Header */}
+      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#E8F0EC] via-[#FBF9F5] to-[#E8F0EC] p-8 sm:p-14 shadow-xl border border-[#2A5243]/20 text-[#1B3B48]">
         
-        {/* Subtle Ambient Background Decorative Glow */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#2A5243]/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F57A54]/10 rounded-full blur-3xl pointer-events-none" />
+        {/* Ambient Background Glows */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#2A5243]/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-extrabold uppercase tracking-wider text-[#6B8E7B]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 border border-[#2A5243]/20 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-xs">
             <Compass className="w-4 h-4 text-[#F57A54]" />
             <span>Clinical Knowledge Hub</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-[#1B3B48] leading-tight">
             Clinical Insights & Parent Guides
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-medium">
             Evidence-based ABA guides, speech milestones, OAP & Passport funding advice, and developmental strategies written by our expert clinical team.
           </p>
         </div>
@@ -274,8 +288,13 @@ function BlogsContent() {
             {/* Author Bar */}
             <div className="pt-4 border-t border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#2A5243] text-white font-bold flex items-center justify-center text-sm shadow-md border border-white/20">
-                  {featuredPost.author.charAt(0)}
+                <div className="relative w-10 h-10 rounded-full overflow-hidden shadow-md border border-white/30 bg-white shrink-0">
+                  <Image
+                    src="/favicon.png"
+                    alt={featuredPost.author}
+                    fill
+                    className="object-contain p-1"
+                  />
                 </div>
                 <div>
                   <span className="block text-xs font-extrabold text-white">{featuredPost.author}</span>
@@ -345,8 +364,13 @@ function BlogsContent() {
               {/* Author Footer */}
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-full bg-[#1B3B48] text-white font-bold flex items-center justify-center text-xs shadow-xs">
-                    {post.author.charAt(0)}
+                  <div className="relative w-8 h-8 rounded-full overflow-hidden shadow-xs border border-slate-200 bg-white shrink-0">
+                    <Image
+                      src="/favicon.png"
+                      alt={post.author}
+                      fill
+                      className="object-contain p-0.5"
+                    />
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-[#1B3B48]">{post.author}</span>
@@ -391,7 +415,7 @@ export default function BlogsPage() {
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-[#1B3B48]">
       <Header />
 
-      <main className="flex-grow pt-32 sm:pt-36 pb-16 sm:pb-24">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Suspense fallback={
             <div className="text-center py-20">

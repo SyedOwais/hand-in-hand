@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SpeechTherapyFAQSection from "@/components/SpeechTherapyFAQSection";
 import {
   MessageSquare,
   Sparkles,
@@ -26,7 +27,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Speech Therapy Vaughan | Hand in Hand Therapy Centre",
+  title: "Speech Therapy Vaughan",
   description:
     "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care. Book your consultation today.",
   keywords: [
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "https://handinhandtherapy.ca/speech-therapy-vaughan",
   },
   openGraph: {
-    title: "Speech Therapy Vaughan | Hand in Hand Therapy Centre",
+    title: "Speech Therapy Vaughan",
     description:
       "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care. Book your consultation today.",
     url: "https://handinhandtherapy.ca/speech-therapy-vaughan",
@@ -59,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Speech Therapy Vaughan | Hand in Hand Therapy Centre",
+    title: "Speech Therapy Vaughan",
     description:
-      "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care.",
+      "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care. Book your consultation today.",
     images: ["/images/speech-therapy-vaughan.png"],
   },
 };
@@ -122,7 +123,7 @@ export default function SpeechTherapyVaughanPage() {
             "name": "At what age should my child start speech therapy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Earlier is generally better. If your toddler isn't using words by 18 months, or their speech is hard for family members to understand by age 3, it's worth an assessment — early intervention tends to produce stronger, faster results."
+              "text": "Earlier is generally better. If your toddler isn't using words by 18 months, or their speech is hard for family members to understand by age 3, it's worth an assessment. Early intervention tends to produce stronger, faster results."
             }
           },
           {
@@ -157,7 +158,7 @@ export default function SpeechTherapyVaughanPage() {
   const whyChoosePillars = [
     {
       title: "A True Multidisciplinary Team",
-      desc: "Speech-language pathologists, behaviour therapists, and occupational therapists collaborate on one plan — so speech goals reinforce ABA goals, and vice versa.",
+      desc: "Speech-language pathologists, behaviour therapists, and occupational therapists collaborate on one plan so speech goals reinforce ABA goals, and vice versa.",
       icon: Users,
       color: "text-[#2A5243]",
       bg: "bg-[#2A5243]/10"
@@ -171,7 +172,7 @@ export default function SpeechTherapyVaughanPage() {
     },
     {
       title: "Local & Accessible Locations",
-      desc: "Conveniently located in Concord, serving families across Vaughan, Woodbridge, Maple, Thornhill, and Kleinburg — with a second location in Bradford for families in Bradford West Gwillimbury and Simcoe County.",
+      desc: "Conveniently located in Concord, serving families across Vaughan, Woodbridge, Maple, Thornhill, and Kleinburg, with a second location in Bradford for families in Bradford West Gwillimbury and Simcoe County.",
       icon: MapPin,
       color: "text-[#1B3B48]",
       bg: "bg-[#1B3B48]/10"
@@ -194,13 +195,13 @@ export default function SpeechTherapyVaughanPage() {
     },
     {
       title: "Language Development Therapy",
-      desc: "Building vocabulary, sentence structure, and the ability to understand and follow directions — for late talkers through school-age children.",
+      desc: "Building vocabulary, sentence structure, and the ability to understand and follow directions, for late talkers through school-age children.",
       icon: MessageSquare,
       tag: "Expressive & Receptive"
     },
     {
       title: "Social Communication (Pragmatics)",
-      desc: "Turn-taking, conversation skills, reading social cues, and building the language tools needed for friendships — often delivered alongside our Social Skills Groups.",
+      desc: "Turn-taking, conversation skills, reading social cues, and building the language tools needed for friendships, often delivered alongside our Social Skills Groups.",
       icon: Users,
       tag: "Social Connection"
     },
@@ -232,7 +233,7 @@ export default function SpeechTherapyVaughanPage() {
     {
       step: "03",
       title: "Individualized Plan",
-      desc: "Goals are set collaboratively with you, and — where relevant — coordinated with your child's ABA or OT team."
+      desc: "Goals are set collaboratively with you, and where relevant, coordinated with your child's ABA or OT team."
     },
     {
       step: "04",
@@ -244,7 +245,7 @@ export default function SpeechTherapyVaughanPage() {
   const faqs = [
     {
       q: "At what age should my child start speech therapy?",
-      a: "Earlier is generally better. If your toddler isn't using words by 18 months, or their speech is hard for family members to understand by age 3, it's worth an assessment — early intervention tends to produce stronger, faster results."
+      a: "Earlier is generally better. If your toddler isn't using words by 18 months, or their speech is hard for family members to understand by age 3, it's worth an assessment. Early intervention tends to produce stronger, faster results."
     },
     {
       q: "Do you work with adults, or only children?",
@@ -270,7 +271,7 @@ export default function SpeechTherapyVaughanPage() {
 
       <Header />
 
-      <main className="flex-grow pt-32 sm:pt-36">
+      <main className="flex-grow pt-44 sm:pt-48 lg:pt-52">
         
         {/* Hero Section */}
         <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">
@@ -294,11 +295,11 @@ export default function SpeechTherapyVaughanPage() {
                 </h1>
 
                 <p className="text-xl sm:text-2xl font-black text-[#F57A54] leading-snug">
-                  Personalized, multidisciplinary speech and language support for children and adults — right here in Vaughan.
+                  Personalized, multidisciplinary speech and language support for children and adults right here in Vaughan.
                 </p>
 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium">
-                  At <strong>Hand in Hand Therapy Centre</strong>, we believe every child and family deserves a plan built around how they actually learn, not a one-size-fits-all program. Our Vaughan clinic (located in Concord, at <strong>65 Millway Ave, Unit 38</strong>) brings speech-language pathology together with ABA/IBI therapy, occupational therapy, and social skills groups — so your child gets coordinated care from a team that talks to each other, not a single therapist working in isolation.
+                  At <strong>Hand in Hand Therapy Centre</strong>, we believe every child and family deserves a plan built around how they actually learn, not a one-size-fits-all program. Our Vaughan clinic (located in Concord, at <strong>65 Millway Ave, Unit 38</strong>) brings speech-language pathology together with ABA/IBI therapy, occupational therapy, and social skills groups, so your child gets coordinated care from a team that talks to each other, not a single therapist working in isolation.
                 </p>
 
                 {/* Hero CTAs */}
@@ -613,73 +614,39 @@ export default function SpeechTherapyVaughanPage() {
           </div>
         </section>
 
-        {/* Frequently Asked Questions */}
-        <section className="py-16 sm:py-24 bg-white border-y border-slate-200/60">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
-            <div className="text-center space-y-3">
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-[#2A5243] bg-[#2A5243]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2 border border-[#2A5243]/20">
-                <HelpCircle className="w-4 h-4 text-[#F57A54]" />
-                <span>Common Inquiries</span>
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-[#1B3B48] tracking-tight">
-                Frequently Asked Questions
-              </h2>
-            </div>
-
-            <div className="space-y-4">
-              {faqs.map((faq, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#FBF9F5] p-6 sm:p-7 rounded-3xl border border-slate-200/90 shadow-xs space-y-3"
-                >
-                  <h3 className="text-lg sm:text-xl font-extrabold text-[#1B3B48] flex items-start gap-3">
-                    <span className="w-7 h-7 rounded-xl bg-[#2A5243] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                      Q
-                    </span>
-                    <span>{faq.q}</span>
-                  </h3>
-
-                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium pl-10">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-          </div>
-        </section>
+        {/* Frequently Asked Questions Accordion */}
+        <SpeechTherapyFAQSection />
 
         {/* Ready to Get Started CTA Section */}
-        <section className="py-16 sm:py-24 bg-gradient-to-r from-[#0F2530] via-[#1B3B48] to-[#0F2530] text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#E8F0EC]/70 text-[#1B3B48] border-t border-slate-200/80 relative overflow-hidden">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10 space-y-6">
             
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#6B8E7B] text-xs font-black uppercase tracking-wider border border-white/15">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-black uppercase tracking-wider border border-[#2A5243]/20 shadow-xs">
               <Sparkles className="w-4 h-4 text-[#F57A54]" />
               <span>Take the First Step</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+            <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#1B3B48] leading-tight">
               Ready to Get Started?
             </h2>
 
-            <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed font-medium">
-              If you&rsquo;re noticing signs your child might benefit from speech therapy, don&rsquo;t wait — early support makes a real difference. Reach out to our Vaughan or Bradford team today.
+            <p className="text-base sm:text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed font-medium">
+              If you&rsquo;re noticing signs your child might benefit from speech therapy, don&rsquo;t wait, early support makes a real difference. Reach out to our Vaughan or Bradford team today.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-black text-[#1B3B48] bg-white hover:bg-slate-100 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-white bg-[#2A5243] hover:bg-[#1B3B48] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
               >
-                <MessageSquare className="w-5 h-5 text-[#2A5243]" />
-                <span>Contact Us / Book a Consultation</span>
-                <ArrowRight className="w-5 h-5 text-[#F57A54]" />
+                <MessageSquare className="w-5 h-5 text-white" />
+                <span>Contact Us</span>
+                <ArrowRight className="w-5 h-5 text-white" />
               </Link>
 
               <a
                 href="tel:4169305293"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all duration-300"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
               >
                 <PhoneCall className="w-5 h-5 text-[#F57A54]" />
                 <span>Call (416) 930-5293</span>

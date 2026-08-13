@@ -46,7 +46,7 @@ export default function Header() {
   // Services Dropdown Items (For ABA Therapy Header ONLY)
   const servicesDropdownItems = [
     {
-      name: "Speech Therapy Vaughan",
+      name: "Speech Therapy",
       href: "/speech-therapy-vaughan",
       desc: "SLP assessment, articulation & language therapy",
       icon: Sparkles
@@ -64,26 +64,17 @@ export default function Header() {
     {
       name: "Gallery",
       href: "/gallery?track=pediatric",
-      desc: "Pediatric suites, OT gym & sensory rooms",
-      icon: Camera,
-      badge: "2–18 Spaces",
-      badgeBg: "bg-[#2A5243]/20 text-[#6B8E7B]"
+      desc: "Pediatric suites, OT gym & sensory rooms"
     },
     {
       name: "Blogs",
       href: "/blogs?track=pediatric",
-      desc: "Pediatric ABA, Speech & OT guides",
-      icon: BookOpen,
-      badge: "Pediatric Care",
-      badgeBg: "bg-[#1B3B48]/30 text-blue-300"
+      desc: "Pediatric ABA, Speech & OT guides"
     },
     {
       name: "FAQs",
       href: "/faqs?track=pediatric",
-      desc: "OAP funding & pediatric therapy answers",
-      icon: HelpCircle,
-      badge: "OAP Guide",
-      badgeBg: "bg-[#F57A54]/20 text-[#F57A54]"
+      desc: "OAP funding & pediatric therapy answers"
     },
   ];
 
@@ -91,26 +82,17 @@ export default function Header() {
     {
       name: "Gallery",
       href: "/gallery?track=adult",
-      desc: "Life-skill kitchens, computer lab & lounges",
-      icon: Camera,
-      badge: "18+ Hubs",
-      badgeBg: "bg-[#1B3B48]/40 text-emerald-300"
+      desc: "Life-skill kitchens, computer lab & lounges"
     },
     {
       name: "Blogs",
       href: "/blogs?track=adult",
-      desc: "Passport funding & transition guides",
-      icon: BookOpen,
-      badge: "Adult Growth",
-      badgeBg: "bg-[#2A5243]/30 text-teal-300"
+      desc: "Passport funding & transition guides"
     },
     {
       name: "FAQs",
       href: "/faqs?track=adult",
-      desc: "18+ Adult Day Program, RESP & Passport FAQs",
-      icon: HelpCircle,
-      badge: "18+ FAQs",
-      badgeBg: "bg-[#F57A54]/20 text-[#F57A54]"
+      desc: "18+ Adult Day Program, RESP & Passport FAQs"
     },
   ];
 
@@ -265,7 +247,6 @@ export default function Header() {
                               <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
                               Pediatric Care & Therapy
                             </span>
-                            <span className="text-[10px] text-[#2A5243] font-bold">2 Services</span>
                           </div>
 
                           {/* Items Grid */}
@@ -324,50 +305,39 @@ export default function Header() {
                       />
                     </button>
 
-                    {/* Premium Glassmorphism Desktop Dropdown Card */}
+                    {/* Light Palette Desktop Dropdown Card for Insights */}
                     {insightsHovered && (
                       <div className="absolute top-full left-1/2 -translate-x-1/2 w-80 pt-3 z-50 animate-in fade-in slide-in-from-top-3 duration-200">
-                        <div className="bg-[#0F2530]/95 backdrop-blur-xl rounded-3xl p-3.5 shadow-2xl border border-[#2A5243]/50 text-white space-y-2">
+                        <div className="bg-[#FBF9F5] rounded-3xl p-3.5 shadow-2xl border border-[#2A5243]/20 text-[#1B3B48] space-y-2">
                           
                           {/* Dropdown Header Pill */}
-                          <div className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#6B8E7B] flex items-center gap-1.5">
+                          <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
+                            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
                               <Compass className="w-3.5 h-3.5 text-[#F57A54]" />
                               {isAdult ? "Adult Resource Hub" : "Pediatric Resource Hub"}
                             </span>
-                            <span className="text-[10px] text-slate-400 font-medium">3 Sections</span>
                           </div>
 
                           {/* Items Grid */}
                           <div className="space-y-1 pt-1">
                             {insightsDropdownItems.map((item, idx) => {
-                              const IconComp = item.icon;
                               return (
                                 <Link
                                   key={idx}
                                   href={item.href}
                                   onClick={() => setInsightsHovered(false)}
-                                  className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 hover:bg-[#2A5243]/60 border border-white/5 hover:border-white/20 transition-all duration-200 group"
+                                  className="flex items-center justify-between p-3 rounded-2xl bg-white hover:bg-[#E8F0EC] border border-slate-200/80 hover:border-[#2A5243]/40 transition-all duration-200 group shadow-xs"
                                 >
-                                  <div className="w-10 h-10 rounded-xl bg-[#2A5243] text-white flex items-center justify-center shrink-0 group-hover:bg-[#F57A54] group-hover:scale-105 transition-all shadow-md">
-                                    <IconComp className="w-5 h-5" />
-                                  </div>
-
-                                  <div className="flex-grow space-y-0.5">
-                                    <div className="flex items-center justify-between">
-                                      <span className="block text-sm font-extrabold text-white group-hover:text-white transition-colors">
-                                        {item.name}
-                                      </span>
-                                      <span className={`text-[9px] font-extrabold px-2 py-0.5 rounded-full ${item.badgeBg}`}>
-                                        {item.badge}
-                                      </span>
-                                    </div>
-                                    <span className="block text-[11px] text-slate-300 leading-tight">
+                                  <div className="space-y-0.5">
+                                    <span className="block text-sm font-black text-[#1B3B48] group-hover:text-[#2A5243] transition-colors">
+                                      {item.name}
+                                    </span>
+                                    <span className="block text-[11px] text-slate-600 font-medium leading-tight">
                                       {item.desc}
                                     </span>
                                   </div>
 
-                                  <ArrowRight className="w-4 h-4 text-[#6B8E7B] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all shrink-0" />
+                                  <ArrowRight className="w-4 h-4 text-[#F57A54] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all shrink-0 ml-2" />
                                 </Link>
                               );
                             })}
@@ -479,23 +449,20 @@ export default function Header() {
                       </button>
 
                       {mobileInsightsOpen && (
-                        <div className="bg-[#0F2530] rounded-2xl p-3 space-y-2 text-white border border-[#2A5243]/40">
+                        <div className="bg-[#E8F0EC]/60 rounded-2xl p-2.5 space-y-1.5 border border-[#2A5243]/20">
                           {insightsDropdownItems.map((sub, i) => {
-                            const IconC = sub.icon;
                             return (
                               <Link
                                 key={i}
                                 href={sub.href}
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="flex items-center gap-3 p-2.5 rounded-xl bg-white/5 hover:bg-[#2A5243] transition-colors"
+                                className="flex items-center justify-between p-3 rounded-xl bg-white hover:bg-[#E8F0EC] border border-slate-200/80 transition-colors shadow-xs"
                               >
-                                <div className="w-8 h-8 rounded-lg bg-[#2A5243] flex items-center justify-center text-white shrink-0">
-                                  <IconC className="w-4 h-4" />
-                                </div>
                                 <div>
-                                  <span className="block text-xs font-extrabold text-white">{sub.name}</span>
-                                  <span className="block text-[10px] text-slate-300">{sub.desc}</span>
+                                  <span className="block text-xs font-black text-[#1B3B48]">{sub.name}</span>
+                                  <span className="block text-[10px] text-slate-600 font-medium">{sub.desc}</span>
                                 </div>
+                                <ArrowRight className="w-3.5 h-3.5 text-[#F57A54] shrink-0 ml-2" />
                               </Link>
                             );
                           })}
