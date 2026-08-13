@@ -114,7 +114,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-7 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
-                    src="/images/Adults-Hero.webp"
+                    src="/images/adult-14.webp"
                     alt="Life Skills Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -128,7 +128,7 @@ export default function AdultProgramsPage() {
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-2xl sm:text-3xl font-extrabold flex items-center gap-2">
                       <Utensils className="w-6 h-6 text-[#EAA85E]" />
-                      Life Skills Program
+                      Life Skills & Cooking Program
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-200 mt-1 font-medium">
                       Menu Planning, Cooking, Budgeting & Household Self-Care
@@ -160,7 +160,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-5 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 sm:h-72 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-01.webp"
+                    src="/images/adult-05.webp"
                     alt="Daily Living Skills"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -174,20 +174,20 @@ export default function AdultProgramsPage() {
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-2xl font-extrabold flex items-center gap-2">
                       <Heart className="w-6 h-6 text-[#F57A54]" />
-                      Daily Living / Self Help
+                      Daily Living / Personal Care
                     </h3>
                     <p className="text-xs text-slate-200 mt-1 font-medium">
-                      Hands-on routines for comfortable, confident daily living
+                      Hands-on routines for personal grooming, hygiene & independence
                     </p>
                   </div>
                 </div>
                 <div className="p-6 sm:p-8 flex-grow space-y-3">
                   {[
-                    "Learn Their Way Around A Kitchen",
+                    "Learn Personal Grooming & Hygiene",
+                    "Learn Hair Care & Self-Wellness",
                     "Learn To Make Up A Room",
                     "Learn To Clean Living Room",
-                    "Learn Skills In The Washroom",
-                    "Personal Hygiene & Grooming",
+                    "Skills In The Washroom",
                     "And Much More..."
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
@@ -198,35 +198,35 @@ export default function AdultProgramsPage() {
                 </div>
               </div>
 
-              {/* Bento Card 3: Academic Program (Span 4) */}
+              {/* Bento Card 3: Cognitive & Table Activities (Span 4) */}
               <div className="lg:col-span-4 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-06.webp"
-                    alt="Academic Program"
+                    src="/images/adult-12.webp"
+                    alt="Cognitive & Tabletop Activities"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#4A7C64] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                      Cognitive Growth
+                      Cognitive Focus
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-xl font-extrabold flex items-center gap-2">
                       <BookOpen className="w-5 h-5 text-[#6B8E7B]" />
-                      Academic Program
+                      Cognitive & Table Games
                     </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Literacy, tech & journaling</p>
+                    <p className="text-xs text-slate-200 mt-0.5">Puzzles, focus & learning</p>
                   </div>
                 </div>
                 <div className="p-6 flex-grow space-y-2.5">
                   {[
-                    "Classroom Activities",
-                    "Computer Lab & Emailing",
-                    "Library Activities",
-                    "Individual Worksheets, Books and Journals",
+                    "Jigsaw Puzzles & Problem Solving",
+                    "Tabletop Games & Strategy",
+                    "Individual Worksheets & Books",
+                    "Classroom Learning Stations",
                     "Functional Reading & Math"
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
@@ -237,41 +237,41 @@ export default function AdultProgramsPage() {
                 </div>
               </div>
 
-              {/* Bento Card 4: Recreation & Leisure Program (Span 8) */}
+              {/* Bento Card 4: Recreation & Outings (Span 8) */}
               <div className="lg:col-span-8 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-05.webp"
-                    alt="Recreation and Leisure Program"
+                    src="/images/adult-07.webp"
+                    alt="Recreation & Outings"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#F57A54] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                      Sensory & Creative Discovery
+                      Community Outings
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-2xl font-extrabold flex items-center gap-2">
                       <Music className="w-6 h-6 text-[#EAA85E]" />
-                      Recreation & Leisure Program
+                      Recreation & Bowling Trips
                     </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Multi-sensory rooms, pet therapy & creative arts</p>
+                    <p className="text-xs text-slate-200 mt-0.5">Splitsville bowling, outings & community fun</p>
                   </div>
                 </div>
                 <div className="p-6 sm:p-8 flex-grow">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {[
-                      "Snoezelen Room Experience",
+                      "Splitsville Bowling Trips",
                       "Farm Visits & Pet Therapy",
                       "Indoor Play Yards",
                       "Shopping Outings",
                       "Theatre & Movie Trips",
                       "Games & Puzzles",
-                      "Arts & Crafts (Sensory Art)",
+                      "Arts & Crafts",
                       "Books & Smart Stories",
-                      "Music & Rhythm Therapy"
+                      "Music & Rhythm Sessions"
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#F57A54] shrink-0" />
@@ -286,7 +286,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-07.webp"
+                    src="/images/adult-03.webp"
                     alt="Physical Fitness Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -294,26 +294,26 @@ export default function AdultProgramsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#2A5243] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                      Active Health & Movement
+                      Active Health & Exercise
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-2xl font-extrabold flex items-center gap-2">
                       <Dumbbell className="w-6 h-6 text-[#6B8E7B]" />
-                      Physical Fitness Program
+                      Physical Fitness & Exercise
                     </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Gym sports, swimming, skating & yoga</p>
+                    <p className="text-xs text-slate-200 mt-0.5">Elliptical fitness, sports & active health</p>
                   </div>
                 </div>
                 <div className="p-6 sm:p-8 flex-grow">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {[
+                      "Elliptical Machine Workout",
                       "Gymnasium Games & Sports",
                       "Swimming Sessions",
-                      "Ice Skating Trips",
                       "Outdoor Parks & Trails",
-                      "Fitness & Yoga Classes",
-                      "Physiotherapy / Massage"
+                      "Fitness & Movement Classes",
+                      "Physiotherapy / Exercise"
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-2 bg-white p-3 rounded-xl border border-slate-200/60 shadow-xs">
                         <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />
@@ -328,7 +328,7 @@ export default function AdultProgramsPage() {
               <div className="lg:col-span-6 bg-[#FBF9F5] rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative h-60 w-full overflow-hidden">
                   <Image
-                    src="/images/adult-03.webp"
+                    src="/images/adult-01.webp"
                     alt="Social Skills Program"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -336,15 +336,15 @@ export default function AdultProgramsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/85 via-transparent to-transparent" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#F57A54] text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
-                      Peer Connection & Friendships
+                      Peer Connection & Circles
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-6 right-6 text-white">
                     <h3 className="text-2xl font-extrabold flex items-center gap-2">
                       <Users className="w-6 h-6 text-[#EAA85E]" />
-                      Social Skills Program
+                      Group Social Connections
                     </h3>
-                    <p className="text-xs text-slate-200 mt-0.5">Communication, game days & mentorship</p>
+                    <p className="text-xs text-slate-200 mt-0.5">Circle discussions, peer bonds & guided social time</p>
                   </div>
                 </div>
                 <div className="p-6 sm:p-8 flex-grow">
