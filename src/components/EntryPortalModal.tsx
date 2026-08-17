@@ -44,17 +44,17 @@ export default function EntryPortalModal() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] bg-gradient-to-b from-[#0F2530] via-[#1B3B48] to-[#142E28] text-white flex flex-col justify-between py-4 sm:py-6 px-3 sm:px-6 lg:px-8 overflow-y-auto overflow-x-hidden max-w-full w-full select-none backdrop-blur-xl">
+    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-[#FBF9F5] via-[#E8F0EC]/85 to-[#F4F9F6] text-[#1B3B48] flex flex-col justify-between py-4 sm:py-6 px-3 sm:px-6 lg:px-8 overflow-y-auto overflow-x-hidden max-w-full w-full select-none backdrop-blur-xl">
       {/* Background ambient lighting locked inside overflow-hidden */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-1/4 -left-16 w-64 h-64 sm:w-96 sm:h-96 bg-[#4A7C64]/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -right-16 w-64 h-64 sm:w-96 sm:h-96 bg-[#F57A54]/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -left-16 w-64 h-64 sm:w-96 sm:h-96 bg-[#4A7C64]/15 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-16 w-64 h-64 sm:w-96 sm:h-96 bg-[#F57A54]/12 rounded-full blur-3xl" />
       </div>
 
       {/* Top Bar */}
       <div className="max-w-7xl mx-auto w-full flex items-center justify-end z-10 gap-2 pt-1 pb-2">
-        <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold backdrop-blur-md border border-white/10">
-          <Sparkles className="w-3.5 h-3.5 text-[#6B8E7B]" />
+        <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white text-[#2A5243] text-xs font-bold shadow-xs border border-[#4A7C64]/20">
+          <Sparkles className="w-3.5 h-3.5 text-[#4A7C64]" />
           <span>Vaughan & Bradford, ON</span>
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function EntryPortalModal() {
         {/* Intro Header */}
         <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-8 flex flex-col items-center">
           {/* Centered Logo */}
-          <div className="bg-white/95 backdrop-blur-md px-4 sm:px-8 py-2.5 sm:py-4 rounded-2xl sm:rounded-3xl shadow-2xl border border-white/20 mb-3 sm:mb-4 inline-flex items-center justify-center max-w-[90vw]">
+          <div className="bg-white px-5 sm:px-8 py-3 sm:py-4 rounded-2xl sm:rounded-3xl shadow-lg border border-slate-200/80 mb-3 sm:mb-4 inline-flex items-center justify-center max-w-[90vw]">
             <div className="relative h-11 w-48 xs:h-12 xs:w-56 sm:h-16 sm:w-72 max-w-full">
               <Image
                 src="/images/hand-in-hand-v2.png"
@@ -81,11 +81,11 @@ export default function EntryPortalModal() {
             Together We Can!
           </p>
 
-          <p className="text-slate-300 text-xs sm:text-base max-w-xl mx-auto leading-relaxed mb-3 sm:mb-4 px-2">
+          <p className="text-[#1B3B48]/80 text-xs sm:text-base max-w-xl mx-auto leading-relaxed mb-3 sm:mb-4 px-2 font-medium">
             Whether you're looking for pediatric therapy or an adult day program, choose your program track below to get started.
           </p>
 
-          <h2 className="text-base sm:text-2xl font-bold text-white tracking-tight">
+          <h2 className="text-base sm:text-2xl font-black text-[#1B3B48] tracking-tight">
             Who are you looking for support for?
           </h2>
         </div>
@@ -98,10 +98,10 @@ export default function EntryPortalModal() {
             onClick={handleSelectTherapy}
             onMouseEnter={() => setActiveHover("therapy")}
             onMouseLeave={() => setActiveHover(null)}
-            className={`group relative cursor-pointer bg-gradient-to-b from-white/15 to-white/5 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border-2 transition-all duration-300 flex flex-col justify-between shadow-2xl ${
+            className={`group relative cursor-pointer bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border-2 transition-all duration-300 flex flex-col justify-between shadow-xl ${
               activeHover === "therapy"
-                ? "border-[#F57A54] scale-[1.01] shadow-[#F57A54]/25"
-                : "border-white/20 hover:border-white/40"
+                ? "border-[#F57A54] scale-[1.01] shadow-[#F57A54]/20"
+                : "border-slate-200/80 hover:border-[#F57A54]/60"
             }`}
           >
             <div>
@@ -111,21 +111,21 @@ export default function EntryPortalModal() {
                   Ages 2–18
                 </span>
                 
-                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white/10 text-white flex items-center justify-center group-hover:bg-[#F57A54] transition-colors">
-                  <DoorOpen className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#F57A54]/10 text-[#F57A54] flex items-center justify-center group-hover:bg-[#F57A54] group-hover:text-white transition-colors">
+                  <DoorOpen className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
               </div>
 
-              <h2 className="text-xl sm:text-3xl font-black text-white tracking-tight mb-1">
+              <h2 className="text-xl sm:text-3xl font-black text-[#1B3B48] tracking-tight mb-1">
                 Therapy Centre
               </h2>
               
-              <p className="text-slate-300 font-semibold text-xs sm:text-sm mb-3">
+              <p className="text-slate-600 font-semibold text-xs sm:text-sm mb-3">
                 For children & teens ages 2–18
               </p>
 
               {/* Bullet List */}
-              <ul className="space-y-1.5 mb-4 sm:mb-6 text-slate-200 text-xs sm:text-sm">
+              <ul className="space-y-1.5 mb-4 sm:mb-6 text-[#1B3B48] text-xs sm:text-sm">
                 {[
                   "ABA Therapy",
                   "Speech Therapy",
@@ -135,14 +135,14 @@ export default function EntryPortalModal() {
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F57A54] shrink-0" />
-                    <span className="font-medium text-slate-100">{item}</span>
+                    <span className="font-semibold text-slate-700">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="pt-3 border-t border-white/15">
-              <span className="w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl sm:rounded-2xl font-extrabold text-xs sm:text-sm text-white bg-[#F57A54] group-hover:bg-[#E3643E] shadow-lg transition-all">
+            <div className="pt-3 border-t border-slate-100">
+              <span className="w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl sm:rounded-2xl font-extrabold text-xs sm:text-sm text-white bg-[#F57A54] group-hover:bg-[#E3643E] shadow-md transition-all">
                 <span>Explore Therapy Centre</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -155,10 +155,10 @@ export default function EntryPortalModal() {
             onClick={handleSelectAdult}
             onMouseEnter={() => setActiveHover("adult")}
             onMouseLeave={() => setActiveHover(null)}
-            className={`group relative cursor-pointer bg-gradient-to-b from-white/15 to-white/5 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border-2 transition-all duration-300 flex flex-col justify-between shadow-2xl ${
+            className={`group relative cursor-pointer bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border-2 transition-all duration-300 flex flex-col justify-between shadow-xl ${
               activeHover === "adult"
-                ? "border-[#4A7C64] scale-[1.01] shadow-[#4A7C64]/30"
-                : "border-white/20 hover:border-white/40"
+                ? "border-[#4A7C64] scale-[1.01] shadow-[#4A7C64]/20"
+                : "border-slate-200/80 hover:border-[#4A7C64]/60"
             }`}
           >
             <div>
@@ -168,21 +168,21 @@ export default function EntryPortalModal() {
                   Ages 18+
                 </span>
                 
-                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white/10 text-white flex items-center justify-center group-hover:bg-[#4A7C64] transition-colors">
-                  <DoorOpen className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#4A7C64]/10 text-[#4A7C64] flex items-center justify-center group-hover:bg-[#4A7C64] group-hover:text-white transition-colors">
+                  <DoorOpen className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
               </div>
 
-              <h2 className="text-xl sm:text-3xl font-black text-white tracking-tight mb-1">
+              <h2 className="text-xl sm:text-3xl font-black text-[#1B3B48] tracking-tight mb-1">
                 The Next Level
               </h2>
               
-              <p className="text-slate-300 font-semibold text-xs sm:text-sm mb-3">
+              <p className="text-slate-600 font-semibold text-xs sm:text-sm mb-3">
                 Adult Day Program | Ages 18+
               </p>
 
               {/* Bullet List */}
-              <ul className="space-y-1.5 mb-4 sm:mb-6 text-slate-200 text-xs sm:text-sm">
+              <ul className="space-y-1.5 mb-4 sm:mb-6 text-[#1B3B48] text-xs sm:text-sm">
                 {[
                   "Day Programming & Life Skills",
                   "Community Involvement Outings",
@@ -191,14 +191,14 @@ export default function EntryPortalModal() {
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#4A7C64] shrink-0" />
-                    <span className="font-medium text-slate-100">{item}</span>
+                    <span className="font-semibold text-slate-700">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="pt-3 border-t border-white/15">
-              <span className="w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl sm:rounded-2xl font-extrabold text-xs sm:text-sm text-white bg-[#2A5243] group-hover:bg-[#4A7C64] shadow-lg transition-all border border-white/10">
+            <div className="pt-3 border-t border-slate-100">
+              <span className="w-full flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl sm:rounded-2xl font-extrabold text-xs sm:text-sm text-white bg-[#2A5243] group-hover:bg-[#4A7C64] shadow-md transition-all">
                 <span>Explore The Next Level</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -209,7 +209,7 @@ export default function EntryPortalModal() {
 
       </div>
 
-      <div className="text-center text-[11px] sm:text-xs text-slate-400 z-10 py-1">
+      <div className="text-center text-[11px] sm:text-xs text-[#1B3B48]/60 font-semibold z-10 py-1">
         <span>Hand In Hand Therapy Centre & Adult Programs • Vaughan & Bradford, ON</span>
       </div>
     </div>
