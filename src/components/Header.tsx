@@ -45,6 +45,12 @@ export default function Header() {
 
   const servicesDropdownItems = [
     {
+      name: "ABA Therapy",
+      href: "/aba-therapy-vaughan",
+      desc: "BCBA-supervised ABA & early intervention in Vaughan",
+      icon: Sparkles
+    },
+    {
       name: "Speech Therapy",
       href: "/speech-therapy-vaughan",
       desc: "SLP assessment, articulation & language therapy",

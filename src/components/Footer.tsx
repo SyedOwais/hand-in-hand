@@ -55,7 +55,7 @@ export default function Footer() {
                 Therapy
               </h4>
               <ul className="space-y-2 text-xs text-slate-300">
-                <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">ABA Therapy</Link></li>
+                <li><Link href="/aba-therapy-vaughan" className="hover:text-white transition-colors">ABA Therapy</Link></li>
                 <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Speech Therapy</Link></li>
                 <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Occupational Therapy</Link></li>
                 <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Social Skills Groups</Link></li>

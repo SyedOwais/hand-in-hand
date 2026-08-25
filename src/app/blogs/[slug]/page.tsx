@@ -53,6 +53,205 @@ interface BlogPostDetail {
 }
 
 const blogData: Record<string, BlogPostDetail> = {
+  "adult-speech-therapy-vaughan-guide": {
+    slug: "adult-speech-therapy-vaughan-guide",
+    title: "Adult Speech Therapy in Vaughan: Who It's For and How It Helps",
+    metaTitle: "Adult Speech Therapy in Vaughan: Who It's For & How It Helps",
+    metaDescription: "Speech therapy isn't just for kids. Learn how adults in Vaughan use speech therapy for stroke recovery, voice, stuttering, and more.",
+    excerpt: "Speech therapy isn't just for kids. Learn how adults in Vaughan use speech therapy for stroke recovery, voice, stuttering, accent modification, and more.",
+    category: "Speech Therapy",
+    categoryBadge: "bg-[#1B3B48] text-white",
+    track: "adult",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Adult Speech-Language Pathology Team",
+    readTime: "7 min read",
+    date: "August 25, 2026",
+    image: "/images/speech-therapy-adults-vaughan.png",
+    content: {
+      intro: "When most people hear \"speech therapy,\" they picture a young child working on their R's or S's with a therapist. That association is understandable — but it's incomplete. Speech-language pathologists work with adults just as often, supporting people recovering from a stroke, managing a lifelong stutter, dealing with a voice that just won't cooperate anymore, or simply wanting to communicate more clearly and confidently at work and in daily life.\n\nIf you or someone you love is dealing with a communication challenge as an adult, here's what speech therapy actually involves, who it helps, and what to expect from working with a [speech-language pathologist in Vaughan](/locations/speech-therapy-adults-vaughan) or Bradford.",
+      keyTakeaways: [
+        "Speech-language pathology supports adults in stroke recovery, voice strain, adult stuttering, accent modification, and swallowing management.",
+        "Neuroplasticity allows the brain to continue adapting and rebuilding communication skills well into adulthood.",
+        "No doctor referral or medical diagnosis is required to schedule an initial speech assessment.",
+        "Adult therapy focuses on functional, real-world goals tailored to personal, medical, and professional priorities."
+      ],
+      sections: [
+        {
+          heading: "Speech Therapy Isn't Just for Children",
+          body: [
+            "Communication challenges can appear — or reappear — at any stage of life. Some adults have managed a speech difference since childhood that never fully resolved. Others develop new communication challenges later in life due to a medical event, a neurological condition, or simply the demands of a career that puts pressure on their voice or clarity.",
+            "Whatever the cause, the encouraging news is the same: the brain remains capable of learning and adapting well into adulthood, and speech-language pathologists have effective, evidence-based tools to help."
+          ]
+        },
+        {
+          heading: "Common Reasons Adults Seek Speech Therapy",
+          body: [
+            "Adults seek specialized speech pathology for a wide range of medical, personal, and professional communication goals:",
+            "• **Stroke and Brain Injury Recovery** — A stroke, traumatic brain injury, or other neurological event can affect the ability to speak, understand language, find words, or swallow safely. Key conditions addressed include **Aphasia** (difficulty producing or understanding language while intelligence remains intact), **Dysarthria** (weakened or uncoordinated muscles affecting speech clarity), and **Apraxia** (difficulty coordinating speech movements). Recovery timelines vary, but meaningful progress with [adult speech therapy in Vaughan](/locations/speech-therapy-adults-vaughan) is achievable well beyond the initial recovery period.",
+            "• **Voice Disorders** — Hoarseness, vocal fatigue, and other voice concerns are especially common among professionals who rely heavily on their voice at work — teachers, sales leaders, call centre staff, and executives. Voice therapy builds breath support, vocal technique, and strain reduction.",
+            "• **Stuttering in Adulthood** — Stuttering often begins in childhood, but many adults continue to manage it throughout life — sometimes with more intensity during high-stakes moments like presentations, interviews, or meetings. Adult stuttering therapy focuses on practical fluency strategies tailored to real situations.",
+            "• **Accent Modification** — For adults seeking to adjust pronunciation and speech clarity for professional or personal confidence — tailored to individual goals without erasing identity or background.",
+            "• **Swallowing Difficulties (Dysphagia)** — Swallowing difficulties frequently accompany stroke or neurological events. Speech-language pathologists assess swallowing function and provide exercises for safer, more comfortable eating.",
+            "• **General Communication Refinement** — Clearer, more confident public speaking and meeting participation without needing any formal diagnosis or referral."
+          ]
+        },
+        {
+          heading: "What Happens in an Adult Speech Therapy Assessment?",
+          body: [
+            "The process is individualized and transparent. At our Vaughan (Concord) and [Bradford clinic](/locations/speech-therapy-adults-vaughan#bradford), it typically involves four main steps:",
+            "1. **Initial consultation** — We talk through your communication history, current concerns, and specific goals — whether that's medical recovery, professional communication, or daily confidence.",
+            "2. **Assessment** — A registered Speech-Language Pathologist evaluates speech clarity, language, voice, and (where relevant) swallowing function using clinical tools.",
+            "3. **Individualized plan** — Built entirely around your priorities, whether that is stroke recovery, vocal strain reduction, or accent modification coaching.",
+            "4. **Ongoing therapy with progress reviews** — Regular 1-on-1 sessions with clear milestone check-ins so you always know where things stand."
+          ]
+        },
+        {
+          heading: "How Adult Speech Therapy Differs From Pediatric Speech Therapy",
+          body: [
+            "The core skill — communication — is the same, but the approach is quite different. Pediatric speech therapy is largely developmental, often play-based, and focused on building skills a child hasn't yet acquired. Adult speech therapy is typically about rebuilding, adapting, or refining skills — whether that means recovering language after a medical event, adjusting long-standing speech patterns, or protecting vocal health for professional demands.",
+            "If you're looking for support for a child instead, our [pediatric speech therapy page](/speech-therapy-vaughan) covers our toddler, child, and youth programs in detail."
+          ]
+        },
+        {
+          heading: "It's Never 'Too Late' to Start",
+          body: [
+            "One of the most common misconceptions about adult speech therapy is that it only works if you start right away after a stroke or injury, or that certain communication patterns are simply too ingrained to change later in life. Neither is accurate.",
+            "The brain retains the capacity to learn and adapt throughout life, and adults regularly make meaningful progress in speech therapy regardless of how long a challenge has been present."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "Do I need a doctor's referral for adult speech therapy?",
+          a: "No referral is required to book an initial consultation."
+        },
+        {
+          q: "How soon after a stroke should speech therapy start?",
+          a: "Earlier is generally better for stroke recovery, but meaningful progress is possible at any stage — it's never too late to begin or resume therapy."
+        },
+        {
+          q: "Can speech therapy really help with a stutter I've had my whole life?",
+          a: "Yes. Many adults benefit from therapy for a long-standing stutter, particularly when it comes to building practical strategies for high-pressure situations like meetings, interviews, or public speaking."
+        },
+        {
+          q: "Is accent modification the same as losing my accent?",
+          a: "No. Accent modification therapy focuses on clarity and pronunciation goals you choose — it's about communication confidence, not erasing identity or background."
+        },
+        {
+          q: "Is adult speech therapy covered by insurance?",
+          a: "Many extended health plans include coverage for speech-language pathology services. We recommend checking with your provider for your specific plan."
+        },
+        {
+          q: "Do you offer adult speech therapy in Bradford as well as Vaughan?",
+          a: "Yes — Hand in Hand Therapy Centre has a dedicated Bradford clinic in addition to our Vaughan (Concord) location."
+        }
+      ]
+    }
+  },
+  "aba-therapy-vaughan-parent-guide": {
+    slug: "aba-therapy-vaughan-parent-guide",
+    title: "ABA Therapy in Vaughan: What Every Parent Should Know Before Getting Started",
+    metaTitle: "ABA Therapy in Vaughan: What Parents Should Know",
+    metaDescription: "New to ABA therapy? Learn how it works, what BCBA supervision means, and how to choose an ABA provider in Vaughan for your child.",
+    excerpt: "New to ABA therapy? Learn how it works, what BCBA supervision means, and how to choose an ABA provider in Vaughan for your child.",
+    category: "ABA Therapy",
+    categoryBadge: "bg-[#2A5243] text-white",
+    track: "pediatric",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Board Certified Behavior Analyst (BCBA) & Multidisciplinary Team",
+    readTime: "8 min read",
+    date: "August 25, 2026",
+    image: "/images/aba-therapy-vaughan.png",
+    content: {
+      intro: "If your child has recently been diagnosed with autism spectrum disorder, chances are someone - a pediatrician, a developmental assessor, another parent - has already mentioned ABA therapy. It's one of the most widely recommended, evidence-based interventions for children with autism, but for a lot of parents, the term itself is still a bit of a mystery. What does it actually involve? Who delivers it? How do you know if a provider is qualified?\n\nThis guide walks through how ABA therapy works, what BCBA supervision actually means, and what to look for when choosing an [ABA therapist in Vaughan](/aba-therapy-vaughan/) or Bradford.",
+      keyTakeaways: [
+        "Applied Behavior Analysis (ABA) is a structured, evidence-based approach breaking goals into small, teachable steps reinforced consistently with data tracking.",
+        "BCBA supervision ensures graduate-level oversight for assessment design, therapist supervision, and ongoing plan adjustments.",
+        "In-clinic and in-home ABA therapy offer distinct benefits; many Vaughan and Bradford families utilize a combination of both.",
+        "Multidisciplinary care integrates ABA with speech therapy and occupational therapy under one unified treatment plan."
+      ],
+      sections: [
+        {
+          heading: "What Is ABA Therapy?",
+          body: [
+            "Applied Behavior Analysis (ABA) is a structured, evidence-based approach to teaching skills and reducing behaviours that interfere with learning, communication, and daily life. It's most commonly used to support children with autism spectrum disorder, though it's also used for other developmental and behavioural needs.",
+            "At its core, ABA breaks larger goals - communication, social interaction, self-care, following instructions - into small, teachable steps. Progress is reinforced consistently, and data is tracked closely so a child's program can be adjusted as they grow and change.",
+            "Contrary to a common misconception, ABA today looks very different from rigid, outdated models some parents may have heard about. Modern ABA, delivered well, is individualized, play-based where appropriate, and built around a child's actual interests and family life - not a rigid, one-size-fits-all script."
+          ]
+        },
+        {
+          heading: "What Does 'BCBA-Supervised' Actually Mean?",
+          body: [
+            "This is one of the most important things to understand when choosing an ABA provider, and it's worth asking about directly. A Board Certified Behavior Analyst (BCBA) is a professional who has completed graduate-level training in behaviour analysis, passed a national certification exam, and maintains ongoing continuing education requirements.",
+            "In a properly run ABA program:",
+            "• **The BCBA conducts the initial assessment** and designs the treatment plan\n• **The BCBA supervises the therapists** (often called Registered Behavior Technicians, or RBTs) who deliver day-to-day sessions\n• **Progress is reviewed and the plan adjusted regularly** under the BCBA's oversight",
+            "Without BCBA supervision, a program may still be labelled 'ABA,' but the quality, structure, and accountability behind it can vary significantly. When researching providers, it's reasonable - and encouraged - to ask directly whether a program is BCBA-supervised."
+          ]
+        },
+        {
+          heading: "Signs Your Child May Benefit from ABA Therapy",
+          body: [
+            "While ABA is most closely associated with autism spectrum disorder, families often start exploring it after noticing patterns like:",
+            "• **Difficulty communicating** wants, needs, or emotions\n• **Repetitive behaviours** that interfere with daily activities or learning\n• **Difficulty following instructions** or transitioning between activities\n• **Challenges with social interaction**, such as difficulty engaging with peers\n• **Behaviours like tantrums, aggression, or self-injury** that seem connected to frustration or communication difficulty\n• **Delays in daily living skills** such as dressing, feeding, or toileting",
+            "A formal autism diagnosis is typically the starting point that leads families to ABA, often following an assessment by a pediatrician, psychologist, or developmental specialist."
+          ]
+        },
+        {
+          heading: "In-Clinic vs. In-Home ABA: Which Is Right for Your Child?",
+          body: [
+            "One of the first decisions families face is where therapy will actually take place. Both approaches are legitimate, and many children benefit from a combination.",
+            "**In-clinic ABA offers:**\n• A structured, distraction-controlled environment\n• Access to a full multidisciplinary team in one location (speech, OT, ABA) if your child receives more than one service\n• Consistency in routine and setting from session to session",
+            "**In-home ABA offers:**\n• Skills practiced directly in the environment where they need to happen - mealtimes, mornings, bedtime routines\n• Easier generalization of skills to real daily life\n• Convenience for families managing multiple appointments or younger siblings",
+            "Many families in Vaughan and [Bradford](/aba-therapy-vaughan#locations) use a blend of both - starting in-clinic to build foundational skills, then shifting some sessions in-home to support generalization, or vice versa depending on the child."
+          ]
+        },
+        {
+          heading: "Early Intervention vs. School-Age ABA",
+          body: [
+            "Early intervention (sometimes associated with IBI-style intensive programming) typically targets toddlers and preschool-age children, focusing on foundational communication, play, and social skills at a stage when the brain's capacity for rapid learning is highest. Research consistently supports starting early intervention autism support as early as possible when a diagnosis has been made.",
+            "That said, it's never too late to start. School-age ABA support focuses on different priorities - classroom readiness, following multi-step directions, managing transitions, social skills with peers, and reducing behaviours that interfere with learning. A good provider will tailor the program to your child's current developmental stage rather than applying an early-intervention curriculum to an older child, or vice versa."
+          ]
+        },
+        {
+          heading: "How to Choose an ABA Provider in Vaughan",
+          body: [
+            "A few questions worth asking any provider you're considering:",
+            "• **Is the program BCBA-supervised**, and how often does the BCBA review progress?\n• **Is therapy available in-clinic, in-home, or both** - and can that flex as my child's needs change?\n• **How is progress measured** and communicated to parents?\n• **Does the provider coordinate with other therapies** my child receives (speech, occupational therapy)? Children who need more than one type of support generally benefit from a coordinated plan rather than separate, disconnected providers.\n• **What does parent training and caregiver involvement look like?** ABA works best when strategies extend beyond the therapy session into daily life."
+          ]
+        },
+        {
+          heading: "Why a Multidisciplinary Approach Matters",
+          body: [
+            "Autism support rarely fits neatly into a single category. A child working on ABA goals may also need help with fine motor skills, sensory regulation, or speech and language development. At Hand in Hand Therapy Centre, our BCBA-supervised [ABA therapy in Vaughan](/aba-therapy-vaughan/) is coordinated with our [speech-language pathology and occupational therapy](/speech-therapy-vaughan/) teams, so a child's behavioural, communication, and motor goals reinforce each other rather than being addressed in isolation by providers who never communicate."
+          ]
+        },
+        {
+          heading: "Next Steps",
+          body: [
+            "If you're exploring ABA therapy for your child, choosing a BCBA-supervised, coordinated program is one of the most important decisions you'll make early on. Our team at Hand in Hand Therapy Centre offers BCBA-supervised [ABA therapy in Vaughan](/aba-therapy-vaughan/) and Bradford - in-clinic, in-home, and coordinated with speech and occupational therapy when needed."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "Do I need a diagnosis before starting ABA therapy?",
+          a: "Most funded ABA programs require an autism diagnosis. Our team can walk you through what's needed and what your options look like during an initial consultation."
+        },
+        {
+          q: "How many hours of ABA therapy does my child need?",
+          a: "This varies widely based on your child's individual needs and goals, and is determined through the BCBA's assessment - there's no universal number of hours that applies to every child."
+        },
+        {
+          q: "Is ABA therapy covered by insurance or government funding in Ontario?",
+          a: "Coverage depends on your specific extended health plan and, for some families, provincial autism funding programs. It's worth discussing your specific situation directly with a provider."
+        },
+        {
+          q: "Can ABA therapy be combined with speech or occupational therapy?",
+          a: "Yes, and for many children, it should be. Coordinated programming across ABA, speech, and OT tends to produce more consistent progress than managing each service separately."
+        }
+      ]
+    }
+  },
   "signs-child-needs-occupational-therapy-vaughan": {
     slug: "signs-child-needs-occupational-therapy-vaughan",
     title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
@@ -238,55 +437,6 @@ const blogData: Record<string, BlogPostDetail> = {
       ]
     }
   },
-  "oap-funding-guide-2026": {
-    slug: "oap-funding-guide-2026",
-    title: "Navigating the Ontario Autism Program (OAP) Access Funding in 2026",
-    excerpt: "A comprehensive breakdown of core clinical services funding, budget allocations, eligible therapies, and step-by-step guidance for submitting claims through Access OAP.",
-    category: "OAP Funding",
-    categoryBadge: "bg-[#2A5243] text-white",
-    track: "pediatric",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Multidisciplinary Clinical Specialists",
-    readTime: "8 min read",
-    date: "August 10, 2026",
-    image: "/images/therapy-hero.png",
-    content: {
-      intro: "Navigating government funding for pediatric autism therapy can often feel overwhelming for families. In Ontario, Access OAP manages core clinical services funding to help children under 18 access evidence-based therapies including ABA (Applied Behavior Analysis), Speech-Language Pathology, and Occupational Therapy.",
-      keyTakeaways: [
-        "Core Clinical Services funding is allocated based on your child's age and determined funding tier.",
-        "Eligible services include 1-on-1 ABA, Speech Therapy, Occupational Therapy, and specialized clinical supervision.",
-        "Reimbursements can be claimed directly via the Access OAP online portal with itemized invoices.",
-        "Hand In Hand Therapy Centre provides full administrative support for invoice submission in Concord & Bradford."
-      ],
-      sections: [
-        {
-          heading: "Understanding Core Clinical Services Tiers",
-          body: [
-            "Access OAP operates on a funding model designed to give families flexibility in choosing registered clinical service providers. Depending on your child's age group (ages 2–5, 6–11, or 12–17) and intake assessment, your family receives an annual budget allocation.",
-            "This funding can be utilized across multidisciplinary therapies to target communication, behavioral regulation, fine and gross motor development, and social pragmatics."
-          ]
-        },
-        {
-          heading: "How to Allocate Your Budget Effectively",
-          body: [
-            "We recommend working closely with your Clinical Supervisor (BCBA) to draft an individualized service plan that prioritizes high-impact goals. For younger children, prioritizing early intensive behavioral intervention (EIBI) and speech articulation yields high long-term developmental gains.",
-            "For school-aged children, blending center-based ABA sessions with social skills groups and sensory OT helps maintain classroom focus and peer engagement."
-          ]
-        },
-        {
-          heading: "Submitting Invoices and Avoiding Common Delays",
-          body: [
-            "To ensure seamless reimbursement, invoices submitted to Access OAP must include the BCBA or registered therapist's registration number, dates of service, and itemized fee breakdown.",
-            "At Hand In Hand Therapy Centre, our administrative team generates Access OAP-compliant receipts for every session so parents never face delayed funding claims."
-          ]
-        }
-      ],
-      quote: {
-        text: "Empowering parents with clarity on OAP funding allows families to focus on what matters most: watching their children grow, communicate, and thrive.",
-        author: "Hand In Hand Clinical Team"
-      }
-    }
-  },
   "passport-funding-transition-18": {
     slug: "passport-funding-transition-18",
     title: "Transitioning Beyond 18: Maximizing Ontario Passport Funding for Day Programs",
@@ -327,123 +477,6 @@ const blogData: Record<string, BlogPostDetail> = {
         text: "Adulthood is about dignity, choice, and active community participation. Passport Funding opens the door for young adults to thrive.",
         author: "Hand In Hand Adult Program Team"
       }
-    }
-  },
-  "aac-devices-speech-therapy": {
-    slug: "aac-devices-speech-therapy",
-    title: "Building Early Communication: How AAC Devices Complement Speech Therapy",
-    excerpt: "Discover how Augmentative and Alternative Communication (AAC) devices empower non-verbal toddlers to express wants, lower frustration, and expand speech articulation.",
-    category: "Pediatric Speech",
-    categoryBadge: "bg-[#2A5243] text-white",
-    track: "pediatric",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Pediatric Therapy Specialists",
-    readTime: "5 min read",
-    date: "July 28, 2026",
-    image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop",
-    content: {
-      intro: "For parents of non-verbal or minimally verbal children, frustration around communication is one of the biggest daily challenges. AAC (Augmentative and Alternative Communication) devices provide a powerful voice for toddlers and young children beginning their communication journey.",
-      keyTakeaways: [
-        "AAC devices include symbol boards, speech-generating apps (e.g. Proloquo2Go, TouchChat), and eye-gaze systems.",
-        "Using an AAC device does NOT prevent a child from developing verbal speech; studies show it actually encourages vocalization.",
-        "Speech-Language Pathologists customize vocabulary grids based on the child's daily routines."
-      ],
-      sections: [
-        {
-          heading: "Debunking the Myth: Will AAC Replace Verbal Speech?",
-          body: [
-            "One of the most common concerns parents share is whether introducing an AAC tablet will discourage vocal speech. Clinical research consistently shows that AAC reduces communication frustration, lowering behavioral meltdowns and creating positive neurological feedback for verbal speech development.",
-            "Children learn that pressing a button produces immediate rewards, prompting them to imitate sounds alongside the device output."
-          ]
-        }
-      ]
-    }
-  },
-  "culinary-life-skills-adults": {
-    slug: "culinary-life-skills-adults",
-    title: "Fostering Independence: How Culinary Kitchens Build Vocational Confidence",
-    excerpt: "Inside our Bradford life-skills kitchen: how cooking, meal prep, and kitchen safety foster autonomy and self-esteem for adults with developmental delays.",
-    category: "Adult Vocational",
-    categoryBadge: "bg-[#1B3B48] text-white",
-    track: "adult",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Life-Skills & Vocational Team",
-    readTime: "6 min read",
-    date: "July 19, 2026",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
-    content: {
-      intro: "Cooking is more than just preparing a meal - it is a multi-step cognitive, sensory, and motor exercise that builds confidence. In our life-skills kitchens at Hand In Hand, adult participants master daily culinary routines in a safe, supportive environment.",
-      keyTakeaways: [
-        "Kitchen routines build sequencing, time management, and fine-motor dexterity.",
-        "Participants learn food hygiene, knife safety with adaptive tools, and induction stove operation.",
-        "Group cooking fosters teamwork, communication, and shared culinary pride."
-      ],
-      sections: [
-        {
-          heading: "Step-by-Step Task Breakdown in the Kitchen",
-          body: [
-            "We utilize visual recipe cards and color-coded measuring tools to help participants independently follow recipes. From measuring ingredients to setting tables and washing dishes, every step reinforces functional independence."
-          ]
-        }
-      ]
-    }
-  },
-  "sensory-regulation-at-home": {
-    slug: "sensory-regulation-at-home",
-    title: "Sensory Regulation at Home: Creating a Calming Snoezelen Corner on a Budget",
-    excerpt: "Occupational therapy strategies to help children self-regulate sensory overstimulation using light cables, deep pressure, and tactile tools.",
-    category: "Sensory & OT",
-    categoryBadge: "bg-[#2A5243] text-white",
-    track: "pediatric",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Sensory & OT Clinical Team",
-    readTime: "6 min read",
-    date: "July 12, 2026",
-    image: "/images/camp-community.png",
-    content: {
-      intro: "Children with sensory processing differences often experience sensory overload after a long day at school. Creating a dedicated quiet sensory nook at home gives your child a safe sanctuary to decompress and self-regulate.",
-      keyTakeaways: [
-        "Dim, warm lighting reduces visual overstimulation.",
-        "Weighted blankets and compression vests provide calming deep pressure therapy.",
-        "Tactile fiber-optic sensory lights encourage quiet focus."
-      ],
-      sections: [
-        {
-          heading: "Setting Up Your Home Sensory Nook",
-          body: [
-            "Choose a quiet corner of your living room or bedroom away from loud televisions or high-traffic areas. Add a soft pop-up tent, weighted lap pads, and soothing bubble lamps to create a tranquil space."
-          ]
-        }
-      ]
-    }
-  },
-  "adult-social-connections": {
-    slug: "adult-social-connections",
-    title: "Promoting Meaningful Adult Friendships & Peer Inclusion After Age 18",
-    excerpt: "Why social connection is crucial for young adults with special needs and how structured gaming lounges & community outings prevent isolation.",
-    category: "Adult Life",
-    categoryBadge: "bg-[#1B3B48] text-white",
-    track: "adult",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Adult Program Specialists",
-    readTime: "5 min read",
-    date: "June 30, 2026",
-    image: "/images/adult-community-trips.png",
-    content: {
-      intro: "Social isolation is one of the most common challenges young adults face after leaving high school. Building peer connections in structured social environments helps adults develop long-lasting friendships, confidence, and emotional well-being.",
-      keyTakeaways: [
-        "Structured social lounges facilitate natural icebreakers through board games and sports.",
-        "Community field trips build shared memories and real-world conversation skills.",
-        "Peer mentorship encourages positive role modeling and mutual support."
-      ],
-      sections: [
-        {
-          heading: "Creating Inclusive Group Dynamics",
-          body: [
-            "At The Next Level Adult Day Program, our facilitators design activities around shared participant interests - from gaming tournaments and art projects to weekly community volunteer trips."
-          ]
-        }
-      ]
     }
   }
 };

@@ -133,7 +133,7 @@ export default function SpeechTherapyVaughanPage() {
             "name": "Do you work with adults, or only children?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our primary focus is pediatric speech and language therapy, though we assess on a case-by-case basis. Contact us to discuss your specific situation."
+              "text": "We offer dedicated adult speech therapy for stroke recovery, voice disorders, stuttering, accent modification, and swallowing. Visit our Adult Speech Therapy in Vaughan page for details."
             }
           },
           {
@@ -251,7 +251,7 @@ export default function SpeechTherapyVaughanPage() {
     },
     {
       q: "Do you work with adults, or only children?",
-      a: "Our primary focus is pediatric speech and language therapy, though we assess on a case-by-case basis. Contact us to discuss your specific situation."
+      a: "While this page focuses on pediatric care, we also offer specialized adult speech therapy for stroke recovery, voice, stuttering, accent modification, and swallowing. Visit our Adult Speech Therapy page for details."
     },
     {
       q: "Do I need a doctor's referral?",
@@ -273,7 +273,23 @@ export default function SpeechTherapyVaughanPage() {
 
       <Header />
 
-      <main className="flex-grow pt-44 sm:pt-48 lg:pt-38">
+      <main className="flex-grow pt-32 sm:pt-36">
+        {/* ADULT CROSS-LINK BANNER */}
+        <div className="bg-[#1B3B48] text-white py-3.5 px-4 shadow-sm border-b border-[#F57A54]/30">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm">
+            <div className="flex items-center gap-2 text-slate-200">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#F57A54] animate-pulse" />
+              <span className="font-medium">Looking for adult speech therapy (stroke recovery, voice, stuttering, accent)?</span>
+            </div>
+            <Link
+              href="/locations/speech-therapy-adults-vaughan"
+              className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full text-xs font-extrabold text-white bg-[#F57A54] hover:bg-[#e06843] transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 min-w-[240px] text-center"
+            >
+              <span>Explore Adult Speech Therapy</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </div>
 
         {/* Hero Section */}
         <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#E8F0EC]/90 via-[#FBF9F5] to-[#FBF9F5] overflow-hidden">

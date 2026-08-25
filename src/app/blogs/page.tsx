@@ -51,6 +51,34 @@ function BlogsContent() {
 
   const blogPosts: BlogPost[] = [
     {
+      id: 10,
+      slug: "adult-speech-therapy-vaughan-guide",
+      title: "Adult Speech Therapy in Vaughan: Who It's For and How It Helps",
+      excerpt: "Speech therapy isn't just for kids. Learn how adults in Vaughan use speech therapy for stroke recovery, voice, stuttering, accent modification, and more.",
+      category: "speech",
+      track: "adult",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Adult Speech-Language Pathology Team",
+      readTime: "7 min read",
+      date: "August 25, 2026",
+      image: "/images/speech-therapy-adults-vaughan.png",
+      featured: false
+    },
+    {
+      id: 9,
+      slug: "aba-therapy-vaughan-parent-guide",
+      title: "ABA Therapy in Vaughan: What Every Parent Should Know Before Getting Started",
+      excerpt: "New to ABA therapy? Learn how it works, what BCBA supervision means, and how to choose an ABA provider in Vaughan for your child.",
+      category: "aba",
+      track: "pediatric",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "BCBA & Multidisciplinary Team",
+      readTime: "8 min read",
+      date: "August 25, 2026",
+      image: "/images/aba-therapy-vaughan.png",
+      featured: true
+    },
+    {
       id: 8,
       slug: "signs-child-needs-occupational-therapy-vaughan",
       title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
@@ -76,20 +104,6 @@ function BlogsContent() {
       readTime: "7 min read",
       date: "August 13, 2026",
       image: "/images/signs-child-speech-therapy-vaughan.png",
-      featured: true
-    },
-    {
-      id: 2,
-      slug: "oap-funding-guide-2026",
-      title: "Navigating the Ontario Autism Program (OAP) Access Funding in 2026",
-      excerpt: "A comprehensive breakdown of core clinical services funding, budget allocations, eligible therapies, and step-by-step guidance for submitting claims through Access OAP.",
-      category: "funding",
-      track: "pediatric",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Multidisciplinary Clinical Specialists",
-      readTime: "8 min read",
-      date: "August 10, 2026",
-      image: "/images/therapy-hero.png",
       featured: false
     },
     {
@@ -104,62 +118,6 @@ function BlogsContent() {
       readTime: "7 min read",
       date: "August 4, 2026",
       image: "/images/adult-day-program.png",
-      featured: false
-    },
-    {
-      id: 3,
-      slug: "aac-devices-speech-therapy",
-      title: "Building Early Communication: How AAC Devices Complement Speech Therapy",
-      excerpt: "Discover how Augmentative and Alternative Communication (AAC) devices empower non-verbal toddlers to express wants, lower frustration, and expand speech articulation.",
-      category: "speech",
-      track: "pediatric",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Pediatric Therapy Specialists",
-      readTime: "5 min read",
-      date: "July 28, 2026",
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop",
-      featured: false
-    },
-    {
-      id: 4,
-      slug: "culinary-life-skills-adults",
-      title: "Fostering Independence: How Culinary Kitchens Build Vocational Confidence",
-      excerpt: "Inside our Bradford life-skills kitchen: how cooking, meal prep, and kitchen safety foster autonomy and self-esteem for adults with developmental delays.",
-      category: "adult",
-      track: "adult",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Life-Skills & Vocational Team",
-      readTime: "6 min read",
-      date: "July 19, 2026",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
-      featured: false
-    },
-    {
-      id: 5,
-      slug: "sensory-regulation-at-home",
-      title: "Sensory Regulation at Home: Creating a Calming Snoezelen Corner on a Budget",
-      excerpt: "Occupational therapy strategies to help children self-regulate sensory overstimulation using light cables, deep pressure, and tactile tools.",
-      category: "aba",
-      track: "pediatric",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Sensory & OT Clinical Team",
-      readTime: "6 min read",
-      date: "July 12, 2026",
-      image: "/images/camp-community.png",
-      featured: false
-    },
-    {
-      id: 6,
-      slug: "adult-social-connections",
-      title: "Promoting Meaningful Adult Friendships & Peer Inclusion After Age 18",
-      excerpt: "Why social connection is crucial for young adults with special needs and how structured gaming lounges & community outings prevent isolation.",
-      category: "adult",
-      track: "adult",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Adult Program Specialists",
-      readTime: "5 min read",
-      date: "June 30, 2026",
-      image: "/images/adult-community-trips.png",
       featured: false
     }
   ];

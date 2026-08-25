@@ -6,6 +6,7 @@ import LifeBeyondClinic from "./LifeBeyondClinic";
 import ParentJourney from "./ParentJourney";
 import SocialProofVisual from "./SocialProofVisual";
 import SeeLifeCommunity from "./SeeLifeCommunity";
+import RecentBlogsSection from "./RecentBlogsSection";
 import FinalTherapyCTA from "./FinalTherapyCTA";
 
 export default function TherapyCentreView() {
@@ -38,7 +39,10 @@ export default function TherapyCentreView() {
         buttonText="Explore Therapy Gallery"
       />
 
-      {/* 07. Section 7: Final CTA */}
+      {/* 08. Recent Clinical Blogs & Parent Guides Section */}
+      <RecentBlogsSection />
+
+      {/* 09. Section 9: Final CTA */}
       <FinalTherapyCTA />
     </div>
   );
