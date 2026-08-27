@@ -30,11 +30,11 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Admissions & Intake Process | Hand In Hand & The Next Level",
-  description: "Step-by-step admissions process for Hand In Hand Therapy Centre (Ages 2–18) and The Next Level Adult Day Program (Ages 18+). Contact our Intake & Admissions Team to get started.",
+  title: "Admissions & Intake Process | Hand In Hand",
+  description: "Streamlined admissions for certified ABA therapy & adult day programming in Vaughan & Bradford, ON. Schedule a center tour or consultation today.",
   openGraph: {
-    title: "Admissions & Intake Process | Hand In Hand & The Next Level",
-    description: "Step-by-step admissions & assessment process for therapy and 18+ adult day programming in Vaughan & Bradford.",
+    title: "Admissions & Intake Process | Hand In Hand",
+    description: "Streamlined admissions for ABA therapy & adult day programming in Vaughan & Bradford, ON. Schedule a tour or consultation today.",
     url: "https://handinhandtherapy.ca/admissions",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Admissions & Intake Process | Hand In Hand",
-    description: "Start your admissions journey today with our intake team.",
+    description: "Streamlined admissions for ABA therapy & adult day programming in Vaughan & Bradford, ON.",
     images: ["/images/adult-01.webp"],
   },
 };

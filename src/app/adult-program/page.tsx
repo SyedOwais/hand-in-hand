@@ -14,11 +14,11 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Next Level Adult Day Program | Hand In Hand (Ages 18+)",
-  description: "A place to build independence, connection, purpose, and community for adults 18+. Structured day programming, life skills, community outings, and DSO / Passport funding guidance in Vaughan & Bradford.",
+  title: "The Next Level Adult Day Program | Hand In Hand (18+)",
+  description: "Top adult day program in Vaughan, Concord & Bradford, ON. Offering life skills, peer community, respite care & DSO/Passport funding guidance for adults 18+.",
   openGraph: {
-    title: "The Next Level Adult Day Program (Ages 18+) | Hand In Hand",
-    description: "Building independence, connection, purpose, and community for adults 18+ in Vaughan & Bradford. DSO & Passport funding accepted.",
+    title: "The Next Level Adult Day Program (18+) | Hand In Hand",
+    description: "Structured 18+ adult day program in Vaughan, Concord & Bradford. Life skills, community outings, respite care & Passport funding guidance.",
     url: "https://handinhandtherapy.ca/adult-program",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Next Level Adult Day Program (Ages 18+)",
-    description: "Structured day programming, life skills, and community excursions in Vaughan & Bradford.",
+    title: "The Next Level Adult Day Program (18+)",
+    description: "Structured 18+ adult day program in Vaughan, Concord & Bradford, ON.",
     images: ["/images/Adults-Hero.webp"],
   },
 };

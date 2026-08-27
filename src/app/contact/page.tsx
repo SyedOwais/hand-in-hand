@@ -3,10 +3,34 @@ import ContactSection from "@/components/ContactSection";
 import LocationsSection from "@/components/LocationsSection";
 import Footer from "@/components/Footer";
 import { Leaf } from "lucide-react";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Contact Us | Hand In Hand Therapy Centre & Adult Day Program",
-  description: "Get in touch with Hand In Hand Therapy Centre & Adult Day Program in Vaughan & Bradford. Phone: 647-280-9952 (Vaughan) / (905)-251-4756 (Bradford). Email: handinhandtherapycentre@yahoo.com",
+export const metadata: Metadata = {
+  title: "Contact Us | Hand In Hand Therapy Centre & Adult Program",
+  description:
+    "Contact Hand In Hand in Vaughan (647-280-9952) & Bradford (905-251-4756). Schedule a tour or consultation for ABA therapy & adult day programming today!",
+  openGraph: {
+    title: "Contact Us | Hand In Hand Therapy Centre & Adult Program",
+    description: "Contact Hand In Hand in Vaughan (647-280-9952) & Bradford (905-251-4756). Schedule a tour or consultation today.",
+    url: "https://handinhandtherapy.ca/contact",
+    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    images: [
+      {
+        url: "/images/aboutus-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "Contact Hand In Hand Therapy Centre & Adult Day Program",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Hand In Hand Therapy Centre & Adult Program",
+    description: "Contact Hand In Hand in Vaughan (647-280-9952) & Bradford (905-251-4756).",
+    images: ["/images/aboutus-main.webp"],
+  },
 };
 
 export default function ContactPage() {

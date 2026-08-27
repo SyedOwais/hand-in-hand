@@ -30,7 +30,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | Hand In Hand Therapy Centre",
-  description: "Learn about Hand In Hand Therapy Centre, established in 2010. Dedicated educators and clinicians offering ABA therapy, speech, OT, and adult day programming across Vaughan & Bradford.",
+  description: "Learn about Hand In Hand Therapy Centre (est. 2010). Dedicated clinicians offering ABA therapy, speech, OT & adult day programming across Vaughan & Bradford.",
   openGraph: {
     title: "About Us | Hand In Hand Therapy Centre (Established 2010)",
     description: "Our story, mission, and clinical leadership. Transformative therapy and adult day programming in Vaughan & Bradford.",

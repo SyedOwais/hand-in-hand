@@ -26,11 +26,11 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About The Next Level | Adult Day Program (Ages 18+)",
-  description: "Learn about Hand in Hand - The Next Level, our dedicated adult day program created by Nakita Medeiros. Providing life skills, peer community, sensory chill zones, and respite care for teenagers & adults 18+ in Vaughan & Bradford.",
+  title: "About The Next Level | Adult Day Program (18+)",
+  description: "Discover Hand in Hand - The Next Level: a dedicated adult day program offering life skills, peer community, and respite care in Vaughan & Bradford.",
   openGraph: {
     title: "About The Next Level | Adult Day Program (18+)",
-    description: "Our story, mission, and founder vision for teenagers and adults with special needs across Vaughan & Bradford.",
+    description: "Dedicated adult day programming, life skills, peer community, and caregiver respite for adults 18+ in Vaughan & Bradford.",
     url: "https://handinhandtherapy.ca/about-the-next-level",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About The Next Level | Adult Day Program (18+)",
-    description: "Dedicated adult day programming, life skills, and caregiver respite in Vaughan & Bradford.",
+    description: "Dedicated adult day programming, life skills, peer community, and caregiver respite for adults 18+ in Vaughan & Bradford.",
     images: ["/images/Adults-Hero.webp"],
   },
 };

@@ -12,8 +12,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://handinhandtherapy.ca"),
   title: {
-    default: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
-    template: "%s | Hand In Hand Therapy Centre & Adult Day Program",
+    default: "Therapy Center for Teens & Adults - Hand In Hand",
+    template: "%s",
   },
   description: "Individualized ABA therapy, speech, occupational therapy & 18+ adult day programming in Vaughan and Bradford. Built to help every individual connect, grow & thrive.",
   keywords: [

@@ -8,22 +8,22 @@ import EntryPortalModal from "@/components/EntryPortalModal";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hand In Hand | Therapy Centre & Adult Day Program (Vaughan & Bradford)",
+  title: "Therapy Center for Teens & Adults - Hand In Hand",
   description:
-    "Pediatric ABA therapy, speech, OT, social skills (Ages 2–18) and The Next Level Adult Day Program (Ages 18+) in Vaughan & Bradford. OAP approved, DSO & Passport funding guidance.",
+    "Top-rated ABA therapy, speech, OT & adult day programming in Vaughan, Concord & Bradford, ON. Empowering teens & adults. OAP & Passport funding.",
   keywords: [
     "ABA Therapy Vaughan",
     "Autism Support Bradford",
-    "Pediatric Therapy York Region",
+    "Therapy Centre Vaughan",
     "Speech Therapy Vaughan",
     "Occupational Therapy Bradford",
     "Adult Day Program Vaughan",
     "Passport Funding Ontario",
-    "DSO Adult Services",
+    "OAP Approved Vaughan",
   ],
   openGraph: {
-    title: "Hand In Hand | Therapy Centre & Adult Day Program (Vaughan & Bradford)",
-    description: "Pediatric ABA therapy, speech, OT & 18+ Adult Day Program in Vaughan & Bradford. Together We Can!",
+    title: "Therapy Center for Teens & Adults - Hand In Hand",
+    description: "Top-rated ABA therapy, speech, OT & adult day programming in Vaughan, Concord & Bradford, ON. Empowering teens & adults.",
     url: "https://handinhandtherapy.ca/",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hand In Hand | Therapy Centre & Adult Day Program",
-    description: "Pediatric ABA therapy, speech, OT & 18+ Adult Day Program in Vaughan & Bradford.",
+    title: "Therapy Center for Teens & Adults - Hand In Hand",
+    description: "Top-rated ABA therapy, speech, OT & adult day programming in Vaughan, Concord & Bradford, ON.",
     images: ["/images/aboutus-main.webp"],
   },
 };
