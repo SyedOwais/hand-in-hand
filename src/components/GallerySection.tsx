@@ -8,7 +8,7 @@ export default function GallerySection() {
   const galleryItems = [
     {
       title: "Interactive Therapy",
-      category: "1:1 ABA Session",
+      category: "Individualized ABA Session",
       image: "/images/therapy-hero.png",
       span: "col-span-1 md:col-span-2 lg:col-span-2",
       height: "h-72 sm:h-80",

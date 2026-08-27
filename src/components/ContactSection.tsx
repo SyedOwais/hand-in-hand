@@ -140,7 +140,7 @@ export default function ContactSection() {
                       <input
                         type="tel"
                         required
-                        placeholder="(416)-930-5293"
+                        placeholder="647-280-9952"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:border-[#2A5243] focus:ring-2 focus:ring-[#2A5243]/20 outline-none text-sm transition-all"

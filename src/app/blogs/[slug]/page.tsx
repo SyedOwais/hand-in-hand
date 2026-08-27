@@ -106,10 +106,10 @@ const blogData: Record<string, BlogPostDetail> = {
           ]
         },
         {
-          heading: "How Adult Speech Therapy Differs From Pediatric Speech Therapy",
+          heading: "How Adult Speech Therapy Differs From Speech Therapy for Children",
           body: [
-            "The core skill — communication — is the same, but the approach is quite different. Pediatric speech therapy is largely developmental, often play-based, and focused on building skills a child hasn't yet acquired. Adult speech therapy is typically about rebuilding, adapting, or refining skills — whether that means recovering language after a medical event, adjusting long-standing speech patterns, or protecting vocal health for professional demands.",
-            "If you're looking for support for a child instead, our [pediatric speech therapy page](/speech-therapy-vaughan) covers our toddler, child, and youth programs in detail."
+            "The core skill — communication — is the same, but the approach is quite different. Children's speech therapy is largely developmental, often play-based, and focused on building skills a child hasn't yet acquired. Adult speech therapy is typically about rebuilding, adapting, or refining skills — whether that means recovering language after a medical event, adjusting long-standing speech patterns, or protecting vocal health for professional demands.",
+            "If you're looking for support for a child instead, our [speech therapy page](/speech-therapy-vaughan) covers our toddler, child, and youth programs in detail."
           ]
         },
         {
@@ -257,17 +257,17 @@ const blogData: Record<string, BlogPostDetail> = {
     title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
     metaTitle: "Does My Child Need Occupational Therapy? Signs to Know | Hand in Hand Therapy",
     metaDescription: "Struggling with handwriting, sensory overload, or daily routines? Learn the signs your child may benefit from occupational therapy in Vaughan.",
-    excerpt: "Learn the common signs a child may benefit from pediatric occupational therapy, what happens during an OT assessment, and how sensory & fine motor support helps Vaughan and Bradford families.",
-    category: "Pediatric Occupational Therapy",
+    excerpt: "Learn the common signs a child may benefit from occupational therapy, what happens during an OT assessment, and how sensory & fine motor support helps Vaughan and Bradford families.",
+    category: "Occupational Therapy",
     categoryBadge: "bg-[#2A5243] text-white",
     track: "pediatric",
     author: "Hand In Hand Clinical Team",
-    authorRole: "Pediatric Occupational Therapy Team",
+    authorRole: "Occupational Therapy Team",
     readTime: "7 min read",
     date: "August 13, 2026",
     image: "/images/signs-child-needs-occupational-therapy-vaughan.png",
     content: {
-      intro: "If your child melts down over a scratchy shirt tag, can't seem to hold a pencil the \"right\" way no matter how much you practice, or struggles to sit still through dinner, you've probably wondered whether it's just a phase - or something worth looking into. Occupational therapy (OT) is one of the most misunderstood services in pediatric care, largely because most parents only associate it with physical rehabilitation. In reality, occupational therapists work on something much broader: the everyday skills kids need to function, learn, and feel comfortable in their own bodies.\n\nThis guide breaks down the most common signs a child may benefit from [pediatric occupational therapy in Vaughan](/occupational-therapy-vaughan/), what a typical assessment looks like, and how to find the right support in Vaughan or Bradford.",
+      intro: "If your child melts down over a scratchy shirt tag, can't seem to hold a pencil the \"right\" way no matter how much you practice, or struggles to sit still through dinner, you've probably wondered whether it's just a phase - or something worth looking into. Occupational therapy (OT) is one of the most misunderstood services in care, largely because most parents only associate it with physical rehabilitation. In reality, occupational therapists work on something much broader: the everyday skills kids need to function, learn, and feel comfortable in their own bodies.\n\nThis guide breaks down the most common signs a child may benefit from [occupational therapy in Vaughan](/occupational-therapy-vaughan/), what a typical assessment looks like, and how to find the right support in Vaughan or Bradford.",
       keyTakeaways: [
         "Occupational therapy focuses on everyday 'occupations' for kids - fine motor skills, self-care routines, sensory processing, and self-regulation.",
         "Key indicators for OT include pencil grip difficulties, clothing texture sensitivities, clumsy coordination, and routine meltdowns.",
@@ -351,11 +351,11 @@ const blogData: Record<string, BlogPostDetail> = {
     metaTitle: "Signs Your Child May Need Speech Therapy in Vaughan | Hand in Hand Therapy",
     metaDescription: "Wondering if your child needs speech therapy? Learn the signs, what to expect, and how Hand in Hand Therapy Centre supports Vaughan & Bradford families.",
     excerpt: "Learn the common signs of speech delay in toddlers and children, what to expect during an SLP assessment, and how early intervention supports Vaughan and Bradford families.",
-    category: "Pediatric Speech",
+    category: "Speech Therapy",
     categoryBadge: "bg-[#2A5243] text-white",
     track: "pediatric",
     author: "Hand In Hand Clinical Team",
-    authorRole: "Pediatric Speech-Language Pathology Team",
+    authorRole: "Speech-Language Pathology Team",
     readTime: "7 min read",
     date: "August 13, 2026",
     image: "/images/signs-child-speech-therapy-vaughan.png",

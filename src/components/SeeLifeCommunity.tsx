@@ -31,7 +31,7 @@ export default function SeeLifeCommunity({
   buttonText = "View Full Gallery",
 }: SeeLifeCommunityProps) {
   const defaultGallery: GalleryItem[] = [
-    { src: "/images/child.webp", title: "1:1 Therapy & Engagement", caption: "Child-Centered Support & Growth" },
+    { src: "/images/child.webp", title: "Individualized Therapy & Engagement", caption: "Child-Centered Support & Growth" },
     { src: "/images/swimming.webp", title: "Water Play & Hydrotherapy", caption: "Sensory Integration & Fun" },
     { src: "/images/indoor.webp", title: "Indoor Sensory & Play", caption: "Structured Indoor Learning Environment" },
     { src: "/images/outdoor.webp", title: "Outdoor Exploration", caption: "Park Outings & Motor Skills" },

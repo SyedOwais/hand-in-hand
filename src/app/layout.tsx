@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
     template: "%s | Hand In Hand Therapy Centre & Adult Day Program",
   },
-  description: "Individualized pediatric ABA therapy, speech, occupational therapy & 18+ adult day programming in Vaughan and Bradford. Built to help every individual connect, grow & thrive.",
+  description: "Individualized ABA therapy, speech, occupational therapy & 18+ adult day programming in Vaughan and Bradford. Built to help every individual connect, grow & thrive.",
   keywords: [
     "ABA Therapy Vaughan",
     "Speech Therapy Bradford",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
-    description: "Individualized pediatric therapy and adult day support built around unique strengths in Vaughan and Bradford. Together We Can!",
+    description: "Individualized therapy and adult day support built around unique strengths in Vaughan and Bradford. Together We Can!",
     url: "https://handinhandtherapy.ca/",
     siteName: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hand In Hand Therapy Centre & The Next Level Adult Day Program",
-    description: "Comprehensive pediatric therapy and 18+ adult day programming in York Region & Simcoe County.",
+    description: "Comprehensive therapy and 18+ adult day programming in York Region & Simcoe County.",
     images: ["/images/aboutus-main.webp"],
   },
   robots: {
@@ -96,7 +96,7 @@ export default function RootLayout({
                   },
                   "image": "https://handinhandtherapy.ca/images/aboutus-main.webp",
                   "slogan": "Together We Can!",
-                  "description": "Comprehensive pediatric ABA therapy, Speech-Language Pathology, Occupational Therapy, and 18+ Adult Day Programming across York Region and Simcoe County.",
+                  "description": "Comprehensive ABA therapy, Speech-Language Pathology, Occupational Therapy, and 18+ Adult Day Programming across York Region and Simcoe County.",
                   "founder": {
                     "@type": "Person",
                     "name": "Nakita Medeiros",
@@ -104,12 +104,12 @@ export default function RootLayout({
                   },
                   "foundingDate": "2010",
                   "email": "handinhandtherapycentre@yahoo.com",
-                  "telephone": ["+1-416-930-5293", "+1-905-251-4756"],
+                  "telephone": ["+1-647-280-9952", "+1-905-251-4756"],
                   "address": [
                     {
                       "@type": "PostalAddress",
                       "name": "Concord / Vaughan Centre",
-                      "streetAddress": "665 Millway Ave, Unit 38",
+                      "streetAddress": "750 Millway Avenue unit #5",
                       "addressLocality": "Concord",
                       "addressRegion": "ON",
                       "postalCode": "L4K 3T8",

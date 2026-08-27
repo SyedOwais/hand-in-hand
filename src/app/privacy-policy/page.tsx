@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-slate-700 font-medium">
                 <li><strong>Contact Details:</strong> Parent/Caregiver Name, Email Address, and Phone Number.</li>
-                <li><strong>Participant Information:</strong> Participant or Child Name, Age/Age Group (Pediatric 2–18 or Adult 18+).</li>
+                <li><strong>Participant Information:</strong> Participant or Child Name, Age/Age Group (Ages 2–18 or Adult 18+).</li>
                 <li><strong>Program Interest:</strong> Therapy services required (ABA, Speech, Occupational Therapy, Social Skills) or Adult Day Program tracks.</li>
                 <li><strong>Preferred Location:</strong> Concord / Vaughan Center or Bradford Center.</li>
                 <li><strong>Consultation Messages & Funding Details:</strong> Specific care requirements, OAP (Ontario Autism Program) status, or Passport Funding inquiries submitted in message fields.</li>
@@ -110,7 +110,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="bg-[#FBF9F5] p-5 rounded-2xl border border-slate-200 space-y-2">
                 <p className="font-bold text-[#1B3B48]">Hand In Hand Therapy Centre & Adult Day Program</p>
-                <p className="text-xs text-slate-600">Vaughan Center: 665 Millway Ave, Unit 38, Concord, ON | (416)-930-5293</p>
+                <p className="text-xs text-slate-600">Vaughan Center: 750 Millway Avenue unit #5, Concord, ON | 647-280-9952</p>
                 <p className="text-xs text-slate-600">Bradford Center: 465 Holland St W, Unit 3/4, Bradford, ON | (905)-251-4756</p>
                 <p className="text-xs text-blue-600 font-semibold">Email: handinhandtherapycentre@yahoo.com</p>
               </div>

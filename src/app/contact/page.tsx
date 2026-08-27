@@ -6,7 +6,7 @@ import { Leaf } from "lucide-react";
 
 export const metadata = {
   title: "Contact Us | Hand In Hand Therapy Centre & Adult Day Program",
-  description: "Get in touch with Hand In Hand Therapy Centre & Adult Day Program in Vaughan & Bradford. Phone: (416)-930-5293 (Vaughan) / (905)-251-4756 (Bradford). Email: handinhandtherapycentre@yahoo.com",
+  description: "Get in touch with Hand In Hand Therapy Centre & Adult Day Program in Vaughan & Bradford. Phone: 647-280-9952 (Vaughan) / (905)-251-4756 (Bradford). Email: handinhandtherapycentre@yahoo.com",
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
             </h1>
 
             <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-              Have questions about pediatric therapy (Ages 2–18) or The Next Level Adult Day Program (Ages 18+)? Reach out to our clinical team today.
+              Have questions about therapy (Ages 2–18) or The Next Level Adult Day Program (Ages 18+)? Reach out to our clinical team today.
             </p>
           </div>
         </section>

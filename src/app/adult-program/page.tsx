@@ -42,12 +42,12 @@ export const metadata: Metadata = {
 
 export default function AdultProgramPage() {
   const adultCommunityItems = [
-    { src: "/images/Adults-Hero.webp", title: "Culinary Life Skills", caption: "Independent Cooking & Recipe Planning" },
-    { src: "/images/adult-01.webp", title: "Daily Life Skills Routine", caption: "Schedule Planning & Time Management" },
-    { src: "/images/adult-02.webp", title: "Pre-Vocational Workshop", caption: "Inventory Sorting & Task Organization" },
-    { src: "/images/adult-04.webp", title: "Community Outings", caption: "Budgeting & Store Navigation" },
-    { src: "/images/adult-05.webp", title: "Creative Art Studio", caption: "Self-Expression & Fine Motor Focus" },
-    { src: "/images/adult-06.webp", title: "Digital Literacy Lab", caption: "Computer Skills & Online Safety" },
+    { src: "/images/Adults-Hero.webp", title: "Culinary Life Skills", caption: "Independent Cooking & Meal Preparation" },
+    { src: "/images/adult-01.webp", title: "Group Social Connections", caption: "Peer Interaction & Circle Time Discussion" },
+    { src: "/images/adult-02.webp", title: "Outdoor Community Outings", caption: "Farm Visits & Nature Exploration" },
+    { src: "/images/adult-04.webp", title: "Music & Rhythm Expression", caption: "Acoustic Guitar & Interactive Song Sessions" },
+    { src: "/images/adult-05.webp", title: "Daily Living & Personal Care", caption: "Hands-on Self-Care & Grooming Routines" },
+    { src: "/images/adult-07.webp", title: "Recreation & Bowling Trips", caption: "Community Outings & Splitsville Bowling" },
   ];
 
   return (

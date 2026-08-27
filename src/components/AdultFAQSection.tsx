@@ -37,8 +37,12 @@ export default function AdultFAQSection() {
       a: "Yes, we have current parents who would be more than happy to speak with prospective parents about The Next Level. We’d be pleased to provide contact information to you during our meeting."
     },
     {
+      q: "What Are Your Support Ratios?",
+      a: "Our support ratios vary depending on the individual needs of each participant. We maintain flexible ratios—ranging from small group guidance to 1:1 support—to ensure every individual gets the exact level of support required to thrive."
+    },
+    {
       q: "Do You Accept Students Who Require 1:1 Support?",
-      a: "We consider 1:1 support for students on a case-by case basis. We have a limited number of spots available for students who require 1:1 support."
+      a: "Yes, we consider 1:1 support for participants on a case-by-case basis based on individual needs and goals."
     },
     {
       q: "How Much Is The Application Fee?",

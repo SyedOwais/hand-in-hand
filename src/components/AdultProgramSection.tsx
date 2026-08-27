@@ -43,7 +43,7 @@ export default function AdultProgramSection() {
     },
     {
       title: "Transition Support",
-      description: "Guided support for young adults transitioning out of high school or pediatric therapy into adult community living.",
+      description: "Guided support for young adults transitioning out of high school or youth therapy into adult community living.",
       icon: Compass,
       color: "bg-purple-500/15 text-purple-600",
     },

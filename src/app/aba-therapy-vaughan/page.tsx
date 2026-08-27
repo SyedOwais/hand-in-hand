@@ -81,13 +81,13 @@ export default function ABATherapyVaughanPage() {
     "name": "Hand In Hand Therapy Centre - ABA Therapy Vaughan",
     "image": "https://handinhandtherapy.ca/images/aba-therapy-vaughan.png",
     "url": "https://handinhandtherapy.ca/aba-therapy-vaughan",
-    "telephone": "(416)-930-5293",
+    "telephone": "647-280-9952",
     "email": "handinhandtherapycentre@yahoo.com",
     "priceRange": "$$",
     "address": [
       {
         "@type": "PostalAddress",
-        "streetAddress": "65 Millway Ave, Unit 38",
+        "streetAddress": "750 Millway Avenue unit #5",
         "addressLocality": "Concord",
         "addressRegion": "ON",
         "postalCode": "L4K 3V7",
@@ -237,11 +237,11 @@ export default function ABATherapyVaughanPage() {
                   </Link>
 
                   <a
-                    href="tel:4169305293"
+                    href="tel:6472809952"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-sm font-bold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
                   >
                     <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                    <span>(416) 930-5293</span>
+                    <span>647-280-9952</span>
                   </a>
                 </div>
 
@@ -656,7 +656,7 @@ export default function ABATherapyVaughanPage() {
                   Vaughan / Concord Clinic
                 </h3>
                 <p className="text-sm font-bold text-slate-700">
-                  65 Millway Ave, Unit 38, Concord, Ontario
+                  750 Millway Avenue unit #5, Concord, Ontario
                 </p>
                 <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   Serving Vaughan, Woodbridge, Maple, Thornhill, Kleinburg, and surrounding areas. In-home ABA also available throughout the Vaughan area.
@@ -736,11 +736,11 @@ export default function ABATherapyVaughanPage() {
               </Link>
 
               <a
-                href="tel:4169305293"
+                href="tel:6472809952"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-xs sm:text-sm font-extrabold text-[#1B3B48] bg-white border border-slate-300 hover:bg-slate-50 transition-colors shadow-xs"
               >
                 <PhoneCall className="w-4 h-4 text-[#2A5243]" />
-                <span>Call (416)-930-5293</span>
+                <span>Call 647-280-9952</span>
               </a>
             </div>
           </div>

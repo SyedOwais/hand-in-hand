@@ -43,7 +43,7 @@ export default function Footer() {
 
             <div className="pt-2">
               <span className="inline-block text-xs font-semibold px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 border border-white/10">
-                Registered ABA & Pediatric Clinicians
+                Registered ABA & Therapy Clinicians
               </span>
             </div>
           </div>
@@ -55,9 +55,21 @@ export default function Footer() {
                 Therapy
               </h4>
               <ul className="space-y-2 text-xs text-slate-300">
-                <li><Link href="/aba-therapy-vaughan" className="hover:text-white transition-colors">ABA Therapy</Link></li>
-                <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Speech Therapy</Link></li>
-                <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Occupational Therapy</Link></li>
+                <li>
+                  <Link href="/aba-therapy-vaughan" className="hover:text-white transition-colors">
+                    ABA Therapy (Ages 2–18)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speech-therapy-vaughan" className="hover:text-white transition-colors">
+                    Speech Therapy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/occupational-therapy-vaughan" className="hover:text-white transition-colors">
+                    Occupational Therapy
+                  </Link>
+                </li>
                 <li><Link href="/therapy#what-we-help-with" className="hover:text-white transition-colors">Social Skills Groups</Link></li>
                 <li><Link href="/therapy#beyond-therapy" className="hover:text-white transition-colors">Parent Coaching</Link></li>
                 <li><Link href="/therapy#beyond-therapy" className="hover:text-white transition-colors">School Advocacy & OAP</Link></li>
@@ -158,8 +170,8 @@ export default function Footer() {
             <ul className="space-y-4 text-xs text-slate-300">
               <li className="space-y-1">
                 <span className="font-bold text-white block text-[11px] uppercase tracking-wider">Concord / Vaughan:</span>
-                <span className="block text-slate-400">665 Millway Ave, Unit 38, Concord, ON</span>
-                <a href="tel:4169305293" className="text-[#6B8E7B] font-bold hover:underline block">(416)-930-5293</a>
+                <span className="block text-slate-400">750 Millway Avenue unit #5, Concord, ON</span>
+                <a href="tel:6472809952" className="text-[#6B8E7B] font-bold hover:underline block">647-280-9952</a>
                 <a href="mailto:handinhandtherapycentre@yahoo.com" className="text-blue-400 hover:underline block text-[11px] sm:text-xs break-all leading-snug">
                   handinhandtherapycentre@yahoo.com
                 </a>

@@ -76,11 +76,15 @@ export default function NextLevelHero() {
               <ImageFrame />
             </div>
 
-            {/* 3 Outcome Checkmarks - Placed beneath image on mobile */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            {/* 4 Outcome Checkmarks - Placed beneath image on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
               <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
                 <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
                 <span>Passport & DSO Guidance</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
+                <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
+                <span>Flexible Ratios Based on Needs</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
                 <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
@@ -103,11 +107,11 @@ export default function NextLevelHero() {
               </Link>
 
               <a
-                href="tel:4169305293"
+                href="tel:6472809952"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs transition-all"
               >
                 <Phone className="w-4 h-4 text-[#2A5243]" />
-                <span>Call Vaughan: (416)-930-5293</span>
+                <span>Call Vaughan: 647-280-9952</span>
               </a>
             </div>
           </div>

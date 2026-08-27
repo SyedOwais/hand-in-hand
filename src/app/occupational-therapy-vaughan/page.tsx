@@ -34,11 +34,10 @@ export const metadata: Metadata = {
     absolute: "Occupational Therapy Vaughan | Hand in Hand Therapy Centre"
   },
   description:
-    "Pediatric occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
+    "Occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
   keywords: [
     "occupational therapist Vaughan",
     "occupational therapy near me",
-    "pediatric occupational therapy Vaughan",
     "fine motor skills therapy Vaughan",
     "sensory processing therapy Vaughan",
     "occupational therapy Bradford",
@@ -51,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Occupational Therapy Vaughan | Hand in Hand Therapy Centre",
     description:
-      "Pediatric occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
+      "Occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
     url: "https://handinhandtherapy.ca/occupational-therapy-vaughan",
     siteName: "Hand In Hand Therapy Centre",
     images: [
@@ -69,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Occupational Therapy Vaughan | Hand in Hand Therapy Centre",
     description:
-      "Pediatric occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
+      "Occupational therapy in Vaughan (Concord) & Bradford. Personalized, multidisciplinary care for fine motor, sensory & daily living skills.",
     images: ["/images/therapy-hero.png"],
   },
 };
@@ -81,13 +80,13 @@ export default function OccupationalTherapyVaughanPage() {
     "name": "Hand In Hand Therapy Centre - Occupational Therapy Vaughan",
     "image": "https://handinhandtherapy.ca/images/therapy-hero.png",
     "url": "https://handinhandtherapy.ca/occupational-therapy-vaughan",
-    "telephone": "(416)-930-5293",
+    "telephone": "647-280-9952",
     "email": "info@handinhandtherapy.ca",
     "priceRange": "$$",
     "address": [
       {
         "@type": "PostalAddress",
-        "streetAddress": "65 Millway Ave, Unit 38",
+        "streetAddress": "750 Millway Avenue unit #5",
         "addressLocality": "Concord",
         "addressRegion": "ON",
         "postalCode": "L4K 3V7",
@@ -233,11 +232,11 @@ export default function OccupationalTherapyVaughanPage() {
                   </Link>
 
                   <a
-                    href="tel:4169305293"
+                    href="tel:6472809952"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-sm font-bold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
                   >
                     <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                    <span>(416) 930-5293</span>
+                    <span>647-280-9952</span>
                   </a>
                 </div>
 
@@ -576,7 +575,7 @@ export default function OccupationalTherapyVaughanPage() {
                   Vaughan / Concord Clinic
                 </h3>
                 <p className="text-sm font-bold text-slate-700">
-                  65 Millway Ave, Unit 38, Concord, Ontario
+                  750 Millway Avenue unit #5, Concord, Ontario
                 </p>
                 <p className="text-xs text-slate-600 leading-relaxed font-medium">
                   Serving Vaughan, Woodbridge, Maple, Thornhill, Kleinburg, and surrounding areas.
@@ -656,11 +655,11 @@ export default function OccupationalTherapyVaughanPage() {
               </Link>
 
               <a
-                href="tel:4169305293"
+                href="tel:6472809952"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full text-xs sm:text-sm font-extrabold text-[#1B3B48] bg-white border border-slate-300 hover:bg-slate-50 transition-colors shadow-xs"
               >
                 <PhoneCall className="w-4 h-4 text-[#2A5243]" />
-                <span>Call (416)-930-5293</span>
+                <span>Call 647-280-9952</span>
               </a>
             </div>
           </div>

@@ -107,7 +107,7 @@ export default function AdultSpeechFAQSection() {
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#F57A54] text-xs sm:text-sm font-extrabold uppercase tracking-wider backdrop-blur-md border border-white/15">
               <Heart className="w-4 h-4 fill-[#F57A54]" />
-              <span>Pediatric Speech Pathology</span>
+              <span>Children's Speech Pathology</span>
             </div>
 
             <div className="space-y-3 max-w-2xl">
@@ -115,7 +115,7 @@ export default function AdultSpeechFAQSection() {
                 Looking for speech therapy for a child instead?
               </h3>
               <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
-                Visit our pediatric speech therapy page for information on speech, articulation, late talker intervention, and language support for children.
+                Visit our speech therapy page for information on speech, articulation, late talker intervention, and language support for children.
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export default function AdultSpeechFAQSection() {
                 href="/speech-therapy-vaughan"
                 className="w-full sm:max-w-2xl mx-auto flex items-center justify-center gap-3 py-5 px-8 sm:px-12 rounded-full text-sm sm:text-base font-black uppercase tracking-wider text-white bg-[#F57A54] hover:bg-[#e06843] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-white/20"
               >
-                <span>Go to Pediatric Speech Therapy Page</span>
+                <span>Go to Children's Speech Therapy Page</span>
                 <ArrowRight className="w-5 h-5 text-white" />
               </Link>
             </div>

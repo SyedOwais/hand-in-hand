@@ -38,12 +38,12 @@ export default function FinalAdultCTA() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-8 border-t border-slate-200/80 text-xs sm:text-sm">
           
           <a
-            href="tel:4169305293"
+            href="tel:6472809952"
             className="p-4 rounded-2xl bg-white hover:bg-[#E8F0EC]/50 border border-slate-200/80 shadow-xs flex flex-col items-center gap-2 transition-colors text-[#1B3B48]"
           >
             <Phone className="w-5 h-5 text-[#2A5243]" />
             <span className="font-bold">Vaughan Phone</span>
-            <span className="text-[11px] text-slate-500">416-930-5293</span>
+            <span className="text-[11px] text-slate-500">647-280-9952</span>
           </a>
 
           <a

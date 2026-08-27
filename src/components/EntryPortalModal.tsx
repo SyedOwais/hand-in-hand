@@ -82,7 +82,7 @@ export default function EntryPortalModal() {
           </p>
 
           <p className="text-[#1B3B48]/80 text-xs sm:text-base max-w-xl mx-auto leading-relaxed mb-3 sm:mb-4 px-2 font-medium">
-            Whether you're looking for pediatric therapy or an adult day program, choose your program track below to get started.
+            Whether you're looking for child & youth therapy or an adult day program, choose your program track below to get started.
           </p>
 
           <h2 className="text-base sm:text-2xl font-black text-[#1B3B48] tracking-tight">

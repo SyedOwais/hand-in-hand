@@ -37,16 +37,15 @@ export const metadata: Metadata = {
     "speech therapy Concord",
     "speech therapy Bradford",
     "speech language pathologist Vaughan",
-    "pediatric speech therapy Vaughan",
     "autism speech therapy Vaughan"
   ],
   alternates: {
     canonical: "https://handinhandtherapy.ca/speech-therapy-vaughan",
   },
   openGraph: {
-    title: "Speech Therapy Vaughan | Hand In Hand Therapy Centre",
+    title: "Speech Therapy Vaughan & Bradford | Hand in Hand Therapy Centre",
     description:
-      "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care. Book your consultation today.",
+      "Comprehensive Speech-Language Pathology for toddlers, children, and youth in Vaughan & Bradford.",
     url: "https://handinhandtherapy.ca/speech-therapy-vaughan",
     siteName: "Hand In Hand Therapy Centre",
     images: [
@@ -62,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Speech Therapy Vaughan | Hand In Hand Therapy Centre",
+    title: "Speech Therapy Vaughan & Bradford | Hand in Hand Therapy Centre",
     description:
-      "Speech therapy in Vaughan (Concord) & Bradford for children and adults. Personalized, multidisciplinary care. Book your consultation today.",
+      "Comprehensive Speech-Language Pathology for toddlers, children, and youth in Vaughan & Bradford.",
     images: ["/images/speech-therapy-vaughan.png"],
   },
 };
@@ -78,13 +77,13 @@ export default function SpeechTherapyVaughanPage() {
         "@id": "https://handinhandtherapy.ca/speech-therapy-vaughan#clinic",
         "name": "Hand In Hand Therapy Centre - Speech Therapy Vaughan",
         "url": "https://handinhandtherapy.ca/speech-therapy-vaughan",
-        "telephone": "(416)-930-5293",
+        "telephone": "647-280-9952",
         "email": "handinhandtherapycentre@yahoo.com",
         "image": "https://handinhandtherapy.ca/images/speech-therapy-vaughan.png",
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "65 Millway Ave, Unit 38",
+          "streetAddress": "750 Millway Avenue unit #5",
           "addressLocality": "Concord",
           "addressRegion": "ON",
           "postalCode": "L4K 3V7",
@@ -251,7 +250,7 @@ export default function SpeechTherapyVaughanPage() {
     },
     {
       q: "Do you work with adults, or only children?",
-      a: "While this page focuses on pediatric care, we also offer specialized adult speech therapy for stroke recovery, voice, stuttering, accent modification, and swallowing. Visit our Adult Speech Therapy page for details."
+      a: "While this page focuses on child and youth care, we also offer specialized adult speech therapy for stroke recovery, voice, stuttering, accent modification, and swallowing. Visit our Adult Speech Therapy page for details."
     },
     {
       q: "Do I need a doctor's referral?",
@@ -332,11 +331,11 @@ export default function SpeechTherapyVaughanPage() {
                   </Link>
 
                   <a
-                    href="tel:4169305293"
+                    href="tel:6472809952"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-sm font-bold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
                   >
                     <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                    <span>(416) 930-5293</span>
+                    <span>647-280-9952</span>
                   </a>
                 </div>
 
@@ -616,7 +615,7 @@ export default function SpeechTherapyVaughanPage() {
                   </div>
 
                   <h3 className="text-2xl font-black text-[#1B3B48]">
-                    65 Millway Ave, Unit 38, Concord, Ontario
+                    750 Millway Avenue unit #5, Concord, Ontario
                   </h3>
 
                   <p className="text-slate-600 text-sm leading-relaxed font-medium">
@@ -626,7 +625,7 @@ export default function SpeechTherapyVaughanPage() {
                   <div className="space-y-2 pt-2 text-xs font-bold text-slate-700">
                     <div className="flex items-center gap-2">
                       <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                      <span>Phone: (416)-930-5293</span>
+                      <span>Phone: 647-280-9952</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#2A5243]" />
@@ -669,7 +668,7 @@ export default function SpeechTherapyVaughanPage() {
                   <div className="space-y-2 pt-2 text-xs font-bold text-slate-700">
                     <div className="flex items-center gap-2">
                       <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                      <span>Phone: (416)-930-5293</span>
+                      <span>Phone: (905)-251-4756</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#2A5243]" />
@@ -729,11 +728,11 @@ export default function SpeechTherapyVaughanPage() {
               </Link>
 
               <a
-                href="tel:4169305293"
+                href="tel:6472809952"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
               >
                 <PhoneCall className="w-5 h-5 text-[#F57A54]" />
-                <span>Call (416) 930-5293</span>
+                <span>Call 647-280-9952</span>
               </a>
             </div>
 

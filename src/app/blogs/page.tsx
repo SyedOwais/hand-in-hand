@@ -86,7 +86,7 @@ function BlogsContent() {
       category: "aba",
       track: "pediatric",
       author: "Hand In Hand Clinical Team",
-      authorRole: "Pediatric Occupational Therapy Team",
+      authorRole: "Occupational Therapy Team",
       readTime: "7 min read",
       date: "August 13, 2026",
       image: "/images/signs-child-needs-occupational-therapy-vaughan.png",
@@ -100,7 +100,7 @@ function BlogsContent() {
       category: "speech",
       track: "pediatric",
       author: "Hand In Hand Clinical Team",
-      authorRole: "Pediatric Speech-Language Pathology Team",
+      authorRole: "Speech-Language Pathology Team",
       readTime: "7 min read",
       date: "August 13, 2026",
       image: "/images/signs-child-speech-therapy-vaughan.png",
@@ -172,7 +172,7 @@ function BlogsContent() {
         <div className="flex items-center gap-2 flex-wrap justify-center md:justify-start">
           {[
             { id: "all", label: "All Insights", icon: Filter },
-            { id: "pediatric", label: "Pediatric Care (2–18)", icon: Heart },
+            { id: "pediatric", label: "Care & Therapy (2–18)", icon: Heart },
             { id: "adult", label: "Adult Programs (18+)", icon: Sparkles },
             { id: "funding", label: "OAP & Passport Funding", icon: Tag },
           ].map((tab) => {
@@ -302,7 +302,7 @@ function BlogsContent() {
               <div className="absolute top-3 left-3">
                 <span className={`text-[10px] font-extrabold px-3 py-1 rounded-full text-white shadow-xs uppercase tracking-wider ${post.track === "pediatric" ? "bg-[#2A5243]" : post.track === "adult" ? "bg-[#1B3B48]" : "bg-[#F57A54]"
                   }`}>
-                  {post.track === "pediatric" ? "Pediatric (2–18)" : post.track === "adult" ? "Adult (18+)" : "Universal"}
+                  {post.track === "pediatric" ? "Child Care (2–18)" : post.track === "adult" ? "Adult (18+)" : "Universal"}
                 </span>
               </div>
             </div>

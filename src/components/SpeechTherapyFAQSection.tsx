@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Do you work with adults, or only children?",
-    a: "Our primary focus is pediatric speech and language therapy, though we assess on a case-by-case basis. Contact us to discuss your specific situation."
+    a: "Our primary focus is child and youth speech and language therapy, though we assess on a case-by-case basis. Contact us to discuss your specific situation."
   },
   {
     q: "Do I need a doctor's referral?",

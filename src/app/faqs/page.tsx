@@ -102,7 +102,7 @@ function FAQsContent() {
     // Pediatric Care & OAP Funding FAQs
     {
       q: "What age groups are served at Hand In Hand Therapy Centre?",
-      a: "Our pediatric therapy division provides 1-on-1 ABA, Speech-Language Pathology, and Occupational Therapy for children and adolescents ages 2–18.",
+      a: "Our therapy division provides 1-on-1 ABA, Speech-Language Pathology, and Occupational Therapy for children and adolescents ages 2–18.",
       category: "pediatric"
     },
     {
@@ -117,7 +117,7 @@ function FAQsContent() {
     },
     {
       q: "Where are your therapy and day program centers located?",
-      a: "We operate two state-of-the-art facilities: Concord / Vaughan (665 Millway Ave, Unit 38) and Bradford (465 Holland St W, Unit 3/4).",
+      a: "We operate two state-of-the-art facilities: Concord / Vaughan (750 Millway Avenue unit #5) and Bradford (465 Holland St W, Unit 3/4).",
       category: "funding"
     }
   ];
@@ -172,7 +172,7 @@ function FAQsContent() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-medium">
-            Find immediate answers regarding 18+ Adult Day Program admissions, RESP funds, Passport funding, 1:1 support, and pediatric OAP services.
+            Find immediate answers regarding 18+ Adult Day Program admissions, RESP funds, Passport funding, 1:1 support, and child OAP services.
           </p>
         </div>
       </div>
@@ -185,7 +185,7 @@ function FAQsContent() {
           {[
             { id: "all", label: "All Questions", icon: Filter },
             { id: "adult", label: "Adult Day Program (18+)", icon: Sparkles },
-            { id: "pediatric", label: "Pediatric Care (2–18)", icon: Heart },
+            { id: "pediatric", label: "Care & Therapy (2–18)", icon: Heart },
             { id: "funding", label: "OAP & Passport Funding", icon: Tag },
           ].map((tab) => {
             const IconComp = tab.icon;
@@ -193,65 +193,64 @@ function FAQsContent() {
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold transition-all duration-300 flex items-center gap-2 ${
+                onClick={() => setActiveTab(tab.id as typeof activeTab)}
+                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-extrabold transition-all duration-200 shadow-xs ${
                   isActive
-                    ? "bg-[#1B3B48] text-white shadow-lg scale-105"
-                    : "bg-[#FBF9F5] text-slate-600 hover:bg-[#E8F0EC] border border-slate-200/80"
+                    ? "bg-[#1B3B48] text-white shadow-md"
+                    : "bg-slate-100 text-slate-600 hover:bg-[#E8F0EC] hover:text-[#2A5243]"
                 }`}
               >
-                <IconComp className={`w-3.5 h-3.5 ${isActive ? "text-[#6B8E7B]" : "text-[#2A5243]"}`} />
+                <IconComp className="w-3.5 h-3.5" />
                 <span>{tab.label}</span>
               </button>
             );
           })}
         </div>
 
-        {/* Search Input */}
-        <div className="relative w-full md:w-80">
-          <Search className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+        {/* Search Field */}
+        <div className="relative w-full md:w-72">
+          <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search FAQs by keyword..."
+            placeholder="Search FAQs..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-11 pr-4 py-2.5 rounded-full bg-[#FBF9F5] border border-slate-200 text-xs sm:text-sm text-[#1B3B48] placeholder-slate-400 focus:outline-none focus:border-[#2A5243] focus:ring-2 focus:ring-[#2A5243]/20 transition-all shadow-xs"
+            className="w-full pl-9 pr-4 py-2.5 rounded-full bg-slate-100 focus:bg-white border border-slate-200 focus:border-[#2A5243] focus:ring-2 focus:ring-[#2A5243]/20 text-xs font-semibold outline-none transition-all"
           />
         </div>
-
       </div>
 
       {/* Accordion List */}
       <div className="space-y-4 max-w-4xl mx-auto">
         {filteredFaqs.map((faq, idx) => {
-          const isOpen = openIndex === idx;
-          return (
-            <div
-              key={idx}
-              className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden transition-all duration-300"
-            >
-              <button
-                onClick={() => setOpenIndex(isOpen ? null : idx)}
-                className="w-full p-6 text-left flex items-center justify-between gap-4 font-extrabold text-base sm:text-lg text-[#1B3B48] hover:text-[#2A5243] transition-colors"
+            const isOpen = openIndex === idx;
+            return (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden transition-all duration-200"
               >
-                <span className="flex items-center gap-3">
-                  <span className={`text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase shrink-0 ${
-                    faq.category === "adult"
-                      ? "bg-[#1B3B48] text-white"
-                      : faq.category === "pediatric"
-                      ? "bg-[#2A5243] text-white"
-                      : "bg-[#F57A54] text-white"
-                  }`}>
-                    {faq.category === "adult" ? "18+ Adult" : faq.category === "pediatric" ? "2–18 Pediatric" : "Funding"}
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : idx)}
+                  className="w-full p-5 sm:p-6 text-left flex items-start justify-between gap-4 font-black text-sm sm:text-base text-[#1B3B48] hover:text-[#2A5243] transition-colors"
+                >
+                  <span className="flex items-center gap-3 flex-wrap">
+                    <span className={`text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow-2xs uppercase tracking-wider ${
+                      faq.category === "adult"
+                        ? "bg-[#1B3B48] text-white"
+                        : faq.category === "pediatric"
+                        ? "bg-[#2A5243] text-white"
+                        : "bg-[#F57A54] text-white"
+                    }`}>
+                      {faq.category === "adult" ? "18+ Adult" : faq.category === "pediatric" ? "Ages 2–18" : "Funding"}
+                    </span>
+                    <span>{faq.q}</span>
                   </span>
-                  <span>{faq.q}</span>
-                </span>
-                <ChevronDown
-                  className={`w-5 h-5 text-[#2A5243] shrink-0 transition-transform duration-300 ${
-                    isOpen ? "rotate-180 text-[#F57A54]" : ""
-                  }`}
-                />
-              </button>
+                  <ChevronDown
+                    className={`w-5 h-5 text-[#2A5243] shrink-0 transition-transform duration-300 ${
+                      isOpen ? "rotate-180 text-[#F57A54]" : ""
+                    }`}
+                  />
+                </button>
 
               {isOpen && (
                 <div className="px-6 pb-6 pt-0 text-sm text-slate-700 leading-relaxed border-t border-slate-100/80 bg-[#E8F0EC]/30">

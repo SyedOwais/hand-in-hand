@@ -145,49 +145,6 @@ export default function SocialProofVisual() {
             </div>
           </div>
 
-          {/* BENTO CARD 3: Stephanie Salguero (Compact 10/10 Transition Review) */}
-          <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-white via-[#FFFBF9] to-[#FDF3F0]/60 rounded-3xl p-7 border border-[#F57A54]/20 shadow-md hover:shadow-2xl hover:border-[#F57A54]/40 transition-all duration-300 flex flex-col justify-between space-y-6 group transform hover:-translate-y-1 relative overflow-hidden">
-            {/* Soft Coral Ambient Light Glow Mesh */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#F57A54]/12 rounded-full blur-2xl pointer-events-none group-hover:bg-[#F57A54]/25 transition-all duration-500" />
-
-            <div className="space-y-4 relative z-10">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-gradient-to-r from-[#F57A54]/20 to-[#F57A54]/10 text-[#F57A54] border border-[#F57A54]/20">
-                  <Sparkles className="w-3 h-3 text-[#F57A54]" />
-                  <span>10/10 Staff Rating</span>
-                </span>
-
-                <div className="flex items-center gap-1 text-amber-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-              </div>
-
-              <Quote className="w-8 h-8 text-[#F57A54]/30 group-hover:text-[#F57A54]/60 transition-colors" />
-
-              <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-semibold italic">
-                &ldquo;What a great supportive environment that supports children with ASD through their developmental transitions. Staff is 10/10 welcoming, respectful and involved.&rdquo;
-              </p>
-            </div>
-
-            <div className="pt-4 border-t border-[#F57A54]/15 flex items-center justify-between relative z-10">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F57A54] to-[#E05A32] text-white font-extrabold flex items-center justify-center text-sm shadow-md border border-white/40">
-                  S
-                </div>
-                <div>
-                  <h3 className="text-xs font-extrabold text-[#1B3B48]">Stephanie Salguero</h3>
-                  <span className="block text-[10px] font-bold text-slate-500">ASD Parent</span>
-                </div>
-              </div>
-
-              <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-slate-100 text-slate-500 border border-slate-200">
-                Google Review
-              </span>
-            </div>
-          </div>
-
           {/* BENTO CARD 4: Matthew S. (16 Years Client Parent Review) */}
           <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-white via-[#FAFBF9] to-[#E8F0EC]/60 rounded-3xl p-7 border border-[#2A5243]/20 shadow-md hover:shadow-2xl hover:border-[#2A5243]/40 transition-all duration-300 flex flex-col justify-between space-y-6 group transform hover:-translate-y-1 relative overflow-hidden">
             {/* Soft Mint Ambient Light Glow Mesh */}

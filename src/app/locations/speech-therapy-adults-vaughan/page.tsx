@@ -86,13 +86,13 @@ export default function AdultSpeechTherapyVaughanPage() {
         "@id": "https://handinhandtherapy.ca/locations/speech-therapy-adults-vaughan#clinic",
         "name": "Hand In Hand Therapy Centre - Adult Speech Therapy Vaughan",
         "url": "https://handinhandtherapy.ca/locations/speech-therapy-adults-vaughan",
-        "telephone": "(416)-930-5293",
+        "telephone": "647-280-9952",
         "email": "handinhandtherapycentre@yahoo.com",
         "image": "https://handinhandtherapy.ca/images/speech-therapy-adults-vaughan.png",
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "65 Millway Ave, Unit 38",
+          "streetAddress": "750 Millway Avenue unit #5",
           "addressLocality": "Concord",
           "addressRegion": "ON",
           "postalCode": "L4K 3V7",
@@ -181,7 +181,7 @@ export default function AdultSpeechTherapyVaughanPage() {
             "name": "Looking for speech therapy for a child instead?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Visit our pediatric speech therapy page for information on speech and language support for children."
+              "text": "Visit our speech therapy page for information on speech and language support for children."
             }
           }
         ]
@@ -269,7 +269,7 @@ export default function AdultSpeechTherapyVaughanPage() {
 
       <main className="flex-1 pt-32 sm:pt-36">
         
-        {/* PEDIATRIC CROSS-LINK HEADER ALERT BANNER */}
+        {/* CROSS-LINK HEADER ALERT BANNER */}
         <div className="bg-[#1B3B48] text-white py-3.5 px-4 shadow-sm border-b border-[#F57A54]/30">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm">
             <div className="flex items-center gap-2 text-slate-200">
@@ -280,7 +280,7 @@ export default function AdultSpeechTherapyVaughanPage() {
               href="/speech-therapy-vaughan"
               className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full text-xs font-extrabold text-white bg-[#F57A54] hover:bg-[#e06843] transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 min-w-[240px] text-center"
             >
-              <span>Explore Pediatric Speech Therapy</span>
+              <span>Explore Children's Speech Therapy</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -316,11 +316,11 @@ export default function AdultSpeechTherapyVaughanPage() {
                   </a>
 
                   <a
-                    href="tel:4169305293"
+                    href="tel:6472809952"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4.5 rounded-full text-base font-bold text-[#1B3B48] bg-white border border-slate-300 hover:border-[#2A5243] hover:bg-slate-50 transition-all shadow-xs min-w-[220px]"
                   >
                     <PhoneCall className="w-4 h-4 text-[#2A5243]" />
-                    <span>Call (416) 930-5293</span>
+                    <span>Call 647-280-9952</span>
                   </a>
                 </div>
               </div>
@@ -575,13 +575,13 @@ export default function AdultSpeechTherapyVaughanPage() {
                   </div>
 
                   <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    <strong className="text-[#1B3B48]">Address:</strong> 65 Millway Ave, Unit 38, Concord, Ontario<br />
+                    <strong className="text-[#1B3B48]">Address:</strong> 750 Millway Avenue unit #5, Concord, Ontario<br />
                     <strong className="text-[#1B3B48]">Serving:</strong> Vaughan, Concord, Woodbridge, Maple, Thornhill, Kleinburg, and surrounding areas.
                   </p>
 
                   <div className="pt-2 text-xs font-bold text-[#2A5243] flex items-center gap-2">
                     <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                    <span>Phone: (416) 930-5293</span>
+                    <span>Phone: 647-280-9952</span>
                   </div>
                 </div>
 

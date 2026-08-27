@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { FileCheck, AlertCircle, HelpCircle, Mail, MapPin, ArrowRight } from "lucide-react";
+import { FileCheck, AlertCircle, HelpCircle, Mail, MapPin, ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata = {
   title: "Terms & Conditions | Hand In Hand Therapy Centre & Adult Day Program",
@@ -50,7 +50,7 @@ export default function TermsAndConditionsPage() {
                 2. Use of Contact Forms & Inquiry Submissions
               </h2>
               <p>
-                Our website provides digital contact forms to facilitate initial program inquiries, tour bookings, and consultation requests for pediatric therapy (ages 2–18) and adult day programming (18+):
+                Our website provides digital contact forms to facilitate initial program inquiries, tour bookings, and consultation requests for therapy (ages 2–18) and adult day programming (18+):
               </p>
               <ul className="list-disc pl-6 space-y-2 text-slate-700">
                 <li><strong>Accurate Submissions:</strong> You agree to provide accurate, current, and truthful information (such as your name, email, phone number, and participant age) when completing any website inquiry form.</li>
@@ -73,13 +73,25 @@ export default function TermsAndConditionsPage() {
               </ul>
             </section>
 
-            <section className="space-y-3 pt-4 border-t border-slate-100">
+            {/* 3. Intellectual Property */}
+            <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1B3B48] flex items-center gap-2">
-                <FileCheck className="w-5 h-5 text-[#2A5243]" />
-                4. Intellectual Property & Brand Assets
+                <CheckCircle2 className="w-5 h-5 text-[#2A5243]" />
+                3. Intellectual Property Rights
               </h2>
               <p>
-                All text, graphics, logos, program names, imagery, and software functionality displayed on this website are the exclusive property of Hand In Hand Therapy Centre & The Next Level Adult Day Program and are protected under Canadian trademark and copyright laws.
+                All website content, custom graphic elements, badges, branding marks, and copy are owned by Hand In Hand Therapy Centre & The Next Level Adult Day Program. Content may not be reproduced or republished without written consent.
+              </p>
+            </section>
+
+            {/* 4. Limitation of Liability */}
+            <section className="space-y-3">
+              <h2 className="text-lg font-bold text-[#1B3B48] flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-[#4A7C64]" />
+                4. Limitation of Liability
+              </h2>
+              <p>
+                While we strive for complete accuracy, website materials are provided &quot;as is&quot; for informational purposes. Program structures, scheduling, and clinician assignments are finalized during direct intake procedures.
               </p>
             </section>
 
@@ -93,7 +105,7 @@ export default function TermsAndConditionsPage() {
               </p>
               <div className="bg-[#FBF9F5] p-5 rounded-2xl border border-slate-200 space-y-2">
                 <p className="font-bold text-[#1B3B48]">Hand In Hand Therapy Centre & Adult Day Program</p>
-                <p className="text-xs text-slate-600">Vaughan Center: 665 Millway Ave, Unit 38, Concord, ON | (416)-930-5293</p>
+                <p className="text-xs text-slate-600">Vaughan Center: 750 Millway Avenue unit #5, Concord, ON | 647-280-9952</p>
                 <p className="text-xs text-slate-600">Bradford Center: 465 Holland St W, Unit 3/4, Bradford, ON | (905)-251-4756</p>
                 <p className="text-xs text-blue-600 font-semibold">Email: handinhandtherapycentre@yahoo.com</p>
               </div>

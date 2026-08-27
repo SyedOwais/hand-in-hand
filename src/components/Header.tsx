@@ -75,17 +75,17 @@ export default function Header() {
     {
       name: "Gallery",
       href: "/gallery?track=pediatric",
-      desc: "Pediatric suites, OT gym & sensory rooms"
+      desc: "Therapy suites, OT gym & sensory rooms"
     },
     {
       name: "Blogs",
       href: "/blogs?track=pediatric",
-      desc: "Pediatric ABA, Speech & OT guides"
+      desc: "ABA, Speech & OT guides"
     },
     {
       name: "FAQs",
       href: "/faqs?track=pediatric",
-      desc: "OAP funding & pediatric therapy answers"
+      desc: "OAP funding & therapy answers"
     },
   ];
 
@@ -128,7 +128,7 @@ export default function Header() {
   // Navigation Links for Adult Day Program (18+)
   const adultNavLinks: NavLink[] = [
     { name: "Programs", href: "/adult-programs" },
-    { name: "About Us", href: "/about" },
+    { name: "About Us", href: "/about-the-next-level" },
     { name: "Admission", href: "/admissions" },
     { name: "Insights", isDropdown: true },
     { name: "Locations", href: "/adult-program#locations" },
@@ -148,11 +148,11 @@ export default function Header() {
             </span>
             <span className="hidden md:inline text-slate-500">•</span>
             <a
-              href="tel:4169305293"
+              href="tel:6472809952"
               className="flex items-center gap-1.5 hover:text-white transition-colors font-semibold"
             >
               <PhoneCall className="w-4 h-4 text-[#6B8E7B]" />
-              <span>(416)-930-5293</span>
+              <span>647-280-9952</span>
             </a>
             <span className="hidden md:inline text-slate-500">•</span>
             <a
@@ -256,7 +256,7 @@ export default function Header() {
                           <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
                             <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
                               <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
-                              Pediatric Care & Therapy
+                              Care & Therapy
                             </span>
                           </div>
 
@@ -325,7 +325,7 @@ export default function Header() {
                           <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
                             <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
                               <Compass className="w-3.5 h-3.5 text-[#F57A54]" />
-                              {isAdult ? "Adult Resource Hub" : "Pediatric Resource Hub"}
+                              {isAdult ? "Adult Resource Hub" : "Therapy Resource Hub"}
                             </span>
                           </div>
 

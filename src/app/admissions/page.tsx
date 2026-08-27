@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   description: "Step-by-step admissions process for Hand In Hand Therapy Centre (Ages 2–18) and The Next Level Adult Day Program (Ages 18+). Contact our Intake & Admissions Team to get started.",
   openGraph: {
     title: "Admissions & Intake Process | Hand In Hand & The Next Level",
-    description: "Step-by-step admissions & assessment process for pediatric therapy and 18+ adult day programming in Vaughan & Bradford.",
+    description: "Step-by-step admissions & assessment process for therapy and 18+ adult day programming in Vaughan & Bradford.",
     url: "https://handinhandtherapy.ca/admissions",
     siteName: "Hand In Hand Therapy Centre & Adult Day Program",
     images: [
@@ -387,11 +387,11 @@ export default function AdmissionsPage() {
                 </Link>
 
                 <a
-                  href="tel:4169305293"
+                  href="tel:6472809952"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-xs font-extrabold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all text-center"
                 >
                   <PhoneCall className="w-4 h-4 text-[#F57A54]" />
-                  <span>Call (416) 930-5293</span>
+                  <span>Call 647-280-9952</span>
                 </a>
               </div>
 

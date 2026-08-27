@@ -7,7 +7,7 @@ export default function StatsBar() {
   const stats = [
     {
       icon: Users,
-      value: "1:1 Dedicated Support",
+      value: "Dedicated Support",
       label: "Individualized learning plans",
     },
     {

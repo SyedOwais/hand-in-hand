@@ -56,7 +56,7 @@ function GalleryContent() {
   const pediatricItems: GalleryItem[] = [
     {
       id: 101,
-      title: "1:1 Pediatric ABA & Speech Therapy Session",
+      title: "Individualized ABA & Speech Therapy Session",
       category: "pediatric",
       location: "Concord / Vaughan",
       image: "/images/child.webp",
@@ -334,7 +334,7 @@ function GalleryContent() {
             }`}
           >
             <Heart className={`w-4 h-4 ${activeTrack === "pediatric" ? "text-[#F57A54]" : "text-[#2A5243]"}`} />
-            <span>Pediatric Gallery (2–18)</span>
+            <span>Therapy & Care Gallery (2–18)</span>
           </button>
 
           {/* Adult Track Button (18+) */}
@@ -343,49 +343,53 @@ function GalleryContent() {
             className={`px-6 py-3 rounded-full font-extrabold text-sm sm:text-base transition-all duration-300 flex items-center gap-2.5 ${
               activeTrack === "adult"
                 ? "bg-[#1B3B48] text-white shadow-xl scale-105"
-                : "text-slate-600 hover:text-[#1B3B48] hover:bg-slate-100"
+                : "text-slate-600 hover:text-[#1B3B48] hover:bg-[#E8F0EC]"
             }`}
           >
             <Sparkles className={`w-4 h-4 ${activeTrack === "adult" ? "text-[#6B8E7B]" : "text-[#1B3B48]"}`} />
-            <span>Adult Gallery (18+)</span>
+            <span>Adult Day Program (18+)</span>
           </button>
 
         </div>
       </div>
 
       {/* Asymmetric Bento Photography Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 auto-rows-[280px] sm:auto-rows-[320px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4 sm:px-6">
         {displayedItems.map((item, idx) => {
           const isFeatured = item.featured;
           return (
             <div
               key={item.id}
               onClick={() => setLightboxIndex(idx)}
-              className={`group relative rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-1 ${
-                isFeatured ? "md:col-span-2 md:row-span-2" : "md:col-span-1 md:row-span-1"
+              className={`group relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border border-slate-200/80 bg-slate-900 ${
+                isFeatured ? "md:col-span-2 lg:col-span-2 min-h-[360px] sm:min-h-[420px]" : "min-h-[300px] sm:min-h-[340px]"
               }`}
             >
-              {/* Full Photo */}
+              {/* Background Image */}
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Glassmorphism Dark Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530]/95 via-[#0F2530]/25 to-transparent flex flex-col justify-between p-6 text-white">
-                
-                {/* Top Badges */}
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold px-3.5 py-1.5 rounded-full bg-black/50 backdrop-blur-md border border-white/20 flex items-center gap-1.5 shadow-xs">
-                    <MapPin className="w-3.5 h-3.5 text-[#F57A54]" />
-                    {item.location}
-                  </span>
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-85 group-hover:opacity-90 transition-opacity" />
 
-                  <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 shadow-lg border border-white/20">
-                    <Maximize2 className="w-5 h-5" />
-                  </div>
+              {/* Top Hover Badge */}
+              <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30 shadow-lg">
+                  <Maximize2 className="w-5 h-5" />
+                </span>
+              </div>
+
+              {/* Card Details Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 z-10 flex flex-col justify-end space-y-3">
+                
+                {/* Location Badge */}
+                <div className="flex items-center gap-2 text-slate-300 text-xs font-bold">
+                  <MapPin className="w-3.5 h-3.5 text-[#F57A54]" />
+                  <span>{item.location}</span>
                 </div>
 
                 {/* Bottom Details */}
@@ -393,7 +397,7 @@ function GalleryContent() {
                   <span className={`text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-xs ${
                     item.category === "pediatric" ? "bg-[#2A5243] text-white" : "bg-[#1B3B48] text-white"
                   }`}>
-                    {item.category === "pediatric" ? "Pediatric (2–18)" : "Adult (18+)"}
+                    {item.category === "pediatric" ? "Care & Therapy (2–18)" : "Adult (18+)"}
                   </span>
 
                   <h3 className={`font-bold text-white group-hover:text-[#6B8E7B] transition-colors leading-snug drop-shadow-md ${
@@ -414,7 +418,7 @@ function GalleryContent() {
         {!isExpanded && currentItems.length > 6 ? (
           <button
             onClick={() => setIsExpanded(true)}
-            className="group px-8 py-3.5 rounded-full bg-[#1B3B48] hover:bg-[#2A5243] text-white text-xs sm:text-sm font-extrabold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2.5 transform hover:-translate-y-0.5"
+            className="group px-8 py-3.5 rounded-full bg-[#1B3B48] hover:bg-[#2A5243] text-[#FAFDFB] text-xs sm:text-sm font-extrabold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2.5 transform hover:-translate-y-0.5"
           >
             <span>View More</span>
             <ChevronDown className="w-4 h-4 text-[#F57A54] group-hover:translate-y-0.5 transition-transform" />
@@ -470,7 +474,7 @@ function GalleryContent() {
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-[#6B8E7B] uppercase tracking-wider flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-[#F57A54]" />
-                  {displayedItems[lightboxIndex].location} • {activeTrack === "pediatric" ? "Pediatric Therapy" : "Adult Day Program"}
+                  {displayedItems[lightboxIndex].location} • {activeTrack === "pediatric" ? "Therapy & Care" : "Adult Day Program"}
                 </span>
                 <span className="text-xs text-slate-400 font-semibold">
                   {lightboxIndex + 1} of {displayedItems.length}

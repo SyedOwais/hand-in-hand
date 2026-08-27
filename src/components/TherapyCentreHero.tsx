@@ -56,14 +56,14 @@ export default function TherapyCentreHero() {
         >
           <Image
             src="/images/therapy-hero.webp"
-            alt="Pediatric Learning & ABA Therapy Session"
+            alt="Learning & ABA Therapy Session"
             fill
             className="object-cover object-top sm:object-[center_20%]"
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
           <div className="absolute top-4 left-4 bg-[#2A5243]/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-black text-white z-10 border border-white/20 shadow-md">
-            1:1 ABA & Pediatric Therapy
+            Individualized ABA & Child Therapy
           </div>
         </div>
 
@@ -118,7 +118,7 @@ export default function TherapyCentreHero() {
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs sm:text-sm font-extrabold tracking-wider uppercase border border-[#4A7C64]/30 shadow-xs">
               <Leaf className="w-4 h-4 text-[#4A7C64]" />
-              <span>Pediatric & Adolescent Support • Ages 2–18</span>
+              <span>Child & Youth Support • Ages 2–18</span>
             </div>
 
             <div>
@@ -142,11 +142,11 @@ export default function TherapyCentreHero() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
               <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
                 <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
-                <span>OAP Approved</span>
+                <span>OAP & SSAH Approved Funding</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
                 <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
-                <span>1:1 & Group Sessions</span>
+                <span>Individual & Group Sessions</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#1B3B48]">
                 <CheckCircle2 className="w-4 h-4 text-[#4A7C64] shrink-0" />
@@ -166,11 +166,11 @@ export default function TherapyCentreHero() {
                 </Link>
 
                 <a
-                  href="tel:4169305293"
+                  href="tel:6472809952"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-extrabold text-[#1B3B48] bg-white border-2 border-[#4A7C64]/40 hover:border-[#1B3B48] shadow-xs hover:shadow-md transition-all"
                 >
                   <Phone className="w-4 h-4 text-[#2A5243]" />
-                  <span>Call Vaughan: (416)-930-5293</span>
+                  <span>Call Vaughan: 647-280-9952</span>
                 </a>
               </div>
 
