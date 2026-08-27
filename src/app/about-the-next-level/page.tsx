@@ -288,8 +288,7 @@ export default function AboutTheNextLevelPage() {
                 <div className="pt-2 flex flex-wrap gap-2">
                   {[
                     "👁️ Open-Door Observation",
-                    "📊 Daily Progress Tracking",
-                    "🏠 Home Therapy Integration"
+                    "📊 Daily Progress Tracking"
                   ].map((chip, cIdx) => (
                     <span key={cIdx} className="text-xs font-extrabold px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-[#2A5243] shadow-sm">
                       {chip}

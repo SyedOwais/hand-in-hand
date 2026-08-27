@@ -69,7 +69,7 @@ export default function WhatWeHelpWith() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6 pt-4 border-t border-slate-200">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
                   <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />
-                  <span>IBI & ABA Clinical Supervision</span>
+                  <span>BCBA & Psychologist Clinical Supervision</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
                   <CheckCircle2 className="w-4 h-4 text-[#2A5243] shrink-0" />

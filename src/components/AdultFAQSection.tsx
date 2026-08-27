@@ -14,27 +14,27 @@ export default function AdultFAQSection() {
   const faqs: FAQItem[] = [
     {
       q: "When Should I Apply?",
-      a: "As soon as possible. THE NEXT LEVEL is a small centre with a strong yearly re-enrollment, so there are limited spaces available each year. Many families start to look for a new school in the fall and winter of the year before entry."
+      a: "As soon as possible. Our adult day program is a small centre with a strong yearly re-enrollment, so there are limited spaces available each year. Many families start to look for a new program in the fall and winter of the year before entry."
     },
     {
       q: "Do You Only Take Students In Certain Years, Or 'Entry Years'?",
-      a: "We accept students into our program any time."
+      a: "We accept participants into our program any time."
     },
     {
       q: "Do You Accept Students Once The School Year Has Begun?",
-      a: "Yes, we are happy to accept students during the school year if we have space available. The sooner students come in, the sooner they start learning the functional skills they will use for the rest of their lives."
+      a: "Yes, we are happy to accept participants during the year if we have space available. The sooner participants come in, the sooner they start learning the functional skills they will use for the rest of their lives."
     },
     {
       q: "How Do You Select Students?",
-      a: "Once the assessment process is completed, we consider how well the program can meet the needs of the prospective student. We also look at the fit with other students in our groups and the amount of support a student may require."
+      a: "Once the assessment process is completed, we consider how well the program can meet the needs of the prospective participant. We also look at the fit with other participants in our groups and the amount of support a participant may require."
     },
     {
-      q: "What Kinds Of Students Attend The Next Level?",
-      a: "The Next Level is an inclusive environment. Most students have a diagnosis of some kind (High needs individuals, Learning Disability, Down Syndrome, ASD, MID). Some of our students have come from a high school alternative (non-credit) program, and some have even earned their high school diploma. Some have been out of school for several years. Our students have various challenges, but to us, they are individuals who benefit from the unique, individualized programming available at THE NEXT LEVEL."
+      q: "What Kinds Of Participants Attend Our Program?",
+      a: "Our adult day program is an inclusive environment. Most participants have a diagnosis of some kind (High needs individuals, Learning Disability, Down Syndrome, ASD, MID). Some of our participants have come from a high school alternative (non-credit) program, and some have even earned their high school diploma. Some have been out of school for several years. Our participants have various challenges, but to us, they are individuals who benefit from the unique, individualized programming available at Hand in Hand."
     },
     {
-      q: "Do You Have Parents Who I Can Call For References About THE NEXT LEVEL?",
-      a: "Yes, we have current parents who would be more than happy to speak with prospective parents about The Next Level. We’d be pleased to provide contact information to you during our meeting."
+      q: "Do You Have Parents Who I Can Call For References About Our Program?",
+      a: "Yes, we have current parents who would be more than happy to speak with prospective parents about our adult day program. We’d be pleased to provide contact information to you during our meeting."
     },
     {
       q: "What Are Your Support Ratios?",
@@ -82,7 +82,7 @@ export default function AdultFAQSection() {
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
-            Everything you need to know about enrolment, admissions, funding, and 1:1 support at THE NEXT LEVEL.
+            Everything you need to know about enrolment, admissions, funding, and support in our adult day program.
           </p>
         </div>
 

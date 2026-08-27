@@ -127,11 +127,11 @@ export default function EntryPortalModal() {
               {/* Bullet List */}
               <ul className="space-y-1.5 mb-4 sm:mb-6 text-[#1B3B48] text-xs sm:text-sm">
                 {[
-                  "ABA Therapy",
-                  "Speech Therapy",
-                  "Occupational Therapy",
-                  "Social Skills Groups",
-                  "Parent Coaching & Advocacy",
+                  "ABA & IBI Therapy",
+                  "Speech & Occupational Therapy",
+                  "Life Skills & Holiday Camps",
+                  "Respite Services",
+                  "OAP Advocacy & Parent Coaching",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F57A54] shrink-0" />
@@ -185,8 +185,9 @@ export default function EntryPortalModal() {
               <ul className="space-y-1.5 mb-4 sm:mb-6 text-[#1B3B48] text-xs sm:text-sm">
                 {[
                   "Day Programming & Life Skills",
-                  "Community Involvement Outings",
-                  "Independent Living & Job Skills",
+                  "Community Outings & Activities",
+                  "Respite Services",
+                  "Independent Living & Skills",
                   "Passport Funding & DSO Guidance",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">

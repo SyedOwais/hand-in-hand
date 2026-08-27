@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 export default function AdultProgramPage() {
   const adultCommunityItems = [
-    { src: "/images/Adults-Hero.webp", title: "Culinary Life Skills", caption: "Independent Cooking & Meal Preparation" },
+    { src: "/images/adult-14.webp", title: "Culinary Life Skills", caption: "Independent Cooking & Meal Preparation" },
     { src: "/images/adult-01.webp", title: "Group Social Connections", caption: "Peer Interaction & Circle Time Discussion" },
     { src: "/images/adult-02.webp", title: "Outdoor Community Outings", caption: "Farm Visits & Nature Exploration" },
     { src: "/images/adult-04.webp", title: "Music & Rhythm Expression", caption: "Acoustic Guitar & Interactive Song Sessions" },

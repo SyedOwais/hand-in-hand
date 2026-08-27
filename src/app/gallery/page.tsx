@@ -116,7 +116,7 @@ function GalleryContent() {
       title: "Outdoor Exploration & Gross Motor Play",
       category: "pediatric",
       location: "Bradford",
-      image: "/images/outdoor.webp",
+      image: "/images/Childhood-Outside.webp",
       description: "Active outdoor play area designed for gross motor exercises, teamwork, and nature-based sensory discovery."
     },
     {
