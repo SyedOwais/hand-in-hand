@@ -479,8 +479,8 @@ export default function AboutTheNextLevelPage() {
                         </div>
 
                         <div className="p-3.5 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-1">
-                          <span className="block text-xl font-black text-[#F57A54]">Corporation</span>
-                          <span className="block text-[11px] text-slate-600 font-bold">Legal Business Structure</span>
+                          <span className="block text-xl font-black text-[#F57A54]">Parent Respite</span>
+                          <span className="block text-[11px] text-slate-600 font-bold">Caregiver Peace of Mind</span>
                         </div>
 
                       </div>
