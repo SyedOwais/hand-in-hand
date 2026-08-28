@@ -116,7 +116,7 @@ function GalleryContent() {
       title: "Outdoor Exploration & Gross Motor Play",
       category: "pediatric",
       location: "Bradford",
-      image: "/images/Childhood-Outside.webp",
+      image: "/images/outdoor-updated.jpg",
       description: "Active outdoor play area designed for gross motor exercises, teamwork, and nature-based sensory discovery."
     },
     {
@@ -124,7 +124,7 @@ function GalleryContent() {
       title: "Milestone Celebrations & Achievements",
       category: "pediatric",
       location: "Concord / Vaughan",
-      image: "/images/celebration.webp",
+      image: "/images/Celebrating-Milestones.jpg",
       description: "Joyful community gatherings celebrating developmental milestones, birthdays, and personal achievements."
     },
     {

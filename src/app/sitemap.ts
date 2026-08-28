@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/adult-program",
     "/adult-programs",
     "/about",
+    "/about-the-next-level",
     "/contact",
     "/privacy-policy",
     "/terms-and-conditions",

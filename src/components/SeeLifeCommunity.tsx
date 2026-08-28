@@ -34,8 +34,8 @@ export default function SeeLifeCommunity({
     { src: "/images/child.webp", title: "Individualized Therapy & Engagement", caption: "Child-Centered Support & Growth" },
     { src: "/images/swimming.webp", title: "Water Play & Hydrotherapy", caption: "Sensory Integration & Fun" },
     { src: "/images/indoor.webp", title: "Indoor Sensory & Play", caption: "Structured Indoor Learning Environment" },
-    { src: "/images/Childhood-Outside.webp", title: "Outdoor Exploration", caption: "Park Outings & Motor Skills" },
-    { src: "/images/celebration.webp", title: "Milestone Celebrations", caption: "Celebrating Progress & Achievements" },
+    { src: "/images/outdoor-updated.jpg", title: "Outdoor Exploration", caption: "Park Outings & Motor Skills" },
+    { src: "/images/Celebrating-Milestones.jpg", title: "Milestone Celebrations", caption: "Celebrating Progress & Achievements" },
     { src: "/images/activity.webp", title: "Group & Peer Activities", caption: "Social Skills & Collaborative Play" },
   ];
 

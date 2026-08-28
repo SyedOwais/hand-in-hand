@@ -159,8 +159,8 @@ export default function AboutTheNextLevelPage() {
               {/* Image Column (Adult Image Only) */}
               <div className="lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
-                  src="/images/adult-01.webp"
-                  alt="Hand in Hand - The Next Level Adult Program Group Social Connections"
+                  src="/images/Specializing in Developmental Support for over 10 Years.jpg"
+                  alt="Specializing in Developmental Support for Over 10 Years"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-top sm:object-center group-hover:scale-105 transition-transform duration-700"

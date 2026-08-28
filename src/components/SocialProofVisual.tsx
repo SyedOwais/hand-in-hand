@@ -188,6 +188,46 @@ export default function SocialProofVisual() {
             </div>
           </div>
 
+          {/* BENTO CARD 5: Yasmin De Ocampo (Occupational Therapy & Early Intervention Review) */}
+          <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-white via-[#FAFBF9] to-[#E8F0EC]/60 rounded-3xl p-7 border border-[#2A5243]/20 shadow-md hover:shadow-2xl hover:border-[#2A5243]/40 transition-all duration-300 flex flex-col justify-between space-y-6 group transform hover:-translate-y-1 relative overflow-hidden">
+            <div className="space-y-4 relative z-10">
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-gradient-to-r from-[#2A5243]/20 to-[#6B8E7B]/15 text-[#2A5243] border border-[#2A5243]/20">
+                  <Heart className="w-3 h-3 text-[#F57A54]" />
+                  <span>OT & Early Intervention</span>
+                </span>
+
+                <div className="flex items-center gap-1 text-amber-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+              </div>
+
+              <Quote className="w-8 h-8 text-[#2A5243]/30 group-hover:text-[#F57A54]/50 transition-colors" />
+
+              <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-semibold italic">
+                &ldquo;I highly recommend Hand in Hand Therapy Center. My nephew started his Occupational therapy last December 2022. It was really difficult for him to obey our commands and to say what he wants. Now, after almost 10 months in Therapy and Early Intervention, we can say that his improvements are very noticeable. He’s now able to follow our instructions and tell us what he wants + We observed how longer it is for him to have his &quot;Waiting time&quot; than before, making it less difficult for us to bring him to events. Kudos to all the teachers in Hand in Hand!&rdquo;
+              </p>
+            </div>
+
+            <div className="pt-4 border-t border-[#2A5243]/15 flex items-center justify-between relative z-10">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F57A54] to-[#2A5243] text-white font-extrabold flex items-center justify-center text-sm shadow-md border border-white/40">
+                  Y
+                </div>
+                <div>
+                  <h3 className="text-xs font-extrabold text-[#1B3B48]">Yasmin De Ocampo</h3>
+                  <span className="block text-[10px] font-bold text-slate-500">OT & Early Intervention Family</span>
+                </div>
+              </div>
+
+              <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-slate-100 text-slate-500 border border-slate-200">
+                Google Review
+              </span>
+            </div>
+          </div>
+
           {/* BENTO CARD 5: SaaS Callout Box & Google Review Link */}
           <div className="md:col-span-1 lg:col-span-1 bg-gradient-to-br from-[#E8F0EC] via-white to-[#F4F9F6] text-[#1B3B48] rounded-3xl p-7 border-2 border-[#4A7C64]/30 shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-4">

@@ -37,7 +37,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isAdult = pathname.startsWith("/adult");
+  const isAdult = pathname.startsWith("/adult") || pathname.startsWith("/about-the-next-level");
 
   const currentEmail = isAdult
     ? "handinhandthenextlevel@gmail.com"

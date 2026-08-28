@@ -163,8 +163,8 @@ export default function AboutPage() {
               {/* Image Column */}
               <div className="lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
-                  src="/images/interaction.webp"
-                  alt="Hand in Hand Therapy Centre Team"
+                  src="/images/Professional Educators and Experienced Clinicians.jpg"
+                  alt="Professional Educators and Experienced Clinicians"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-top sm:object-center group-hover:scale-105 transition-transform duration-700"
@@ -611,16 +611,16 @@ export default function AboutPage() {
                   What Hand in Hand Has To Offer
                 </h2>
 
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  The transition to independence throughout young adulthood is a challenging and pivotal time for everybody. For young adults with developmental disabilities, these periods can be particularly difficult. Hand in Hand understands this difficulty that many teens and young adults with special needs are simply unprepared to experience.
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
+                  Every child deserves a nurturing space to grow, connect, and discover their full potential. At Hand in Hand Therapy Centre, we focus on helping younger children build essential life skills, express themselves with confidence, and foster meaningful, lasting friendships in a supportive, fun environment.
                 </p>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
-                  The main objective of Hand in Hand is to help ease individuals adjusting to having fewer and less structured support programs by providing a service to the community that is practically non-existent, especially to those with high needs.
+                  Our main objective is to empower children by teaching functional communication, social interaction, and daily living skills tailored to their unique learning styles. We provide child-centered therapy programs that seamlessly integrate learning with play and active exploration.
                 </p>
 
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  There are very few programs available for teenagers and adults with special needs that allow them to have the experiences in a safe and controlled environment catering specially to their needs. This demand will specifically allow Hand in Hand to excel as an organization.
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
+                  By partnering closely with families and connecting children with the surrounding community, Hand in Hand creates a welcoming space where children of all abilities feel valued, included, and inspired to achieve every milestone.
                 </p>
 
                 <div className="pt-2 flex flex-col sm:flex-row gap-4">
@@ -643,16 +643,16 @@ export default function AboutPage() {
 
               <div className="lg:col-span-5 relative h-[320px] sm:h-[400px] rounded-2xl overflow-hidden shadow-xl border border-white/10">
                 <Image
-                  src="/images/adult-06.webp"
-                  alt="Adult Day Program Environment"
+                  src="/images/What Hand in Hand Inc. has to offer.jpg"
+                  alt="What Hand in Hand Inc. Has To Offer"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover object-top sm:object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-white">
-                  <span className="text-[11px] font-extrabold text-[#EAA85E] uppercase tracking-wider block">Life Skills & Community Connection</span>
-                  <p className="text-xs text-slate-200 mt-0.5">Empowering young adults with developmental special needs.</p>
+                  <span className="text-[11px] font-extrabold text-[#EAA85E] uppercase tracking-wider block">Childhood Development & Friendship</span>
+                  <p className="text-xs text-slate-200 mt-0.5 font-medium">Empowering children with essential skills, friendship, and community connection.</p>
                 </div>
               </div>
 
