@@ -54,8 +54,9 @@ export default function VisualSitemapPage() {
         { name: "About Us (Therapy Centre)", href: "/about", desc: "Our story, mission, values & credentials" },
         { name: "About The Next Level", href: "/about-the-next-level", desc: "Dedicated adult day program story & founder vision" },
         { name: "Contact Us & Tour Booking", href: "/contact", desc: "Inquire, book a tour or call our offices" },
-        { name: "Concord / Vaughan Location", href: "/contact", desc: "750 Millway Avenue unit #5, Concord, ON" },
-        { name: "Bradford Location", href: "/contact", desc: "465 Holland St W, Unit 3/4, Bradford, ON" },
+        { "name": "Concord / Vaughan Location", "href": "/contact", "desc": "750 Millway Avenue unit #5, Concord, ON" },
+        { "name": "Bradford Location Clinic", "href": "/contact", "desc": "465 Holland St W, Unit 3/4, Bradford, ON" },
+        { "name": "Bradford Life Skills & Routines", "href": "/locations/bradford/life-skills-routines", "desc": "Practical daily routines, self-care & classroom readiness" },
       ]
     },
     {

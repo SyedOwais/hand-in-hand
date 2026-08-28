@@ -53,6 +53,115 @@ interface BlogPostDetail {
 }
 
 const blogData: Record<string, BlogPostDetail> = {
+  "bradford-life-skills-routines-parent-guide": {
+    slug: "bradford-life-skills-routines-parent-guide",
+    title: "Building Life Skills & Routines at Home: A Parent's Guide",
+    metaTitle: "Building Life Skills & Routines at Home: A Parent's Guide",
+    metaDescription: "Struggling with mornings, self-care, or getting your child ready for school? Learn how structured routines build lasting independence.",
+    excerpt: "Struggling with mornings, self-care, or getting your child ready for school? Learn how structured routines build lasting independence.",
+    category: "Life Skills & Routines",
+    categoryBadge: "bg-[#2A5243] text-white",
+    track: "pediatric",
+    author: "Hand In Hand Clinical Team",
+    authorRole: "Pediatric & Life Skills Specialists",
+    readTime: "8 min read",
+    date: "August 28, 2026",
+    image: "/images/aba-therapy-vaughan.png",
+    content: {
+      intro: "If mornings in your house feel like a battle (getting dressed, brushing teeth, finding shoes, walking out the door on time), you're not alone, and it's not a sign you're doing something wrong. For many children, especially those with autism, ADHD, or developmental delays, the challenge isn't understanding what to do; it's building the consistent, repeatable habits that make daily routines feel automatic instead of exhausting.\n\nThis guide covers how life skills and daily routines actually develop, the most common friction points families run into, and practical ways to build lasting independence both at home and heading into the classroom.",
+      keyTakeaways: [
+        "Automaticity in routines requires explicit teaching, task breakdown, and repetition for children with developmental needs.",
+        "Classroom readiness depends heavily on functional routines (following instructions, transitions) rather than academic skills alone.",
+        "Coordinating routine goals across therapy, home, and school generates faster, more durable independence.",
+        "Our Bradford Life Skills & Routines program provides dedicated local support for Simcoe County families."
+      ],
+      sections: [
+        {
+          heading: "Why Daily Routines Are Harder for Some Kids Than Others",
+          body: [
+            "For many children, routines like getting dressed or brushing teeth eventually become automatic through repetition and modeling. For children with autism, ADHD, sensory processing differences, or other developmental needs, that same automaticity often doesn't happen the same way. This is not because the child isn't capable, but because the steps involved (sequencing, transitions, sensory tolerance, motor coordination) each require more explicit teaching and more repetition to stick.",
+            "This is exactly the gap that structured life skills and routines support is designed to close: breaking a routine into clear, practiced steps rather than expecting it to click all at once. Families looking for localized, structured intervention can access our dedicated [Life Skills & Routines program in Bradford](/locations/bradford/life-skills-routines)."
+          ]
+        },
+        {
+          heading: "Common Daily Routine Struggles Families Face",
+          body: [
+            "1. **Morning Routines** — Getting dressed, eating breakfast, brushing teeth, and leaving on time are often the most stressful stretch of the day, especially when a child resists transitions or gets stuck on one step.",
+            "2. **Self-Care Skills** — Toileting, hand-washing, brushing hair, and other hygiene routines that many children pick up with minimal instruction, but that some children need broken down explicitly and practiced consistently.",
+            "3. **Mealtime Routines** — Sitting through a meal, using utensils, and managing food-related sensory sensitivities.",
+            "4. **Bedtime Routines** — Winding down, following a consistent sequence, and settling, which are often disrupted by the same transition and sensory challenges that show up earlier in the day.",
+            "5. **Classroom Readiness** — Following multi-step instructions, staying organized, managing transitions between subjects or activities, and building the independence a classroom setting expects: packing a backpack, following a visual schedule, or transitioning from recess back to class."
+          ]
+        },
+        {
+          heading: "How Structured Routine-Building Actually Works",
+          body: [
+            "The most effective approach to building life skills isn't a single conversation or a one-time demonstration; it's a structured process involving a few consistent elements:",
+            "• **Breaking the routine into small, explicit steps:** \"Get dressed\" becomes a specific sequence: pants, then shirt, then socks, then shoes, visualized or written out if helpful.",
+            "• **Consistent practice in the actual environment:** A routine practiced only in a therapy setting doesn't automatically transfer to a busy, real-life morning. Practicing the actual routine in the actual environment matters.",
+            "• **Visual supports and schedules:** Many children benefit significantly from visual routines (picture schedules, checklists, or simple charts) that make the sequence concrete rather than something they have to remember and infer.",
+            "• **Gradual fading of support:** Support (prompts, reminders, visual aids) is intentionally reduced over time as the child builds independence, rather than withdrawn all at once.",
+            "• **Consistency across environments:** Progress tends to be far more durable when the same routine and approach are reinforced at home, at school, and in therapy, rather than each environment doing something different."
+          ]
+        },
+        {
+          heading: "Classroom Readiness: Why It's More Than Just Academics",
+          body: [
+            "Parents often think of \"school readiness\" purely in academic terms: letters, numbers, early reading. But a huge part of a child's success in the classroom depends on functional skills that have nothing to do with academic content:",
+            "• Following multi-step verbal instructions\n• Managing transitions between activities without significant distress\n• Staying organized (backpack, materials, belongings)\n• Sitting, attending, and participating in group routines\n• Communicating needs appropriately (asking for help, requesting a break)",
+            "Children who struggle with these functional routines often appear to be \"behind\" academically, when the underlying challenge is actually about routine and self-regulation, not learning ability. Addressing the routine piece directly often has a bigger impact on classroom success than academic tutoring alone."
+          ]
+        },
+        {
+          heading: "How This Connects to Therapy Your Child May Already Be Receiving",
+          body: [
+            "Life skills and routines work rarely exists in isolation; it tends to be most effective when it's coordinated with other therapy a child is already receiving:",
+            "• **With ABA therapy:** routine-building and daily living goals can be built directly into a child's behavioural program using [BCBA-supervised ABA therapy](/aba-therapy-vaughan).",
+            "• **With occupational therapy:** fine motor and sensory strategies are applied directly to real self-care tasks with [pediatric occupational therapy](/occupational-therapy-vaughan).",
+            "• **With parent coaching:** strategies are taught directly to parents and caregivers, so consistency becomes part of everyday family life."
+          ]
+        },
+        {
+          heading: "Practical Tips You Can Start Using at Home",
+          body: [
+            "• **Use visual schedules for morning and bedtime routines:** A simple picture or checklist sequence taped to the wall or bathroom mirror can reduce a surprising amount of daily friction.",
+            "• **Build in extra transition time rather than rushing:** Many children need more time than expected to shift from one activity to the next.",
+            "• **Practice the same routine the same way, consistently:** Even small variations in sequence can make a routine harder for a child to internalize.",
+            "• **Celebrate small steps, not just full completion:** Partial independence on a multi-step routine is real progress.",
+            "• **Loop in the school where possible:** Ensure routines and expectations stay consistent between home and the classroom."
+          ]
+        },
+        {
+          heading: "Next Steps",
+          body: [
+            "If daily routines have been a consistent source of stress for your family, structured, consistent support can make a real difference. Our team at Hand in Hand Therapy Centre offers a dedicated [Life Skills & Routines program in Bradford](/locations/bradford/life-skills-routines), coordinated with ABA and occupational therapy when needed."
+          ]
+        }
+      ],
+      faqs: [
+        {
+          q: "At what age should life skills training start?",
+          a: "There's no fixed starting age. Foundational self-care routines can begin in early childhood, while classroom-readiness and independence skills often become a bigger focus around school entry and through the early school years."
+        },
+        {
+          q: "How long does it take to see progress in daily routines?",
+          a: "This varies by child and the specific routine, but most families see meaningful progress with consistent practice over a period of months, with continued refinement over time as routines become more automatic."
+        },
+        {
+          q: "Does my child need a diagnosis to get life skills support?",
+          a: "No. While life skills and routines support is often part of a broader autism or developmental program, it can also stand alone for any child who needs extra, structured support building independence."
+        },
+        {
+          q: "Can life skills support be combined with ABA or occupational therapy?",
+          a: "Yes, and for many children, that coordination is exactly what makes progress stick, since routine-building goals reinforce (and are reinforced by) behavioural and motor skill work happening elsewhere in the program."
+        },
+        {
+          q: "Do you offer this kind of support near Bradford?",
+          a: "Yes, Hand in Hand Therapy Centre's Bradford clinic offers a dedicated Life Skills & Routines program, alongside our Vaughan (Concord) location."
+        }
+      ]
+    }
+  },
   "adult-speech-therapy-vaughan-guide": {
     slug: "adult-speech-therapy-vaughan-guide",
     title: "Adult Speech Therapy in Vaughan: Who It's For and How It Helps",
@@ -66,7 +175,7 @@ const blogData: Record<string, BlogPostDetail> = {
     authorRole: "Adult Speech-Language Pathology Team",
     readTime: "7 min read",
     date: "August 25, 2026",
-    image: "/images/speech-therapy-adults-vaughan.png",
+    image: "/images/adult-01.webp",
     content: {
       intro: "When most people hear \"speech therapy,\" they picture a young child working on their R's or S's with a therapist. That association is understandable — but it's incomplete. Speech-language pathologists work with adults just as often, supporting people recovering from a stroke, managing a lifelong stutter, dealing with a voice that just won't cooperate anymore, or simply wanting to communicate more clearly and confidently at work and in daily life.\n\nIf you or someone you love is dealing with a communication challenge as an adult, here's what speech therapy actually involves, who it helps, and what to expect from working with a [speech-language pathologist in Vaughan](/locations/speech-therapy-adults-vaughan) or Bradford.",
       keyTakeaways: [
@@ -252,8 +361,8 @@ const blogData: Record<string, BlogPostDetail> = {
       ]
     }
   },
-  "signs-child-needs-occupational-therapy-vaughan": {
-    slug: "signs-child-needs-occupational-therapy-vaughan",
+  "vaughan-pediatric-occupational-therapy-signs": {
+    slug: "vaughan-pediatric-occupational-therapy-signs",
     title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
     metaTitle: "Does My Child Need Occupational Therapy? Signs to Know | Hand in Hand Therapy",
     metaDescription: "Struggling with handwriting, sensory overload, or daily routines? Learn the signs your child may benefit from occupational therapy in Vaughan.",
@@ -345,8 +454,8 @@ const blogData: Record<string, BlogPostDetail> = {
       ]
     }
   },
-  "signs-your-child-needs-speech-therapy-vaughan": {
-    slug: "signs-your-child-needs-speech-therapy-vaughan",
+  "vaughan-pediatric-speech-language-delay-signs": {
+    slug: "vaughan-pediatric-speech-language-delay-signs",
     title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",
     metaTitle: "Signs Your Child May Need Speech Therapy in Vaughan | Hand in Hand Therapy",
     metaDescription: "Wondering if your child needs speech therapy? Learn the signs, what to expect, and how Hand in Hand Therapy Centre supports Vaughan & Bradford families.",
@@ -435,48 +544,6 @@ const blogData: Record<string, BlogPostDetail> = {
           a: "Yes - Hand in Hand Therapy Centre has a dedicated clinic in Bradford serving Bradford West Gwillimbury and the surrounding area, in addition to our Vaughan (Concord) location."
         }
       ]
-    }
-  },
-  "passport-funding-transition-18": {
-    slug: "passport-funding-transition-18",
-    title: "Transitioning Beyond 18: Maximizing Ontario Passport Funding for Day Programs",
-    excerpt: "Essential steps for parents of teens aging out of school systems. Learn how Passport Funding covers adult day programs, community trips, and independent living skills.",
-    category: "Adult Passport Funding",
-    categoryBadge: "bg-[#1B3B48] text-white",
-    track: "adult",
-    author: "Hand In Hand Clinical Team",
-    authorRole: "Adult Program Specialists",
-    readTime: "7 min read",
-    date: "August 4, 2026",
-    image: "/images/adult-day-program.png",
-    content: {
-      intro: "When young adults turn 18 and graduate from high school, families face a significant transition period. In Ontario, Passport Funding provides financial support to adults with a developmental disability to participate in community activities, build life skills, and attend structured day programs.",
-      keyTakeaways: [
-        "Passport Funding is administered through Developmental Services Ontario (DSO).",
-        "Covers fees for structured day programs, vocational workshops, and community field trips.",
-        "Supports independent living skill development including culinary training and computer literacy.",
-        "Allows parents to purchase caregiver relief and respite services."
-      ],
-      sections: [
-        {
-          heading: "Steps to Apply for DSO and Passport Funding",
-          body: [
-            "Prior to your son or daughter turning 18, it is critical to initiate registration with Developmental Services Ontario (DSO). The DSO assessment determines eligibility for Passport Funding and supportive housing programs.",
-            "Once approved, funding can be directed toward community participation support, such as The Next Level Adult Day Program at Hand In Hand."
-          ]
-        },
-        {
-          heading: "Utilizing Passport Funding for Life-Skill Kitchens & Tech Labs",
-          body: [
-            "Passport Funding allows flexibility in choosing programs that foster true adult independence. Participants at our Concord and Bradford centers utilize their funding to practice grocery shopping, meal preparation, banking, and digital resume building.",
-            "Engaging in structured daily activities helps maintain social routines, prevents isolation, and builds lifelong friendships."
-          ]
-        }
-      ],
-      quote: {
-        text: "Adulthood is about dignity, choice, and active community participation. Passport Funding opens the door for young adults to thrive.",
-        author: "Hand In Hand Adult Program Team"
-      }
     }
   }
 };

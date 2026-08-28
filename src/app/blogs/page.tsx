@@ -51,6 +51,20 @@ function BlogsContent() {
 
   const blogPosts: BlogPost[] = [
     {
+      id: 11,
+      slug: "bradford-life-skills-routines-parent-guide",
+      title: "Building Life Skills & Routines at Home: A Parent's Guide",
+      excerpt: "Struggling with mornings, self-care, or getting your child ready for school? Learn how structured routines build lasting independence.",
+      category: "parenting",
+      track: "pediatric",
+      author: "Hand In Hand Clinical Team",
+      authorRole: "Pediatric & Life Skills Specialists",
+      readTime: "8 min read",
+      date: "August 28, 2026",
+      image: "/images/What Hand in Hand Inc. has to offer.jpg",
+      featured: true
+    },
+    {
       id: 10,
       slug: "adult-speech-therapy-vaughan-guide",
       title: "Adult Speech Therapy in Vaughan: Who It's For and How It Helps",
@@ -61,7 +75,7 @@ function BlogsContent() {
       authorRole: "Adult Speech-Language Pathology Team",
       readTime: "7 min read",
       date: "August 25, 2026",
-      image: "/images/speech-therapy-adults-vaughan.png",
+      image: "/images/adult-01.webp",
       featured: false
     },
     {
@@ -80,7 +94,7 @@ function BlogsContent() {
     },
     {
       id: 8,
-      slug: "signs-child-needs-occupational-therapy-vaughan",
+      slug: "vaughan-pediatric-occupational-therapy-signs",
       title: "Does My Child Need Occupational Therapy? Signs Every Vaughan Parent Should Know",
       excerpt: "Struggling with handwriting, sensory overload, or daily routines? Learn the signs your child may benefit from occupational therapy in Vaughan & Bradford.",
       category: "aba",
@@ -89,12 +103,12 @@ function BlogsContent() {
       authorRole: "Occupational Therapy Team",
       readTime: "7 min read",
       date: "August 13, 2026",
-      image: "/images/signs-child-needs-occupational-therapy-vaughan.png",
+      image: "/images/indoor.webp",
       featured: false
     },
     {
       id: 1,
-      slug: "signs-your-child-needs-speech-therapy-vaughan",
+      slug: "vaughan-pediatric-speech-language-delay-signs",
       title: "Signs Your Child May Need Speech Therapy in Vaughan: A Parent's Guide",
       excerpt: "Wondering if your child needs speech therapy? Learn the signs, what to expect, and how Hand in Hand Therapy Centre supports Vaughan & Bradford families.",
       category: "speech",
@@ -104,20 +118,6 @@ function BlogsContent() {
       readTime: "7 min read",
       date: "August 13, 2026",
       image: "/images/signs-child-speech-therapy-vaughan.png",
-      featured: false
-    },
-    {
-      id: 3,
-      slug: "passport-funding-transition-18",
-      title: "Transitioning Beyond 18: Maximizing Ontario Passport Funding for Day Programs",
-      excerpt: "Essential steps for parents of teens aging out of school systems. Learn how Passport Funding covers adult day programs, community trips, and independent living skills.",
-      category: "funding",
-      track: "adult",
-      author: "Hand In Hand Clinical Team",
-      authorRole: "Adult Program Specialists",
-      readTime: "7 min read",
-      date: "August 4, 2026",
-      image: "/images/adult-day-program.png",
       featured: false
     }
   ];
