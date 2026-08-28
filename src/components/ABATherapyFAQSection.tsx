@@ -27,7 +27,11 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Is ABA therapy covered by insurance or government funding?",
-    a: "Coverage varies by provider and by provincial funding programs. We recommend discussing your specific situation with our team, who can help you understand your options."
+    a: "Coverage varies by provider and by provincial funding programs (such as the Ontario Autism Program - OAP). We provide itemized receipts and assist families in understanding their coverage options."
+  },
+  {
+    q: "How are speech and occupational therapy integrated with ABA?",
+    a: "Our multidisciplinary team collaborates under one roof. ABA goals, speech-language therapy, and OT targets are integrated into a unified care plan so all clinicians work together towards shared developmental milestones."
   },
   {
     q: "Do you offer ABA therapy in Bradford as well as Vaughan?",
@@ -50,7 +54,7 @@ export default function ABATherapyFAQSection() {
         <div className="text-center space-y-3">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20">
             <HelpCircle className="w-4 h-4 text-[#F57A54]" />
-            <span>Common Inquiries</span>
+            <span>ABA Therapy Services FAQs (Ages 2–18)</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-[#1B3B48] tracking-tight">

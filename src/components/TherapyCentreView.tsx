@@ -7,6 +7,7 @@ import ParentJourney from "./ParentJourney";
 import SocialProofVisual from "./SocialProofVisual";
 import SeeLifeCommunity from "./SeeLifeCommunity";
 import RecentBlogsSection from "./RecentBlogsSection";
+import ABATherapyFAQSection from "./ABATherapyFAQSection";
 import FinalTherapyCTA from "./FinalTherapyCTA";
 
 export default function TherapyCentreView() {
@@ -42,7 +43,10 @@ export default function TherapyCentreView() {
       {/* 08. Recent Clinical Blogs & Parent Guides Section */}
       <RecentBlogsSection />
 
-      {/* 09. Section 9: Final CTA */}
+      {/* 09. ABA Therapy FAQs */}
+      <ABATherapyFAQSection />
+
+      {/* 10. Section 10: Final CTA */}
       <FinalTherapyCTA />
     </div>
   );

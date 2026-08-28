@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AdultFAQSection from "@/components/AdultFAQSection";
+import ABATherapyFAQSection from "@/components/ABATherapyFAQSection";
 import {
   Heart,
   Target,
@@ -661,8 +661,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Adult Program FAQs */}
-        <AdultFAQSection />
+        {/* ABA Therapy FAQs */}
+        <ABATherapyFAQSection />
 
       </main>
 
