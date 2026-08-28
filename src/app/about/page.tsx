@@ -30,12 +30,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | Hand In Hand Therapy Centre",
-  description: "Learn about Hand In Hand Therapy Centre (est. 2010). Dedicated clinicians offering ABA therapy, speech, OT & adult day programming across Vaughan & Bradford.",
+  description: "Learn about Hand In Hand Therapy Centre (est. 2010). Dedicated clinicians offering ABA therapy, speech-language pathology, and occupational therapy (ages 2–18) across Vaughan & Bradford.",
   openGraph: {
     title: "About Us | Hand In Hand Therapy Centre (Established 2010)",
-    description: "Our story, mission, and clinical leadership. Transformative therapy and adult day programming in Vaughan & Bradford.",
+    description: "Our story, mission, and clinical leadership. Transformative pediatric & adolescent therapy in Vaughan & Bradford.",
     url: "https://handinhandtherapy.ca/about",
-    siteName: "Hand In Hand Therapy Centre & Adult Day Program",
+    siteName: "Hand In Hand Therapy Centre",
     images: [
       {
         url: "/images/interaction.webp",
@@ -123,7 +123,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-base sm:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto font-medium">
-                A dedicated group of professional educators and clinicians providing compassionate, effective educational services for teenagers and adults with developmental special needs.
+                A dedicated group of professional educators and clinicians providing compassionate, effective therapy services for children and youth with developmental special needs.
               </p>
 
               {/* Founder Tagline Banner */}
@@ -190,7 +190,7 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                  <strong>Hand in Hand</strong> consists of a group of professional educators and clinicians who are dedicated to providing efficient and effective educational services for all adults and young individuals. The team at Hand in Hand has specialized in providing therapy for individuals with developmental disabilities for over ten years.
+                  <strong>Hand in Hand</strong> consists of a group of professional educators and clinicians who are dedicated to providing efficient and effective therapeutic services for children and youth (ages 2–18). The team at Hand in Hand has specialized in providing therapy for children and adolescents with developmental disabilities for over ten years.
                 </p>
 
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
@@ -426,7 +426,7 @@ export default function AboutPage() {
                   {/* Subtle Background Image Overlay with Gradient */}
                   <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 group-hover:opacity-35 transition-opacity duration-700 pointer-events-none hidden sm:block">
                     <Image
-                      src="/images/Adults-Hero.webp"
+                      src="/images/aboutus-main.webp"
                       alt="Chill Zone Atmosphere"
                       fill
                       className="object-cover"
@@ -510,7 +510,7 @@ export default function AboutPage() {
                   <div className="relative z-10 pt-6 mt-6">
                     <div className="relative h-32 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md group-hover:scale-[1.02] transition-transform duration-500">
                       <Image
-                        src="/images/Adults-Hero.webp"
+                        src="/images/aba-therapy-vaughan.png"
                         alt="Life Skills & Program Engagement"
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
@@ -543,7 +543,7 @@ export default function AboutPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0F2530] via-transparent to-transparent opacity-75" />
                       <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-white/20 backdrop-blur-md border border-white/25 text-white">
                         <span className="text-[11px] font-extrabold text-[#EAA85E] uppercase tracking-wider block">Caregiver Peace of Mind</span>
-                        <p className="text-xs text-white mt-0.5 font-medium">Reliable daytime care for high-needs young adults.</p>
+                        <p className="text-xs text-white mt-0.5 font-medium">Reliable care and therapeutic support for high-needs children.</p>
                       </div>
                     </div>
 
@@ -561,7 +561,7 @@ export default function AboutPage() {
                         </h3>
 
                         <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-medium">
-                          Hand in Hand is a safe haven where parents feel completely comfortable bringing their loved ones. It provides essential respite previously inaccessible due to a lack of specialized adult day programs.
+                          Hand in Hand is a safe haven where parents feel completely comfortable bringing their children. It provides essential respite and therapeutic support tailored to each child&apos;s unique developmental goals.
                         </p>
                       </div>
 
