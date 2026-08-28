@@ -438,22 +438,25 @@ export default function AboutPage() {
                     <div className="flex items-center justify-between">
                       <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F57A54] text-white text-xs font-black uppercase tracking-wider shadow-md">
                         <Smile className="w-3.5 h-3.5" />
-                        Atmosphere & Social Nook
+                        High Behavioural Needs Support
                       </span>
                       <div className="w-10 h-10 rounded-2xl bg-[#F57A54]/10 flex items-center justify-center text-[#F57A54] border border-[#F57A54]/20">
                         <Sparkles className="w-5 h-5 text-[#F57A54]" />
                       </div>
                     </div>
 
-                    <div className="space-y-3 max-w-xl">
+                    <div className="space-y-4 max-w-xl">
                       <h3 className="text-2xl sm:text-3xl font-black text-[#1B3B48] tracking-tight">
                         Safe Atmosphere & Dedicated &ldquo;Chill Zone&rdquo;
                       </h3>
                       <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-semibold">
-                        Hand in Hand provides an inclusive, pressure-free environment catering specifically to teenagers and young adults with special needs.
+                        We understand that children with high behavioural needs may require a level of support, structure, and individualized care that can be difficult to accommodate in traditional program settings. Our dedicated space allows us to meet each child where they are, providing the individualized support they need while working toward meaningful participation in a structured day program.
                       </p>
                       <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
-                        Our dedicated &ldquo;chill zone&rdquo; was created to fill a major community gap—a space where clients explore personal interests, meet new friends, hang out, and feel comfortable among peers without judgment.
+                        Rather than allowing challenging behaviours to become a barrier to participation, our team works collaboratively to understand each child&rsquo;s needs, break challenges down into manageable steps, and build the skills needed to move forward. Through consistency, patience, and individualized strategies, we support children in developing greater regulation, independence, communication, and the ability to successfully participate in daily routines and activities.
+                      </p>
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                        We are committed to working through challenges alongside each child and family, with the goal of creating opportunities for growth, inclusion, and greater independence.
                       </p>
                     </div>
                   </div>
@@ -462,10 +465,10 @@ export default function AboutPage() {
                   <div className="relative z-10 pt-6 border-t border-slate-100 mt-6">
                     <div className="flex flex-wrap gap-2.5">
                       {[
-                        "✨ Non-Judgmental Social Lounge",
-                        "🎮 Board Games & Recreation",
-                        "🤝 Genuine Peer Friendship",
-                        "🎨 Inclusive Creative Outlets"
+                        "✨ High Behavioural Needs Support",
+                        "🎮 Safe Chill Zone & Structure",
+                        "🤝 Individualized Regulation Strategies",
+                        "🎨 Growth, Inclusion & Independence"
                       ].map((pill, pIdx) => (
                         <span key={pIdx} className="text-xs font-extrabold px-3.5 py-1.5 rounded-xl bg-[#FBF9F5] border border-slate-200 text-[#1B3B48] shadow-sm">
                           {pill}
