@@ -425,7 +425,7 @@ export default function AdmissionsPage() {
               </Link>
 
               <a
-                href="mailto:info@handinhandtherapy.ca"
+                href="mailto:info@handinhandtherapycentre.ca"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#1B3B48] bg-white hover:bg-slate-100 border border-slate-300/80 shadow-md transition-all duration-300"
               >
                 <Mail className="w-5 h-5 text-[#F57A54]" />

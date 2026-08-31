@@ -39,9 +39,7 @@ export default function Header() {
 
   const isAdult = pathname.startsWith("/adult") || pathname.startsWith("/about-the-next-level");
 
-  const currentEmail = isAdult
-    ? "handinhandthenextlevel@gmail.com"
-    : "handinhandtherapycentre@yahoo.com";
+  const currentEmail = "info@handinhandtherapycentre.ca";
 
   const servicesDropdownItems = [
     {

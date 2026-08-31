@@ -172,8 +172,8 @@ export default function Footer() {
                 <span className="font-bold text-white block text-[11px] uppercase tracking-wider">Concord / Vaughan:</span>
                 <span className="block text-slate-400">750 Millway Avenue unit #5, Concord, ON</span>
                 <a href="tel:6472809952" className="text-[#6B8E7B] font-bold hover:underline block">647-280-9952</a>
-                <a href="mailto:handinhandtherapycentre@yahoo.com" className="text-blue-400 hover:underline block text-[11px] sm:text-xs break-all leading-snug">
-                  handinhandtherapycentre@yahoo.com
+                <a href="mailto:info@handinhandtherapycentre.ca" className="text-blue-400 hover:underline block text-[11px] sm:text-xs break-all leading-snug">
+                  info@handinhandtherapycentre.ca
                 </a>
               </li>
               
@@ -181,8 +181,8 @@ export default function Footer() {
                 <span className="font-bold text-white block text-[11px] uppercase tracking-wider">Bradford:</span>
                 <span className="block text-slate-400">465 Holland St W, Unit 3/4, Bradford, ON</span>
                 <a href="tel:9052514756" className="text-[#4A7C64] font-bold hover:underline block">(905)-251-4756</a>
-                <a href="mailto:handinhandtherapycentrebradford@aol.com" className="text-blue-400 hover:underline block text-[11px] sm:text-xs break-all leading-snug">
-                  handinhandtherapycentrebradford@aol.com
+                <a href="mailto:info@handinhandtherapycentre.ca" className="text-blue-400 hover:underline block text-[11px] sm:text-xs break-all leading-snug">
+                  info@handinhandtherapycentre.ca
                 </a>
               </li>
             </ul>

@@ -78,7 +78,7 @@ export default function SpeechTherapyVaughanPage() {
         "name": "Hand In Hand Therapy Centre - Speech Therapy Vaughan",
         "url": "https://handinhandtherapy.ca/speech-therapy-vaughan",
         "telephone": "647-280-9952",
-        "email": "handinhandtherapycentre@yahoo.com",
+        "email": "info@handinhandtherapycentre.ca",
         "image": "https://handinhandtherapy.ca/images/speech-therapy-vaughan.png",
         "priceRange": "$$",
         "address": {
@@ -629,7 +629,7 @@ export default function SpeechTherapyVaughanPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#2A5243]" />
-                      <span>Email: handinhandtherapycentre@yahoo.com</span>
+                      <span>Email: info@handinhandtherapycentre.ca</span>
                     </div>
                   </div>
                 </div>
@@ -672,7 +672,7 @@ export default function SpeechTherapyVaughanPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-[#2A5243]" />
-                      <span>Email: handinhandtherapycentre@yahoo.com</span>
+                      <span>Email: info@handinhandtherapycentre.ca</span>
                     </div>
                   </div>
                 </div>

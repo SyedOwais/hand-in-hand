@@ -103,7 +103,7 @@ export default function RootLayout({
                     "jobTitle": "Founder & Owner"
                   },
                   "foundingDate": "2010",
-                  "email": "handinhandtherapycentre@yahoo.com",
+                  "email": "info@handinhandtherapycentre.ca",
                   "telephone": ["+1-647-280-9952", "+1-905-251-4756"],
                   "address": [
                     {

@@ -83,7 +83,7 @@ export default function BradfordLifeSkillsPage() {
     "@id": "https://handinhandtherapy.ca/locations/bradford/life-skills-routines#localbusiness",
     "url": "https://handinhandtherapy.ca/locations/bradford/life-skills-routines",
     "telephone": "+19052514756",
-    "email": "handinhandtherapycentre@yahoo.com",
+    "email": "info@handinhandtherapycentre.ca",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",

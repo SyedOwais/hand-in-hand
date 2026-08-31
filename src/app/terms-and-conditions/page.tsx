@@ -107,7 +107,7 @@ export default function TermsAndConditionsPage() {
                 <p className="font-bold text-[#1B3B48]">Hand In Hand Therapy Centre & Adult Day Program</p>
                 <p className="text-xs text-slate-600">Vaughan Center: 750 Millway Avenue unit #5, Concord, ON | 647-280-9952</p>
                 <p className="text-xs text-slate-600">Bradford Center: 465 Holland St W, Unit 3/4, Bradford, ON | (905)-251-4756</p>
-                <p className="text-xs text-blue-600 font-semibold">Email: handinhandtherapycentre@yahoo.com</p>
+                <p className="text-xs text-blue-600 font-semibold">Email: info@handinhandtherapycentre.ca</p>
               </div>
             </section>
 

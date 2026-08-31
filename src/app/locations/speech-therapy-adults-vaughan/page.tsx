@@ -87,7 +87,7 @@ export default function AdultSpeechTherapyVaughanPage() {
         "name": "Hand In Hand Therapy Centre - Adult Speech Therapy Vaughan",
         "url": "https://handinhandtherapy.ca/locations/speech-therapy-adults-vaughan",
         "telephone": "647-280-9952",
-        "email": "handinhandtherapycentre@yahoo.com",
+        "email": "info@handinhandtherapycentre.ca",
         "image": "https://handinhandtherapy.ca/images/speech-therapy-adults-vaughan.png",
         "priceRange": "$$",
         "address": {

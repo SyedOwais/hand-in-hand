@@ -81,7 +81,7 @@ export default function OccupationalTherapyVaughanPage() {
     "image": "https://handinhandtherapy.ca/images/therapy-hero.png",
     "url": "https://handinhandtherapy.ca/occupational-therapy-vaughan",
     "telephone": "647-280-9952",
-    "email": "info@handinhandtherapy.ca",
+    "email": "info@handinhandtherapycentre.ca",
     "priceRange": "$$",
     "address": [
       {

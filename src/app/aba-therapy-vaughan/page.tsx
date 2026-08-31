@@ -82,7 +82,7 @@ export default function ABATherapyVaughanPage() {
     "image": "https://handinhandtherapy.ca/images/aba-therapy-vaughan.png",
     "url": "https://handinhandtherapy.ca/aba-therapy-vaughan",
     "telephone": "647-280-9952",
-    "email": "handinhandtherapycentre@yahoo.com",
+    "email": "info@handinhandtherapycentre.ca",
     "priceRange": "$$",
     "address": [
       {
