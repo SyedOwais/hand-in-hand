@@ -27,53 +27,89 @@ export async function POST(req: Request) {
     const destinationEmail = process.env.CONTACT_NOTIFICATION_EMAIL || "info@handinhandtherapycentre.ca";
     const senderEmail = process.env.RESEND_FROM_EMAIL || "Hand In Hand Therapy <info@handinhandtherapycentre.ca>";
 
-    // Shared CSS styling matching exact website brand identity:
-    // Dark Navy: #0F2530 | Slate: #1B3B48 | Forest Green: #2A5243 | Mint Sage: #E8F0EC | Coral: #F57A54 | Gold: #EAA85E | Cream BG: #FBF9F5
-    const sharedStyles = `
-      body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background-color: #FBF9F5; color: #1B3B48; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
-      .wrapper { background-color: #FBF9F5; padding: 24px 12px; }
-      .container { max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(15, 37, 48, 0.08); }
-      
-      /* Header Styling */
-      .header-bg { background-color: #0F2530; background: linear-gradient(135deg, #0F2530 0%, #1B3B48 100%); padding: 32px 24px; text-align: center; border-bottom: 3px solid #2A5243; }
-      .header-pretitle { color: #EAA85E; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 6px 0; }
-      .header-title { color: #ffffff; font-size: 22px; font-weight: 900; margin: 0 0 6px 0; letter-spacing: -0.5px; }
-      .header-slogan { color: #F57A54; font-size: 13px; font-weight: 800; margin: 0; letter-spacing: 0.5px; }
-      
-      /* Main Body */
-      .content { padding: 32px 28px; }
-      .greeting { font-size: 20px; font-weight: 800; color: #1B3B48; margin: 0 0 14px 0; }
-      .lead-text { font-size: 14px; line-height: 1.65; color: #475569; margin: 0 0 24px 0; font-weight: 500; }
-      
-      /* Card Badges & Boxes */
-      .badge-container { margin-bottom: 20px; }
-      .program-badge { display: inline-block; background-color: #E8F0EC; color: #2A5243; font-weight: 800; padding: 6px 16px; border-radius: 20px; font-size: 13px; border: 1px solid rgba(42, 82, 67, 0.2); }
-      
-      .details-card { background-color: #F8FAFC; border-radius: 14px; border: 1px solid #E2E8F0; padding: 20px; margin-bottom: 24px; }
-      .details-header { font-size: 11px; font-weight: 800; color: #2A5243; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; border-bottom: 2px solid #E8F0EC; padding-bottom: 8px; }
-      .field-row { margin-bottom: 12px; font-size: 14px; color: #334155; }
-      .field-label { font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px; }
-      .field-value { font-weight: 700; color: #1B3B48; margin: 0; font-size: 15px; }
-      .message-quote { background: #ffffff; border-left: 4px solid #F57A54; padding: 14px 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; color: #1B3B48; margin-top: 8px; border-top: 1px solid #f1f5f9; border-right: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; }
+    // Shared Header Block with Official Website Logo
+    const headerHtml = `
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #0F2530; border-bottom: 4px solid #2A5243; text-align: center;">
+        <tr>
+          <td style="padding: 32px 20px; text-align: center;">
+            <table align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 16px auto;">
+              <tr>
+                <td style="background-color: #ffffff; padding: 12px 24px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center;">
+                  <img src="https://handinhandtherapy.ca/images/hand-in-hand-v2.png" alt="Hand In Hand Therapy Centre & Adult Day Program" width="220" style="display: block; width: 220px; max-width: 100%; height: auto; margin: 0 auto; border: 0;" />
+                </td>
+              </tr>
+            </table>
+            <div style="color: #EAA85E; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px;">
+              Hand In Hand Therapy Centre & Adult Day Program
+            </div>
+            <div style="color: #F57A54; font-size: 14px; font-weight: 800; letter-spacing: 0.5px;">
+              Together We Can!
+            </div>
+          </td>
+        </tr>
+      </table>
+    `;
 
-      .highlight-box { background-color: #E8F0EC; border-left: 4px solid #2A5243; padding: 18px; border-radius: 12px; font-size: 13px; line-height: 1.6; color: #1B3B48; margin-bottom: 24px; }
-      .highlight-box strong { color: #2A5243; }
+    // Shared Sleek Professional Footer with Explicitly-Styled Social Badges
+    const footerHtml = `
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #0F2530; border-top: 3px solid #2A5243; text-align: center;">
+        <tr>
+          <td style="padding: 36px 24px; text-align: center;">
+            
+            <div style="color: #ffffff; font-size: 15px; font-weight: 800; margin-bottom: 4px;">
+              Hand In Hand Therapy Centre & Adult Day Program
+            </div>
+            <div style="color: #6B8E7B; font-size: 12px; font-weight: 700; margin-bottom: 24px;">
+              Serving York Region & Simcoe County
+            </div>
 
-      /* Locations Section */
-      .locations-grid { margin-top: 24px; border-top: 1px solid #E2E8F0; padding-top: 20px; }
-      .location-title { font-size: 12px; font-weight: 800; color: #1B3B48; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
-      .location-card { background: #F8FAFC; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; font-size: 12px; color: #475569; border: 1px solid #E2E8F0; }
-      .location-card strong { color: #1B3B48; }
+            <!-- Social Media Buttons -->
+            <table align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 24px auto; max-width: 520px; width: 100%;">
+              <tr>
+                <td style="padding: 0 8px 16px 8px; text-align: center;" width="50%" valign="top">
+                  <div style="color: #EAA85E; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">
+                    Therapy Centre (Ages 2–18)
+                  </div>
+                  <a href="https://www.facebook.com/profile.php?id=100037961153848" target="_blank" style="display: inline-block; background-color: #1877F2; color: #ffffff !important; text-decoration: none !important; font-size: 11px; font-weight: 800; padding: 8px 14px; border-radius: 20px; margin: 3px;">
+                    f Facebook
+                  </a>
+                  <a href="https://www.instagram.com/handinhandtherapy/" target="_blank" style="display: inline-block; background-color: #E4405F; color: #ffffff !important; text-decoration: none !important; font-size: 11px; font-weight: 800; padding: 8px 14px; border-radius: 20px; margin: 3px;">
+                    📷 Instagram
+                  </a>
+                </td>
+                <td style="padding: 0 8px 16px 8px; text-align: center;" width="50%" valign="top">
+                  <div style="color: #F57A54; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 8px;">
+                    The Next Level (Ages 18+)
+                  </div>
+                  <a href="https://www.facebook.com/profile.php?id=100076041793102" target="_blank" style="display: inline-block; background-color: #1877F2; color: #ffffff !important; text-decoration: none !important; font-size: 11px; font-weight: 800; padding: 8px 14px; border-radius: 20px; margin: 3px;">
+                    f Facebook
+                  </a>
+                  <a href="https://www.instagram.com/hand_in_hand_the_next_level/" target="_blank" style="display: inline-block; background-color: #E4405F; color: #ffffff !important; text-decoration: none !important; font-size: 11px; font-weight: 800; padding: 8px 14px; border-radius: 20px; margin: 3px;">
+                    📷 Instagram
+                  </a>
+                </td>
+              </tr>
+            </table>
 
-      /* Footer & Social Section */
-      .footer-bg { background-color: #0F2530; padding: 28px 24px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
-      .social-heading { color: #6B8E7B; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: block; }
-      
-      .social-btn { display: inline-block; background-color: rgba(255,255,255,0.1); color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 700; padding: 8px 16px; border-radius: 8px; margin: 4px; border: 1px solid rgba(255,255,255,0.15); }
-      .social-btn:hover { background-color: #2A5243; }
+            <!-- Divider -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 20px;">
+              <tr>
+                <td style="border-top: 1px solid rgba(255,255,255,0.12);"></td>
+              </tr>
+            </table>
 
-      .footer-text { color: #94a3b8; font-size: 11px; margin-top: 20px; line-height: 1.6; }
-      .footer-text a { color: #EAA85E; text-decoration: none; font-weight: 700; }
+            <!-- Links -->
+            <div style="color: #94a3b8; font-size: 12px; line-height: 1.8;">
+              Website: <a href="https://handinhandtherapy.ca" style="color: #EAA85E !important; text-decoration: none !important; font-weight: 700;">handinhandtherapy.ca</a><br>
+              Email: <a href="mailto:info@handinhandtherapycentre.ca" style="color: #EAA85E !important; text-decoration: none !important; font-weight: 700;">info@handinhandtherapycentre.ca</a>
+            </div>
+            <div style="color: #64748b; font-size: 11px; margin-top: 12px;">
+              © ${new Date().getFullYear()} Hand In Hand Therapy Centre & Adult Day Program. All Rights Reserved.
+            </div>
+
+          </td>
+        </tr>
+      </table>
     `;
 
     // 1. Admin Inquiry Notification HTML Template
@@ -82,63 +118,68 @@ export async function POST(req: Request) {
       <html>
         <head>
           <meta charset="utf-8">
-          <style>${sharedStyles}</style>
         </head>
-        <body>
-          <div class="wrapper">
-            <div class="container">
-              <div class="header-bg">
-                <p class="header-pretitle">New Website Inquiry</p>
-                <h1 class="header-title">Hand In Hand Therapy Centre</h1>
-                <p class="header-slogan">Together We Can!</p>
-              </div>
+        <body style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background-color: #FBF9F5; color: #1B3B48; margin: 0; padding: 24px 12px;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(15, 37, 48, 0.08);">
+            <tr>
+              <td>
+                ${headerHtml}
 
-              <div class="content">
-                <div class="badge-container">
-                  <span class="program-badge">Program Requested: ${lookingFor}</span>
-                </div>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff;">
+                  <tr>
+                    <td style="padding: 32px 28px;">
+                      
+                      <div style="margin-bottom: 20px;">
+                        <span style="display: inline-block; background-color: #E8F0EC; color: #2A5243; font-weight: 800; padding: 6px 16px; border-radius: 20px; font-size: 12px; border: 1px solid rgba(42, 82, 67, 0.2); text-transform: uppercase; letter-spacing: 0.5px;">
+                          🔔 New Website Inquiry
+                        </span>
+                      </div>
 
-                <div class="details-card">
-                  <div class="details-header">Client Contact Details</div>
-                  
-                  <div class="field-row">
-                    <span class="field-label">Full Name</span>
-                    <p class="field-value">${name}</p>
-                  </div>
+                      <h2 style="font-size: 20px; font-weight: 800; color: #1B3B48; margin: 0 0 16px 0;">
+                        Inquiry Details
+                      </h2>
 
-                  <div class="field-row">
-                    <span class="field-label">Email Address</span>
-                    <p class="field-value"><a href="mailto:${email}" style="color: #2A5243; text-decoration: none;">${email}</a></p>
-                  </div>
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; margin-bottom: 24px;">
+                        <tr>
+                          <td style="padding: 20px;">
+                            
+                            <div style="margin-bottom: 14px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Requested Track</span>
+                              <span style="font-size: 16px; font-weight: 800; color: #2A5243; display: block;">${lookingFor}</span>
+                            </div>
 
-                  <div class="field-row">
-                    <span class="field-label">Phone Number</span>
-                    <p class="field-value"><a href="tel:${phone}" style="color: #2A5243; text-decoration: none;">${phone}</a></p>
-                  </div>
+                            <div style="margin-bottom: 14px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Full Name</span>
+                              <span style="font-size: 15px; font-weight: 700; color: #1B3B48; display: block;">${name}</span>
+                            </div>
 
-                  <div class="field-row" style="margin-bottom: 0;">
-                    <span class="field-label">Situation / Client Notes</span>
-                    <div class="message-quote">${situation ? situation : "No details provided."}</div>
-                  </div>
-                </div>
-              </div>
+                            <div style="margin-bottom: 14px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Email Address</span>
+                              <a href="mailto:${email}" style="font-size: 15px; font-weight: 700; color: #2A5243 !important; text-decoration: none !important;">${email}</a>
+                            </div>
 
-              <div class="footer-bg">
-                <span class="social-heading">Hand In Hand Social Channels</span>
-                <div>
-                  <a href="https://www.facebook.com/profile.php?id=100037961153848" target="_blank" class="social-btn">Therapy Facebook</a>
-                  <a href="https://www.instagram.com/handinhandtherapy/" target="_blank" class="social-btn">Therapy Instagram</a>
-                  <a href="https://www.facebook.com/profile.php?id=100076041793102" target="_blank" class="social-btn">Next Level Facebook</a>
-                  <a href="https://www.instagram.com/hand_in_hand_the_next_level/" target="_blank" class="social-btn">Next Level Instagram</a>
-                </div>
+                            <div style="margin-bottom: 14px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Phone Number</span>
+                              <a href="tel:${phone}" style="font-size: 15px; font-weight: 700; color: #2A5243 !important; text-decoration: none !important;">${phone}</a>
+                            </div>
 
-                <div class="footer-text">
-                  Sent automatically from the website contact form.<br>
-                  <a href="https://handinhandtherapy.ca">handinhandtherapy.ca</a>
-                </div>
-              </div>
-            </div>
-          </div>
+                            <div>
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 4px;">Client Notes / Situation</span>
+                              <div style="background-color: #ffffff; border-left: 4px solid #F57A54; border: 1px solid #e2e8f0; border-left-width: 4px; border-left-color: #F57A54; padding: 14px 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; color: #1B3B48;">${situation ? situation : "No details provided."}</div>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                ${footerHtml}
+              </td>
+            </tr>
+          </table>
         </body>
       </html>
     `;
@@ -149,90 +190,124 @@ export async function POST(req: Request) {
       <html>
         <head>
           <meta charset="utf-8">
-          <style>${sharedStyles}</style>
         </head>
-        <body>
-          <div class="wrapper">
-            <div class="container">
-              <div class="header-bg">
-                <p class="header-pretitle">Inquiry Confirmation</p>
-                <h1 class="header-title">Hand In Hand Therapy Centre</h1>
-                <p class="header-slogan">Together We Can!</p>
-              </div>
+        <body style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background-color: #FBF9F5; color: #1B3B48; margin: 0; padding: 24px 12px;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(15, 37, 48, 0.08);">
+            <tr>
+              <td>
+                ${headerHtml}
 
-              <div class="content">
-                <h2 class="greeting">Hi ${name},</h2>
-                <p class="lead-text">
-                  Thank you for connecting with <strong>Hand In Hand Therapy Centre & Adult Day Program</strong>. We have received your request regarding <strong>${lookingFor}</strong> support.
-                </p>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff;">
+                  <tr>
+                    <td style="padding: 32px 28px;">
+                      
+                      <div style="margin-bottom: 20px;">
+                        <span style="display: inline-block; background-color: #E8F0EC; color: #2A5243; font-weight: 800; padding: 6px 16px; border-radius: 20px; font-size: 12px; border: 1px solid rgba(42, 82, 67, 0.2); text-transform: uppercase; letter-spacing: 0.5px;">
+                          ✓ Inquiry Received
+                        </span>
+                      </div>
 
-                <div class="highlight-box">
-                  <strong>What happens next?</strong><br>
-                  Our clinical intake team is reviewing your information and will reach out to you promptly (typically within 1 business day) to answer questions, discuss your goals, or schedule a tour.
-                </div>
+                      <h2 style="font-size: 20px; font-weight: 800; color: #1B3B48; margin: 0 0 12px 0;">
+                        Hi ${name},
+                      </h2>
+                      <p style="font-size: 14px; line-height: 1.65; color: #475569; margin: 0 0 24px 0; font-weight: 500;">
+                        Thank you for reaching out to <strong>Hand In Hand Therapy Centre & Adult Day Program</strong>. We have received your inquiry for <strong>${lookingFor}</strong> support.
+                      </p>
 
-                <div class="details-card">
-                  <div class="details-header">Summary of Your Inquiry</div>
-                  
-                  <div class="field-row">
-                    <span class="field-label">Selected Track</span>
-                    <p class="field-value">${lookingFor}</p>
-                  </div>
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 24px;">
+                        <tr>
+                          <td style="background-color: #E8F0EC; border-left: 4px solid #2A5243; padding: 18px 20px; border-radius: 0 12px 12px 0;">
+                            <div style="font-size: 12px; font-weight: 800; color: #2A5243; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">
+                              What Happens Next?
+                            </div>
+                            <div style="font-size: 13px; line-height: 1.6; color: #1B3B48;">
+                              Our clinical intake team is reviewing your information and will reach out to you promptly (typically within 1 business day) to answer questions, discuss your goals, or arrange a clinic tour.
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
 
-                  <div class="field-row">
-                    <span class="field-label">Name</span>
-                    <p class="field-value">${name}</p>
-                  </div>
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; margin-bottom: 28px;">
+                        <tr>
+                          <td style="padding: 20px;">
+                            <div style="font-size: 11px; font-weight: 800; color: #2A5243; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; border-bottom: 2px solid #E8F0EC; padding-bottom: 8px;">
+                              Summary of Your Submission
+                            </div>
+                            
+                            <div style="margin-bottom: 12px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Selected Track</span>
+                              <span style="font-size: 15px; font-weight: 700; color: #1B3B48; display: block;">${lookingFor}</span>
+                            </div>
 
-                  <div class="field-row">
-                    <span class="field-label">Email</span>
-                    <p class="field-value">${email}</p>
-                  </div>
+                            <div style="margin-bottom: 12px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Full Name</span>
+                              <span style="font-size: 15px; font-weight: 700; color: #1B3B48; display: block;">${name}</span>
+                            </div>
 
-                  <div class="field-row">
-                    <span class="field-label">Phone</span>
-                    <p class="field-value">${phone}</p>
-                  </div>
+                            <div style="margin-bottom: 12px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Email Address</span>
+                              <a href="mailto:${email}" style="font-size: 15px; font-weight: 700; color: #2A5243 !important; text-decoration: none !important;">${email}</a>
+                            </div>
 
-                  ${situation ? `
-                    <div class="field-row" style="margin-bottom: 0;">
-                      <span class="field-label">Details Provided</span>
-                      <div class="message-quote">${situation}</div>
-                    </div>
-                  ` : ""}
-                </div>
+                            <div style="margin-bottom: 12px;">
+                              <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 2px;">Phone Number</span>
+                              <a href="tel:${phone}" style="font-size: 15px; font-weight: 700; color: #2A5243 !important; text-decoration: none !important;">${phone}</a>
+                            </div>
 
-                <div class="locations-grid">
-                  <div class="location-title">Our Centers & Direct Contact</div>
-                  
-                  <div class="location-card">
-                    <strong>Concord / Vaughan Center:</strong><br>
-                    750 Millway Avenue unit #5, Concord, ON | 📞 <a href="tel:6472809952" style="color: #2A5243; font-weight:700; text-decoration:none;">647-280-9952</a>
-                  </div>
+                            ${situation ? `
+                              <div>
+                                <span style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 4px;">Details Shared</span>
+                                <div style="background-color: #ffffff; border-left: 4px solid #F57A54; border: 1px solid #e2e8f0; border-left-width: 4px; border-left-color: #F57A54; padding: 14px 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; color: #1B3B48;">${situation}</div>
+                              </div>
+                            ` : ""}
+                          </td>
+                        </tr>
+                      </table>
 
-                  <div class="location-card">
-                    <strong>Bradford Center:</strong><br>
-                    465 Holland St W, Unit 3/4, Bradford, ON | 📞 <a href="tel:9052514756" style="color: #2A5243; font-weight:700; text-decoration:none;">(905)-251-4756</a>
-                  </div>
-                </div>
-              </div>
+                      <div style="font-size: 12px; font-weight: 800; color: #1B3B48; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">
+                        Our Centers & Direct Contact
+                      </div>
+                      
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; margin-bottom: 10px;">
+                        <tr>
+                          <td style="padding: 14px 16px;">
+                            <div style="font-size: 13px; font-weight: 800; color: #1B3B48; margin-bottom: 2px;">
+                              Concord / Vaughan Center (Therapy & Adult Day Program)
+                            </div>
+                            <div style="font-size: 12px; color: #475569; margin-bottom: 6px;">
+                              750 Millway Avenue unit #5, Concord, ON
+                            </div>
+                            <a href="tel:6472809952" style="display: inline-block; background-color: #1B3B48; color: #ffffff !important; font-size: 11px; font-weight: 800; text-decoration: none !important; padding: 6px 14px; border-radius: 20px;">
+                              📞 Call: 647-280-9952
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
 
-              <div class="footer-bg">
-                <span class="social-heading">Connect With Us On Social Media</span>
-                <div>
-                  <a href="https://www.facebook.com/profile.php?id=100037961153848" target="_blank" class="social-btn">Therapy Facebook</a>
-                  <a href="https://www.instagram.com/handinhandtherapy/" target="_blank" class="social-btn">Therapy Instagram</a>
-                  <a href="https://www.facebook.com/profile.php?id=100076041793102" target="_blank" class="social-btn">Next Level Facebook</a>
-                  <a href="https://www.instagram.com/hand_in_hand_the_next_level/" target="_blank" class="social-btn">Next Level Instagram</a>
-                </div>
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px;">
+                        <tr>
+                          <td style="padding: 14px 16px;">
+                            <div style="font-size: 13px; font-weight: 800; color: #1B3B48; margin-bottom: 2px;">
+                              Bradford Center (Therapy & Community Programs)
+                            </div>
+                            <div style="font-size: 12px; color: #475569; margin-bottom: 6px;">
+                              465 Holland St W, Unit 3/4, Bradford, ON
+                            </div>
+                            <a href="tel:9052514756" style="display: inline-block; background-color: #2A5243; color: #ffffff !important; font-size: 11px; font-weight: 800; text-decoration: none !important; padding: 6px 14px; border-radius: 20px;">
+                              📞 Call: (905)-251-4756
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
 
-                <div class="footer-text">
-                  Hand In Hand Therapy Centre & Adult Day Program<br>
-                  <a href="https://handinhandtherapy.ca">handinhandtherapy.ca</a> | <a href="mailto:info@handinhandtherapycentre.ca">info@handinhandtherapycentre.ca</a>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </td>
+                  </tr>
+                </table>
+
+                ${footerHtml}
+              </td>
+            </tr>
+          </table>
         </body>
       </html>
     `;
