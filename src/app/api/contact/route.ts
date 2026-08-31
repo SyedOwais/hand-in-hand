@@ -29,7 +29,8 @@ export async function POST(req: Request) {
     // Resend verified domain sender
     const senderEmail = process.env.RESEND_FROM_EMAIL || "Hand In Hand Therapy <info@handinhandtherapycentre.ca>";
 
-    const htmlContent = `
+    // 1. Admin Notification Email HTML Template
+    const adminHtmlContent = `
       <!DOCTYPE html>
       <html>
         <head>
@@ -86,24 +87,109 @@ export async function POST(req: Request) {
       </html>
     `;
 
-    const { data, error } = await resend.emails.send({
-      from: senderEmail,
-      to: [destinationEmail],
-      replyTo: email,
-      subject: `New Inquiry: ${name} (${lookingFor})`,
-      html: htmlContent,
-      text: `New Website Inquiry\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nLooking For: ${lookingFor}\nDetails:\n${situation || "N/A"}`,
-    });
+    // 2. Client Auto-Reply Confirmation Email HTML Template
+    const clientAutoReplyHtml = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <style>
+            body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background-color: #FBF9F5; color: #1B3B48; margin: 0; padding: 20px; }
+            .card { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+            .header { background: #0F2530; color: #ffffff; padding: 28px 24px; text-align: center; }
+            .header p { margin: 0 0 6px 0; color: #EAA85E; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+            .header h1 { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+            .body { padding: 28px; }
+            .greeting { font-size: 18px; font-weight: 800; color: #1B3B48; margin-top: 0; margin-bottom: 12px; }
+            .intro { font-size: 14px; line-height: 1.6; color: #475569; margin-bottom: 20px; }
+            .summary-box { background: #F8FAFC; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; margin-bottom: 24px; }
+            .summary-title { font-size: 11px; font-weight: 800; color: #2A5243; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; display: block; }
+            .field-row { margin-bottom: 8px; font-size: 13px; color: #334155; }
+            .field-row strong { color: #1B3B48; }
+            .next-steps { background: #E8F0EC; border-left: 4px solid #2A5243; padding: 16px; border-radius: 8px; font-size: 13px; line-height: 1.5; color: #1B3B48; margin-bottom: 24px; }
+            .next-steps strong { color: #2A5243; }
+            .locations { font-size: 12px; color: #64748b; margin-top: 20px; border-top: 1px solid #f1f5f9; padding-top: 16px; line-height: 1.6; }
+            .footer { background: #0F2530; padding: 20px; text-align: center; font-size: 12px; color: #94a3b8; }
+            .footer a { color: #EAA85E; text-decoration: none; font-weight: 700; }
+          </style>
+        </head>
+        <body>
+          <div class="card">
+            <div class="header">
+              <p>Inquiry Received</p>
+              <h1>Hand In Hand Therapy Centre</h1>
+            </div>
+            <div class="body">
+              <h2 class="greeting">Hi ${name},</h2>
+              <p class="intro">
+                Thank you for reaching out to <strong>Hand In Hand Therapy Centre & Adult Day Program</strong>. We have successfully received your inquiry for <strong>${lookingFor}</strong> support.
+              </p>
+              
+              <div class="next-steps">
+                <strong>What happens next?</strong><br>
+                Our clinical intake team is reviewing your details and will contact you promptly to answer any questions, discuss your goals, or arrange a clinic tour.
+              </div>
 
-    if (error) {
-      console.error("Resend API error:", error);
+              <div class="summary-box">
+                <span class="summary-title">Summary of Your Submission</span>
+                <div class="field-row"><strong>Program Requested:</strong> ${lookingFor}</div>
+                <div class="field-row"><strong>Name:</strong> ${name}</div>
+                <div class="field-row"><strong>Email:</strong> ${email}</div>
+                <div class="field-row"><strong>Phone:</strong> ${phone}</div>
+                ${situation ? `<div class="field-row" style="margin-top: 8px;"><strong>Details Shared:</strong> ${situation}</div>` : ""}
+              </div>
+
+              <div class="locations">
+                <strong style="color: #1B3B48; display: block; margin-bottom: 4px;">Our Locations & Contact Info:</strong>
+                • <strong>Concord / Vaughan Clinic:</strong> 750 Millway Avenue unit #5 | (647) 280-9952<br>
+                • <strong>Bradford Clinic:</strong> 465 Holland St W, Unit 3/4 | (905) 251-4756
+              </div>
+            </div>
+            <div class="footer">
+              Hand In Hand Therapy Centre & Adult Day Program<br>
+              <a href="https://handinhandtherapy.ca">handinhandtherapy.ca</a> | <a href="mailto:info@handinhandtherapycentre.ca">info@handinhandtherapycentre.ca</a>
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+    // Dispatch both emails in parallel
+    const [adminResult, clientResult] = await Promise.allSettled([
+      // Admin Notification
+      resend.emails.send({
+        from: senderEmail,
+        to: [destinationEmail],
+        replyTo: email,
+        subject: `New Inquiry: ${name} (${lookingFor})`,
+        html: adminHtmlContent,
+        text: `New Website Inquiry\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nLooking For: ${lookingFor}\nDetails:\n${situation || "N/A"}`,
+      }),
+      // Client Auto-Reply Confirmation
+      resend.emails.send({
+        from: senderEmail,
+        to: [email],
+        replyTo: destinationEmail,
+        subject: `Thank you for contacting Hand In Hand Therapy Centre`,
+        html: clientAutoReplyHtml,
+        text: `Hi ${name},\n\nThank you for reaching out to Hand In Hand Therapy Centre & Adult Day Program. We have received your inquiry for ${lookingFor} support.\n\nOur clinical intake team will contact you promptly.\n\nHand In Hand Therapy Centre\ninfo@handinhandtherapycentre.ca`,
+      }),
+    ]);
+
+    if (adminResult.status === "rejected" || (adminResult.status === "fulfilled" && adminResult.value.error)) {
+      const err = adminResult.status === "rejected" ? adminResult.reason : adminResult.value.error;
+      console.error("Resend Admin Email Error:", err);
       return NextResponse.json(
-        { error: error.message || "Failed to send email via Resend." },
+        { error: err?.message || "Failed to deliver inquiry notification email." },
         { status: 500 }
       );
     }
 
-    return NextResponse.json({ success: true, data });
+    if (clientResult.status === "rejected" || (clientResult.status === "fulfilled" && clientResult.value.error)) {
+      console.warn("Resend Client Auto-Reply Warning:", clientResult.status === "rejected" ? clientResult.reason : clientResult.value.error);
+    }
+
+    return NextResponse.json({ success: true, data: adminResult.value.data });
   } catch (err: any) {
     console.error("Contact API internal error:", err);
     return NextResponse.json(
