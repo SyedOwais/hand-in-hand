@@ -26,8 +26,8 @@ export async function POST(req: Request) {
     const resend = new Resend(apiKey);
     const destinationEmail = process.env.CONTACT_NOTIFICATION_EMAIL || "info@handinhandtherapycentre.ca";
     
-    // Resend requires onboarded domain or default onboarding sender
-    const senderEmail = process.env.RESEND_FROM_EMAIL || "Hand In Hand Website <onboarding@resend.dev>";
+    // Resend verified domain sender
+    const senderEmail = process.env.RESEND_FROM_EMAIL || "Hand In Hand Therapy <info@handinhandtherapycentre.ca>";
 
     const htmlContent = `
       <!DOCTYPE html>
