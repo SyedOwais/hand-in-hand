@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
+import FloatingTextWidget from "@/components/FloatingTextWidget";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -175,6 +176,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased text-[#1B3B48] bg-[#FBF9F5] selection:bg-[#2A5243] selection:text-white">
         {children}
+        <FloatingTextWidget />
       </body>
     </html>
   );

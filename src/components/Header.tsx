@@ -250,14 +250,6 @@ export default function Header() {
                       <div className="absolute top-full left-1/2 -translate-x-1/2 w-80 pt-3 z-50 animate-in fade-in slide-in-from-top-3 duration-200">
                         <div className="bg-[#FBF9F5] rounded-3xl p-3.5 shadow-2xl border border-[#2A5243]/20 text-[#1B3B48] space-y-2">
                           
-                          {/* Dropdown Header Pill */}
-                          <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
-                            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
-                              <Sparkles className="w-3.5 h-3.5 text-[#F57A54]" />
-                              Care & Therapy
-                            </span>
-                          </div>
-
                           {/* Items Grid */}
                           <div className="space-y-1 pt-1">
                             {servicesDropdownItems.map((item, idx) => {
@@ -319,14 +311,6 @@ export default function Header() {
                       <div className="absolute top-full left-1/2 -translate-x-1/2 w-80 pt-3 z-50 animate-in fade-in slide-in-from-top-3 duration-200">
                         <div className="bg-[#FBF9F5] rounded-3xl p-3.5 shadow-2xl border border-[#2A5243]/20 text-[#1B3B48] space-y-2">
                           
-                          {/* Dropdown Header Pill */}
-                          <div className="px-3 py-1.5 rounded-xl bg-[#E8F0EC] border border-[#2A5243]/15 flex items-center justify-between">
-                            <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#2A5243] flex items-center gap-1.5">
-                              <Compass className="w-3.5 h-3.5 text-[#F57A54]" />
-                              {isAdult ? "Adult Resource Hub" : "Therapy Resource Hub"}
-                            </span>
-                          </div>
-
                           {/* Items Grid */}
                           <div className="space-y-1 pt-1">
                             {insightsDropdownItems.map((item, idx) => {

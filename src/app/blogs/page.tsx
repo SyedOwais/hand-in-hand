@@ -150,8 +150,7 @@ function BlogsContent() {
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F57A54]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 border border-[#2A5243]/20 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-xs">
-            <Compass className="w-4 h-4 text-[#F57A54]" />
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#2A5243]/10 border border-[#2A5243]/20 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-xs">
             <span>Clinical Knowledge Hub</span>
           </div>
 

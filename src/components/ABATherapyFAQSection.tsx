@@ -52,8 +52,7 @@ export default function ABATherapyFAQSection() {
         
         {/* Section Header */}
         <div className="text-center space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20">
-            <HelpCircle className="w-4 h-4 text-[#F57A54]" />
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20">
             <span>ABA Therapy Services FAQs (Ages 2–18)</span>
           </div>
 

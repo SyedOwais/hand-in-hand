@@ -65,8 +65,7 @@ export default function AdultProgramSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EAA85E]/20 text-[#EAA85E] text-xs font-black tracking-wider uppercase mb-4 border border-[#EAA85E]/30">
-            <Users className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#EAA85E]/20 text-[#EAA85E] text-xs font-black tracking-wider uppercase mb-4 border border-[#EAA85E]/30">
             <span>Ages 18+ • Adult Day Program</span>
           </div>
 

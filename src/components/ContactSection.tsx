@@ -72,8 +72,7 @@ export default function ContactSection() {
           
           {/* Left Side: Heading & Subheading Only */}
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-extrabold tracking-wider uppercase border border-[#4A7C64]/20">
-              <MessageSquare className="w-3.5 h-3.5 text-[#4A7C64]" />
+            <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-extrabold tracking-wider uppercase border border-[#4A7C64]/20">
               <span>Contact Us</span>
             </div>
 

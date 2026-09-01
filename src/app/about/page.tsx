@@ -110,8 +110,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
 
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm backdrop-blur-md">
-                <Sparkles className="w-4 h-4 text-[#F57A54]" />
+              <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold uppercase tracking-wider border border-[#2A5243]/20 shadow-sm backdrop-blur-md">
                 <span>Our Story, Mission & Leadership</span>
               </div>
 

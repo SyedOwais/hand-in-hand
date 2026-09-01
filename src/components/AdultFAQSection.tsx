@@ -72,8 +72,7 @@ export default function AdultFAQSection() {
         
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1B3B48]/10 text-[#1B3B48] text-xs sm:text-sm font-extrabold uppercase tracking-wider">
-            <HelpCircle className="w-4 h-4 text-[#F57A54]" />
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1B3B48]/10 text-[#1B3B48] text-xs sm:text-sm font-extrabold uppercase tracking-wider">
             <span>Adult Day Program FAQs (18+)</span>
           </div>
 

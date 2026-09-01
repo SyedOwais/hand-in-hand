@@ -44,8 +44,7 @@ export default function ContactPage() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#4A7C64]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold tracking-wider uppercase border border-[#2A5243]/20 shadow-xs">
-              <Leaf className="w-4 h-4 text-[#F57A54]" />
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs sm:text-sm font-extrabold tracking-wider uppercase border border-[#2A5243]/20 shadow-xs">
               <span>Get In Touch</span>
             </div>
 

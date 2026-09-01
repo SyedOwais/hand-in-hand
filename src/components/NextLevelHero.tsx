@@ -53,8 +53,7 @@ export default function NextLevelHero() {
           
           {/* Left Text Column & Mobile Image */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 text-[#2A5243] text-xs sm:text-sm font-black tracking-wider uppercase border border-[#4A7C64]/30 shadow-xs">
-              <Leaf className="w-4 h-4 text-[#4A7C64]" />
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/80 text-[#2A5243] text-xs sm:text-sm font-black tracking-wider uppercase border border-[#4A7C64]/30 shadow-xs">
               <span>Adult Day Program • Ages 18+</span>
             </div>
 

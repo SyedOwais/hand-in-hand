@@ -43,8 +43,7 @@ export default function LocationsSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#1B3B48] text-white text-xs font-black tracking-wider uppercase mb-3 shadow-xs">
-            <Building2 className="w-3.5 h-3.5 text-[#EAA85E]" />
+          <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#1B3B48] text-white text-xs font-black tracking-wider uppercase mb-3 shadow-xs">
             <span>Our Two Locations</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-[#1B3B48] tracking-tight mb-3">

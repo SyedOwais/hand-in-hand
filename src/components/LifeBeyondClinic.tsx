@@ -18,8 +18,7 @@ export default function LifeBeyondClinic() {
         
         {/* Storytelling Header */}
         <div className="max-w-3xl mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-black tracking-wider uppercase mb-3 border border-[#4A7C64]/20">
-            <Leaf className="w-4 h-4 text-[#4A7C64]" />
+          <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-black tracking-wider uppercase mb-3 border border-[#4A7C64]/20">
             <span>Life Beyond The Clinic</span>
           </div>
 

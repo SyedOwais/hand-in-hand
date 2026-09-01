@@ -44,8 +44,7 @@ export default function BeyondTherapy() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-black tracking-wider uppercase mb-4 border border-[#2A5243]/20">
-            <Leaf className="w-4 h-4 text-[#4A7C64]" />
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#2A5243]/10 text-[#2A5243] text-xs font-black tracking-wider uppercase mb-4 border border-[#2A5243]/20">
             <span>The Hand In Hand Differentiator</span>
           </div>
 

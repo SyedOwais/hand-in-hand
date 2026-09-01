@@ -15,8 +15,7 @@ export default function WhatWeHelpWith() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-black tracking-wider uppercase mb-3 border border-[#4A7C64]/30 shadow-xs">
-              <Leaf className="w-3.5 h-3.5 text-[#4A7C64]" />
+            <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#E8F0EC] text-[#2A5243] text-xs font-black tracking-wider uppercase mb-3 border border-[#4A7C64]/30 shadow-xs">
               <span>Therapy & Care Services</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1B3B48] tracking-tight mb-2">
